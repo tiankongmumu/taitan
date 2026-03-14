@@ -1,0 +1,29 @@
+[
+  {
+    "id": "rage-escape",
+    "name": "发疯文学职场逃生舱",
+    "description": "通过分析你的MBTI和近期压力源，生成专属的“发疯文学”文案和“水逆退散”玄学仪式，助你精神离职。",
+    "target_audience": "精神内耗严重、渴望情绪宣泄的年轻“打工人”",
+    "hook_question": "你的职场怨气，最适合用哪款发疯文学来治愈？",
+    "paywall_trigger": "在生成你专属的“发疯”金句和“水逆退散”转运仪式步骤时弹出",
+    "theme_color": "purple"
+  },
+  {
+    "id": "robe-switch",
+    "name": "孔乙己长衫置换所",
+    "description": "通过一系列灵魂拷问，测试你脱下“学历长衫”的勇气指数，并为你匹配最适合“搞钱”的副业人格。",
+    "target_audience": "高学历但感到迷茫、在“体面”与“搞钱”间挣扎的年轻人",
+    "hook_question": "你的“长衫”，是体面还是枷锁？",
+    "paywall_trigger": "在揭示你最适合的“搞钱”副业赛道和具体行动指南前卡住",
+    "theme_color": "amber"
+  },
+  {
+    "id": "system-fortune",
+    "name": "体制内玄学运势指南",
+    "description": "结合传统玄学与职场情境，为你测算在“体制内”的年度运势、贵人方位和最佳“躺平”姿势。",
+    "target_audience": "体制内新人、渴望稳定但焦虑晋升与人际关系的年轻人",
+    "hook_question": "你的体制内人生，是紫微斗数里的哪颗星？",
+    "paywall_trigger": "在显示你的年度关键贵人、晋升时机和需要避开的“坑”等详细报告时弹出",
+    "theme_color": "emerald"
+  }
+]

@@ -1,0 +1,119 @@
+{
+  "keyword": "typing speed test",
+  "competitors": [
+    {
+      "name": "TypingTest.com",
+      "url": "https://www.typingtest.com/",
+      "features": [
+        "Multiple test lengths (1, 3, 5 minutes)",
+        "Customizable text options",
+        "Detailed results including WPM and accuracy"
+      ],
+      "weaknesses": [
+        "Outdated user interface",
+        "Limited mobile responsiveness",
+        "No gamification elements"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 200000
+    },
+    {
+      "name": "10FastFingers",
+      "url": "https://10fastfingers.com/typing-test/english",
+      "features": [
+        "Competitive typing races",
+        "Leaderboards",
+        "Multi-language support"
+      ],
+      "weaknesses": [
+        "Limited customization of test content",
+        "Ads can be intrusive",
+        "Less detailed performance metrics"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 150000
+    },
+    {
+      "name": "KeyHero",
+      "url": "https://www.keyhero.com/free-typing-test/",
+      "features": [
+        "Clean and modern UI",
+        "Progress tracking over time",
+        "Wide range of practice texts"
+      ],
+      "weaknesses": [
+        "Fewer language options compared to competitors",
+        "No mobile app",
+        "Limited social features"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 100000
+    },
+    {
+      "name": "Ratatype",
+      "url": "https://www.ratatype.com/typing-test/",
+      "features": [
+        "Comprehensive training courses",
+        "Interactive lessons",
+        "Detailed progress reports"
+      ],
+      "weaknesses": [
+        "Some features require a paid subscription",
+        "UI can be cluttered",
+        "Less focus on quick tests"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 80000
+    },
+    {
+      "name": "Speed Typing Online",
+      "url": "https://www.speedtypingonline.com/",
+      "features": [
+        "Simple and straightforward tests",
+        "Immediate feedback",
+        "Option to print certificates"
+      ],
+      "weaknesses": [
+        "Basic and limited features",
+        "No mobile optimization",
+        "Lack of advanced analytics"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 50000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Enhanced mobile experience with a dedicated app",
+      "implementation": "Develop a mobile app for iOS and Android that offers the same features as the web version, with additional mobile-specific optimizations like touch-friendly controls and offline mode.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Advanced analytics and personalized insights",
+      "implementation": "Integrate AI to provide users with detailed, actionable insights based on their typing habits. Offer personalized tips and exercises to improve specific areas of weakness.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Gamification and social features",
+      "implementation": "Add gamification elements such as badges, levels, and challenges. Integrate social features like sharing results on social media, creating and joining groups, and participating in community events.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "Customizable and user-generated content",
+      "implementation": "Allow users to create and share their own typing tests. Provide tools for customizing test content, including importing text from external sources and adding images or videos.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Enterprise solutions for businesses and schools",
+      "implementation": "Offer a B2B solution with features like bulk user management, group performance tracking, and integration with learning management systems (LMS). Provide tiered pricing plans for different organizational sizes.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    }
+  ],
+  "recommended_positioning": "A modern, feature-rich typing speed test platform with a seamless mobile experience, advanced analytics, and engaging social and gamification elements.",
+  "analyzed_at": "2026-03-05T09:40:52.709304"
+}

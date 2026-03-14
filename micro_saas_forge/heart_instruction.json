@@ -1,0 +1,15 @@
+{
+  "drive": "profit",
+  "priority": 1,
+  "tasks": [
+    "demand_radar_scan",
+    "forge_monetization_tool",
+    "integrate_payment",
+    "social_distribute",
+    "beast_mode_push"
+  ],
+  "energy_allocation": 0.7,
+  "reason": "赚钱驱动（收入=¥0.0, 目标=¥100.0）",
+  "stage": "EARLY_STAGE",
+  "timestamp": "2026-03-14T15:42:06.845722"
+}

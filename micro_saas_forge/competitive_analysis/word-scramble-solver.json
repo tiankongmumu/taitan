@@ -1,0 +1,130 @@
+{
+  "keyword": "word scramble solver",
+  "competitors": [
+    {
+      "name": "WordFinder by YourDictionary",
+      "url": "https://wordfinder.yourdictionary.com/word-scramble/",
+      "features": [
+        "Large dictionary (over 200k words)",
+        "Advanced filters (starts with, ends with, contains)",
+        "Anagram solver functionality",
+        "Clean, fast interface",
+        "Mobile-responsive design"
+      ],
+      "weaknesses": [
+        "Cluttered with ads (intrusive pop-ups)",
+        "No dedicated mobile app",
+        "Limited explanation of solving logic",
+        "Branding focuses on broader word games, not just scrambling"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 1200000
+    },
+    {
+      "name": "Word Unscrambler (Unscramble.me)",
+      "url": "https://unscramble.me/",
+      "features": [
+        "Extremely simple, single-input box interface",
+        "Shows all possible words sorted by length",
+        "Includes Scrabble point values",
+        "Works offline (PWA-like functionality)"
+      ],
+      "weaknesses": [
+        "Very basic, no advanced features",
+        "Minimal design, feels outdated",
+        "No filtering or pattern matching",
+        "Site is ad-supported with low-quality ads"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 800000
+    },
+    {
+      "name": "WordTips Word Unscrambler",
+      "url": "https://word.tips/unscramble/",
+      "features": [
+        "Powerful solver with pattern search (use '?' for wildcards)",
+        "Integrated with other word game tools (Wordle, Scrabble)",
+        "Clear display of word definitions (via tooltips)",
+        "Shows anagrams and similar word lists"
+      ],
+      "weaknesses": [
+        "Aggressive ad placement disrupts user flow",
+        "Page load can be slow due to ad scripts",
+        "Interface, while feature-rich, can feel overwhelming",
+        "Primarily monetized through ads, creating a poor UX"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 950000
+    },
+    {
+      "name": "All Scrabble Words",
+      "url": "https://www.allscrabblewords.com/word-unscrambler/",
+      "features": [
+        "Specialized in Scrabble & Words with Friends dictionaries",
+        "Shows word scores and letter distributions clearly",
+        "Option to exclude or require certain letters",
+        "Detailed blog/content around word game strategy"
+      ],
+      "weaknesses": [
+        "Niche focus may not appeal to casual scramblers",
+        "Website design is very dated and not mobile-optimized",
+        "Navigation is confusing with many links",
+        "Traffic likely dominated by hardcore board game players"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 300000
+    },
+    {
+      "name": "Word Scramble Solver (Word-Grabber.com)",
+      "url": "https://www.word-grabber.com/word-scramble-solver",
+      "features": [
+        "Real-time solving as you type",
+        "Multi-word anagram solver (for entire phrases)",
+        "Supports multiple languages",
+        "Dedicated mobile apps available"
+      ],
+      "weaknesses": [
+        "Website is heavily monetized with pushy 'premium' upsells",
+        "Free version is severely limited (max letters, daily uses)",
+        "UI is cluttered with upgrade prompts",
+        "Trust signals are weak; feels like a 'tool farm' site"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 500000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "No clean, ad-free, and educational solver focused on teaching the process.",
+      "implementation": "Build a tool with a 'step-by-step' mode that visually demonstrates sorting letters, identifying prefixes/suffixes, and building words. Include a 'learning' tab with common scrambling patterns and tips.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Lack of integration with popular daily word games (Wordle, Connections, etc.) as a unified puzzle hub.",
+      "implementation": "Create a dashboard where users can input their scrambled letters AND their daily Wordle/Connections progress. The solver could offer hints specific to those puzzles' constraints (e.g., Wordle's green/yellow letters).",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Poor mobile experience; no competitor has a best-in-class, native-feeling mobile app or PWA.",
+      "implementation": "Develop a dedicated, installable PWA or lightweight native app with an ultra-fast, keyboard-optimized interface, offline functionality, and iOS/Android widget support for quick access.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "No community or competitive features. Solving is a solitary activity on all existing platforms.",
+      "implementation": "Add a 'daily scramble challenge' with a leaderboard, option to race against friends, or a 'solve collaboratively' mode where users can share a scramble link and see others' guesses in real-time.",
+      "impact": "MEDIUM",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Weak visual design and user experience; most sites are functional but not enjoyable or modern.",
+      "implementation": "Prioritize a minimalist, modern UI (inspired by apps like Duolingo or NYT Games) with smooth animations, satisfying feedback, and a cohesive color scheme. Ruthlessly eliminate clutter and intrusive ads.",
+      "impact": "HIGH",
+      "effort": "SIMPLE to MEDIUM"
+    }
+  ],
+  "recommended_positioning": "The clean, educational, and community-powered word scramble solver designed for both casual fun and improving your word game skills.",
+  "analyzed_at": "2026-03-05T15:04:17.533786"
+}

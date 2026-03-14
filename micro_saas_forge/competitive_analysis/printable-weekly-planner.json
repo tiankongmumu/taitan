@@ -1,0 +1,133 @@
+{
+  "keyword": "printable weekly planner",
+  "competitors": [
+    {
+      "name": "Canva",
+      "url": "https://www.canva.com/templates/search/printable-weekly-planner/",
+      "features": [
+        "Massive template library with modern designs",
+        "Intuitive drag-and-drop editor",
+        "Strong brand recognition and trust",
+        "Integration with other Canva tools (graphics, photos)",
+        "Easy export to PDF/print"
+      ],
+      "weaknesses": [
+        "Overwhelming for simple printing (requires account/sign-up)",
+        "Focus is on design, not pure productivity/planning theory",
+        "Many best templates are behind Canva Pro paywall",
+        "Can be slow/clunky for a simple task"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 2000000
+    },
+    {
+      "name": "Template.net",
+      "url": "https://www.template.net/business/planner-templates/weekly-planner/",
+      "features": [
+        "Huge volume of templates (thousands)",
+        "Categorized by style (business, student, etc.)",
+        "Direct download links for many files",
+        "No account required for basic downloads"
+      ],
+      "weaknesses": [
+        "Aggressive advertising and pop-ups",
+        "Low-quality, generic designs mixed in",
+        "Poor user experience (feels spammy)",
+        "Watermarks on many 'free' downloads",
+        "No customization tools on-site"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 1500000
+    },
+    {
+      "name": "Monday.com Blog (Template Hub)",
+      "url": "https://monday.com/blog/productivity/free-printable-weekly-planners/",
+      "features": [
+        "High-quality, professionally designed templates",
+        "Content from a trusted productivity brand",
+        "Clean, ad-light user experience",
+        "Templates tied to productivity methodologies"
+      ],
+      "weaknesses": [
+        "Limited selection (curated list, not a library)",
+        "Primary goal is lead gen for Monday.com software",
+        "No customization or editing tools",
+        "Deeply buried in a blog, not a dedicated tool"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 800000
+    },
+    {
+      "name": "PDFfiller",
+      "url": "https://www.pdffiller.com/en/feature/weekly-planner.htm",
+      "features": [
+        "Online editor to fill/type directly into planner PDFs",
+        "Cloud storage for saved planners",
+        "Ability to create from scratch or upload",
+        "Strong focus on form-filling functionality"
+      ],
+      "weaknesses": [
+        "UI is complex and business-oriented",
+        "Heavy push for paid subscription",
+        "Core product is not planner-specific",
+        "Design aesthetics are functional, not inspiring",
+        "Free tier is very limited"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 1200000
+    },
+    {
+      "name": "Shining Mom Printables",
+      "url": "https://www.shiningmom.com/free-printable-weekly-planner/",
+      "features": [
+        "Niche focus (moms, families, home management)",
+        "Specific designs for meal planning, chores, kids",
+        "Personal, blog-style content and tips",
+        "Truly free downloads with minimal hassle"
+      ],
+      "weaknesses": [
+        "Amateur design and branding",
+        "Very limited template selection",
+        "Poor mobile experience",
+        "No customization options",
+        "Traffic limited to niche audience"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 80000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Lack of intelligent, context-aware planner generation",
+      "implementation": "Build a wizard that asks 3-5 questions (e.g., 'Are you a student or professional?', 'Do you need meal/sleep tracking?', 'Prefer time-blocking or to-do lists?') and generates a custom PDF planner with relevant sections.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "No seamless digital-to-analog bridge",
+      "implementation": "Create a companion mobile app that lets users quickly snap a photo of their filled-out printed planner. Use simple OCR to digitize tasks/notes and sync them to a basic digital calendar (Google/Outlook) or to-do app.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Poor accessibility and inclusivity in design",
+      "implementation": "Offer templates specifically designed for: 1) Low vision (high contrast, large fonts), 2) Neurodiverse users (minimalist layouts, reduced visual clutter, focus aids), 3) Left-handed people (binding on right). Market as 'Planners for Every Brain.'",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "Missing 'print-on-demand' physical product integration",
+      "implementation": "Partner with a print-on-demand service. Allow users to customize a planner (cover, layout, paper type) and order a professionally bound, shipped physical notebook directly from the site, with their chosen template pre-printed.",
+      "impact": "MEDIUM",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "No community or template sharing ecosystem",
+      "implementation": "Build a platform where users can upload their own created planner templates (via a simple designer) and share/download others' creations, with ratings and categories. Differentiate from Canva by being hyper-focused on planners.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    }
+  ],
+  "recommended_positioning": "The intelligent printable planner platform that bridges your analog planning with your digital life.",
+  "analyzed_at": "2026-03-05T16:55:06.201842"
+}

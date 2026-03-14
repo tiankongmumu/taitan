@@ -1,0 +1,89 @@
+{
+    "source": "https://github.com/KeygraphHQ/shannon",
+    "learned_at": "2026-03-05T10:15:00",
+    "category": "web_security_and_automation",
+    "summary": "Shannon — 自主AI渗透测试框架，学习其Web自动化和安全扫描能力",
+    "architecture_patterns": {
+        "multi_agent_pipeline": {
+            "description": "5阶段流水线: Pre-Recon → Recon → Vuln Analysis(5并行) → Exploitation(5并行) → Report",
+            "key_insight": "每个阶段基于前一阶段的产出(deliverables)，progressive analysis",
+            "parallel_execution": "漏洞分析和利用阶段各5个agent并行执行，大幅加速",
+            "agent_registry": "centralized AGENTS record with prerequisites, prompt templates, deliverable filenames"
+        },
+        "deliverable_validation": {
+            "description": "No Exploit No Report — 只有成功验证的漏洞才进入报告",
+            "pattern": "每个agent产出一个.md deliverable文件，validator检查文件是否存在且有效",
+            "titan_application": "质量门控: 只有编译通过+功能验证的产品才能部署"
+        },
+        "git_checkpoints": {
+            "description": "执行前创建git checkpoint，失败则rollback",
+            "titan_application": "构建前保存状态，失败时可以回滚到上一个稳定版本"
+        }
+    },
+    "web_automation_tools": {
+        "playwright_mcp": {
+            "description": "通过MCP协议集成Playwright浏览器自动化",
+            "command": "npx @playwright/mcp@latest --isolated --user-data-dir /tmp/agent-name",
+            "features": [
+                "headless browser",
+                "per-agent isolated sessions",
+                "form filling",
+                "navigation",
+                "screenshot"
+            ],
+            "titan_application": "用于产品功能测试、竞品分析、用户行为模拟"
+        },
+        "reconnaissance_tools": {
+            "nmap": "网络端口扫描和服务发现",
+            "subfinder": "子域名发现",
+            "whatweb": "Web技术栈识别",
+            "schemathesis": "API Schema测试",
+            "titan_application": "竞品技术栈分析、市场情报收集"
+        }
+    },
+    "security_testing_capabilities": {
+        "vulnerability_categories": [
+            {
+                "type": "injection",
+                "description": "SQL注入、命令注入、LDAP注入",
+                "prompt": "vuln-injection.txt"
+            },
+            {
+                "type": "xss",
+                "description": "跨站脚本攻击",
+                "prompt": "vuln-xss.txt"
+            },
+            {
+                "type": "auth",
+                "description": "认证绕过、弱密码、会话劫持",
+                "prompt": "vuln-auth.txt"
+            },
+            {
+                "type": "authz",
+                "description": "授权绕过、权限提升",
+                "prompt": "vuln-authz.txt"
+            },
+            {
+                "type": "ssrf",
+                "description": "服务端请求伪造",
+                "prompt": "vuln-ssrf.txt"
+            }
+        ],
+        "exploitation_approach": "code-aware dynamic testing: 分析源码找attack vector → 浏览器自动化验证",
+        "titan_application": "对生成的Web应用自动进行安全测试，确保产品安全"
+    },
+    "code_patterns_to_adopt": {
+        "result_type": "Result<T, E> for explicit error propagation",
+        "services_boundary": "Activities是thin wrappers，business logic在services层",
+        "di_container": "per-workflow dependency injection container",
+        "config_driven": "YAML配置 + JSON Schema验证",
+        "prompt_templates": "变量替换模板 {{TARGET_URL}}、{{CONFIG_CONTEXT}}"
+    },
+    "integration_plan_for_titan": [
+        "1. 在app_builder中集成Playwright进行构建后功能测试",
+        "2. 添加基础安全扫描(XSS检测、输入验证检查)到quality_gate",
+        "3. 使用WhatWeb分析竞品技术栈，辅助需求雷达决策",
+        "4. 采用deliverable-based validation模式改进质量门控",
+        "5. 实现parallel agent execution加速多产品同时构建"
+    ]
+}

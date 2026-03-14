@@ -1,0 +1,22 @@
+[
+    {
+        "url": "https://www.dingdanxia.com",
+        "type": "API_PLATFORM",
+        "status": "UNVERIFIED"
+    },
+    {
+        "url": "https://api.mayixingqiu.com",
+        "type": "API_PLATFORM",
+        "status": "UNVERIFIED"
+    },
+    {
+        "url": "https://www.fakawang.vip",
+        "type": "API_PLATFORM",
+        "status": "UNVERIFIED"
+    },
+    {
+        "url": "https://open.maoyan.com",
+        "type": "API_PLATFORM",
+        "status": "UNVERIFIED"
+    }
+]

@@ -1,0 +1,45 @@
+=========================================
+🔥【必看】国内安装 Docker 免翻墙图文教程
+=========================================
+
+因为国内网络环境问题，直接双击运行 OpenClaw 可能会在 [4/4] 启动容器时卡住报错。
+这往往是因为连不上 Docker Hub 官方服务器。只需要花 1 分钟配置一下“国内加速器源”即可完美解决！
+
+💻 Windows / Mac 配置方法（步骤完全一样）：
+
+第一步：
+打开你的 Docker Desktop 软件（也就是右下角那个小鲸鱼图标）。
+
+第二步：
+点击软件右上角的【齿轮图标 ⚙️】进入 Settings（设置）。
+
+第三步：
+在左侧菜单点击【Docker Engine】选项。
+
+第四步：
+你会看到右边有一个黑色的代码编辑框，里面有一段 JSON 代码。
+请把下面这段包含“国内免翻墙镜像源”的代码，完全替换掉框里的所有内容：
+
+{
+  "builder": {
+    "gc": {
+      "defaultKeepStorage": "20GB",
+      "enabled": true
+    }
+  },
+  "experimental": false,
+  "registry-mirrors": [
+    "https://docker.m.daocloud.io",
+    "https://dockerproxy.com",
+    "https://docker.nju.edu.cn",
+    "https://docker.mirrors.ustc.edu.cn",
+    "https://cr.console.aliyun.com"
+  ]
+}
+
+第五步：
+确保大括号和标点符号没有报错，然后点击右下角的蓝色按钮【Apply & restart】（应用并重启）。
+
+第六步：
+等待 Docker 重启完毕后，关闭 Docker 窗口。
+重新双击【一键启动OpenClaw.bat】，此时下载速度将起飞！🚀

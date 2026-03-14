@@ -1,0 +1,23 @@
+{
+  "file": "regex-tester.html",
+  "tested_at": "2026-03-02T09:42:47.628658",
+  "checks": {
+    "structure": 10.0,
+    "seo": 9.0,
+    "mobile": 8.0,
+    "interactivity": 10.0,
+    "performance": 10.0,
+    "commercial": 2.0,
+    "visual": 9.0
+  },
+  "issues": [
+    "SEO: Missing H1 heading",
+    "MOBILE: No touch event handling",
+    "COMMERCIAL: No ad slots",
+    "COMMERCIAL: No share functionality",
+    "COMMERCIAL: No analytics tracking",
+    "COMMERCIAL: No email capture"
+  ],
+  "score": 7.8,
+  "pass": true
+}

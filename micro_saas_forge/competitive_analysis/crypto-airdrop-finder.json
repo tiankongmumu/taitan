@@ -1,0 +1,134 @@
+{
+  "keyword": "crypto airdrop finder",
+  "competitors": [
+    {
+      "name": "Airdrops.io",
+      "url": "https://airdrops.io",
+      "features": [
+        "Comprehensive, curated list of active and upcoming airdrops",
+        "Strong community verification and rating system",
+        "Clear categorization (e.g., DeFi, NFT, Gaming)",
+        "Integrated wallet connection for eligibility checks",
+        "Detailed guides and step-by-step instructions"
+      ],
+      "weaknesses": [
+        "Interface can feel cluttered and overwhelming",
+        "Heavy reliance on user-submitted content can lead to scams if not vetted quickly",
+        "Limited advanced filtering or personalized alerts",
+        "No native portfolio tracker for claimed airdrops"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 1200000
+    },
+    {
+      "name": "CoinMarketCap Airdrops",
+      "url": "https://coinmarketcap.com/airdrop/",
+      "features": [
+        "Massive existing user base and brand trust",
+        "Seamless integration with CMC's crypto data (prices, market cap)",
+        "Simple, clean interface for browsing",
+        "Basic 'Ending Soon' and 'New' filters",
+        "Direct links to project pages for research"
+      ],
+      "weaknesses": [
+        "List is not exhaustive; misses many smaller airdrops",
+        "Very basic feature set - just a list with minimal details",
+        "No community discussion or scam warnings",
+        "No tools for tracking user progress or submissions"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 950000
+    },
+    {
+      "name": "Airdrop Alert",
+      "url": "https://airdropalert.com",
+      "features": [
+        "Long-established reputation in the space",
+        "Detailed individual pages for each airdrop with requirements",
+        "Active blog with news and tutorials",
+        "Email newsletter for new airdrop alerts",
+        "Some exclusive airdrop partnerships"
+      ],
+      "weaknesses": [
+        "Website design feels outdated and slow",
+        "Aggressive advertising and pop-ups degrade user experience",
+        "Free tier is very limited; key features (like detailed guides) are paywalled",
+        "Mobile experience is poor"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 800000
+    },
+    {
+      "name": "DappRadar Airdrops",
+      "url": "https://dappradar.com/hub/airdrop",
+      "features": [
+        "Leverages deep data on dApp usage for 'activity-based' airdrop discovery",
+        "Focus on quality over quantity, highlighting major ecosystem airdrops",
+        "Clean, modern UI/UX",
+        "Strong focus on Web3 gaming and NFT airdrops",
+        "Integration with portfolio tracker"
+      ],
+      "weaknesses": [
+        "Narrow scope; misses many DeFi and general crypto airdrops",
+        "Less frequent updates compared to aggregators",
+        "Requires understanding of dApp interaction for many listings",
+        "Limited community features or discussion"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 550000
+    },
+    {
+      "name": "Airdrop Bob",
+      "url": "https://airdropbob.com",
+      "features": [
+        "Simple, no-nonsense list format",
+        "Clear tags for 'Ending Soon', 'Easy', 'Viral' etc.",
+        "Direct links to Twitter/Discord tasks",
+        "Lightweight and fast-loading site",
+        "Completely free with no paywalls"
+      ],
+      "weaknesses": [
+        "Extremely basic, just a list with minimal details",
+        "No vetting or scam warnings - high risk for users",
+        "No account system, personalization, or tracking",
+        "Poor categorization and almost no search/filter functionality"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 300000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Intelligent, Personalized Airdrop Feed",
+      "implementation": "Build a user profile where users connect wallets and specify interests (DeFi, Gaming, NFTs, specific chains). Use on-chain analysis of the connected wallets to automatically surface airdrops for which the user is already partially eligible or is likely to qualify for based on their historical activity. Prioritize the feed accordingly.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Integrated Airdrop Workflow & Submission Tracker",
+      "implementation": "Create a dashboard that not only lists airdrops but breaks down tasks (e.g., 'Follow on Twitter', 'Bridge to Arbitrum', 'Swap 50 USDC'). Allow users to check off tasks, set reminders, and track their submission status (e.g., 'Submitted', 'Pending', 'Claimed'). Store proof of task completion.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Advanced Trust & Safety Layer with Real-Time Community Sentiment",
+      "implementation": "Implement a robust, multi-source scam detection system. Integrate on-chain analytics to flag suspicious token contracts. Add a live community sentiment widget (via integrated comments or Discord/Twitter sentiment analysis) on each airdrop page showing real-time user reports of issues or successes.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "ROI & Tax Estimation Tool",
+      "implementation": "For claimed airdrops, integrate price data to show current value vs. claim cost (gas fees). Provide a simple dashboard estimating potential tax implications (e.g., fair market value at receipt) based on user-selected jurisdiction. Help users understand the real value of their efforts.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Focus on 'Pre-Interaction' Airdrop Discovery",
+      "implementation": "Most tools list airdrops after they're announced. Build a system that monitors smart contract deployments, governance proposals, and social sentiment of new projects to predict *potential* future airdrops. Guide users on early, low-cost interactions that could make them eligible for unannounced rewards.",
+      "impact": "MEDIUM",
+      "effort": "COMPLEX"
+    }
+  ],
+  "recommended_positioning": "The intelligent airdrop platform that personalizes your hunt, manages your tasks, and protects you from scams—turning airdrop searching from a chore into a streamlined strategy.",
+  "analyzed_at": "2026-03-06T10:09:07.622838"
+}

@@ -1,0 +1,57 @@
+=== TWITTER THREAD ===
+**Tweet 1:**  
+CSS clip-path is a superpower. But writing it by hand? Absolute pain.  
+We just shipped a solution so you never have to guess polygon coordinates again.  
+👉 https://shipmicro.com/tools
+
+**Tweet 2:**  
+Existing generators are clunky, static, and stuck in 2015. You tweak numbers blindly, refresh, and pray.  
+No visual intuition. No real control. It’s like drawing with your eyes closed.
+
+**Tweet 3:**  
+Ours is different:  
+• Drag & drop points in real-time  
+• Preview instantly as you build  
+• Support polygons, circles, ellipses, insets  
+• Export clean CSS, SCSS, or JS  
+• Works offline (PWA)  
+Finally—clip-path that feels like design, not code.
+
+**Tweet 4:**  
+It’s live. It’s free. Go cut some shapes.  
+Then tell me what you’d add next.  
+🔗 https://shipmicro.com/tools  
+Building in public—feedback is fuel.
+
+=== REDDIT POST ===
+**I was so frustrated with manually tweaking CSS clip-path values that I built a drag-and-drop generator.**
+
+As a frontend dev, I often need custom shapes for overlays, image masks, or UI elements. Writing polygon coordinates by hand is tedious—trial and error, refreshing, tweaking numbers, rinse and repeat. Existing tools felt either too simplistic or clunky, so I decided to scratch my own itch.
+
+I built a visual editor where you can drag points directly on a canvas, adjust curves, and see the CSS update in real time. It supports polygons, circles, ellipses, and inset shapes, and you can export clean CSS code or copy it directly. It’s also a PWA, so it works offline.
+
+**Tech side:** It’s a Next.js app with TypeScript, using Canvas for the interactive editor and Tailwind for UI. The trickiest part was making the drag interactions feel smooth while keeping the generated CSS accurate.
+
+If you work with CSS clipping or need non-rectangular layouts, give it a try:  
+[https://shipmicro.com/tools](https://shipmicro.com/tools)
+
+I’d love brutal feedback—especially on UX, performance, or anything that feels off. What features would make this actually useful for your workflow?
+
+=== 小红书文案 ===
+🔥 CSS 切图封神了！这个拖拽神器让我效率原地起飞💥
+
+家人们谁懂啊！以前调个 CSS clip-path 多边形，要手写代码算半天坐标，改个圆角都得重算，眼睛都快看瞎了😭  
+现在有了这个「CSS 拖拽路径生成器」，我直接封它为前端打工人年度效率神器！
+
+✨ 惊艳亮点直接拉满：
+1️⃣ 超直觉拖拽界面——用鼠标直接拉形状，像玩设计软件一样简单！
+2️⃣ 实时视觉预览——边拖边看效果，再也不用盲写代码刷新八百遍！
+3️⃣ 支持复杂自定义——多边形、圆形、椭圆、inset 全都能做，导出 CSS 直接复制！
+
+最绝的是它还是个 PWA，没网络也能用，灵感来了随时随地切图形🎨  
+从此做不规则边框、创意遮罩、动态裁剪效果……简直像开了挂！
+
+工具指路👉 https://shipmicro.com/tools  
+前端/设计姐妹快冲，早用早下班！
+
+#效率神器 #前端开发 #CSS黑科技 #打工人必备 #生产力工具 #程序员日常

@@ -1,0 +1,30 @@
+{
+  "how-to-optimize-resume-for-ai-screening": {
+    "title": "How to Optimize Your Resume for AI Screening in 2024",
+    "description": "Learn proven strategies to beat AI resume screening systems. Our guide shows you how to format, keyword-optimize, and structure your resume to get noticed by recruiters.",
+    "sections": [
+      {
+        "h2": "Understanding AI Resume Screening Systems",
+        "p": "AI resume screening, or Applicant Tracking Systems (ATS), automatically scans and ranks resumes before human eyes see them. Over 75% of large companies use these systems to filter thousands of applications. They parse your document for keywords, formatting, and relevance to job requirements. To optimize your resume for AI screening, you must think like the algorithm—focusing on machine-readable content rather than just visual appeal. These systems typically favor simple formats, standard headings, and specific terminology from the job description. Understanding this process is the first step to ensuring your resume passes through the digital gatekeeper and reaches hiring managers."
+      },
+      {
+        "h2": "Keyword Optimization Strategies That Work",
+        "p": "Strategic keyword placement is crucial for AI screening success. Start by analyzing the job description—identify hard skills (like 'Python' or 'project management'), soft skills ('leadership'), certifications, and industry-specific terms. Incorporate these keywords naturally throughout your resume, particularly in the skills section, job descriptions, and summary. Avoid keyword stuffing, as sophisticated AI can penalize unnatural repetition. Instead, use variations and context. For example, if the job requires 'data analysis,' mention 'analyzed datasets' in your experience. Tools like ShipMicro's Resume Analyzer can scan your resume against job descriptions to identify missing keywords and suggest improvements, giving you a competitive edge."
+      },
+      {
+        "h2": "Formatting for Maximum AI Readability",
+        "p": "Proper formatting ensures AI systems parse your resume correctly. Use standard section headings like 'Work Experience,' 'Education,' and 'Skills.' Avoid tables, columns, headers/footers, and fancy graphics, as these often confuse parsers. Stick to common fonts (Arial, Calibri) and use bullet points for readability. Save your file as a .docx or .pdf (unless specified otherwise), as these formats are most compatible. According to recruiters, up to 30% of resumes are rejected due to formatting issues alone. By keeping it simple and structured, you increase the chances of your content being accurately extracted and scored. ShipMicro's Resume tool automatically checks your formatting against ATS standards, flagging potential problems before you apply."
+      },
+      {
+        "h2": "Structuring Content for Both AI and Humans",
+        "p": "A well-structured resume serves dual purposes: pleasing AI with clear organization and engaging humans with compelling content. Place your most relevant information—such as key skills and recent experience—near the top. Use reverse-chronological order for work history, as this is the standard AI expects. Quantify achievements with numbers (e.g., 'increased sales by 20%') to demonstrate impact. Include a professional summary that incorporates target keywords naturally. Remember, after passing AI screening, your resume will be reviewed by a person, so balance optimization with readability. ShipMicro's Resume builder guides you through this process with templates designed for both ATS and human appeal, ensuring you don't sacrifice one for the other."
+      },
+      {
+        "h2": "Testing and Refining Your Optimized Resume",
+        "p": "Before submitting, test your resume's AI compatibility. Use free online ATS checkers or tools like ShipMicro's Resume Analyzer to simulate how recruiters' systems will view your document. These tools provide scores on keyword matching, formatting, and overall optimization. Based on feedback, refine your content—add missing keywords, adjust phrasing, or simplify layout. Additionally, tailor each resume for specific job applications; a one-size-fits-all approach often fails in AI screening. Regularly update your resume as you gain new skills and experiences. By continuously testing and optimizing, you'll stay ahead in the competitive job market. ShipMicro offers ongoing analysis to help you adapt to evolving AI screening trends."
+      }
+    ],
+    "ctaProduct": "Optimize Your Resume Now",
+    "ctaLink": "/resume"
+  }
+}

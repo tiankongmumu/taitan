@@ -1,0 +1,52 @@
+[
+  {
+    "pain_point": "SEO优化困难，网站页面被Google抓取但未索引",
+    "evidence": "\"Crawled – currently not indexed.\" It means Google visited your page, read it, and said \"nah.\"",
+    "solution_id": "prod_101",
+    "solution_name": "极速企业建站服务器 (阿里云)",
+    "commission_rate": "30%",
+    "affiliate_url": "https://promotion.aliyun.com/ntms/yunparter/invite.html",
+    "pitch_copy": "别再让Google无视你的网站！用阿里云服务器优化SEO，提升索引率，轻松获取更多流量，每月节省数千元营销成本。立即点击：https://promotion.aliyun.com/ntms/yunparter/invite.html",
+    "match_score": 85
+  },
+  {
+    "pain_point": "开发者不擅长营销，获客困难",
+    "evidence": "\"I'm a dev who sucks at marketing. Here's everything I learned getting to 1,525 users in 2 months.\"",
+    "solution_id": "prod_104",
+    "solution_name": "冷邮件自动化营销工具 (Mailshake平替)",
+    "commission_rate": "35%",
+    "affiliate_url": "https://email-automation.com/?ref=demo",
+    "pitch_copy": "开发者也能轻松获客！用自动化邮件工具精准触达客户，告别营销焦虑，每月多赚数万元收入。立即点击：https://email-automation.com/?ref=demo",
+    "match_score": 90
+  },
+  {
+    "pain_point": "团队协作混乱，文档管理效率低",
+    "evidence": "\"Customer QBRs were killing our CS team's bandwidth. Each QBR deck was being built mostly from scratch, pulling data, creating slides, customizing everything for each customer.\"",
+    "solution_id": "prod_102",
+    "solution_name": "Notion中国平替 - Wolai 企业团队版",
+    "commission_rate": "25%",
+    "affiliate_url": "https://www.wolai.com/affiliate?ref=titan",
+    "pitch_copy": "告别繁琐的QBR准备！用Wolai统一管理文档和知识库，团队协作效率提升50%，每月节省数百小时工时。立即点击：https://www.wolai.com/affiliate?ref=titan",
+    "match_score": 95
+  },
+  {
+    "pain_point": "客服成本高，人工回复占用大量时间",
+    "evidence": "\"Customer QBRs were killing our CS team's bandwidth. A full day of work per customer, each QBR deck was being built mostly from scratch.\"",
+    "solution_id": "prod_103",
+    "solution_name": "智能客服机器人 SaaS (网易七鱼)",
+    "commission_rate": "20%",
+    "affiliate_url": "https://qiyukf.com/affiliate",
+    "pitch_copy": "别再让客服团队忙到崩溃！用智能客服机器人自动处理80%咨询，成本降低60%，客户满意度飙升。立即点击：https://qiyukf.com/affiliate",
+    "match_score": 90
+  },
+  {
+    "pain_point": "销售漏斗不清晰，客户跟进记录易丢失",
+    "evidence": "\"I mass-messaged 200+ people on LinkedIn about my SaaS. Here's what actually happened (with real numbers).\"",
+    "solution_id": "prod_106",
+    "solution_name": "企业级 CRM 系统 (纷享销客)",
+    "commission_rate": "15%",
+    "affiliate_url": "https://crm-partner.com/signup",
+    "pitch_copy": "告别混乱的销售跟进！用CRM系统清晰管理客户漏斗，提升转化率30%，每月多签数十单。立即点击：https://crm-partner.com/signup",
+    "match_score": 85
+  }
+]

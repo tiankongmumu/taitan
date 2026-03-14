@@ -1,0 +1,29 @@
+[
+  {
+    "id": "svg-magic-pro",
+    "name": "SVG秒转高清PNG神器",
+    "description": "一键将SVG矢量图转换为高清、背景透明的PNG图片，完美适配所有平台上传需求。",
+    "target_audience": "电商美工、新媒体运营、PPT设计师、需要频繁处理图标素材的办公人群",
+    "hook_question": "做电商详情页，甲方给的SVG图标上传不了平台急死人？",
+    "paywall_trigger": "软件本体免费发送，内置机器码激活授权收费9.9元/月，解锁批量转换与超清画质选项",
+    "theme_color": "emerald"
+  },
+  {
+    "id": "jwt-cracker-pro",
+    "name": "JWT令牌一键解析验真器",
+    "description": "快速解码JWT令牌，可视化展示Header、Payload内容，并验证签名是否有效。",
+    "target_audience": "前端/后端开发初学者、软件测试工程师、需要调试API接口的IT从业者",
+    "hook_question": "调试接口总被JWT卡住，看不懂Payload里到底写了啥？",
+    "paywall_trigger": "基础解码功能免费，在显示签名验证结果和详细权限分析报告前卡住，付费9.9元解锁",
+    "theme_color": "indigo"
+  },
+  {
+    "id": "regex-viz-pro",
+    "name": "正则表达式可视化调试大师",
+    "description": "将复杂的正则表达式实时转化为直观的流程图，并高亮匹配结果，助你快速编写和调试。",
+    "target_audience": "程序员、数据分析师、需要处理文本批量的办公人员、计算机专业学生",
+    "hook_question": "写正则像看天书，调试半天不知道哪里匹配不上？",
+    "paywall_trigger": "输入正则和文本可预览基础匹配，在生成可保存的高清流程图和复杂模式解释前卡住，付费9.9元解锁",
+    "theme_color": "amber"
+  }
+]

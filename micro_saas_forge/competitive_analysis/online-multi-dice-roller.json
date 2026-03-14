@@ -1,0 +1,139 @@
+{
+  "keyword": "online multi dice roller",
+  "competitors": [
+    {
+      "name": "Rolz",
+      "url": "https://rolz.org/",
+      "features": [
+        "Extremely simple interface",
+        "Real-time chat room for rolling with others",
+        "Supports complex dice notation (e.g., 4d6kh3)",
+        "No login required for basic use",
+        "Mobile-friendly"
+      ],
+      "weaknesses": [
+        "Outdated, early-2000s visual design",
+        "No visual dice rolling animation",
+        "Limited customization of dice appearance",
+        "Interface can feel cluttered with ads and chat",
+        "No persistent history or save/export features"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 120000
+    },
+    {
+      "name": "Wizards of the Coast Dice Roller",
+      "url": "https://dnd.wizards.com/tools/dice-roller",
+      "features": [
+        "Official D&D branding and trust",
+        "Clean, thematic D&D interface",
+        "Pre-configured rolls for D&D 5e (Ability Checks, Attacks, etc.)",
+        "Visual 3D dice with physics",
+        "Simple and intuitive for new players"
+      ],
+      "weaknesses": [
+        "Very limited to D&D 5e, not generic",
+        "Cannot roll multiple dice types simultaneously in one 'throw'",
+        "No advanced notation or logic",
+        "No collaborative features",
+        "Requires a (free) Wizards account to save characters"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 95000
+    },
+    {
+      "name": "Random.org Dice Roller",
+      "url": "https://www.random.org/dice/",
+      "features": [
+        "Powered by true randomness (atmospheric noise)",
+        "Strong reputation for fairness and legitimacy",
+        "Extremely simple: one button for standard dice",
+        "Multiple dice displayed as a list of results",
+        "No-nonsense, ad-light experience"
+      ],
+      "weaknesses": [
+        "Functionally very basic",
+        "Only rolls standard polyhedral dice one type at a time",
+        "No customization, notation, or advanced features",
+        "No visual rolling simulation, just static results",
+        "UI is sparse and not engaging for gaming"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 85000
+    },
+    {
+      "name": "Dice Roll by Google",
+      "url": "https://www.google.com/search?q=dice+roller",
+      "features": [
+        "Ultra-convenient, directly in search results",
+        "Clean, minimal Google design",
+        "Visual 3D dice roll animation",
+        "Supports standard dice (d4-d20) and a coin",
+        "Zero friction, no website to visit"
+      ],
+      "weaknesses": [
+        "Extremely limited feature set",
+        "No multi-dice or custom notation",
+        "No history, logging, or sharing",
+        "Cannot be embedded or used in a dedicated tab",
+        "Completely dependent on Google's product whims"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 500000
+    },
+    {
+      "name": "RPGBOT Dice Roller",
+      "url": "https://rpgbot.net/dice/",
+      "features": [
+        "Designed specifically for tabletop RPGs",
+        "Supports complex dice expressions and logic",
+        "Detailed roll history with timestamps",
+        "Clean, modern, and responsive design",
+        "Helpful examples and documentation on site"
+      ],
+      "weaknesses": [
+        "No real-time collaborative features",
+        "Dice are graphical but animation is basic (fade-in)",
+        "Interface has many options which can overwhelm casual users",
+        "Branding is tied to the RPGBOT blog/network",
+        "No user accounts or saved presets"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 65000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Lack of integrated, persistent virtual tabletop (VTT) rooms for sessions.",
+      "implementation": "Build a tool where a GM can create a room, share a link, and all players' dice rolls appear in a shared log with player labels. Include a simple text chat and ability to save room state.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "No tool combines advanced dice logic with a highly satisfying and customizable visual/audio experience.",
+      "implementation": "Create a physics-based 3D dice roller with customizable dice textures, colors, and materials. Add impactful sound effects (clatter, bounce) and haptic feedback options for mobile. Allow users to build and save 'dice sets'.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Missing 'smart' dice rollers with built-in game systems (beyond D&D 5e).",
+      "implementation": "Include pre-configured rollers for popular systems like Pathfinder 2e, Call of Cthulhu, Warhammer, and board games. Feature would auto-calculate modifiers, difficulties, and interpret special dice (e.g., Star Wars/Genesys narrative dice).",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Poor mobile experience for quick, repeated rolls during a physical game.",
+      "implementation": "Develop a progressive web app (PWA) with a 'quick roll' dashboard. Users can pin 4-6 favorite dice expressions to their home screen for one-tap rolling. Optimize for ultra-fast loading and offline use.",
+      "impact": "HIGH",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "No analytics or insights for game masters on player/game luck.",
+      "implementation": "For logged-in users in a session, provide a simple dashboard showing roll distribution (e.g., 'The party rolled 35% below average tonight'), streak tracking, and exportable roll logs for recap blogs/podcasts.",
+      "impact": "LOW",
+      "effort": "MEDIUM"
+    }
+  ],
+  "recommended_positioning": "The collaborative virtual dice tray for online tabletop RPGs, combining satisfying physics-based rolls with seamless session management.",
+  "analyzed_at": "2026-03-05T12:55:35.534744"
+}

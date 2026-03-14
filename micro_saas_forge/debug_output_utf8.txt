@@ -1,0 +1,80 @@
+﻿python : C:\Users\86136\Ap
+pData\Local\Python\pythonc
+ore-3.14-64\Lib\site-packa
+ges\lark_oapi\ws\pb\google
+\__init__.py:2: UserWarnin
+g: pkg_resources is deprec
+ated as an API. See https:
+//setuptools.pypa.io/en/la
+test/pkg_resources.html. T
+he pkg_resources package i
+s slated for removal as ea
+rly as 2025-11-30. Refrain
+ from using this package o
+r pin to Setuptools<81.
+所在位置 行:1 字符: 1
++ python titan_feishu_ws.p
+y > debug_output.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (C  
+  :\Users\86136\... Set   
+ uptools<81.:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+  __import__('pkg_resource
+s').declare_namespace(__na
+me__)
+Traceback (most recent cal
+l last):
+  File "D:\Project\1\micro
+_saas_forge\titan_feishu_w
+s.py", line 78, in <module
+>
+    asyncio.run(main())
+    ~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\86136\App
+Data\Local\Python\pythonco
+re-3.14-64\Lib\asyncio\run
+ners.py", line 204, in run
+    return runner.run(main
+)
+           ~~~~~~~~~~^^^^^
+^
+  File "C:\Users\86136\App
+Data\Local\Python\pythonco
+re-3.14-64\Lib\asyncio\run
+ners.py", line 127, in run
+    return self._loop.run_
+until_complete(task)
+           ~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\86136\App
+Data\Local\Python\pythonco
+re-3.14-64\Lib\asyncio\bas
+e_events.py", line 719, in
+ run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "D:\Project\1\micro
+_saas_forge\titan_feishu_w
+s.py", line 63, in main
+    client = lark.ws.Clien
+t(APP_ID, APP_SECRET, even
+t_handler)
+  File "C:\Users\86136\App
+Data\Local\Python\pythonco
+re-3.14-64\Lib\site-packag
+es\lark_oapi\ws\client.py"
+, line 110, in __init__
+    logger.setLevel(log_le
+vel.value)
+                    ^^^^^^
+^^^^^^^^^
+AttributeError: 'EventDisp
+atcherHandler' object has 
+no attribute 'value'

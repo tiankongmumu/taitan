@@ -1,0 +1,164 @@
+[
+  {
+    "timestamp": "2026-02-25T22:07:51.890425",
+    "idea": "A markdown to clean HTML email converter for newsletter creators",
+    "app_name": "Markdown Email Converter",
+    "slug": "markdown-email-converter",
+    "success": true,
+    "deployment_url": "https://simulated-app-url.vercel.app",
+    "duration_seconds": 121.82
+  },
+  {
+    "timestamp": "2026-02-25T22:31:25.140938",
+    "idea": "A clean JSON to TypeScript Interface generator for developers",
+    "app_name": "JSON TypeScript Interface Generator",
+    "slug": "json-ts-interface-generator",
+    "success": false,
+    "deployment_url": "",
+    "duration_seconds": 306.9
+  },
+  {
+    "timestamp": "2026-02-25T23:02:19.100939",
+    "idea": "A color palette generator for web designers",
+    "app_name": "Palette Pro",
+    "slug": "palette-pro",
+    "success": true,
+    "deployment_url": "dry-run",
+    "duration_seconds": 4.46
+  },
+  {
+    "timestamp": "2026-02-26T21:36:17.251687",
+    "idea": "An AI-powered SQL query optimizer with cost estimation for multiple databases",
+    "app_name": "SQL Optimizer AI",
+    "slug": "sql-optimizer-ai",
+    "success": false,
+    "deployment_url": "",
+    "duration_seconds": 310.57
+  },
+  {
+    "timestamp": "2026-02-26T21:41:27.152191",
+    "idea": "A real-time WebSocket API testing and mocking tool with auto-generated client code",
+    "app_name": "WebSocket MockLab",
+    "slug": "websocket-mocklab",
+    "success": false,
+    "deployment_url": "",
+    "duration_seconds": 304.9
+  },
+  {
+    "timestamp": "2026-02-26T21:46:57.948616",
+    "idea": "A privacy-focused image compression tool that strips EXIF data and optimizes for web",
+    "app_name": "Privacy-Focused Image Compressor",
+    "slug": "privacy-focused-image-compressor",
+    "success": false,
+    "deployment_url": "",
+    "duration_seconds": 325.79
+  },
+  {
+    "timestamp": "2026-02-27T07:20:31.228151",
+    "idea": "An AI-powered SQL query optimizer with cost estimation for cloud databases",
+    "app_name": "SQL Optimizer AI",
+    "slug": "sql-optimizer-ai",
+    "success": true,
+    "deployment_url": "https://sql-optimizer-nzdcl29x9-tiankongmumus-projects.vercel.app",
+    "duration_seconds": 365.33
+  },
+  {
+    "timestamp": "2026-02-27T07:26:20.435824",
+    "idea": "A real-time WebSocket API testing suite with automated mock generation",
+    "app_name": "WebSocket TestLab",
+    "slug": "websocket-testlab",
+    "success": true,
+    "deployment_url": "https://websocket-testlab-gi6dhyon3-tiankongmumus-projects.vercel.app",
+    "duration_seconds": 344.2
+  },
+  {
+    "timestamp": "2026-02-27T07:31:56.418922",
+    "idea": "A privacy-first AI code explainer that works entirely client-side",
+    "app_name": "Privacy-First AI Code Explainer",
+    "slug": "privacy-first-ai-code-explainer",
+    "success": true,
+    "deployment_url": "https://privacy-first-ai-code-explainer-k3oyflaql.vercel.app",
+    "duration_seconds": 330.97
+  },
+  {
+    "timestamp": "2026-02-27T20:17:17.574484",
+    "idea": "JWT Debugger: Decode and validate JWT tokens with signature verification and expiry warnings",
+    "app_name": "JWT Debugger",
+    "slug": "jwt-debugger",
+    "success": true,
+    "deployment_url": "https://jwt-debugger-l2c6kriko-tiankongmumus-projects.vercel.app",
+    "duration_seconds": 313.43
+  },
+  {
+    "timestamp": "2026-02-27T20:22:57.324591",
+    "idea": "JSON Path Finder: Extract nested JSON values using intuitive path builder with live preview",
+    "app_name": "JSON Path Finder",
+    "slug": "json-path-finder",
+    "success": true,
+    "deployment_url": "https://json-path-finder-7gb09ltm3-tiankongmumus-projects.vercel.app",
+    "duration_seconds": 334.75
+  },
+  {
+    "timestamp": "2026-02-28T11:13:33.344219",
+    "idea": "JSON Path Tester: Instantly test JSONPath expressions against sample JSON with live highlighting",
+    "app_name": "JSON Path Tester",
+    "slug": "json-path-tester",
+    "success": true,
+    "deployment_url": "https://json-path-tester-mqgeanr00-tiankongmumus-projects.vercel.app",
+    "duration_seconds": 323.78
+  },
+  {
+    "timestamp": "2026-02-28T11:18:22.008290",
+    "idea": "SQL Query Formatter: Format and beautify SQL queries with dialect-aware syntax highlighting",
+    "app_name": "SQL Query Formatter",
+    "slug": "sql-query-formatter",
+    "success": true,
+    "deployment_url": "https://sql-query-formatter-6fh354oza-tiankongmumus-projects.vercel.app",
+    "duration_seconds": 283.66
+  },
+  {
+    "timestamp": "2026-03-01T10:44:10.850597",
+    "idea": "Curl-to-Code: Convert curl commands to Python/JavaScript/Go/PHP code instantly",
+    "app_name": "Curl-to-Code",
+    "slug": "curl-to-code",
+    "success": true,
+    "deployment_url": "https://curl-to-code-p4qfyzen4-tiankongmumus-projects.vercel.app",
+    "duration_seconds": 241.47
+  },
+  {
+    "timestamp": "2026-03-01T12:45:43.046934",
+    "idea": "Cybernetic IP Tracker",
+    "app_name": "Cybernetic IP Tracker",
+    "slug": "cybernetic-ip-tracker",
+    "success": true,
+    "deployment_url": "https://cybernetic-ip-tracker-o5mq1ic3m-tiankongmumus-projects.vercel.app",
+    "duration_seconds": 285.05
+  },
+  {
+    "timestamp": "2026-03-01T14:51:21.952843",
+    "idea": "Api Playground Sandbox: A visual playground where developers can instantly test REST API endpoints with real-time request/response visualization, syntax highlighting, and mock server simulation.",
+    "app_name": "API Playground Sandbox",
+    "slug": "api-playground-sandbox",
+    "success": true,
+    "deployment_url": "https://api-playground-sandbox-70loxf7af-tiankongmumus-projects.vercel.app",
+    "duration_seconds": 282.82
+  },
+  {
+    "timestamp": "2026-03-01T14:56:36.816835",
+    "idea": "Api Playground Builder: A visual playground where developers can instantly test, visualize, and debug REST API endpoints with real-time response visualization and parameter tweaking.",
+    "app_name": "API Playground Builder",
+    "slug": "api-playground-builder",
+    "success": true,
+    "deployment_url": "https://api-playground-builder-96ygltpv9-tiankongmumus-projects.vercel.app",
+    "duration_seconds": 297.43
+  },
+  {
+    "timestamp": "2026-03-01T15:02:16.855167",
+    "idea": "Css Gradient Animator: A visual tool that lets designers create, preview, and export animated CSS gradients with real-time controls for colors, angles, and timing functions.",
+    "app_name": "CSS Gradient Animator",
+    "slug": "css-gradient-animator",
+    "success": true,
+    "deployment_url": "https://css-gradient-animator-9ro35p23n-tiankongmumus-projects.vercel.app",
+    "duration_seconds": 322.08
+  }
+]

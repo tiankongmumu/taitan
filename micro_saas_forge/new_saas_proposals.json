@@ -1,0 +1,12 @@
+[
+    {
+        "idea_name": "PitchDeckAI",
+        "target_audience": "Startup founders, entrepreneurs, and early-stage companies preparing for fundraising",
+        "pain_point": "Building investor pitch decks is time-consuming, repetitive, and requires design skills that many founders lack. Users have to manually translate their business information into standardized slide formats with proper metrics and visuals.",
+        "solution_architecture": "Next.js frontend with a simple form to upload/paste Notion doc content or enter business details. DeepSeek API processes the input to extract key metrics, business model, team info, and market data, then generates structured slide content. React components render the output as a downloadable PowerPoint/PDF with clean startup templates.",
+        "monetization": "$9.99 one-time payment per deck generation with option for $19.99/month subscription for unlimited decks and template variations",
+        "estimated_dev_time_hours": 12,
+        "confidence_score": 95,
+        "discovered_at": "2026-03-11T21:05:23.630482"
+    }
+]

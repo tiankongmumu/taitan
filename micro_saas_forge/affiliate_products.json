@@ -1,0 +1,66 @@
+[
+  {
+    "id": "shopify",
+    "name": "Shopify",
+    "solves": "E-commerce, online stores, selling online",
+    "commission": "$150 per referral",
+    "affiliate_url": "https://www.shopify.com/?ref=shipmicro",
+    "category": "E-commerce"
+  },
+  {
+    "id": "webflow",
+    "name": "Webflow",
+    "solves": "No-code website building, landing pages, portfolio sites",
+    "commission": "50% for 12 months",
+    "affiliate_url": "https://webflow.grsm.io/shipmicro",
+    "category": "No-Code"
+  },
+  {
+    "id": "jasper",
+    "name": "Jasper AI",
+    "solves": "AI copywriting, content creation, blog writing, marketing copy",
+    "commission": "30% recurring",
+    "affiliate_url": "https://jasper.ai/?ref=shipmicro",
+    "category": "AI/Content"
+  },
+  {
+    "id": "beehiiv",
+    "name": "Beehiiv",
+    "solves": "Newsletter platform, email marketing, audience building",
+    "commission": "50% for 12 months",
+    "affiliate_url": "https://www.beehiiv.com/?via=shipmicro",
+    "category": "Email Marketing"
+  },
+  {
+    "id": "notion",
+    "name": "Notion",
+    "solves": "Team productivity, project management, knowledge base, wikis",
+    "commission": "50% of upgrades",
+    "affiliate_url": "https://affiliate.notion.so/shipmicro",
+    "category": "Productivity"
+  },
+  {
+    "id": "nordvpn",
+    "name": "NordVPN",
+    "solves": "Online privacy, VPN, data security, remote work security",
+    "commission": "$10-40 per signup",
+    "affiliate_url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=shipmicro",
+    "category": "Security"
+  },
+  {
+    "id": "surfer",
+    "name": "Surfer SEO",
+    "solves": "SEO optimization, content ranking, keyword research",
+    "commission": "25% recurring",
+    "affiliate_url": "https://surferseo.com/?via=shipmicro",
+    "category": "SEO"
+  },
+  {
+    "id": "hostinger",
+    "name": "Hostinger",
+    "solves": "Web hosting, domain names, WordPress hosting",
+    "commission": "60% per sale",
+    "affiliate_url": "https://www.hostinger.com/?ref=shipmicro",
+    "category": "Hosting"
+  }
+]

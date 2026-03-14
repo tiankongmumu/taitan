@@ -1,0 +1,42 @@
+[
+  {
+    "pain_point": "Founders struggle with SEO issues like pages being crawled but not indexed, hindering organic traffic growth.",
+    "evidence": "\"I've been deep in SEO for years (it's literally what my SaaS does), and one of the most common issues I see founders deal with is this frustrating Google Search Console status: **'Crawled – currently not indexed.'\"",
+    "solution_id": "prod_g03",
+    "solution_name": "Jasper AI (AI Copywriter)",
+    "commission_rate": "30% recurring",
+    "affiliate_url": "YOUR_JASPER_PARTNERSTACK_LINK_HERE",
+    "pitch_copy": "Stop letting Google ignore your pages—Jasper AI helps you craft SEO-optimized content that gets indexed fast, turning those frustrating crawls into real traffic and leads. Click here to start writing content that actually ranks.",
+    "match_score": 85
+  },
+  {
+    "pain_point": "SaaS founders face challenges in acquiring their first 100 users despite having a working product.",
+    "evidence": "\"Many founders say building a SaaS product is the straightforward part, acquiring the first real users is where the real challenge begins.\"",
+    "solution_id": "prod_g04",
+    "solution_name": "Beehiiv (Newsletter Platform)",
+    "commission_rate": "50% for 12 months",
+    "affiliate_url": "YOUR_BEEHIIV_PARTNERSTACK_LINK_HERE",
+    "pitch_copy": "Stop chasing random users—build a loyal audience with Beehiiv to grow your newsletter and convert subscribers into your first 100 paying customers effortlessly. Click here to launch your growth engine today.",
+    "match_score": 90
+  },
+  {
+    "pain_point": "Founders need effective organic social media marketing strategies to promote their SaaS without relying on ads.",
+    "evidence": "\"For those who want to market their SaaS services through organic social media marketing, what would you suggest?\"",
+    "solution_id": "prod_g03",
+    "solution_name": "Jasper AI (AI Copywriter)",
+    "commission_rate": "30% recurring",
+    "affiliate_url": "YOUR_JASPER_PARTNERSTACK_LINK_HERE",
+    "pitch_copy": "Ditch the ad spend and create viral social content with Jasper AI—it generates engaging posts that attract organic followers and drive real SaaS sign-ups. Click here to unlock consistent social growth.",
+    "match_score": 80
+  },
+  {
+    "pain_point": "SaaS teams struggle with scattered knowledge and clunky project management, reducing productivity.",
+    "evidence": "\"Team knowledge is scattered across Google Docs and Slack, project management is clunky.\"",
+    "solution_id": "prod_g06",
+    "solution_name": "Notion (Workspace & Productivity)",
+    "commission_rate": "50% of all new upgrades",
+    "affiliate_url": "YOUR_NOTION_PARTNERSTACK_LINK_HERE",
+    "pitch_copy": "Tired of chaos across docs and chats? Notion centralizes your team's work into one sleek workspace, boosting collaboration and getting projects shipped faster. Click here to organize your SaaS operations.",
+    "match_score": 95
+  }
+]

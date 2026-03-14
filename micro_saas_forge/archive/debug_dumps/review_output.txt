@@ -1,0 +1,197 @@
+﻿=== BRAIN HISTORY: 42 cycles ===
+  cycle_1 | OK | 447s | 2026-03-02T09:50
+  cycle_2 | OK | 1487s | 2026-03-05T08:04
+  cycle_3 | OK | 1005s | 2026-03-05T08:22
+  cycle_4 | OK | 801s | 2026-03-05T08:36
+  cycle_5 | OK | 690s | 2026-03-05T08:48
+  cycle_6 | OK | 1026s | 2026-03-05T09:06
+  cycle_7 | OK | 922s | 2026-03-05T09:28
+  cycle_8 | OK | 788s | 2026-03-05T09:47
+  cycle_9 | OK | 1065s | 2026-03-05T10:11
+  cycle_10 | OK | 1064s | 2026-03-05T10:35
+  cycle_11 | OK | 898s | 2026-03-05T10:56
+  cycle_12 | OK | 730s | 2026-03-05T11:15
+  cycle_13 | OK | 463s | 2026-03-05T12:46
+  cycle_14 | OK | 375s | 2026-03-05T12:53
+  cycle_15 | OK | 231s | 2026-03-05T13:28
+  cycle_16 | OK | 175s | 2026-03-05T13:31
+  cycle_17 | OK | 157s | 2026-03-05T13:36
+  cycle_18 | OK | 169s | 2026-03-05T13:42
+  cycle_19 | OK | 831s | 2026-03-05T14:08
+  cycle_20 | OK | 853s | 2026-03-05T14:28
+  cycle_21 | FAIL | 81s | 2026-03-05T14:36
+  cycle_22 | OK | 1045s | 2026-03-05T14:55
+  cycle_23 | FAIL | 88s | 2026-03-05T15:01
+  cycle_24 | FAIL | 80s | 2026-03-05T15:18
+  cycle_26 | FAIL | 37s | 2026-03-05T16:01
+  cycle_27 | OK | 2461s | 2026-03-05T16:46
+  cycle_28 | FAIL | 145s | 2026-03-05T16:55
+  cycle_29 | FAIL | 80s | 2026-03-05T16:58
+  cycle_30 | FAIL | 94s | 2026-03-05T17:18
+  cycle_31 | OK | 96s | 2026-03-05T17:57
+  cycle_32 | OK | 90s | 2026-03-05T17:58
+  cycle_33 | FAIL | 16s | 2026-03-05T18:05
+  cycle_34 | FAIL | 136s | 2026-03-05T18:12
+  cycle_35 | FAIL | 280s | 2026-03-05T19:33
+  cycle_37 | OK | 1819s | 2026-03-05T21:54
+  cycle_38 | OK | 1692s | 2026-03-05T23:22
+  cycle_39 | OK | 2349s | 2026-03-06T01:01
+  cycle_40 | FAIL | 78s | 2026-03-06T02:02
+  cycle_41 | OK | 1014s | 2026-03-06T03:19
+  cycle_42 | FAIL | 42s | 2026-03-06T10:06
+  cycle_43 | OK | 1400s | 2026-03-06T10:31
+  cycle_45 | OK | 2204s | 2026-03-06T11:35
+
+=== GENERATED APPS: 87 ===
+  With code: 83
+  With node_modules: 74
+  With .next build: 66
+  With out/ export: 0
+  Code > 100 lines: 70
+  Code > 200 lines: 66
+
+--- Apps with code (>50 lines, sorted by lines desc) ---
+  postgresql-schema-designer                     561 lines | BUILD  | ---    | 03/05 19:51
+  pixelflow-animator                             487 lines | ---    | ---    | 02/25 21:21
+  api-playground-builder                         475 lines | ---    | ---    | 03/01 19:23
+  contextual-percentage-calculator               460 lines | BUILD  | ---    | 03/05 16:48
+  microcompose-pro                               455 lines | BUILD  | ---    | 03/06 11:30
+  invoice-flash                                  450 lines | BUILD  | ---    | 03/05 14:30
+  privacy-focused-image-compressor               443 lines | BUILD  | ---    | 02/26 21:45
+  jwt-debugger                                   442 lines | BUILD  | ---    | 02/27 20:15
+  bigscreen-timer-pro                            441 lines | BUILD  | ---    | 03/05 14:19
+  crypto-wallet-health-checker                   440 lines | BUILD  | ---    | 03/01 19:40
+  voiceflow-pro                                  440 lines | BUILD  | ---    | 03/05 16:20
+  math-sprint-pro                                439 lines | BUILD  | ---    | 03/05 12:41
+  bingo-card-pro                                 436 lines | BUILD  | ---    | 03/05 16:09
+  privacy-score-checker                          436 lines | BUILD  | ---    | 03/01 19:07
+  api-playground-pro                             432 lines | BUILD  | ---    | 03/01 19:14
+  clip-path-studio                               431 lines | BUILD  | ---    | 03/05 16:42
+  password-security-coach                        429 lines | BUILD  | ---    | 03/05 14:54
+  privacy-shield-generator                       427 lines | BUILD  | ---    | 03/01 18:25
+  crypto-portfolio-pro                           424 lines | ---    | ---    | 02/25 21:21
+  invoiceflow-pro                                423 lines | BUILD  | ---    | 03/05 16:49
+  tempoflow                                      423 lines | BUILD  | ---    | 03/05 14:28
+  multichain-gas-tracker                         422 lines | BUILD  | ---    | 03/06 03:17
+  privacy-shield-inspector                       422 lines | ---    | ---    | 03/01 18:58
+  tempo-tune-pro                                 418 lines | BUILD  | ---    | 03/05 12:52
+  crypto-airdrop-finder-pro                      414 lines | BUILD  | ---    | 03/06 10:28
+  lapsync-stopwatch                              409 lines | BUILD  | ---    | 03/05 07:52
+  css-gradient-animator                          405 lines | ---    | ---    | 03/01 18:01
+  word-scramble-pro                              405 lines | BUILD  | ---    | 03/05 15:09
+  mindful-planner-pro                            388 lines | ---    | ---    | 02/25 21:21
+  percentdiff-pro                                388 lines | BUILD  | ---    | 03/05 12:45
+  mealplanner-pro                                382 lines | ---    | ---    | 02/25 21:21
+  json-path-finder                               360 lines | BUILD  | ---    | 02/27 20:20
+  smart-qr-generator                             358 lines | BUILD  | ---    | 03/05 13:41
+  promptcraft-studio                             357 lines | BUILD  | ---    | 03/01 18:06
+  web3-wallet-health-checker                     349 lines | BUILD  | ---    | 03/01 17:36
+  api-playground-sandbox                         348 lines | BUILD  | ---    | 03/01 14:49
+  css-grid-playground                            348 lines | ---    | ---    | 03/01 18:15
+  privacy-pulse                                  344 lines | BUILD  | ---    | 03/01 14:41
+  dice-tray-pro                                  338 lines | BUILD  | ---    | 03/05 13:01
+  elementquest                                   338 lines | BUILD  | ---    | 03/05 16:05
+  cybernetic-ip-tracker                          327 lines | BUILD  | ---    | 03/01 12:44
+  smartmeal-planner-pro                          323 lines | BUILD  | ---    | 03/05 14:07
+  websocket-testlab                              315 lines | ---    | ---    | 02/27 07:24
+  intelligent-character-counter                  313 lines | BUILD  | ---    | 03/05 13:27
+  json-path-tester                               312 lines | BUILD  | ---    | 02/28 11:11
+  privacypassphrase                              307 lines | BUILD  | ---    | 03/01 16:46
+  regex-escape-room                              292 lines | BUILD  | ---    | 02/28 11:07
+  jwt-security-workstation                       290 lines | BUILD  | ---    | 03/06 00:58
+  creator-sponsorship-rate-calculator            289 lines | BUILD  | ---    | 03/05 23:16
+  json-ts-interface-generator                    282 lines | BUILD  | ---    | 02/25 22:29
+  privacy-first-ai-code-explainer                279 lines | ---    | ---    | 02/27 07:30
+  regex-ai-pro                                   278 lines | BUILD  | ---    | 03/05 13:35
+  privacypass-generator                          276 lines | BUILD  | ---    | 03/01 16:50
+  sql-query-formatter                            261 lines | BUILD  | ---    | 02/28 11:16
+  ip-assistant-pro                               238 lines | BUILD  | ---    | 03/05 13:31
+  palette-pro                                    236 lines | ---    | ---    | 02/25 21:21
+  tempoflow-pro                                  236 lines | ---    | ---    | 02/25 21:21
+  regex-playground                               235 lines | BUILD  | ---    | 03/01 12:08
+  sql-optimizer-ai                               234 lines | ---    | ---    | 02/27 07:19
+  securepass-generator                           232 lines | BUILD  | ---    | 02/25 21:21
+  markdown-email-converter                       226 lines | BUILD  | ---    | 02/27 21:00
+  websocket-mocklab                              226 lines | BUILD  | ---    | 02/26 21:39
+  securepass-studio                              216 lines | BUILD  | ---    | 03/05 14:03
+  multichain-nft-rarity-checker                  215 lines | BUILD  | ---    | 03/05 21:11
+  cyberpunk-svg-avatar-generator                 212 lines | BUILD  | ---    | 03/01 12:41
+  zero-pdf-editor                                202 lines | BUILD  | ---    | 03/06 10:55
+  curl-to-code                                   175 lines | BUILD  | ---    | 03/01 10:42
+  svg-to-png-pro-converter                       174 lines | BUILD  | ---    | 03/05 19:55
+  postgresql-schema-generator-from-json          172 lines | BUILD  | ---    | 03/05 21:50
+  image-compress-pro                             109 lines | BUILD  | ---    | 03/05 19:53
+  typing-speed-test                               98 lines | BUILD  | ---    | 03/05 19:56
+  number-guessing-game-pro                        97 lines | BUILD  | ---    | 03/05 10:56
+  printable-calendar-creator-pro                  96 lines | BUILD  | ---    | 03/05 08:36
+  favicon-forge-pro                               95 lines | BUILD  | ---    | 03/05 19:57
+  techresume-pro                                  93 lines | BUILD  | ---    | 03/05 11:14
+  spinselect-pro                                  90 lines | BUILD  | ---    | 03/05 09:06
+  character-counter-with-spaces                   89 lines | BUILD  | ---    | 03/05 08:48
+  reaction-time-pro                               83 lines | BUILD  | ---    | 03/05 10:10
+  invoice-ai-pro                                  74 lines | ---    | ---    | 02/25 21:21
+  jwt-workstation-pro                             74 lines | ---    | ---    | 02/25 21:21
+  airdrop-intelligence-pro                        65 lines | ---    | ---    | 02/25 21:21
+  jwt-workbench-pro                               65 lines | ---    | ---    | 02/25 21:21
+
+=== COMPETITIVE ANALYSES: 48 ===
+  character-counter-with-spaces.json
+  creator-sponsorship-rate-calculator.json
+  crypto-airdrop-finder.json
+  crypto-portfolio-tracker.json
+  css-clip-path-generator.json
+  ethereum-gas-tracker.json
+  favicon-generator.json
+  free-bingo-card-generator.json
+  free-invoice-generator-pdf.json
+  free-online-pdf-editor.json
+  image-compressor-online.json
+  interactive-periodic-table.json
+  jwt-decoder-and-verifier.json
+  microservices-docker-compose-generator.json
+  multiplication-table-practice-game.json
+  name-picker-wheel.json
+  nft-rarity-checker.json
+  number-guessing-game.json
+  online-character-counter.json
+  online-coin-flip-simulator.json
+  online-countdown-timer-big-screen.json
+  online-metronome-with-tap-tempo.json
+  online-metronome-with-tuner.json
+  online-multi-dice-roller.json
+  online-piano-keyboard.json
+  online-regex-tester-and-generator.json
+  online-resume-builder-for-tech-jobs.json
+  online-stopwatch-with-laps.json
+  online-voice-recorder-editor.json
+  password-generator-online-custom.json
+  password-strength-test-tool.json
+  password-strength-tester-live.json
+  percentage-calculator-difference.json
+  percentage-increase-calculator.json
+  postgresql-schema-generator-from-json.json
+  printable-calendar-creator.json
+  printable-weekly-meal-planner-template.json
+  printable-weekly-meal-planner.json
+  printable-weekly-planner-template.json
+  printable-weekly-planner.json
+  qr-code-generator-online.json
+  random-name-picker-wheel.json
+  reaction-time-test.json
+  svg-to-png-converter-online.json
+  typing-speed-test.json
+  virtual-dice-roller-multiple-dice.json
+  what-is-my-ip.json
+  word-scramble-solver.json
+
+=== EXECUTOR LOG: 128 entries ===
+  2026-03-05T16:46 | 鏀粯鎺ュ叆瀹屾垚: 宸蹭负0涓簲鐢ㄦ敞鍏hipMicro瀵兼祦閾炬帴
+  2026-03-05T16:50 | 鎵弿瀹屾垚锛屽彂鐜?3涓俊鍙凤紝Top5: ['percentage calculator difference', 'online stopwatch with l
+  2026-03-05T16:52 | 鎵弿瀹屾垚锛屽彂鐜?3涓俊鍙凤紝Top5: ['online stopwatch with laps', 'printable weekly planner', 'o
+  2026-03-05T16:55 | 閿婚€犲畬鎴? {"cycle_id": "cycle_28", "started_at": "2026-03-05T16:52:54.522742", "step
+  2026-03-05T16:55 | 鏀粯鎺ュ叆瀹屾垚: 宸蹭负0涓簲鐢ㄦ敞鍏hipMicro瀵兼祦閾炬帴
+  2026-03-05T16:56 | 鎵弿瀹屾垚锛屽彂鐜?3涓俊鍙凤紝Top5: ['online stopwatch with laps', 'random name picker wheel', 'o
+  2026-03-05T16:58 | 閿婚€犲畬鎴? {"cycle_id": "cycle_29", "started_at": "2026-03-05T16:56:44.209850", "step
+  2026-03-05T16:58 | 鏀粯鎺ュ叆瀹屾垚: 宸蹭负0涓簲鐢ㄦ敞鍏hipMicro瀵兼祦閾炬帴
+  2026-03-05T17:01 | 鎵弿瀹屾垚锛屽彂鐜?4涓俊鍙凤紝Top5: ['online piano keyboard', 'character counter with spaces', 'o
+  2026-03-06T11:35 | 鎵弿瀹屾垚锛屽彂鐜?0涓俊鍙凤紝Top5: ['PostgreSQL schema generator from JSON', 'microservices Dock

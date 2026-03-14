@@ -1,0 +1,26 @@
+[
+  {
+    "gaps": [
+      "typescript_generics"
+    ],
+    "error_snippet": "Failed to compile.\n\n./src/app/page.tsx:92:9\nType error: Type '{ opportunity: string; savings: number; }[]' is not assignable to type '{ opportunity: string; potentialSavings: number; }[]'.\n  Property 'potentialSavings' is missing in type '{ opportunity: string; savings: number; }' but required in ty",
+    "app_slug": "web3-wallet-health-checker",
+    "timestamp": "2026-03-01T17:34:18.678846"
+  },
+  {
+    "gaps": [
+      "typescript_generics"
+    ],
+    "error_snippet": "Failed to compile.\n\n./src/app/api/generate/route.ts:94:7\nType error: Type '\"solana\" | \"cardano\" | \"sui\" | \"aptos\" | \"cosmos\" | \"tezos\" | \"flow\" | \"arbitrum-stylus\" | \"custom\"' is not assignable to type '\"solana\" | \"cardano\" | \"sui\" | \"aptos\" | \"cosmos\" | \"tezos\" | \"flow\" | \"arbitrum-stylus\"'.\n  Type",
+    "app_slug": "multichain-nft-rarity-checker",
+    "timestamp": "2026-03-05T21:11:48.736116"
+  },
+  {
+    "gaps": [
+      "typescript_generics"
+    ],
+    "error_snippet": "Failed to compile.\n\n./src/app/api/generate/route.ts:94:7\nType error: Type '\"solana\" | \"cardano\" | \"sui\" | \"aptos\" | \"cosmos\" | \"tezos\" | \"flow\" | \"arbitrum-stylus\" | \"custom\"' is not assignable to type '\"solana\" | \"cardano\" | \"sui\" | \"aptos\" | \"cosmos\" | \"tezos\" | \"flow\" | \"arbitrum-stylus\"'.\n  Type",
+    "app_slug": "multichain-nft-rarity-checker",
+    "timestamp": "2026-03-05T21:15:39.157300"
+  }
+]

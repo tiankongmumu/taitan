@@ -1,0 +1,186 @@
+[
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\math-sprint-pro",
+    "app_name": "math-sprint-pro",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-05T12:41:14.655902"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\percentdiff-pro",
+    "app_name": "percentdiff-pro",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-05T12:45:21.469978"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\tempo-tune-pro",
+    "app_name": "tempo-tune-pro",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-05T12:52:16.679649"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\intelligent-character-counter",
+    "app_name": "intelligent-character-counter",
+    "method": "vercel",
+    "url": "https://intelligent-character-counter-36b1ajfik-tiankongmumus-projects.vercel.app",
+    "success": true,
+    "timestamp": "2026-03-05T13:27:24.094845"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\ip-assistant-pro",
+    "app_name": "ip-assistant-pro",
+    "method": "vercel",
+    "url": "https://ip-assistant-h4narkupn-tiankongmumus-projects.vercel.app",
+    "success": true,
+    "timestamp": "2026-03-05T13:30:57.297353"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\regex-ai-pro",
+    "app_name": "regex-ai-pro",
+    "method": "vercel",
+    "url": "https://regex-ai-3udybcb7d-tiankongmumus-projects.vercel.app",
+    "success": true,
+    "timestamp": "2026-03-05T13:35:47.795192"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\smart-qr-generator",
+    "app_name": "smart-qr-generator",
+    "method": "vercel",
+    "url": "https://smart-qr-generator-73ortalqz-tiankongmumus-projects.vercel.app",
+    "success": true,
+    "timestamp": "2026-03-05T13:41:12.342938"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\securepass-studio",
+    "app_name": "securepass-studio",
+    "method": "vercel",
+    "url": "https://securepass-studio-1mqksvsvg-tiankongmumus-projects.vercel.app",
+    "success": true,
+    "timestamp": "2026-03-05T14:03:10.110187"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\smartmeal-planner-pro",
+    "app_name": "smartmeal-planner-pro",
+    "method": "vercel",
+    "url": "https://smartmeal-planner-c5jrszh60-tiankongmumus-projects.vercel.app",
+    "success": true,
+    "timestamp": "2026-03-05T14:07:04.285297"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\bigscreen-timer-pro",
+    "app_name": "bigscreen-timer-pro",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-05T14:18:59.275301"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\tempoflow",
+    "app_name": "tempoflow",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-05T14:28:14.086192"
+  },
+  {
+    "app_path": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\password-security-coach",
+    "app_name": "password-security-coach",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-05T14:54:28.601391"
+  },
+  {
+    "app_path": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\elementquest",
+    "app_name": "elementquest",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-05T16:05:25.328537"
+  },
+  {
+    "app_path": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\bingo-card-pro",
+    "app_name": "bingo-card-pro",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-05T16:09:36.767619"
+  },
+  {
+    "app_path": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\voiceflow-pro",
+    "app_name": "voiceflow-pro",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-05T16:20:48.705197"
+  },
+  {
+    "app_path": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\clip-path-studio",
+    "app_name": "clip-path-studio",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-05T16:42:34.897867"
+  },
+  {
+    "app_path": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\invoiceflow-pro",
+    "app_name": "invoiceflow-pro",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-05T16:49:06.859260"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\postgresql-schema-generator-from-json",
+    "app_name": "postgresql-schema-generator-from-json",
+    "method": "vercel",
+    "url": "https://postgresql-schema-generator-from-json-629qn77yp.vercel.app",
+    "success": true,
+    "timestamp": "2026-03-05T21:50:34.932430"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\creator-sponsorship-rate-calculator",
+    "app_name": "creator-sponsorship-rate-calculator",
+    "method": "vercel",
+    "url": "https://creator-sponsorship-rate-calculator-ihyfzwaj9.vercel.app",
+    "success": true,
+    "timestamp": "2026-03-05T23:16:06.781006"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\jwt-security-workstation",
+    "app_name": "jwt-security-workstation",
+    "method": "vercel",
+    "url": "https://jwt-security-workstation-dlbam3h25-tiankongmumus-projects.vercel.app",
+    "success": true,
+    "timestamp": "2026-03-06T00:58:25.289871"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\multichain-gas-tracker",
+    "app_name": "multichain-gas-tracker",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-06T03:17:33.795410"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\crypto-airdrop-finder-pro",
+    "app_name": "crypto-airdrop-finder-pro",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-06T10:25:32.498793"
+  },
+  {
+    "app_path": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\microcompose-pro",
+    "app_name": "microcompose-pro",
+    "method": "auto",
+    "url": null,
+    "success": false,
+    "timestamp": "2026-03-06T11:30:40.248739"
+  }
+]

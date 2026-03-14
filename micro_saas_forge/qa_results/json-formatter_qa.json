@@ -1,0 +1,22 @@
+{
+  "file": "json-formatter.html",
+  "tested_at": "2026-03-02T09:42:47.611815",
+  "checks": {
+    "structure": 10.0,
+    "seo": 9.0,
+    "mobile": 8.0,
+    "interactivity": 10.0,
+    "performance": 10.0,
+    "commercial": 4.0,
+    "visual": 9.5
+  },
+  "issues": [
+    "SEO: Missing H1 heading",
+    "MOBILE: No touch event handling",
+    "COMMERCIAL: No ad slots",
+    "COMMERCIAL: No analytics tracking",
+    "COMMERCIAL: No email capture"
+  ],
+  "score": 8.3,
+  "pass": true
+}

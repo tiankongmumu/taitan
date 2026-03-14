@@ -1,0 +1,123 @@
+{
+  "keyword": "printable weekly meal planner",
+  "competitors": [
+    {
+      "name": "Canva",
+      "url": "https://www.canva.com/templates/search/printable-weekly-meal-planner/",
+      "features": [
+        "Massive template library with high visual appeal",
+        "Intuitive drag-and-drop editor for customization",
+        "Strong brand recognition and trust",
+        "Easy export to PDF/PNG for printing"
+      ],
+      "weaknesses": [
+        "Templates are generic, not tailored to specific diets or goals",
+        "No integrated recipe database or nutritional info",
+        "Focus is on design, not meal planning functionality",
+        "Can be overwhelming for users who just want a simple planner"
+      ],
+      "pricing": "Freemium (advanced assets/features behind paid plan)",
+      "monthly_traffic": 2500000
+    },
+    {
+      "name": "Etsy",
+      "url": "https://www.etsy.com/search?q=printable%20weekly%20meal%20planner",
+      "features": [
+        "Huge variety of unique, artistic designs from independent creators",
+        "One-time purchase model is clear and simple",
+        "Often includes bundles (planner + grocery list + recipe cards)",
+        "Strong for users seeking a specific aesthetic"
+      ],
+      "weaknesses": [
+        "Quality and usability vary wildly by seller",
+        "No editing capabilities post-purchase (static PDF)",
+        "No community or support around the tool itself",
+        "Discovery relies on search, not a dedicated tool experience"
+      ],
+      "pricing": "Paid (one-time purchase, typically $3-$10)",
+      "monthly_traffic": 450000
+    },
+    {
+      "name": "The Spruce Eats",
+      "url": "https://www.thespruceeats.com/free-printable-meal-planner-4109131",
+      "features": [
+        "Associated with a trusted recipe and cooking advice brand",
+        "Simple, functional, and no-frills design",
+        "Often includes helpful accompanying articles and tips",
+        "Completely free with no paywall"
+      ],
+      "weaknesses": [
+        "Very basic, single-template offering with little customization",
+        "Design is often dated and not visually inspiring",
+        "No digital interactive version or companion app",
+        "Static PDF only, serves as a content marketing tool, not a dedicated product"
+      ],
+      "pricing": "Free",
+      "monthly_traffic": 180000
+    },
+    {
+      "name": "Prepear",
+      "url": "https://www.prepear.com/meal-planner/printable",
+      "features": [
+        "Direct integration with a robust recipe database and meal planner app",
+        "Auto-populates grocery lists from planned meals",
+        "Offers diet-specific templates (Keto, Vegan, etc.)",
+        "Bridges digital planning and physical printing"
+      ],
+      "weaknesses": [
+        "Core product is a subscription app; printables are a secondary feature",
+        "Requires account creation to access most features",
+        "Printing functionality can feel like an afterthought",
+        "Template designs are functional but not highly aesthetic"
+      ],
+      "pricing": "Freemium (advanced planning features require subscription)",
+      "monthly_traffic": 90000
+    },
+    {
+      "name": "Template.net / Word Templates Online",
+      "url": "https://www.template.net/business/planner-templates/weekly-meal-planner/",
+      "features": [
+        "Extensive library of templates in multiple formats (Word, Excel, PDF)",
+        "Templates are highly structured and detailed",
+        "Easy to download and use in familiar software",
+        "Caters to users who want maximum control in MS Office"
+      ],
+      "weaknesses": [
+        "Websites are ad-heavy and have poor user experience",
+        "Templates can be overly corporate or complex for home use",
+        "Zero community, support, or guidance on how to use them effectively",
+        "Pure template dump with no integrated tools or intelligence"
+      ],
+      "pricing": "Freemium (some free, premium templates paid)",
+      "monthly_traffic": 120000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Lack of 'Smart' Printables with Data",
+      "implementation": "Create a web tool where users input dietary goals (e.g., 'budget-friendly', 'high-protein', 'family of 4'), and the system generates a *customized* printable planner. This includes auto-populating a sample meal plan with recipes, estimated costs, and macro totals for the week, all on a single, well-designed PDF.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "No Seamless Digital-to-Physical Loop",
+      "implementation": "Build a simple web app with a beautiful, interactive weekly planner. Users can drag-and-drop meals, and the app generates a synchronized grocery list. The key differentiator: a 'Print Suite' that creates a cohesive, magazine-style printable packet (planner, recipes, grocery list) with one click, designed explicitly for the fridge or binder.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Missing Community-Driven & Aesthetic Focus",
+      "implementation": "Combine the design variety of Etsy with the utility of a dedicated platform. Allow creators to design and sell templates, but host them on a unified site with a standardized preview/editor. Add features like user ratings, 'most used' templates, and the ability to lightly customize colors/fonts before purchase.",
+      "impact": "MEDIUM",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "No Focus on Specific, High-Intent Life Stages",
+      "implementation": "Develop specialized printable systems for underserved niches. Examples: 'Postpartum Meal Planner' with freezer-prep focus and nutrition notes, 'Elderly Nutrition Planner' with large print and medication tracking, or 'Athlete's Meal Prep' with precise timing and portion logging. Market directly to these communities.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    }
+  ],
+  "recommended_positioning": "The intelligent meal planning assistant that creates your perfect, personalized printable in minutes—bridging smart digital tools with the simplicity of pen and paper.",
+  "analyzed_at": "2026-03-05T13:55:30.609356"
+}

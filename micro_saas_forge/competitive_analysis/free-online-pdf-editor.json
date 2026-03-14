@@ -1,0 +1,136 @@
+{
+  "keyword": "free online PDF editor",
+  "competitors": [
+    {
+      "name": "Adobe Acrobat Online",
+      "url": "https://www.adobe.com/acrobat/online/pdf-editor.html",
+      "features": [
+        "Industry-standard brand trust",
+        "Clean, intuitive interface",
+        "Good basic editing (text, images, annotations)",
+        "Strong OCR capability",
+        "Good integration with Adobe ecosystem"
+      ],
+      "weaknesses": [
+        "Free tier is very limited (2 documents/month)",
+        "Advanced features locked behind expensive subscription",
+        "Can feel slow/heavy for simple tasks",
+        "Persistent upsell pressure"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 45000000
+    },
+    {
+      "name": "Smallpdf",
+      "url": "https://smallpdf.com/edit-pdf",
+      "features": [
+        "Extremely user-friendly and simple UI",
+        "Fast processing for basic tasks",
+        "Wide range of related tools (compress, convert, sign)",
+        "Good mobile experience",
+        "Clear free limits"
+      ],
+      "weaknesses": [
+        "Free tier has strict file size and task limits",
+        "Editing features are basic (no advanced text flow)",
+        "Watermarks on free downloads",
+        "Requires account for many actions"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 65000000
+    },
+    {
+      "name": "iLovePDF",
+      "url": "https://www.ilovepdf.com/edit-pdf",
+      "features": [
+        "Completely free for core editing",
+        "No daily limit on tasks",
+        "No account required for basic use",
+        "Supports many languages",
+        "Includes a suite of other PDF tools"
+      ],
+      "weaknesses": [
+        "Cluttered interface with many ads",
+        "Security/privacy concerns (file processing location)",
+        "Basic editing only (add text, images, shapes)",
+        "No advanced features like OCR or form creation",
+        "Branding/watermarks on output"
+      ],
+      "pricing": "freemium (very generous free tier)",
+      "monthly_traffic": 55000000
+    },
+    {
+      "name": "PDF2Go",
+      "url": "https://www.pdf2go.com/edit-pdf",
+      "features": [
+        "Strong focus on editing (text, images, pages)",
+        "Good page management tools",
+        "No file size limit for free users",
+        "Clear, task-oriented interface",
+        "Works directly in browser without Java/Flash"
+      ],
+      "weaknesses": [
+        "Free version adds a small watermark",
+        "Interface can feel technical/less polished",
+        "Limited annotation tools",
+        "No real-time collaboration",
+        "Privacy policy is vague"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 18000000
+    },
+    {
+      "name": "Sejda",
+      "url": "https://www.sejda.com/pdf-editor",
+      "features": [
+        "Powerful desktop-like features online",
+        "Excellent form filling and creation",
+        "Good redaction and security tools",
+        "Clear weekly free task limit (3 days, 3 tasks)",
+        "Respects user privacy (files deleted quickly)"
+      ],
+      "weaknesses": [
+        "Free tier is very restrictive (50MB, 3 tasks/week)",
+        "Interface is functional but not modern",
+        "Can be overwhelming for simple edits",
+        "No real-time collaboration features"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 12000000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Truly Private & Secure 'Zero-Knowledge' Editing",
+      "implementation": "Build a client-side editor where all processing happens in the user's browser. Files never upload to a server. Use clear, verifiable open-source code and audits. Offer a downloadable offline version.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Frictionless Real-Time Collaboration",
+      "implementation": "Integrate live, Google Docs-style collaboration for PDF annotation and commenting. Allow multiple users to view and mark up the same PDF simultaneously with cursor presence and chat.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Context-Aware AI Editing Assistant",
+      "implementation": "Use a local LLM or secure API to offer smart features: 'Summarize this PDF,' 'Fix formatting inconsistencies,' 'Suggest a better title based on content,' 'Extract key data into a table.'",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Predictable, Usage-Based 'Pay-As-You-Go' Credits",
+      "implementation": "Instead of restrictive weekly limits or subscriptions, sell affordable credit packs that never expire. One credit = one task (edit, OCR, etc.). Appeals to infrequent users who hate subscriptions.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "Specialized Editing for Academic/Student Work",
+      "implementation": "Create templates and tools for common student needs: citation sticker insertion, margin note formatting, assignment cover page builder, peer-review annotation sets, and easy bibliography highlighting.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    }
+  ],
+  "recommended_positioning": "The private, collaborative PDF editor for teams and individuals who value security and simplicity without restrictive limits.",
+  "analyzed_at": "2026-03-06T10:41:18.926289"
+}

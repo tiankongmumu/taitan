@@ -1,0 +1,122 @@
+{
+  "keyword": "NFT rarity checker",
+  "competitors": [
+    {
+      "name": "Rarity Sniper",
+      "url": "https://raritysniper.com",
+      "features": [
+        "Supports 100,000+ verified EVM NFT collections",
+        "Real-time rarity updates for live mints",
+        "Chrome extension for 1-click rarity checks on OpenSea/Blur",
+        "Direct buy links for rare listed NFTs"
+      ],
+      "weaknesses": [
+        "Limited support for non-EVM blockchains (Solana, Cardano, Sui)",
+        "Heavy pop-up ad load on free tier",
+        "Advanced trait filtering locked behind paywall"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 2800000
+    },
+    {
+      "name": "Rarity Tools",
+      "url": "https://rarity.tools",
+      "features": [
+        "Industry-standard rarity scoring methodology widely adopted by the NFT community",
+        "Verified collection badges to avoid scam listings",
+        "Trait normalization for accurate rarity calculation",
+        "Historical rarity trend tracking for collections"
+      ],
+      "weaknesses": [
+        "Outdated, clunky UI",
+        "No support for new non-EVM chains",
+        "Custom collection uploads locked behind premium tier",
+        "No mobile app or Discord bot integration"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 1200000
+    },
+    {
+      "name": "Trait Sniper",
+      "url": "https://traitsniper.com",
+      "features": [
+        "Pre-reveal rarity calculation for ongoing mints",
+        "Real-time listing alerts for rare NFTs below floor price",
+        "Wallet portfolio rarity tracking",
+        "Bulk rarity lookup for multiple NFTs"
+      ],
+      "weaknesses": [
+        "High premium subscription cost",
+        "Frequent false rarity scores for unrevealed collections",
+        "Only supports EVM chains",
+        "Intrusive video ads on free tier"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 890000
+    },
+    {
+      "name": "Icy Tools",
+      "url": "https://icy.tools",
+      "features": [
+        "Cross-chain support for EVM and Solana NFTs",
+        "Combined rarity + market performance metrics",
+        "Whale wallet tracking alongside rarity data",
+        "Custom price and rarity alerting"
+      ],
+      "weaknesses": [
+        "Free tier limited to 10 queries per day",
+        "Steep learning curve for new casual users",
+        "Rarity scores less widely recognized than Rarity Tools standard",
+        "No custom collection upload for independent creators"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 720000
+    },
+    {
+      "name": "Rarity Sniffer",
+      "url": "https://raritysniffer.com",
+      "features": [
+        "Ultra-fast pre-reveal rarity calculation for new mints",
+        "Zero onboarding required for quick checks",
+        "Discord bot integration for community servers",
+        "Low latency for real-time mint monitoring"
+      ],
+      "weaknesses": [
+        "No support for older, non-mint collections",
+        "High volume of unverified scam collections listed",
+        "Barebones UI with no filtering options",
+        "No portfolio tracking or historical data"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 450000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Lack of full multi-chain support for under-served non-EVM ecosystems",
+      "implementation": "Build chain-agnostic rarity calculation modules that pull on-chain metadata for 8+ underserved chains (Solana, Cardano, Sui, Aptos, Cosmos, Tezos, Flow, Arbitrum Stylus), add chain-specific verified collection badges, and unify the scoring methodology across all chains",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "No free custom rarity calculation for independent small creators",
+      "implementation": "Add a drag-and-drop metadata upload tool for creators, auto-calculate standard rarity scores for free, allow creators to embed a white-label rarity checker on their website/Discord for free, and monetize only optional premium features like promoted collection listings and advanced trait customization",
+      "impact": "HIGH",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "Intrusive ads and paywalls for core rarity checking functionality across all existing tools",
+      "implementation": "Offer 100% ad-free core rarity checks (full trait breakdown, rank, score) for free up to 150 queries per user per day, and lock only advanced features (mint alerts, portfolio tracking, API access, bulk lookups) behind a low-cost premium tier",
+      "impact": "HIGH",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "No integrated fraud detection alongside rarity scores to reduce user risk of buying fake/manipulated NFTs",
+      "implementation": "Add real-time fraud checks embedded with rarity results: flag verified vs scam collections, detect post-mint trait manipulation, and flag wash-traded NFTs with inflated floor prices, with clear warnings shown to users before they click through to marketplaces",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    }
+  ],
+  "recommended_positioning": "The ad-free, multi-chain NFT rarity checker for both casual collectors and independent creators, with built-in fraud protection and 100% free custom collection rarity calculation.",
+  "analyzed_at": "2026-03-05T20:59:33.812774"
+}

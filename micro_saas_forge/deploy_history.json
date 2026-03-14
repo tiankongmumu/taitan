@@ -1,0 +1,344 @@
+[
+  {
+    "slug": "api-playground-builder",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\api-playground-builder",
+    "deployed_at": "2026-03-05T12:11:45.988803",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "api-playground-pro",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\api-playground-pro",
+    "deployed_at": "2026-03-05T12:11:45.988844",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "api-playground-sandbox",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\api-playground-sandbox",
+    "deployed_at": "2026-03-05T12:11:45.988869",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "auto-interface-tool",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\auto-interface-tool",
+    "deployed_at": "2026-03-05T12:11:45.988897",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "character-counter-with-spaces",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\character-counter-with-spaces",
+    "deployed_at": "2026-03-05T12:11:45.988928",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "crypto-wallet-health-checker",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\crypto-wallet-health-checker",
+    "deployed_at": "2026-03-05T12:11:45.988955",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "css-gradient-animator",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\css-gradient-animator",
+    "deployed_at": "2026-03-05T12:11:45.988982",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "css-grid-playground",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\css-grid-playground",
+    "deployed_at": "2026-03-05T12:11:45.989008",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "curl-to-code",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\curl-to-code",
+    "deployed_at": "2026-03-05T12:11:45.989034",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "cybernetic-ip-tracker",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\cybernetic-ip-tracker",
+    "deployed_at": "2026-03-05T12:11:45.989058",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "cyberpunk-svg-avatar-generator",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\cyberpunk-svg-avatar-generator",
+    "deployed_at": "2026-03-05T12:11:45.989082",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "favicon-forge-pro",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\favicon-forge-pro",
+    "deployed_at": "2026-03-05T12:11:45.989108",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "image-compress-pro",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\image-compress-pro",
+    "deployed_at": "2026-03-05T12:11:45.989132",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "json-path-finder",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\json-path-finder",
+    "deployed_at": "2026-03-05T12:11:45.989177",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "json-path-tester",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\json-path-tester",
+    "deployed_at": "2026-03-05T12:11:45.989204",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "json-ts-interface-generator",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\json-ts-interface-generator",
+    "deployed_at": "2026-03-05T12:11:45.989231",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "jwt-debugger",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\jwt-debugger",
+    "deployed_at": "2026-03-05T12:11:45.989261",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "lapsync-stopwatch",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\lapsync-stopwatch",
+    "deployed_at": "2026-03-05T12:11:45.989285",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "markdown-email-converter",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\markdown-email-converter",
+    "deployed_at": "2026-03-05T12:11:45.989313",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "number-guessing-game-pro",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\number-guessing-game-pro",
+    "deployed_at": "2026-03-05T12:11:45.989344",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "palette-pro",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\palette-pro",
+    "deployed_at": "2026-03-05T12:11:45.989370",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "pixelflow-animator",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\pixelflow-animator",
+    "deployed_at": "2026-03-05T12:11:45.989393",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "printable-calendar-creator-pro",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\printable-calendar-creator-pro",
+    "deployed_at": "2026-03-05T12:11:45.989418",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "privacy-first-ai-code-explainer",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\privacy-first-ai-code-explainer",
+    "deployed_at": "2026-03-05T12:11:45.989441",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "privacy-focused-image-compressor",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\privacy-focused-image-compressor",
+    "deployed_at": "2026-03-05T12:11:45.989465",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "privacy-pulse",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\privacy-pulse",
+    "deployed_at": "2026-03-05T12:11:45.989488",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "privacy-score-checker",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\privacy-score-checker",
+    "deployed_at": "2026-03-05T12:11:45.989514",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "privacy-shield-generator",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\privacy-shield-generator",
+    "deployed_at": "2026-03-05T12:11:45.989537",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "privacy-shield-inspector",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\privacy-shield-inspector",
+    "deployed_at": "2026-03-05T12:11:45.989560",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "privacypass-generator",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\privacypass-generator",
+    "deployed_at": "2026-03-05T12:11:45.989583",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "privacypassphrase",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\privacypassphrase",
+    "deployed_at": "2026-03-05T12:11:45.989605",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "promptcraft-studio",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\promptcraft-studio",
+    "deployed_at": "2026-03-05T12:11:45.989628",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "reaction-time-pro",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\reaction-time-pro",
+    "deployed_at": "2026-03-05T12:11:45.989652",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "regex-escape-room",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\regex-escape-room",
+    "deployed_at": "2026-03-05T12:11:45.989674",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "regex-playground",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\regex-playground",
+    "deployed_at": "2026-03-05T12:11:45.989697",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "securepass-generator",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\securepass-generator",
+    "deployed_at": "2026-03-05T12:11:45.989720",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "spinselect-pro",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\spinselect-pro",
+    "deployed_at": "2026-03-05T12:11:45.989744",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "sql-optimizer-ai",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\sql-optimizer-ai",
+    "deployed_at": "2026-03-05T12:11:45.989769",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "sql-query-formatter",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\sql-query-formatter",
+    "deployed_at": "2026-03-05T12:11:45.989792",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "svg-to-png-pro-converter",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\svg-to-png-pro-converter",
+    "deployed_at": "2026-03-05T12:11:45.989816",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "techresume-pro",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\techresume-pro",
+    "deployed_at": "2026-03-05T12:11:45.989839",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "typing-speed-test",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\typing-speed-test",
+    "deployed_at": "2026-03-05T12:11:45.989863",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "web3-wallet-health-checker",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\web3-wallet-health-checker",
+    "deployed_at": "2026-03-05T12:11:45.989888",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "websocket-mocklab",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\websocket-mocklab",
+    "deployed_at": "2026-03-05T12:11:45.989914",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "websocket-testlab",
+    "source": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\websocket-testlab",
+    "deployed_at": "2026-03-05T12:11:45.989939",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "bigscreen-timer-pro",
+    "source": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\bigscreen-timer-pro",
+    "deployed_at": "2026-03-05T14:06:35.360905",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "dice-tray-pro",
+    "source": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\dice-tray-pro",
+    "deployed_at": "2026-03-05T14:06:35.360943",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "intelligent-character-counter",
+    "source": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\intelligent-character-counter",
+    "deployed_at": "2026-03-05T14:06:35.360971",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "ip-assistant-pro",
+    "source": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\ip-assistant-pro",
+    "deployed_at": "2026-03-05T14:06:35.360996",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "math-sprint-pro",
+    "source": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\math-sprint-pro",
+    "deployed_at": "2026-03-05T14:06:35.361022",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "percentdiff-pro",
+    "source": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\percentdiff-pro",
+    "deployed_at": "2026-03-05T14:06:35.361060",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "regex-ai-pro",
+    "source": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\regex-ai-pro",
+    "deployed_at": "2026-03-05T14:06:35.361090",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "securepass-studio",
+    "source": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\securepass-studio",
+    "deployed_at": "2026-03-05T14:06:35.361116",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "smart-qr-generator",
+    "source": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\smart-qr-generator",
+    "deployed_at": "2026-03-05T14:06:35.361141",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "smartmeal-planner-pro",
+    "source": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\smartmeal-planner-pro",
+    "deployed_at": "2026-03-05T14:06:35.361167",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "tempo-tune-pro",
+    "source": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\tempo-tune-pro",
+    "deployed_at": "2026-03-05T14:06:35.361195",
+    "status": "ready_for_review"
+  },
+  {
+    "slug": "tempoflow-pro",
+    "source": "D:\\Project\\1\\micro_saas_forge\\generated_apps\\tempoflow-pro",
+    "deployed_at": "2026-03-05T14:06:35.361220",
+    "status": "ready_for_review"
+  }
+]

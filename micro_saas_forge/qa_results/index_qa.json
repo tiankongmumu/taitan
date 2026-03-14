@@ -1,0 +1,26 @@
+{
+  "file": "index.html",
+  "tested_at": "2026-03-06T10:56:01.658397",
+  "checks": {
+    "structure": 10.0,
+    "seo": 9.0,
+    "mobile": 8.0,
+    "interactivity": 5.0,
+    "performance": 8.0,
+    "commercial": 2.0,
+    "visual": 9.5
+  },
+  "issues": [
+    "SEO: Title too long (242 chars)",
+    "MOBILE: No touch event handling",
+    "INTERACTIVE: No event listeners",
+    "INTERACTIVE: Very little JS (0 lines)",
+    "PERF: 7 external scripts",
+    "COMMERCIAL: No ad slots",
+    "COMMERCIAL: No share functionality",
+    "COMMERCIAL: No analytics tracking",
+    "COMMERCIAL: No email capture"
+  ],
+  "score": 6.7,
+  "pass": false
+}

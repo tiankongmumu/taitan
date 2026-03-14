@@ -1,0 +1,22 @@
+{
+  "file": "math-blitz.html",
+  "tested_at": "2026-03-02T09:42:47.637742",
+  "checks": {
+    "structure": 10.0,
+    "seo": 7.0,
+    "mobile": 10.0,
+    "interactivity": 10.0,
+    "performance": 10.0,
+    "commercial": 4.0,
+    "visual": 10.0
+  },
+  "issues": [
+    "SEO: Missing meta description",
+    "SEO: Missing H1 heading",
+    "COMMERCIAL: No ad slots",
+    "COMMERCIAL: No analytics tracking",
+    "COMMERCIAL: No email capture"
+  ],
+  "score": 8.3,
+  "pass": true
+}

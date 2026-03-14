@@ -1,0 +1,102 @@
+[
+  {
+    "keyword": "AI business automation",
+    "pain_summary": "Entrepreneurs are looking for AI solutions to automate and streamline their business operations.",
+    "market_size": 9,
+    "competition": 5,
+    "urgency": 8,
+    "evidence": "Hi all- Anthropic CEO Dario Amodei recently predicted all white collar jobs might go away in the next 5 years!",
+    "target_audience": "Small to medium-sized businesses and startups",
+    "opportunity_score": 7.6
+  },
+  {
+    "keyword": "Cofounder matching",
+    "pain_summary": "Finding the right cofounders is a major challenge for entrepreneurs, often hindering the startup process.",
+    "market_size": 6,
+    "competition": 3,
+    "urgency": 7,
+    "evidence": "I have met my match with the most challenging thing about building. Finding people. I cannot for the life of me find someone to work with.",
+    "target_audience": "Early-stage entrepreneurs and startups",
+    "opportunity_score": 6.65
+  },
+  {
+    "keyword": "Pivot strategy",
+    "pain_summary": "Entrepreneurs need guidance on when and how to pivot their business strategies to achieve success.",
+    "market_size": 6,
+    "competition": 3,
+    "urgency": 7,
+    "evidence": "i exited my last company 3 years ago now and have been trying to get back into entrepreneurship for about a year now (although haven't locked in like i'd before) and absolutely struggling.",
+    "target_audience": "Serial entrepreneurs and early-stage startups",
+    "opportunity_score": 6.65
+  },
+  {
+    "keyword": "GDPR compliance",
+    "pain_summary": "SaaS companies struggle with GDPR compliance, especially when dealing with European customers.",
+    "market_size": 8,
+    "competition": 6,
+    "urgency": 7,
+    "evidence": "We don’t even market that much in Europe but a few bigger customers started asking detailed GDPR questions and it's become inevitable at this point.",
+    "target_audience": "US-based SaaS companies with European customers",
+    "opportunity_score": 6.6
+  },
+  {
+    "keyword": "Visitor identification",
+    "pain_summary": "SaaS companies find it difficult to identify and understand their website visitors, leading to missed opportunities.",
+    "market_size": 7,
+    "competition": 4,
+    "urgency": 6,
+    "evidence": "Most of these visitors are just numbers. We can't see who they are or what they're doing on our site.",
+    "target_audience": "SaaS companies with significant web traffic",
+    "opportunity_score": 6.35
+  },
+  {
+    "keyword": "Stability vs. ambition",
+    "pain_summary": "Entrepreneurs struggle to balance the security of stability with the drive to pursue ambitious goals.",
+    "market_size": 5,
+    "competition": 2,
+    "urgency": 6,
+    "evidence": "Usually, the security a job provides trumps the burnout and lack of movement, making it difficult to even plan a way out.",
+    "target_audience": "Mid-career professionals and entrepreneurs",
+    "opportunity_score": 6.15
+  },
+  {
+    "keyword": "Solopreneur SaaS advice",
+    "pain_summary": "Solopreneurs seek practical advice and best practices for starting and growing a SaaS business.",
+    "market_size": 5,
+    "competition": 3,
+    "urgency": 6,
+    "evidence": "A little bit of background: I'm a cloud consultant with a substantial amount of experience in software engineering and cloud architecture. I've also read a ton of books about business and finance over the years.",
+    "target_audience": "Individuals looking to start a SaaS business",
+    "opportunity_score": 5.9
+  },
+  {
+    "keyword": "Startup support services",
+    "pain_summary": "High-quality founders are not engaging with local accelerators and incubators, suggesting a gap in the support ecosystem.",
+    "market_size": 5,
+    "competition": 2,
+    "urgency": 5,
+    "evidence": "Are free support services for startups a dead end? My city has several no-equity, free accelerators and incubators and a government-backed entrepreneur support organization.",
+    "target_audience": "Local governments and startup support organizations",
+    "opportunity_score": 5.75
+  },
+  {
+    "keyword": "Reddit marketing",
+    "pain_summary": "SaaS founders need effective and non-spammy ways to use Reddit for customer acquisition and engagement.",
+    "market_size": 5,
+    "competition": 4,
+    "urgency": 6,
+    "evidence": "I’m curious how founders are using Reddit to get users. I tried using F5bot, but its not efficient, I end up going through like 40–50 posts and maybe 2 or 3 are actually relevant.",
+    "target_audience": "SaaS founders and marketers",
+    "opportunity_score": 5.65
+  },
+  {
+    "keyword": "Team headshots",
+    "pain_summary": "SaaS companies need an easy and cost-effective way to get professional headshots for their team members.",
+    "market_size": 4,
+    "competition": 2,
+    "urgency": 5,
+    "evidence": "Our About page and LinkedIn company profile are an embarrassing mix of phone selfies, old corporate photos from previous jobs, and a couple of people who just haven't submitted anything at all.",
+    "target_audience": "SaaS companies and remote teams",
+    "opportunity_score": 5.4
+  }
+]

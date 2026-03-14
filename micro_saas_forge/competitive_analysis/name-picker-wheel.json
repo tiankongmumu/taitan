@@ -1,0 +1,140 @@
+{
+  "keyword": "name picker wheel",
+  "competitors": [
+    {
+      "name": "Wheel of Names",
+      "url": "https://wheelofnames.com/",
+      "features": [
+        "Highly visual spinning wheel with sound effects",
+        "Easy entry of names via text box or import",
+        "Customizable wheel colors and images",
+        "Shareable links for saved wheels",
+        "Works well for teachers and presenters"
+      ],
+      "weaknesses": [
+        "Interface feels dated and cluttered",
+        "Limited advanced features (e.g., team balancing, constraints)",
+        "No native mobile app",
+        "Can be slow with very long lists",
+        "Basic result history/logging"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 4500000
+    },
+    {
+      "name": "Random Name Picker",
+      "url": "https://www.randomnamepicker.net/",
+      "features": [
+        "Extremely simple, clean interface",
+        "Quick copy/paste name entry",
+        "Instant spin with minimal friction",
+        "Team splitting feature",
+        "No sign-up required"
+      ],
+      "weaknesses": [
+        "Very basic, almost too simple",
+        "No customization (colors, sounds, images)",
+        "No save/share functionality",
+        "No advanced logic (weighting, exclusions)",
+        "Feels like a bare-minimum tool"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 1200000
+    },
+    {
+      "name": "Picker Wheel",
+      "url": "https://pickerwheel.com/",
+      "features": [
+        "Modern, sleek UI with smooth animations",
+        "Multiple wheel types (yes/no, numbers, custom)",
+        "Advanced options for weighting entries",
+        "Full-screen mode for presentations",
+        "Detailed result history and statistics"
+      ],
+      "weaknesses": [
+        "Some advanced features hidden behind paywall",
+        "Free version has branding",
+        "Can be overwhelming for simple use cases",
+        "Mobile web experience could be better"
+      ],
+      "pricing": "freemium",
+      "pricing_details": "Free with limits; Pro at ~$4/month for no ads, more wheels, advanced features",
+      "monthly_traffic": 2500000
+    },
+    {
+      "name": "Name Picker Wheel by Comment Picker",
+      "url": "https://commentpicker.com/name-picker-wheel.php",
+      "features": [
+        "Direct integration with YouTube/Twitch comment picking",
+        "Clean, functional design",
+        "Option to remove names after selection",
+        "Export results to CSV",
+        "Clear instructions for specific use cases"
+      ],
+      "weaknesses": [
+        "Niche focus on content creators",
+        "Less visually engaging wheel animation",
+        "Limited visual customization",
+        "Interface has promotional upsells",
+        "Generic for non-streamer uses"
+      ],
+      "pricing": "freemium",
+      "pricing_details": "Free with limitations; paid plans for higher limits and features",
+      "monthly_traffic": 800000
+    },
+    {
+      "name": "Flippity Random Name Picker",
+      "url": "https://www.flippity.net/RandomNamePicker.htm",
+      "features": [
+        "Uses Google Sheets as a backend (familiar for educators)",
+        "Fully customizable via spreadsheet",
+        "Can include student photos",
+        "Completely free and ad-free",
+        "Great for classroom integration"
+      ],
+      "weaknesses": [
+        "Requires Google Sheets knowledge - not intuitive",
+        "Setup is cumbersome for quick use",
+        "No standalone web app experience",
+        "Outdated visual design",
+        "No instant 'just spin' mode"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 400000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Lack of collaborative, real-time wheels for teams/remote meetings",
+      "implementation": "Build a tool where a host creates a wheel and shares a live link. Participants can see the spin in real-time, add names via a shared queue, and vote on options. Integrate with Zoom/Teams or offer a standalone collaborative space.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "No intelligence for fair team/group creation from a list",
+      "implementation": "Add a 'Create Teams' mode. After entering a list, users specify number of teams or team size. The tool uses algorithms to balance teams based on optional criteria (e.g., skill ratings, attributes) and assigns via the wheel spin for transparency/fun.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Poor mobile-native experience; most are desktop-optimized websites.",
+      "implementation": "Develop a dedicated mobile app (iOS/Android) with a gesture-based spin (flick to spin), offline functionality, and native sharing (AirDrop, etc.). Optimize for quick, on-the-go use cases like deciding lunch spots with friends.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Limited post-selection workflow and tracking.",
+      "implementation": "Implement a 'Session' mode. Users create a wheel for a recurring purpose (e.g., 'Classroom Recitation'). The tool keeps a log of who was picked, when, and the result. It can suggest who to pick next to ensure fairness over time and prevent repeats.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE to MEDIUM"
+    },
+    {
+      "gap": "No integration with common work/education platforms.",
+      "implementation": "Create direct integrations or easy import from platforms like Google Classroom (roster import), Slack (pick from a channel member list), or Excel/Sheets. Reduce the friction of manual name entry for professional users.",
+      "impact": "MEDIUM",
+      "effort": "COMPLEX"
+    }
+  ],
+  "recommended_positioning": "The intelligent, collaborative name picker wheel for modern teams and classrooms, making fair decisions fun and effortless.",
+  "analyzed_at": "2026-03-05T15:01:33.122543"
+}

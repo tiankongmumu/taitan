@@ -1,0 +1,30 @@
+{
+  "cover-letter-keywords-that-beat-ats-filters": {
+    "title": "Cover Letter Keywords That Beat ATS Filters: A Complete Guide",
+    "description": "Learn how to optimize your cover letter with keywords that pass ATS filters. Discover actionable strategies and tools like ShipMicro to land more interviews.",
+    "sections": [
+      {
+        "h2": "What Are ATS Filters and Why Do Keywords Matter?",
+        "p": "Applicant Tracking Systems (ATS) are software tools used by over 75% of employers to screen resumes and cover letters before human review. These systems scan for specific keywords related to the job description, skills, and qualifications. If your cover letter lacks these keywords, it may be automatically rejected, regardless of your experience. Keywords act as signals to the ATS that you're a relevant candidate. For example, if a job posting emphasizes 'project management' and 'budget oversight,' including these exact phrases increases your chances of passing the initial filter. Understanding this process is the first step to crafting a cover letter that gets noticed."
+      },
+      {
+        "h2": "How to Identify the Right Keywords for Your Cover Letter",
+        "p": "Start by carefully analyzing the job description. Look for repeated terms, specific skills (like 'Python' or 'CRM software'), certifications, and action verbs (e.g., 'managed,' 'developed'). Tools like job description scanners can help, but a manual review is often most effective. For instance, if a marketing role lists 'SEO optimization' and 'content strategy' multiple times, prioritize these in your cover letter. Also, research industry-specific jargon—terms like 'agile methodology' in tech or 'patient-centered care' in healthcare. Avoid keyword stuffing; instead, integrate keywords naturally into sentences that showcase your achievements. This balance ensures your cover letter is both ATS-friendly and compelling to human readers."
+      },
+      {
+        "h2": "Top Cover Letter Keywords That Beat ATS Filters in 2024",
+        "p": "Based on industry data, certain keywords consistently rank high in ATS scans. Action-oriented words like 'achieved,' 'improved,' 'led,' and 'implemented' demonstrate impact. Hard skills such as 'data analysis,' 'cloud computing,' or 'fluent in Spanish' are also critical. For soft skills, use phrases like 'team collaboration' or 'problem-solving abilities,' but pair them with examples. For example, instead of just saying 'communication skills,' write 'enhanced team communication through weekly reports.' Additionally, include keywords from the company's values or mission statement if mentioned in the job ad. This tailored approach shows you've done your homework and align with the organization's culture, boosting your ATS score."
+      },
+      {
+        "h2": "Common Mistakes to Avoid When Using Keywords",
+        "p": "One major error is overloading your cover letter with keywords, which can make it sound robotic and trigger ATS penalties for spam. Keep keyword density around 1-2% of the total text. Another mistake is using synonyms that the ATS might not recognize—stick to the exact phrasing from the job description when possible. Also, avoid placing keywords in headers or footers, as some ATS systems may not scan these areas. Formatting issues, like using images or unusual fonts, can cause parsing errors. Always save your cover letter as a .docx or .pdf file for compatibility. By steering clear of these pitfalls, you ensure your keywords effectively communicate your fit for the role."
+      },
+      {
+        "h2": "How ShipMicro's Cover Letter Tool Simplifies ATS Optimization",
+        "p": "ShipMicro's Cover Letter tool takes the guesswork out of ATS optimization. It analyzes job descriptions in real-time, suggesting relevant keywords to include based on industry trends and the specific role. The tool provides a keyword density checker to prevent overuse and offers templates that integrate keywords naturally. For example, if you're applying for a sales position, ShipMicro might highlight terms like 'client acquisition' or 'revenue growth' and help you weave them into your narrative. With features like ATS compatibility checks and readability scores, ShipMicro ensures your cover letter is both machine-friendly and engaging. Try it today to create a cover letter that stands out in any ATS system and lands you more interviews."
+      }
+    ],
+    "ctaProduct": "Generate Your Cover Letter Now",
+    "ctaLink": "/"
+  }
+}

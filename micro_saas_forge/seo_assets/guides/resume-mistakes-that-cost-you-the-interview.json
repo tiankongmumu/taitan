@@ -1,0 +1,30 @@
+{
+  "resume-mistakes-that-cost-you-the-interview": {
+    "title": "10 Resume Mistakes That Cost You the Interview",
+    "description": "Avoid these common resume mistakes that eliminate candidates. Learn actionable fixes and how ShipMicro's Resume tool creates interview-winning resumes in minutes.",
+    "sections": [
+      {
+        "h2": "Typos and Grammatical Errors",
+        "p": "A single typo can eliminate 61% of candidates according to CareerBuilder research. Recruiters view these errors as indicators of poor attention to detail and lack of professionalism. Common mistakes include misspelled job titles, inconsistent verb tenses, and punctuation errors. Proofreading multiple times isn't enough—read your resume backward to catch spelling errors, use text-to-speech tools to hear awkward phrasing, and have someone else review it. ShipMicro's Resume tool includes built-in grammar and spell checking with industry-specific terminology to ensure your resume is flawless before submission."
+      },
+      {
+        "h2": "Generic, One-Size-Fits-All Resumes",
+        "p": "Sending the same generic resume to every employer is a critical mistake that shows lack of genuine interest. Customization matters: 63% of recruiters say tailored resumes significantly increase interview chances. You should modify your resume for each application by incorporating keywords from the job description, highlighting relevant achievements, and adjusting your professional summary. This doesn't mean rewriting everything—focus on the top third of your resume where recruiters spend the most time. ShipMicro's Resume tool makes customization effortless with templates that adapt to different industries and roles while maintaining professional formatting."
+      },
+      {
+        "h2": "Poor Formatting and Design Choices",
+        "p": "Unprofessional formatting creates immediate negative impressions before recruiters even read your content. Avoid dense paragraphs (use bullet points), inconsistent fonts, excessive colors, and graphics that don't parse through Applicant Tracking Systems (ATS). Research shows recruiters spend just 7.4 seconds initially scanning resumes, so clear visual hierarchy is essential. Use standard fonts like Arial or Calibri, maintain consistent spacing, and ensure proper margins. ShipMicro's Resume tool provides ATS-friendly templates with optimal formatting that's both visually appealing and functionally effective for both human readers and automated systems."
+      },
+      {
+        "h2": "Vague Accomplishments Without Metrics",
+        "p": "Listing job duties instead of quantifiable achievements is a missed opportunity to demonstrate value. Instead of 'responsible for sales,' write 'increased sales by 27% in Q3 through new client acquisition strategy.' Use numbers, percentages, and specific results whenever possible. According to hiring managers, resumes with measurable accomplishments receive 40% more interview requests. Include metrics related to revenue growth, cost reduction, process improvement, team leadership, or efficiency gains. ShipMicro's Resume tool includes achievement builders with prompts to help you identify and articulate your most impactful contributions with appropriate metrics."
+      },
+      {
+        "h2": "Including Irrelevant Information",
+        "p": "Including outdated, personal, or irrelevant details wastes valuable space and can work against you. Remove high school information if you have a college degree, eliminate hobbies unless directly relevant to the position, and exclude personal details like age or marital status. Focus on the last 10-15 years of experience for most professionals. Also avoid listing every software you've ever used—instead highlight proficiency in tools specifically mentioned in the job description. ShipMicro's Resume tool helps you prioritize content with smart suggestions about what to include based on your target role and industry standards."
+      }
+    ],
+    "ctaProduct": "Optimize Your Resume Now",
+    "ctaLink": "/resume"
+  }
+}

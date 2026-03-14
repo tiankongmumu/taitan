@@ -1,0 +1,55 @@
+=== TWITTER THREAD ===
+**Tweet 1:**  
+Ever spent hours tuning a slow SQL query, only to watch it crawl in production?  
+We just shipped a solution.  
+
+Zero-latency SQL Query Optimizer → https://shipmicro.com/tools/sql-opt  
+
+**Tweet 2:**  
+Existing tools? Cloud APIs, network calls, waiting.  
+You’re debugging latency… with more latency.  
+It’s like fixing a leak with a wet sponge.  
+
+**Tweet 3:**  
+Ours runs locally—in your browser—via WASM.  
+Instant feedback. No data leaves your machine.  
+Optimize queries at the speed of thought.  
+
+**Tweet 4:**  
+It’s live. It’s free.  
+Try it, break it, tell us what you think.  
+
+Build faster → https://shipmicro.com/tools/sql-opt  
+#buildinpublic #sql #webassembly
+
+=== REDDIT POST ===
+**I was so frustrated with waiting for SQL query optimizers to run on remote servers, so I made one that runs entirely in your browser with zero latency.**
+
+I work with a lot of legacy databases, and I’m constantly tweaking queries for performance. Every time I’d paste a query into an online optimizer, I’d have to wait for a round trip, deal with network lag, and sometimes worry about sending sensitive schemas over the wire. It felt unnecessary for something that should be almost instantaneous.
+
+So I built **SQL Query Optimizer**, a tool that runs locally in your browser via WebAssembly. It takes your SQL query and schema, analyzes joins, indexes, and filters, and suggests optimizations—all without your data ever leaving your machine. The core engine is written in Rust, compiled to WASM, with a lightweight Next.js/TypeScript frontend. It’s basically a static site; there’s no backend processing at all.
+
+I’ve been using it myself for a few months to clean up slow queries before deployment, and it’s saved me a ton of manual analysis time. It’s not a full replacement for a database’s `EXPLAIN` or a dedicated profiler, but it’s handy for quick, private feedback.
+
+If you want to try it out:  
+[https://shipmicro.com/tools/sql-opt](https://shipmicro.com/tools/sql-opt)
+
+I’d love some **brutal feedback**—especially if you work with complex queries or unusual SQL dialects. Does the analysis feel accurate? Are the suggestions actually useful? Is there a feature you’d kill to have in a tool like this?
+
+=== 小红书文案 ===
+🔥 SQL优化神器！浏览器里零延迟跑，简直了！
+
+家人们谁懂啊！写SQL最头疼的就是调优！每次卡顿都要等服务器响应，改个参数等半天，效率直接掉线💥
+
+直到我发现这个逆天工具——直接在浏览器里用WASM运行，零延迟本地优化！不用部署、不用联网，打开网页就能飙车！
+
+💡 三大封神亮点：
+1️⃣ 零延迟体验：WASM本地计算，敲完代码秒出优化方案
+2️⃣ 隐私绝对安全：所有查询都在你浏览器里处理，数据不出本地
+3️⃣ 开箱即用：无需安装、无需配置，打开即用真香警告
+
+打工人必备效率神器！优化SQL像开了加速器，从此告别卡顿等待！
+
+👉 指路：shipmicro.com/tools/sql-opt
+
+#效率神器 #程序员必备 #生产力工具 #SQL优化 #黑科技 #打工人自救指南

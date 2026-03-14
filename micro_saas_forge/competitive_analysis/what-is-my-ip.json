@@ -1,0 +1,118 @@
+{
+  "keyword": "what is my ip",
+  "competitors": [
+    {
+      "name": "WhatIsMyIPAddress.com",
+      "url": "https://www.whatismyipaddress.com/",
+      "features": [
+        "Prominently displays public IP address.",
+        "Provides extensive IP lookup details (ISP, organization, country, region, city, coordinates).",
+        "Includes a map for approximate location.",
+        "Offers additional tools like IP blacklist check, port scanner, proxy detection.",
+        "Rich educational content on IP addresses, VPNs, and internet security."
+      ],
+      "weaknesses": [
+        "UI can feel dated and cluttered with numerous ads.",
+        "Information density can be overwhelming for users seeking a quick answer.",
+        "Mobile experience could be more streamlined and modern."
+      ],
+      "pricing": "free",
+      "monthly_traffic": 12000000
+    },
+    {
+      "name": "IPinfo.io",
+      "url": "https://ipinfo.io/",
+      "features": [
+        "Clean and modern display of public IP address.",
+        "Detailed IP geolocation data (city, region, country, postal, latitude/longitude, ASN, hostname, company).",
+        "Strong focus on a robust and accurate API for developers.",
+        "Offers a clear, developer-friendly interface for data exploration."
+      ],
+      "weaknesses": [
+        "Website primarily serves as a demo for their API, less focused on end-user experience beyond basic lookup.",
+        "Limited educational content for the average user compared to dedicated information sites.",
+        "Advanced data and higher usage are behind paid API tiers."
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 6000000
+    },
+    {
+      "name": "WhatIsMyIP.com",
+      "url": "https://www.whatismyip.com/",
+      "features": [
+        "Simple and straightforward display of public IP address.",
+        "Basic geolocation information (country, city, ISP).",
+        "Offers a few supplementary tools like IP lookup, speed test, and proxy detection.",
+        "Relatively clean initial interface before ads load."
+      ],
+      "weaknesses": [
+        "Heavy presence of ads, which can be distracting and impact page load times.",
+        "Information provided is quite basic compared to more comprehensive competitors.",
+        "Design feels somewhat generic and lacks unique branding."
+      ],
+      "pricing": "free",
+      "monthly_traffic": 5500000
+    },
+    {
+      "name": "IP Location (iplocation.net)",
+      "url": "https://www.iplocation.net/",
+      "features": [
+        "Displays public IP address.",
+        "Unique feature of aggregating IP geolocation data from multiple providers (e.g., DB-IP, IP-API, IPinfo) for comparison.",
+        "Provides detailed information for each data source.",
+        "Includes a standard IP lookup tool."
+      ],
+      "weaknesses": [
+        "User interface is functional but not particularly modern or visually engaging.",
+        "The display of multiple data sources can be overwhelming for users seeking a quick, simple answer.",
+        "Ad presence can detract from the user experience."
+      ],
+      "pricing": "free",
+      "monthly_traffic": 2500000
+    },
+    {
+      "name": "MyIP.com",
+      "url": "https://www.myip.com/",
+      "features": [
+        "Extremely simple and fast display of public IP address.",
+        "Minimalist design, focusing solely on the core function.",
+        "Provides basic geolocation (country, city, ISP) without clutter."
+      ],
+      "weaknesses": [
+        "Offers very little beyond the IP address itself, lacking additional context or tools.",
+        "Can feel too sparse for users who might expect more information or features.",
+        "Ad-supported, though generally less intrusive than some competitors."
+      ],
+      "pricing": "free",
+      "monthly_traffic": 3500000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Proactive Privacy & Security Dashboard",
+      "implementation": "Instead of just showing the IP, provide an immediate 'privacy health check' for the current connection. This would include a DNS leak test, WebRTC leak test, and a check against known VPN/proxy lists (even if it's a user's own VPN, it confirms it's working). Display results clearly with a simple 'Secure' / 'Vulnerable' status and actionable recommendations.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Ultra-Minimalist, Ad-Free, and Instant-Load Experience",
+      "implementation": "Build a super lightweight, single-page application (SPA) that loads almost instantly, displays *only* the IP address prominently, and is completely ad-free. Focus on extreme performance optimization (CDN, edge caching). Monetization could be through a 'buy me a coffee' model or a premium API for developers.",
+      "impact": "HIGH",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "IP Change Monitoring & Notification Service",
+      "implementation": "Offer a simple, free service to monitor a user's current IP and send an email/push notification if it changes. This addresses a pain point for home users with dynamic IPs who need to know their current address for remote access, gaming, or troubleshooting.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Contextual IP Insights & Actionable Advice",
+      "implementation": "Beyond just displaying data, interpret it for the user. For example, if the IP is detected as a known VPN, confirm it's working. If it's a residential IP, suggest security best practices. If it's a business IP, offer tools relevant to network administrators. This moves from data display to intelligent assistance based on IP characteristics.",
+      "impact": "MEDIUM",
+      "effort": "COMPLEX"
+    }
+  ],
+  "recommended_positioning": "Your personal IP assistant: Fast, private, and smart insights into your online presence.",
+  "analyzed_at": "2026-03-05T13:29:25.701723"
+}

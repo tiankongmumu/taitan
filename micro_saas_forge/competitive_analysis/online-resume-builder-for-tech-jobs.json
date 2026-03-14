@@ -1,0 +1,114 @@
+{
+  "keyword": "online resume builder for tech jobs",
+  "competitors": [
+    {
+      "name": "VisualCV",
+      "url": "https://www.visualcv.com/",
+      "features": [
+        "Customizable templates",
+        "Easy-to-use interface",
+        "Integration with LinkedIn"
+      ],
+      "weaknesses": [
+        "Limited free version",
+        "Some advanced features require a paid subscription"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 150000
+    },
+    {
+      "name": "Resume.io",
+      "url": "https://resume.io/",
+      "features": [
+        "User-friendly design",
+        "Real-time preview",
+        "SEO-optimized resumes"
+      ],
+      "weaknesses": [
+        "Fewer customization options compared to competitors",
+        "No mobile app"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 200000
+    },
+    {
+      "name": "Zety",
+      "url": "https://zety.com/",
+      "features": [
+        "AI-powered resume analysis",
+        "Detailed guides and tips",
+        "Professional templates"
+      ],
+      "weaknesses": [
+        "Some users find the interface less intuitive",
+        "Higher cost for premium features"
+      ],
+      "pricing": "paid",
+      "monthly_traffic": 100000
+    },
+    {
+      "name": "Novoresume",
+      "url": "https://novoresume.com/",
+      "features": [
+        "Wide range of templates",
+        "Cover letter builder",
+        "Export in multiple formats"
+      ],
+      "weaknesses": [
+        "Limited free version",
+        "Some users report issues with formatting"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 80000
+    },
+    {
+      "name": "Kickresume",
+      "url": "https://www.kickresume.com/",
+      "features": [
+        "Industry-specific templates",
+        "Job board integration",
+        "Performance tracking"
+      ],
+      "weaknesses": [
+        "Less user-friendly for beginners",
+        "Some features are only available in the paid version"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 120000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Mobile app for on-the-go editing and creation",
+      "implementation": "Develop a mobile application that allows users to create, edit, and manage their resumes from their smartphones.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Advanced AI-driven content suggestions specific to tech roles",
+      "implementation": "Integrate an AI system that provides tailored content suggestions based on the user's job title, experience, and industry trends.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Integrated portfolio builder for showcasing projects and skills",
+      "implementation": "Add a feature that allows users to create and link a digital portfolio directly from the resume builder, highlighting their technical projects and skills.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Collaborative editing and feedback tools",
+      "implementation": "Enable real-time collaboration and feedback from peers or mentors, allowing users to get input and improve their resumes.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "Comprehensive career resources and job search tools",
+      "implementation": "Provide a suite of career resources, including interview preparation, salary negotiation guides, and a job search engine integrated into the platform.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    }
+  ],
+  "recommended_positioning": "A comprehensive, AI-powered online resume builder specifically designed for tech professionals, offering advanced content suggestions, a built-in portfolio, and integrated career resources.",
+  "analyzed_at": "2026-03-05T11:08:19.507632"
+}

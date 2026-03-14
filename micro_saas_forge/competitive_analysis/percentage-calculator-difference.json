@@ -1,0 +1,129 @@
+{
+  "keyword": "percentage calculator difference",
+  "competitors": [
+    {
+      "name": "Calculator Soup",
+      "url": "https://www.calculatorsoup.com/calculators/algebra/percentage-difference-calculator.php",
+      "features": [
+        "Clear formula explanation",
+        "Step-by-step calculation display",
+        "Multiple related calculators (percentage change, increase/decrease)",
+        "No ads on core calculator page"
+      ],
+      "weaknesses": [
+        "Outdated, dense UI",
+        "No interactive visualization",
+        "Mobile experience is functional but clunky",
+        "Limited real-world context or examples"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 1500000
+    },
+    {
+      "name": "Omni Calculator",
+      "url": "https://www.omnicalculator.com/math/percentage-difference",
+      "features": [
+        "Excellent, conversational explanations",
+        "Interactive input fields with live results",
+        "Clear distinction between difference and change",
+        "Strong SEO content with related use cases"
+      ],
+      "weaknesses": [
+        "Aggressive promotion of other calculators",
+        "Some pages have intrusive mid-content ads",
+        "Explanation can be verbose, burying the tool",
+        "Limited customization of output format"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 12000000
+    },
+    {
+      "name": "RapidTables",
+      "url": "https://www.rapidtables.com/calc/math/percentage-difference-calculator.html",
+      "features": [
+        "Extremely simple, fast-loading interface",
+        "Minimalist design focused purely on calculation",
+        "No-nonsense, immediate results",
+        "Part of a vast suite of quick calculators"
+      ],
+      "weaknesses": [
+        "Zero educational value or explanation",
+        "UI is stark and uninviting",
+        "No context for formula or interpretation",
+        "High ad density relative to tool simplicity"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 8000000
+    },
+    {
+      "name": "Percentage Calculator",
+      "url": "https://percentagecalculator.net/percentage-difference-calculator/",
+      "features": [
+        "Dedicated domain for high keyword relevance",
+        "Very simple two-field input",
+        "Quick result with formula shown",
+        "Links to a dozen other percentage calc types"
+      ],
+      "weaknesses": [
+        "Site is ad-heavy and feels spammy",
+        "Design is outdated and unprofessional",
+        "No depth, purely a transactional tool",
+        "Poor mobile ad placement disrupts use"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 300000
+    },
+    {
+      "name": "GIGAcalculator",
+      "url": "https://www.gigacalculator.com/calculators/percentage-difference-calculator.php",
+      "features": [
+        "Clean, modern interface",
+        "Provides a practical interpretation of the result",
+        "Includes a useful difference vs. change guide",
+        "Offers downloadable results in CSV"
+      ],
+      "weaknesses": [
+        "Primary call-to-action is for other tools",
+        "Some features (like CSV) are under-promoted",
+        "Can be slow to load due to third-party scripts",
+        "Lacks visual comparison (e.g., a bar chart)"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 5000000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Lack of integrated data visualization. No competitor shows the two values being compared in a simple bar or column chart alongside the numeric result.",
+      "implementation": "Add a dynamic, minimal chart (using a library like Chart.js) that updates in real-time as users input values. Visually highlight the 'difference' as a gap or overlay.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "No scenario-based templates or examples for common use cases (e.g., 'Price Match Comparison', 'Salary Offer Difference', 'Test Score Improvement').",
+      "implementation": "Create a dropdown menu with 4-5 common scenarios. Selecting one pre-fills the fields with labeled example data (e.g., 'Old Salary', 'New Salary') and provides a contextual interpretation sentence.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "Inability to save, share, or bookmark calculations. All tools are purely session-based.",
+      "implementation": "Add a 'Share This Calculation' button that generates a unique URL with encoded inputs. Optionally, a simple 'Save as PDF/Image' function for reports.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Poor handling of sequential or batch comparisons. Users cannot calculate the percentage difference between more than two numbers without starting over.",
+      "implementation": "Allow users to add a third (or more) comparison field dynamically. The tool could show a matrix of differences or let the user compare each value to a baseline.",
+      "impact": "LOW",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Minimal focus on accessibility. None announce results to screen readers dynamically, and few have high-contrast modes or keyboard-navigation-first design.",
+      "implementation": "Build with ARIA live regions for instant result announcement, ensure full keyboard operability, and include a high-contrast theme toggle.",
+      "impact": "MEDIUM (for a specific, growing audience)",
+      "effort": "MEDIUM"
+    }
+  ],
+  "recommended_positioning": "The intuitive percentage difference calculator that helps you visualize comparisons and apply them to real-world decisions, not just get a number.",
+  "analyzed_at": "2026-03-05T12:39:10.917978"
+}

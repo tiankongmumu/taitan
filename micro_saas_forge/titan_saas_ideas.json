@@ -1,0 +1,20 @@
+[
+    {
+        "idea_name": "AI Eviction Shield",
+        "target_audience": "Tenants facing potential eviction or lease non-renewal in competitive rental markets.",
+        "pain_point": "Tenants lack the legal knowledge and persuasive writing skills to craft compelling, professional hardship appeals or negotiation letters to landlords/property managers, often leading to avoidable eviction or homelessness.",
+        "proposed_price": "$47 per letter generation"
+    },
+    {
+        "idea_name": "Ghosted Candidate Autoresponder",
+        "target_audience": "Job seekers who have been ghosted after interviews or final-stage applications.",
+        "pain_point": "Professionals waste mental energy and time crafting follow-up emails that get ignored. They need a system to send a sequence of increasingly persuasive, AI-generated follow-ups that professionally prompt a response, closing the loop and freeing them from the anxiety of waiting.",
+        "proposed_price": "$29 per follow-up sequence (3 emails)"
+    },
+    {
+        "idea_name": "Credit Score Crisis Optimizer",
+        "target_audience": "Individuals with poor credit scores desperate for quick, legitimate improvement to secure loans or housing.",
+        "pain_point": "Credit repair services are expensive and slow. Users need an automated system to generate and format custom dispute letters for every questionable item on their credit report, along with a prioritized action plan, based solely on their credit report data.",
+        "proposed_price": "$39 per credit report analysis and letter pack"
+    }
+]

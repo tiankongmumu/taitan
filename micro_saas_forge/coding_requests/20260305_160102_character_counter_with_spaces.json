@@ -1,0 +1,29 @@
+{
+  "id": "20260305_160102",
+  "title": "构建 character counter with spaces 工具",
+  "description": "API自动构建3次失败，升级给Antigravity。",
+  "complexity": "critical",
+  "priority": 1,
+  "status": "pending",
+  "keyword": "character counter with spaces",
+  "monthly_volume": 165000,
+  "revenue_model": "AdSense banner ads",
+  "differentiation": "Real-time counting for multiple platforms (Twitter, Instagram, LinkedIn) with detailed breakdowns and text formatting cleanup",
+  "build_complexity": "SIMPLE",
+  "previous_attempts": 3,
+  "failure_reasons": [
+    "cycle失败"
+  ],
+  "error_logs": [],
+  "expected_output": "一个基于'character counter with spaces'的完整Web应用",
+  "target_dir": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\character-counter-with-spaces",
+  "tech_stack": [
+    "Next.js",
+    "TypeScript",
+    "TailwindCSS"
+  ],
+  "created_at": "2026-03-05T16:01:02.485539",
+  "completed_at": "",
+  "result_summary": "",
+  "result_files": []
+}

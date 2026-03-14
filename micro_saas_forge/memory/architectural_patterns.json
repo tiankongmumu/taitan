@@ -1,0 +1,891 @@
+[
+  {
+    "category": "Agent",
+    "source_repo": "infiniflow/ragflow",
+    "description": "Uses a component-based architecture with parameter validation and async input handling to manage AI agent messages, enabling modular and scalable agent workflows.",
+    "prompt_fragment": "Implement agent components with a base class for parameters and methods to validate inputs and handle async data streams. Use a component registry pattern to dynamically load and execute agent steps, ensuring each component checks its parameters and processes inputs asynchronously when needed.",
+    "timestamp": "2026-03-01T17:38:51.255130"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "infiniflow/ragflow",
+    "description": "Integrates LLM services with tenant-specific configurations and database models to manage multiple AI models per tenant, supporting flexible and isolated deployments.",
+    "prompt_fragment": "Design LLM service layers that query tenant-specific model configurations from a database, using factory patterns to instantiate models. Include methods to split model names and fetch API keys, ensuring each tenant can have custom LLM setups without interference.",
+    "timestamp": "2026-03-01T17:38:51.257781"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "langgenius/dify",
+    "description": "Implements a structured loop node with break conditions and variable management for iterative workflows, enabling controlled repetition and early termination based on dynamic logic.",
+    "prompt_fragment": "Design a loop node with configurable loop count, break conditions using logical operators (AND/OR), and typed loop variables. Include state tracking for outputs and current iteration to support complex iterative workflows in AI pipelines.",
+    "timestamp": "2026-03-01T17:39:00.151047"
+  },
+  {
+    "category": "General",
+    "source_repo": "langgenius/dify",
+    "description": "Uses a runtime type converter to serialize complex objects (e.g., Pydantic models, files) into JSON-encodable formats, ensuring compatibility across system boundaries like APIs or queues.",
+    "prompt_fragment": "Implement a recursive type converter that handles custom types (e.g., Pydantic models, files, decimals) by converting them to JSON-serializable structures (dicts, lists, primitives). Use overloads for type hints and ensure robust handling of nested data.",
+    "timestamp": "2026-03-01T17:39:00.152816"
+  },
+  {
+    "category": "Prompt",
+    "source_repo": "lobehub/lobehub",
+    "description": "Modular prompt layering for user memory, separating identity, context, experience, activity, and preference prompts to build comprehensive user profiles for AI agents.",
+    "prompt_fragment": "Structure user memory prompts into modular layers (identity, context, experience, activity, preference) exported from a central index. This enables flexible composition of user profiles for AI agents, improving personalization and context awareness.",
+    "timestamp": "2026-03-01T17:39:08.362281"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "lobehub/lobehub",
+    "description": "XML-based formatting for knowledge base search results, structuring file metadata and chunks with attributes for easy parsing and tool integration in AI workflows.",
+    "prompt_fragment": "Format knowledge base search results as XML with nested tags for files and chunks, including attributes like fileId, fileName, relevanceScore, and similarity. This standardizes output for LLM tool use and enhances data retrieval clarity.",
+    "timestamp": "2026-03-01T17:39:08.363858"
+  },
+  {
+    "category": "General",
+    "source_repo": "1Panel-dev/1Panel",
+    "description": "Multi-language README structure with standardized badge placement and consistent formatting for open-source project documentation across different regions.",
+    "prompt_fragment": "Structure project README with centered logo, clear project description, standardized badges (license, quality, chat, releases, stars), and organized language selector badges with consistent color scheme and formatting for international accessibility.",
+    "timestamp": "2026-03-01T18:57:09.364939"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "1Panel-dev/MaxKB",
+    "description": "Modular workflow design with reusable node components for building scalable AI agents, enabling flexible orchestration of tasks like knowledge retrieval and image generation.",
+    "prompt_fragment": "Implement a workflow system using modular node components (e.g., start-node, search-knowledge-node, image-generate-node) that inherit from a base AppNode class. Each node should define type, model, and view properties for easy integration into a DAG-based pipeline, supporting configurable properties and edges for dynamic AI process orchestration.",
+    "timestamp": "2026-03-01T18:57:20.217692"
+  },
+  {
+    "category": "General",
+    "source_repo": "1Panel-dev/MaxKB",
+    "description": "Template-driven configuration for rapid AI agent setup, providing pre-defined structures like assistant templates with nodes, edges, and properties to streamline deployment.",
+    "prompt_fragment": "Use JSON-based templates (e.g., applicationTemplate with blank and assistant keys) to define initial workflow states. Include nodes with ids, types, positions, and properties (config, height, stepName, node_data) to enable quick customization and reuse across different AI agent scenarios, reducing setup time.",
+    "timestamp": "2026-03-01T18:57:20.219181"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "2noise/ChatTTS",
+    "description": "Separates model configuration and inference engine for modular offline/online serving, enabling efficient batching and memory management with vLLM integration.",
+    "prompt_fragment": "Design a pipeline with distinct LLM wrapper and engine classes: LLM for offline batched inference with configurable tokenizer, model, and sampling parameters; LLMEngine for core scheduling, KV cache management, and distributed execution. Use vLLM for optimized throughput.",
+    "timestamp": "2026-03-01T18:57:28.396022"
+  },
+  {
+    "category": "General",
+    "source_repo": "2noise/ChatTTS",
+    "description": "Uses fine-grained control over prosodic features like laughter and pauses in TTS models, enhancing naturalness in dialogue scenarios through specialized training.",
+    "prompt_fragment": "Incorporate fine-grained prosodic control in generative models by predicting features such as laughter, pauses, and interjections. Train on dialogue-specific datasets to optimize for conversational TTS with multiple speakers.",
+    "timestamp": "2026-03-01T18:57:28.398223"
+  },
+  {
+    "category": "General",
+    "source_repo": "AccumulateMore/CV",
+    "description": "Integrates community engagement and career support with QR codes and contact methods, fostering user interaction and practical application of skills.",
+    "prompt_fragment": "Incorporate community features like QR codes for groups and contact details for support. Add career opportunities and role descriptions to link learning with real-world applications.",
+    "timestamp": "2026-03-01T18:57:36.060820"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "agent0ai/agent-zero",
+    "description": "Implements a delayed message queue processing pattern to ensure monologue completion before handling queued messages, preventing race conditions and improving agent responsiveness.",
+    "prompt_fragment": "When designing agent message loops, implement a delayed queue processing extension that checks if the agent is running, waits for completion with a timeout (e.g., 60 seconds), and only sends the next queued message after the current task finishes to maintain orderly execution.",
+    "timestamp": "2026-03-01T18:57:45.268044"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "agent0ai/agent-zero",
+    "description": "Uses a modular extension system with conditional execution based on project or settings, enabling dynamic file structure inclusion and configurable depth/ignore rules for workspace awareness.",
+    "prompt_fragment": "For agent extensions that depend on context (e.g., project vs. global settings), design a class that checks enabled flags, loads configuration (max depth, gitignore), and conditionally generates prompts or data, ensuring flexibility across different operational modes.",
+    "timestamp": "2026-03-01T18:57:45.269445"
+  },
+  {
+    "category": "General",
+    "source_repo": "agentscope-ai/agentscope",
+    "description": "Uses dataclasses with DictMixin for serializable response objects, ensuring type safety and easy JSON conversion in AI APIs.",
+    "prompt_fragment": "When designing AI API response classes, use Python dataclasses with a DictMixin for automatic dictionary conversion. Include fields like id, created_at, type, and usage with default factories for consistency and serialization.",
+    "timestamp": "2026-03-01T18:57:54.523006"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "agentscope-ai/agentscope",
+    "description": "Implements a base vector store class with multiple backend implementations (e.g., MongoDB, Qdrant) for flexible RAG systems, supporting async operations and automatic index creation.",
+    "prompt_fragment": "For RAG vector stores, define a base abstract class (e.g., VDBStoreBase) with methods like add, search, and delete. Implement specific backends (e.g., MongoDBStore) that handle connection, indexing, and async queries, ensuring modularity and extensibility.",
+    "timestamp": "2026-03-01T18:57:54.526786"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "Alibaba-NLP/DeepResearch",
+    "description": "Implements incremental evidence accumulation for web agents, enabling continuous information gathering without redundancy by integrating new data with existing summaries.",
+    "prompt_fragment": "When processing new webpage content, integrate it with existing evidence and summary to produce a consolidated final result. Do not indicate which parts are new; build upon and merge all information seamlessly.",
+    "timestamp": "2026-03-01T18:58:02.755865"
+  },
+  {
+    "category": "Prompt",
+    "source_repo": "Alibaba-NLP/DeepResearch",
+    "description": "Uses structured JSON output prompts with clear field definitions (rational, evidence, summary) to enforce consistent data extraction and organization from web content.",
+    "prompt_fragment": "Output only a single valid JSON object with fields: rational (locate relevant sections), evidence (extract full original context), summary (concise paragraph). No extra text before or after.",
+    "timestamp": "2026-03-01T18:58:02.758100"
+  },
+  {
+    "category": "General",
+    "source_repo": "alibaba/arthas",
+    "description": "Uses URL parameters to dynamically configure API endpoints and agent addresses, enabling flexible, environment-agnostic client-server communication without hardcoded values.",
+    "prompt_fragment": "When building web interfaces for agent-based systems, extract configuration parameters like IP addresses and ports from URL query strings (e.g., using URLSearchParams) to dynamically construct API endpoints. This allows the same frontend code to connect to different backend instances without redeployment.",
+    "timestamp": "2026-03-01T18:58:12.427861"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "alibaba/arthas",
+    "description": "Implements a proxy-based request routing pattern where frontend calls a central proxy service, which forwards requests to target agents, simplifying network access and security management.",
+    "prompt_fragment": "For distributed agent systems, design a pipeline where the frontend sends all requests to a proxy endpoint (e.g., /api/native-agent-proxy) with an operation field. The proxy handles routing to specific agents based on agentAddress parameters, centralizing control and easing cross-origin or firewall issues.",
+    "timestamp": "2026-03-01T18:58:12.429751"
+  },
+  {
+    "category": "General",
+    "source_repo": "alibaba/nacos",
+    "description": "Including license headers in source files to ensure compliance with open-source licensing, promoting legal clarity and project transparency.",
+    "prompt_fragment": "Always add a license header comment at the top of each source file, specifying the copyright holder, license type, and terms. This ensures legal compliance and follows best practices for open-source projects.",
+    "timestamp": "2026-03-01T18:58:20.486660"
+  },
+  {
+    "category": "General",
+    "source_repo": "apache/doris",
+    "description": "Badge-based project status display pattern: Uses shields.io badges for license, releases, activity, and docs, offering quick visual project health indicators.",
+    "prompt_fragment": "Add badges at the top of README files for key metrics like license, version, docs, and social links. Use shields.io with consistent colors and styles to improve project visibility and trust.",
+    "timestamp": "2026-03-01T18:58:28.861862"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "assafelovic/gpt-researcher",
+    "description": "Modular skill-based agent architecture with specialized components (e.g., Researcher, Writer, Curator) orchestrated by a central class, enabling scalable and maintainable AI workflows.",
+    "prompt_fragment": "Design agents as modular skill classes (e.g., Researcher, Writer) managed by a central orchestrator. Each skill handles a specific task like web search or report generation, with clear interfaces for integration and parallel execution.",
+    "timestamp": "2026-03-01T18:58:37.200775"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "assafelovic/gpt-researcher",
+    "description": "Human-in-the-loop feedback integration via websockets or console input, allowing real-time user review and adjustment of AI-generated plans to improve accuracy and relevance.",
+    "prompt_fragment": "Incorporate human feedback loops in pipelines using websockets or input prompts. For example, after generating a research plan, prompt users for feedback and adjust based on responses like 'no' or specific suggestions.",
+    "timestamp": "2026-03-01T18:58:37.203022"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "AstrBotDevs/AstrBot",
+    "description": "Implements a tool-loop agent runner pattern with streaming and status updates, enabling stepwise execution with real-time feedback and tool call tracking for interactive AI agents.",
+    "prompt_fragment": "Design an agent runner that processes steps iteratively with a max_step limit. Use async generators to stream intermediate results (e.g., tool calls) and final outputs. Track tool calls by ID in a dictionary to map results back to names, and truncate long tool results for concise status messages.",
+    "timestamp": "2026-03-01T18:58:47.074312"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "AstrBotDevs/AstrBot",
+    "description": "Uses a session-based service manager to dynamically enable/disable LLM and TTS per conversation, allowing granular control over AI features without restarting the application.",
+    "prompt_fragment": "Implement a session service manager that stores configuration per session ID (e.g., in a key-value store). Provide methods to check and set states (e.g., llm_enabled) with defaults for compatibility. Use this to conditionally process requests based on session settings.",
+    "timestamp": "2026-03-01T18:58:47.076414"
+  },
+  {
+    "category": "Prompt",
+    "source_repo": "BloopAI/vibe-kanban",
+    "description": "Detects slash commands in user input to differentiate between direct commands and contextual prompts, enabling flexible agent interactions.",
+    "prompt_fragment": "Implement a function to check if a user prompt starts with a slash command (e.g., '/command'). Use regex to validate the command format and handle it separately from contextual messages to streamline agent processing.",
+    "timestamp": "2026-03-01T18:58:55.144088"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "BloopAI/vibe-kanban",
+    "description": "Builds agent prompts by conditionally combining user messages with context parts, optimizing input for AI agents based on command detection.",
+    "prompt_fragment": "Create a function that constructs agent prompts: if the user input is a slash command, use it alone; otherwise, merge it with provided context parts. Filter out null/undefined values and join with newlines for clarity.",
+    "timestamp": "2026-03-01T18:58:55.145656"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "botpress/botpress",
+    "description": "Uses a task hierarchy with main tasks and subtasks to structure complex workflows, enabling clear progress tracking and selective expansion based on status.",
+    "prompt_fragment": "Implement a task hierarchy with TaskGroup objects containing main tasks and subtasks. Use status-based logic to expand/collapse subtask display. Calculate and display overall progress with a visual bar showing completion percentage.",
+    "timestamp": "2026-03-01T18:59:03.749608"
+  },
+  {
+    "category": "Prompt",
+    "source_repo": "botpress/botpress",
+    "description": "Employs token-based parsing with START_TOKEN and END_TOKEN markers to extract clean code from LLM responses, removing markdown formatting artifacts.",
+    "prompt_fragment": "Parse LLM responses using START_TOKEN and END_TOKEN markers. Extract content between tokens, filter out markdown code fences from first/last lines, and return clean code. Handle missing tokens by adding them automatically.",
+    "timestamp": "2026-03-01T18:59:03.751316"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "bytedance/deer-flow",
+    "description": "Implements a middleware pattern for automatic thread title generation after the first user-assistant exchange, enhancing user experience by summarizing conversations without manual input.",
+    "prompt_fragment": "Add a middleware to automatically generate a concise title for conversation threads after the first user message and assistant response. Check if a title already exists and use a lightweight model with a configurable prompt template, limiting output to a maximum character count. Include fallback logic to use the first part of the user message if generation fails.",
+    "timestamp": "2026-03-01T18:59:12.310866"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "bytedance/deer-flow",
+    "description": "Uses a frontend API to fetch user memory from a backend endpoint, separating concerns and enabling centralized data management for long-term context in AI applications.",
+    "prompt_fragment": "Implement a frontend function to load user memory by making a fetch request to a backend API endpoint. Use a configuration utility to get the base URL and type the response according to a defined UserMemory interface for type safety.",
+    "timestamp": "2026-03-01T18:59:12.312456"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "bytedance/UI-TARS-desktop",
+    "description": "Event-driven agent communication pattern using a bridge to map internal agent events to client-friendly formats, enabling real-time streaming and modular tool integration.",
+    "prompt_fragment": "Implement an EventStreamBridge class with subscribe/unsubscribe/emit methods that maps agent event types (agent_run_start, user_message, tool_call, tool_result, system) to client events (query, answer, streaming_message, event, status). Connect to agent event streams via connectToAgentEventStream method that returns unsubscribe function.",
+    "timestamp": "2026-03-01T18:59:21.558076"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "bytedance/UI-TARS-desktop",
+    "description": "Modular agent initialization pattern with sandbox environment configuration and tool discovery workflow, separating setup from execution phases.",
+    "prompt_fragment": "Create agent initialization with aioSandbox URL and model configuration (provider, id, apiKey, displayName). After initialize(), call getTools() to discover available tools before running tasks. Use console formatting to display tools with name, description, and count.",
+    "timestamp": "2026-03-01T18:59:21.560261"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "camel-ai/camel",
+    "description": "Uses a decorator-based agent tracking pattern for monitoring and instrumentation, enabling seamless integration of observability tools like AgentOps without modifying core agent logic.",
+    "prompt_fragment": "Implement agent tracking by using a decorator that conditionally wraps agent classes based on environment variables (e.g., AGENTOPS_API_KEY). This allows for optional monitoring integration, keeping the agent code clean and modular. Example: @track_agent(name='AgentName') class MyAgent(ChatAgent): ...",
+    "timestamp": "2026-03-01T18:59:31.035729"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "camel-ai/camel",
+    "description": "Implements a workforce pattern with a message toolkit for inter-agent communication, enabling scalable multi-agent coordination through registered agents and shared tools.",
+    "prompt_fragment": "Create a workforce system where agents are registered with a central toolkit (e.g., AgentCommunicationToolkit) that provides messaging tools. Each agent adds these tools to enable communication, and the workforce manages tasks. This supports scalable multi-agent workflows with clear role separation.",
+    "timestamp": "2026-03-01T18:59:31.038393"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "camel-ai/owl",
+    "description": "Implements specialized agents with role-based prompts for domain-specific analysis, enhancing modularity and task focus in multi-agent systems.",
+    "prompt_fragment": "Create a specialized agent class inheriting from a base agent, initializing with a role-specific prompt (e.g., 'fundamentals_analyst' or 'investment_analyst') to handle distinct data processing tasks like financial analysis.",
+    "timestamp": "2026-03-01T18:59:39.300441"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "camel-ai/owl",
+    "description": "Uses structured data flow with standardized input/output dictionaries to pass stock data and analysis results between agents, ensuring consistency and error handling.",
+    "prompt_fragment": "Design agent processes to accept a dictionary with keys like 'stock_data' and return a dictionary with analysis results (e.g., 'fundamentals_analysis'), including error handling for missing data.",
+    "timestamp": "2026-03-01T18:59:39.302682"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "Canner/WrenAI",
+    "description": "Uses a router with fallback models and retry logic to ensure LLM reliability, handling API failures gracefully and maintaining service availability.",
+    "prompt_fragment": "Implement a model router with configurable fallback models and exponential backoff retries for LLM calls. Use a provider pattern to abstract model details, ensuring robust error handling and seamless model switching under failure conditions.",
+    "timestamp": "2026-03-01T18:59:48.779312"
+  },
+  {
+    "category": "Prompt",
+    "source_repo": "Canner/WrenAI",
+    "description": "Employs structured JSON output validation with Pydantic schemas in LLM evaluations, enforcing consistent response formats and improving accuracy in automated scoring.",
+    "prompt_fragment": "Define Pydantic models for LLM evaluation outputs and use JSON schema constraints in generation kwargs. This ensures structured, validated responses from LLMs, facilitating reliable parsing and scoring in automated assessment pipelines.",
+    "timestamp": "2026-03-01T18:59:48.781666"
+  },
+  {
+    "category": "General",
+    "source_repo": "continuedev/continue",
+    "description": "Uses a shared release configuration pattern to standardize build and deployment processes across packages, reducing duplication and ensuring consistency in monorepo setups.",
+    "prompt_fragment": "For monorepo projects, create a shared release configuration file (e.g., shared-release.config.js) that exports a function accepting a package name. Import and use this in individual package configs to centralize release logic, minimizing maintenance overhead and enforcing uniform versioning.",
+    "timestamp": "2026-03-01T18:59:58.591001"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "CopilotKit/CopilotKit",
+    "description": "Typed agent state management using TypeScript interfaces and Python TypedDicts to enforce data structure consistency across agent workflows and UI components.",
+    "prompt_fragment": "Define agent state using typed interfaces/TypedDicts that extend base message states. Include nested typed structures for domain-specific data (like trips with places) and progress tracking. Ensure all state properties have clear types and optional flags where appropriate.",
+    "timestamp": "2026-03-01T19:00:08.209755"
+  },
+  {
+    "category": "General",
+    "source_repo": "coze-dev/coze-studio",
+    "description": "Defines reusable TypeScript types for UI options (label, value, disabled) to standardize dropdown/select components across the application, enhancing consistency and maintainability.",
+    "prompt_fragment": "Define a TypeScript type Options as an array of objects with properties: label (string), value (string or number), and optional disabled (boolean). Use this type for all dropdown/select component configurations to ensure uniformity and easy updates.",
+    "timestamp": "2026-03-01T19:00:18.482673"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "dair-ai/Prompt-Engineering-Guide",
+    "description": "Uses a metadata-driven file system to dynamically load content with fallback titles, enabling multilingual support and structured navigation without hardcoding.",
+    "prompt_fragment": "Implement a metadata-driven content loader: Read a JSON meta file (e.g., _meta.{lang}.json) to map slugs to titles, and fallback to slugs if titles are missing. Use this to dynamically generate navigation or API responses from a directory of files, supporting multiple languages.",
+    "timestamp": "2026-03-01T19:00:27.758578"
+  },
+  {
+    "category": "General",
+    "source_repo": "dair-ai/Prompt-Engineering-Guide",
+    "description": "Organizes content into folders with metadata for hierarchical structure, improving scalability and user experience in documentation or guide apps.",
+    "prompt_fragment": "Structure content hierarchically: Group related files into subdirectories, each with a meta file defining folder titles. In APIs, map folder keys to titles and list files within, returning JSON with folderName and files array for easy frontend rendering.",
+    "timestamp": "2026-03-01T19:00:27.761346"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "datawhalechina/happy-llm",
+    "description": "Implements a thinking budget loop with iterative token counting and conditional stopping, enabling controlled reasoning within token limits for cost-effective AI responses.",
+    "prompt_fragment": "When generating responses with a thinking budget, implement a loop that counts tokens in intermediate outputs, stops if exceeding a budget, and appends prompts like 'Wait!' to refine reasoning before final output.",
+    "timestamp": "2026-03-01T19:00:36.747597"
+  },
+  {
+    "category": "General",
+    "source_repo": "datawhalechina/happy-llm",
+    "description": "Demonstrates configurable decoding strategies (greedy, sampling, beam search) with clear parameter tuning for balancing speed, creativity, and output quality in text generation.",
+    "prompt_fragment": "For text generation, expose parameters like temperature, do_sample, and num_beams to switch between decoding strategies, ensuring users can adjust for deterministic or diverse outputs as needed.",
+    "timestamp": "2026-03-01T19:00:36.752386"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "datawhalechina/hello-agents",
+    "description": "Multi-agent collaboration with specialized roles and sequential task execution, enabling modular and scalable AI workflows for complex tasks like search and report generation.",
+    "prompt_fragment": "Design a multi-agent system where each agent has a distinct role (e.g., GitHub searcher, document writer). Use sequential execution: Agent1 performs a task (e.g., search), passes results to Agent2 for further processing (e.g., report generation), and save output to a file. Ensure agents have clear system prompts and integrated tools (e.g., MCPTool for external APIs).",
+    "timestamp": "2026-03-01T19:00:47.950082"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "datawhalechina/hello-agents",
+    "description": "Centralized tool registry pattern for dynamic tool management and discovery, promoting reusability and clean integration in agent-based applications.",
+    "prompt_fragment": "Implement a ToolRegistry class to centrally manage tools (e.g., MemoryTool, RAGTool). Register tools with a unified interface, enable dynamic loading, and provide methods like list_tools() and get_tool() for discovery and access. Integrate the registry into agents to streamline tool usage and maintenance.",
+    "timestamp": "2026-03-01T19:00:47.955149"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "deepset-ai/haystack",
+    "description": "Uses serializable state schemas with type validation and custom handlers for robust agent state management, enabling dynamic updates and persistence in AI workflows.",
+    "prompt_fragment": "Implement a state schema with serializable types and optional handler functions for each parameter. Validate types and callables, and provide utilities to serialize/deserialize the schema for persistence and dynamic updates in agent loops.",
+    "timestamp": "2026-03-01T19:00:57.243383"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "deepset-ai/haystack",
+    "description": "Routes chat messages using LLM classification with regex patterns, allowing flexible output connections for moderation or content filtering in AI pipelines.",
+    "prompt_fragment": "Create a router component that uses a ChatGenerator to classify messages based on regex patterns. Map each pattern to an output name for routing, enabling dynamic message handling and integration with other pipeline components.",
+    "timestamp": "2026-03-01T19:00:57.253216"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "dzhng/deep-research",
+    "description": "Implements an iterative research loop with depth control, allowing AI to refine queries based on findings and dive deeper into topics, enhancing thoroughness and adaptability.",
+    "prompt_fragment": "Design a pipeline that iteratively generates search queries, processes results, and uses learnings to create new directions, with configurable depth and breadth parameters for controlled exploration.",
+    "timestamp": "2026-03-01T19:01:06.905316"
+  },
+  {
+    "category": "Prompt",
+    "source_repo": "dzhng/deep-research",
+    "description": "Uses a detailed system prompt to set expert researcher behavior, emphasizing accuracy, detail, and proactive anticipation of user needs for high-quality outputs.",
+    "prompt_fragment": "Craft a system prompt that positions the AI as an expert researcher, instructing it to be detailed, accurate, proactive, and open to speculation while flagging uncertainties for trust and depth.",
+    "timestamp": "2026-03-01T19:01:06.911913"
+  },
+  {
+    "category": "General",
+    "source_repo": "e2b-dev/awesome-ai-agents",
+    "description": "Using a structured README with badges, links, and visual charts improves project visibility and community engagement in AI agent repositories.",
+    "prompt_fragment": "Include badges for Discord and Twitter, a visual chart of the AI landscape, and direct links to web versions and submission forms in README files to boost engagement.",
+    "timestamp": "2026-03-01T19:01:15.502521"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "elizaOS/eliza",
+    "description": "Uses environment hooks to manage agent lifecycle events, enabling modular and extensible status updates for tasks like repo copying and deployment.",
+    "prompt_fragment": "Implement environment hooks as abstract classes with event-driven methods (e.g., on_copy_repo_started) to handle lifecycle events. Pass a callable to update status, ensuring modularity and easy integration with logging or UI systems.",
+    "timestamp": "2026-03-01T19:01:25.894159"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "elizaOS/eliza",
+    "description": "Provides a CLI with multiple run modes (single, batch, replay) using a command framework, allowing flexible configuration via files and command-line overrides.",
+    "prompt_fragment": "Design a CLI with commands for different run modes (e.g., single, batch) using a framework like Commander. Support configuration loading from files and override with command-line options, enabling scalable and user-friendly agent execution.",
+    "timestamp": "2026-03-01T19:01:25.899131"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "feder-cr/Jobs_Applier_AI_Agent_AIHawk",
+    "description": "Uses modular LLM chains with preprocessing for template strings and structured logging to generate documents like resumes and cover letters, ensuring clean inputs and traceability.",
+    "prompt_fragment": "Implement a class with methods for each document section (e.g., header, education) using LangChain's ChatPromptTemplate and StrOutputParser. Preprocess templates with textwrap.dedent to remove indentation, and set up loguru logging with rotation and compression for debugging.",
+    "timestamp": "2026-03-01T19:01:36.304217"
+  },
+  {
+    "category": "Prompt",
+    "source_repo": "feder-cr/Jobs_Applier_AI_Agent_AIHawk",
+    "description": "Summarizes job descriptions via a prompt chain before generating cover letters, improving relevance by condensing key details into a focused input for the LLM.",
+    "prompt_fragment": "Before generating a cover letter, create a summarization step: use a prompt template like 'Summarize this job description: {text}' with a cheap LLM model (e.g., GPT-4o-mini) to extract essential points, then feed the summary into the cover letter generation chain.",
+    "timestamp": "2026-03-01T19:01:36.307672"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "FoundationAgents/MetaGPT",
+    "description": "Implements a workflow class with async callable pattern for structured AI task execution, enabling reusable and extensible pipelines with LLM integration and cost management.",
+    "prompt_fragment": "Define a workflow class inheriting from a base with __call__ method for async execution, integrating LLM instances and cost managers for scalable AI pipelines.",
+    "timestamp": "2026-03-01T19:01:44.893752"
+  },
+  {
+    "category": "Prompt",
+    "source_repo": "FoundationAgents/MetaGPT",
+    "description": "Uses reflection prompts with examples to debug and improve code iteratively, enhancing AI-generated code quality through error analysis and step-by-step refinement.",
+    "prompt_fragment": "Provide previous implementation, error context, and a reflection example to guide AI in analyzing failures and outputting corrected, executable code in a single response.",
+    "timestamp": "2026-03-01T19:01:44.895698"
+  },
+  {
+    "category": "General",
+    "source_repo": "googleapis/genai-toolbox",
+    "description": "Modular tool integration via MCP servers simplifies AI agent development by abstracting database complexities like connection pooling and authentication, enabling reusable tools across frameworks.",
+    "prompt_fragment": "Design AI agents to integrate external tools via MCP servers for database access, abstracting connection pooling, authentication, and observability into reusable modules to reduce code and enhance security.",
+    "timestamp": "2026-03-01T19:01:53.443175"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "googleapis/genai-toolbox",
+    "description": "End-to-end observability with built-in OpenTelemetry support provides metrics and tracing for AI workflows, improving performance monitoring and debugging in production environments.",
+    "prompt_fragment": "Incorporate OpenTelemetry into AI pipelines for automatic metrics and tracing, ensuring end-to-end observability to monitor tool performance and debug issues efficiently in complex workflows.",
+    "timestamp": "2026-03-01T19:01:53.445380"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "google/adk-python",
+    "description": "Uses MCP toolset with a tool filter to restrict agent capabilities to read-only file operations, enhancing security by preventing unintended writes.",
+    "prompt_fragment": "When integrating MCP tools, specify a tool_filter list (e.g., ['read_file', 'list_directory']) to limit agent actions to safe operations, avoiding write permissions unless explicitly required.",
+    "timestamp": "2026-03-01T19:02:02.310102"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "google/adk-python",
+    "description": "Implements validation-before-write for configuration files, ensuring YAML syntax and schema compliance to prevent invalid data persistence.",
+    "prompt_fragment": "Before writing configuration files, validate YAML syntax and schema (e.g., using jsonschema) and provide detailed error reporting; optionally backup existing files to avoid data loss.",
+    "timestamp": "2026-03-01T19:02:02.313013"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "hiyouga/LlamaFactory",
+    "description": "Modular training workflow with configurable stages (SFT, PPO, MCA) using shared components like tokenizer loading, dataset preparation, and model initialization for consistency and reusability.",
+    "prompt_fragment": "Implement a modular training pipeline with separate workflow functions for each stage (e.g., SFT, PPO, MCA). Use shared utility modules for tokenizer loading, dataset preparation, and model initialization to ensure consistency. Pass configuration arguments (model_args, data_args, etc.) as parameters to each workflow function.",
+    "timestamp": "2026-03-01T19:02:12.744798"
+  },
+  {
+    "category": "General",
+    "source_repo": "hiyouga/LlamaFactory",
+    "description": "Dynamic data collator wrapper that adjusts sequence lengths by shifting labels and input_ids for proper training alignment, enhancing flexibility across different model architectures.",
+    "prompt_fragment": "Create a data collator wrapper that dynamically adjusts sequence lengths by shifting labels and input_ids (e.g., removing first/last tokens) based on feature keys. Use functools.wraps to preserve the original collator's behavior and apply transformations uniformly across batches.",
+    "timestamp": "2026-03-01T19:02:12.747587"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "huginn/huginn",
+    "description": "Uses directed graph agents to create and consume events, enabling modular, scalable automation workflows similar to IFTTT but self-hosted for data privacy.",
+    "prompt_fragment": "Design agents as independent modules that generate and process events in a directed graph. Each agent should perform a specific task (e.g., web scraping, API calls) and pass events to others, allowing for flexible, composable workflows with clear data flow.",
+    "timestamp": "2026-03-01T19:02:22.093607"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "huginn/huginn",
+    "description": "Integrates diverse external services (APIs, webhooks, scripts) into a unified pipeline, facilitating complex multi-step automations with human-in-the-loop capabilities.",
+    "prompt_fragment": "Build pipelines that connect various external tools (e.g., Twitter, email, custom scripts) through agents. Include support for webhooks and human task agents to enable interactive steps, ensuring the system can handle both automated and manual inputs seamlessly.",
+    "timestamp": "2026-03-01T19:02:22.097448"
+  },
+  {
+    "category": "General",
+    "source_repo": "jeecgboot/JeecgBoot",
+    "description": "Encapsulates dynamic modal creation with lifecycle hooks for clean state management and resource cleanup, enhancing UI component reusability and preventing memory leaks.",
+    "prompt_fragment": "Implement a custom hook that dynamically creates and mounts a modal component to the DOM, using Vue's createVNode and render. Include lifecycle callbacks like onRegister for instance access and afterClose for cleanup (e.g., removing DOM elements). Return methods to control the modal (e.g., update, close, set loading).",
+    "timestamp": "2026-03-01T19:02:33.601244"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "jeecgboot/JeecgBoot",
+    "description": "Centralizes API endpoints and operations with consistent error handling and user confirmations, streamlining backend interactions and improving code maintainability.",
+    "prompt_fragment": "Define an enum for API routes and export functions for CRUD operations (list, save, delete). Use a confirmation dialog for destructive actions (e.g., batch delete) and handle success/error messages uniformly. Ensure functions accept params and callbacks for flexibility.",
+    "timestamp": "2026-03-01T19:02:33.611206"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "khoj-ai/khoj",
+    "description": "Models agents with configurable privacy, tools, and chat models via foreign keys and array fields, enabling flexible, role-based AI personas with structured data.",
+    "prompt_fragment": "Design agents with fields: privacy_level (choices: public, private, protected), input_tools (array of tool types like general, online, notes), output_modes (array like text, image), and a foreign key to a ChatModel table for model selection. Use unique slugs for identification.",
+    "timestamp": "2026-03-01T19:02:44.931339"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "khoj-ai/khoj",
+    "description": "Uses Django migrations to incrementally evolve database schema, ensuring backward compatibility and smooth updates for AI features like agent tools and model references.",
+    "prompt_fragment": "Implement database changes via migration files that add, remove, or alter fields (e.g., replace tools with input_tools array, rename models like ChatModelOptions to ChatModel). Always define dependencies and use operations like AddField, RemoveField, AlterField, and RenameModel.",
+    "timestamp": "2026-03-01T19:02:44.935155"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "labring/FastGPT",
+    "description": "Defines a modular dispatch pattern for AI tools with typed inputs and outputs, ensuring type safety and clear data flow in workflow nodes.",
+    "prompt_fragment": "Create dispatch functions for AI tool nodes with strict TypeScript types for props and responses, returning structured data including node-specific keys (e.g., toolParamsResult) to maintain type safety and modularity in workflows.",
+    "timestamp": "2026-03-01T19:02:54.251529"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "langbot-app/LangBot",
+    "description": "Implements a tool-call tracking system within an agent runner to manage asynchronous tool execution and state, enabling complex multi-step workflows with fallback handling.",
+    "prompt_fragment": "When building an AI agent that calls tools, create a ToolCallTracker class with active_calls (dict) and completed_calls (list) to monitor tool execution states. Use this to handle pending tool calls and ensure proper sequencing in async workflows.",
+    "timestamp": "2026-03-01T19:03:04.192532"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "langbot-app/LangBot",
+    "description": "Uses a database migration pattern to dynamically update configuration schemas with backward compatibility, ensuring smooth upgrades without breaking existing pipelines.",
+    "prompt_fragment": "For database migrations in AI pipelines, write upgrade methods that check for nested config structures and add default values (e.g., base-prompt) if missing. Use raw SQL with conditional logic for different database backends like PostgreSQL and SQLite.",
+    "timestamp": "2026-03-01T19:03:04.198073"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "LlamaFamily/Llama-Chinese",
+    "description": "Integrates LangChain with custom LLM classes for flexible model loading and inference, supporting quantization and hardware optimization.",
+    "prompt_fragment": "When building a LangChain-compatible LLM wrapper, implement a class inheriting from LLM with __init__ for model loading (supporting quantized and full-precision variants) and _call for generation. Use torch.compile for PyTorch 2+ on non-Windows systems to optimize performance.",
+    "timestamp": "2026-03-01T19:03:14.976835"
+  },
+  {
+    "category": "General",
+    "source_repo": "LlamaFamily/Llama-Chinese",
+    "description": "Uses FastAPI with vLLM for high-performance async API servers, handling streaming and client disconnections with background tasks.",
+    "prompt_fragment": "For deploying LLM APIs, use FastAPI with AsyncLLMEngine from vLLM. Implement /generate endpoint with streaming support via StreamingResponse, abort requests on client disconnect using BackgroundTasks, and parse sampling parameters from JSON.",
+    "timestamp": "2026-03-01T19:03:14.979327"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "microsoft/agent-lightning",
+    "description": "Integrates exception handling with OpenTelemetry tracing to record errors as spans, enabling structured debugging and monitoring in AI agent systems without disrupting workflows.",
+    "prompt_fragment": "When designing AI agents, implement a centralized exception emitter that logs errors as OpenTelemetry trace spans with sanitized attributes. This ensures exceptions are captured with metadata for analysis while maintaining system observability. Use a dummy tracer for non-propagating cases to avoid runtime errors.",
+    "timestamp": "2026-03-01T19:03:25.577346"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "microsoft/agent-lightning",
+    "description": "Provides token padding utilities for left and right alignment in sequences, essential for consistent input formatting in LLM pipelines to handle variable-length data efficiently.",
+    "prompt_fragment": "In LLM preprocessing, include functions for left-padding and right-padding token IDs to fixed lengths with attention masks. Left-padding truncates from the start for long sequences, while right-padding truncates from the end, ensuring proper model input alignment and masking.",
+    "timestamp": "2026-03-01T19:03:25.581063"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "NirDiamant/agents-towards-production",
+    "description": "Uses environment variables for dynamic agent configuration, enabling flexible deployment and runtime customization without code changes.",
+    "prompt_fragment": "Implement dynamic agent behavior by reading configuration from environment variables. For example, use os.getenv('QUESTION', 'default') to allow external input, making the agent adaptable across different deployment environments.",
+    "timestamp": "2026-03-01T19:03:33.508728"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "NirDiamant/agents-towards-production",
+    "description": "Integrates FastAPI with streaming responses for real-time AI agent interactions, improving user experience with token-by-token output.",
+    "prompt_fragment": "Create a FastAPI endpoint that streams agent responses using StreamingResponse and async generators. Yield tokens with delays to simulate thinking, and format as JSON for event-stream compatibility, enabling real-time updates in client applications.",
+    "timestamp": "2026-03-01T19:03:33.512130"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "OpenHands/OpenHands",
+    "description": "Implements a registry pattern for managing multiple LLM instances with lazy initialization and event notification, enabling scalable and configurable agent deployments.",
+    "prompt_fragment": "Use a registry class to manage LLM instances, keyed by service IDs, with lazy creation and event-driven updates for efficient resource handling in multi-agent systems.",
+    "timestamp": "2026-03-01T19:03:41.844885"
+  },
+  {
+    "category": "General",
+    "source_repo": "OpenHands/OpenHands",
+    "description": "Provides a dynamic function import utility for runtime dependency injection, allowing flexible skill composition in agent plugins without hard-coded imports.",
+    "prompt_fragment": "Implement a utility function to import functions from modules by name into a target dictionary at runtime, supporting modular and configurable agent skill loading.",
+    "timestamp": "2026-03-01T19:03:41.847635"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "oraios/serena",
+    "description": "Uses semantic code retrieval tools like find_symbol and insert_after_symbol for IDE-like precision, reducing token usage by avoiding full file reads and string replacements.",
+    "prompt_fragment": "Implement semantic code tools (e.g., find_symbol, find_referencing_symbols, insert_after_symbol) to enable LLM agents to interact with codebases at the symbol level, enhancing efficiency by retrieving and editing specific code entities instead of scanning entire files.",
+    "timestamp": "2026-03-01T19:03:50.244095"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "oraios/serena",
+    "description": "Separates prompt templates into auto-generated and user-customizable layers, allowing dynamic updates and personalization while maintaining a clean, modular architecture.",
+    "prompt_fragment": "Design a prompt factory with a base auto-generated class for core templates and a derived class that loads user templates from configurable directories, supporting extensibility and easy customization without modifying generated code.",
+    "timestamp": "2026-03-01T19:03:50.246653"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "OthmanAdi/planning-with-files",
+    "description": "Implements session recovery and state persistence across interruptions, enabling robust long-running AI agent workflows by saving and resuming progress from checkpoints.",
+    "prompt_fragment": "Design the system to support session recovery: automatically save agent state (e.g., task progress, context) to files at checkpoints, and include a mechanism to detect and resume from the last saved state on restart, handling interruptions gracefully.",
+    "timestamp": "2026-03-01T19:03:59.097355"
+  },
+  {
+    "category": "General",
+    "source_repo": "OthmanAdi/planning-with-files",
+    "description": "Uses modular, extensible hooks (e.g., IDE, CLI integrations) to adapt the AI agent to different environments and tools without core changes, enhancing compatibility and user experience.",
+    "prompt_fragment": "Implement a hooks system: define JSON-based configuration files for environment-specific integrations (e.g., IDE commands, CLI tools), allowing the AI agent to dynamically load and execute external adapters, ensuring broad compatibility and easy extension.",
+    "timestamp": "2026-03-01T19:03:59.100138"
+  },
+  {
+    "category": "General",
+    "source_repo": "pinpoint-apm/pinpoint",
+    "description": "Implements a custom React Query hook that conditionally enables queries based on parameter validation, optimizing performance by preventing unnecessary API calls.",
+    "prompt_fragment": "Create custom React Query hooks that validate required parameters (e.g., checking if a string is non-empty) before enabling the query. Use the 'enabled' option to conditionally fetch data, and set 'retry: false' for idempotent requests to avoid redundant retries.",
+    "timestamp": "2026-03-01T19:04:07.925386"
+  },
+  {
+    "category": "General",
+    "source_repo": "qax-os/excelize",
+    "description": "Uses a deferred resource cleanup pattern with error handling to ensure proper closure of files and prevent resource leaks in Go applications.",
+    "prompt_fragment": "Incorporate deferred functions with error handling for resource management, such as closing files or connections. This ensures cleanup executes reliably even if errors occur, improving application robustness and preventing leaks.",
+    "timestamp": "2026-03-01T19:04:16.178898"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "reworkd/AgentGPT",
+    "description": "Implements a state-machine workflow pattern where tasks are analyzed, executed, and transitioned sequentially, enabling modular and error-resilient autonomous agent operations.",
+    "prompt_fragment": "Design agent workflows as state machines with discrete work units. Each unit should have run, conclude, next, and onError methods. Run performs the task, conclude handles results, next determines the next state, and onError manages failures gracefully.",
+    "timestamp": "2026-03-01T19:04:24.903566"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "reworkd/AgentGPT",
+    "description": "Uses a tool abstraction layer with clear descriptions and async streaming responses, allowing seamless integration of external APIs like LLMs for specific tasks like code generation.",
+    "prompt_fragment": "Define tools as classes with a call method that accepts goal, task, and input parameters. Return streaming responses for real-time output. Include public and internal descriptions to guide tool selection in prompts.",
+    "timestamp": "2026-03-01T19:04:24.906222"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "shareAI-lab/learn-claude-code",
+    "description": "Employs subagents with fresh message contexts to isolate subtasks, preventing context pollution in the parent agent. This enables clean delegation and parallel processing.",
+    "prompt_fragment": "For complex tasks, spawn subagents with empty message lists. Let them execute independently and return summaries. This isolates contexts and keeps the main agent's conversation clean.",
+    "timestamp": "2026-03-01T19:04:33.313402"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "SWE-agent/SWE-agent",
+    "description": "Uses a history processor pattern to manage conversation memory by eliding old observations, reducing token usage while preserving context for LLM agents.",
+    "prompt_fragment": "Implement a history processor that truncates old observations beyond a configurable limit (e.g., last 5), replacing them with a summary like 'Old environment output: (n lines omitted)' to optimize token efficiency in agent loops.",
+    "timestamp": "2026-03-01T19:04:42.763001"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "SWE-agent/SWE-agent",
+    "description": "Employs a batch processing system with concurrent execution, hooks for status updates, and configurable instance loading from files or datasets for scalable AI task runs.",
+    "prompt_fragment": "Design a batch runner that supports concurrent processing of instances (e.g., from SWE-bench), includes hooks for real-time status tracking, and allows filtering/slicing/shuffling of input data for efficient large-scale deployments.",
+    "timestamp": "2026-03-01T19:04:42.766203"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "TauricResearch/TradingAgents",
+    "description": "Modular agent design with specialized tools and prompts for distinct analysis tasks, enabling scalable multi-agent systems with clear separation of concerns.",
+    "prompt_fragment": "Design agents as modular functions that accept an LLM and state, define specific tools and system prompts for their role, and use partial prompt templating to inject dynamic context like dates and tickers for consistent, reusable analysis nodes.",
+    "timestamp": "2026-03-01T19:04:51.959941"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "TauricResearch/TradingAgents",
+    "description": "Vendor-agnostic dataflow interface with categorized tools and fallback routing, ensuring robust data fetching across multiple providers with configurable preferences.",
+    "prompt_fragment": "Implement a dataflow interface that maps generic tool names to vendor-specific implementations, organizes tools into categories (e.g., fundamental_data, news_data), and uses configuration to select vendors, enabling flexible, fault-tolerant data sourcing in LLM applications.",
+    "timestamp": "2026-03-01T19:04:51.963686"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "Tencent/WeKnora",
+    "description": "Implements a chain-of-responsibility pattern for document parsing, allowing sequential fallback or pipeline processing to handle heterogeneous formats robustly.",
+    "prompt_fragment": "Use a FirstParser class that tries multiple parsers in order until one succeeds, or a PipelineParser to chain parsers where each processes the previous output. This ensures reliable handling of diverse document types with graceful failure.",
+    "timestamp": "2026-03-01T19:05:00.706652"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "Tencent/WeKnora",
+    "description": "Defines a configurable agent system with modular skills, knowledge base selection, and tool integration for flexible AI reasoning and retrieval-augmented generation.",
+    "prompt_fragment": "Design agents with a CustomAgentConfig interface supporting modes like 'quick-answer' or 'smart-reasoning', configurable skills, knowledge bases, and tools. Enable dynamic behavior through settings like mcp_selection_mode and retrieve_kb_only_when_mentioned for tailored responses.",
+    "timestamp": "2026-03-01T19:05:00.712066"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "unslothai/unsloth",
+    "description": "Optimizes fine-tuning pipelines by integrating performance and memory efficiency metrics directly into model selection tables, enabling rapid comparison and deployment decisions.",
+    "prompt_fragment": "When designing AI fine-tuning pipelines, include a comparative table with columns for model, free notebook links, performance speedup (e.g., 1.5x faster), and memory reduction (e.g., 70% less VRAM) to guide users in selecting optimal configurations based on resource constraints.",
+    "timestamp": "2026-03-01T19:05:09.709893"
+  },
+  {
+    "category": "General",
+    "source_repo": "unslothai/unsloth",
+    "description": "Uses structured visual and interactive elements like buttons and badges in documentation to enhance user engagement and streamline access to resources like notebooks and guides.",
+    "prompt_fragment": "In AI project documentation, incorporate visually distinct buttons or badges for key actions (e.g., 'Start for free', 'Documentation', 'Discord') and use responsive images with dark/light mode support to improve accessibility and user onboarding efficiency.",
+    "timestamp": "2026-03-01T19:05:09.712203"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "vanna-ai/vanna",
+    "description": "Implements a vector-based memory system for agents using Qdrant to store and retrieve tool usage patterns, enabling context-aware AI operations.",
+    "prompt_fragment": "Design an agent memory system that stores tool usage patterns in a vector database like Qdrant. Include methods for saving tool calls with metadata (question, tool name, args, context, success) and retrieving similar patterns via vector search to inform future tool selection.",
+    "timestamp": "2026-03-01T19:05:18.796898"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "vanna-ai/vanna",
+    "description": "Uses an abstract base class for LLM services with async methods for requests and streaming, promoting modular and extensible AI pipeline design.",
+    "prompt_fragment": "Create an abstract LLM service class with async methods for send_request (returns full response) and stream_request (yields chunks). Ensure it supports tool validation and can be subclassed for different LLM providers like OpenAI or Anthropic.",
+    "timestamp": "2026-03-01T19:05:18.800171"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "VectifyAI/PageIndex",
+    "description": "Implements a reasoning-based retrieval pipeline using an agentic tree index, eliminating vector DB and chunking for human-like document analysis.",
+    "prompt_fragment": "Design a retrieval pipeline that uses an agentic, in-context tree index for reasoning-based retrieval over long documents, avoiding vector databases and chunking to enable human-like accuracy.",
+    "timestamp": "2026-03-01T19:05:26.173364"
+  },
+  {
+    "category": "General",
+    "source_repo": "VectifyAI/PageIndex",
+    "description": "Integrates vision-based processing directly into RAG workflows, bypassing traditional OCR pipelines for OCR-free, reasoning-native document handling.",
+    "prompt_fragment": "Incorporate vision-based processing into the RAG workflow to handle PDF page images directly, enabling OCR-free, reasoning-native retrieval without relying on traditional OCR pipelines.",
+    "timestamp": "2026-03-01T19:05:26.176548"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "zai-org/Open-AutoGLM",
+    "description": "Uses a modular agent pattern with separate device-specific handlers (Android/iOS) and a unified model client, enabling cross-platform automation with shared AI logic.",
+    "prompt_fragment": "Implement an AI agent with a base class for core logic (e.g., model interaction, step execution) and subclass it for platform-specific handlers (e.g., ADB for Android, XCTest for iOS). Use dataclasses for configs to ensure type safety and easy customization.",
+    "timestamp": "2026-03-01T19:05:36.174661"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "zai-org/Open-AutoGLM",
+    "description": "Employs a vision-language model pipeline where screenshots are captured, analyzed by AI to generate actions, and executed via device APIs in a loop until task completion.",
+    "prompt_fragment": "Design a pipeline: capture device screenshot, feed it with task description to a vision-language model, parse AI output into structured actions (e.g., tap, swipe), execute actions via device SDK, and repeat in a loop with step limits and error handling.",
+    "timestamp": "2026-03-01T19:05:36.177171"
+  },
+  {
+    "category": "Agent",
+    "source_repo": "ZhuLinsen/daily_stock_analysis",
+    "description": "Implements a conversation manager with TTL-based session cleanup for multi-turn AI agent interactions, ensuring memory efficiency and context persistence.",
+    "prompt_fragment": "Design a conversation manager class that stores session state with a TTL (e.g., 30 minutes). Include methods to add messages, update context, and automatically clean up expired sessions to prevent memory leaks in long-running applications.",
+    "timestamp": "2026-03-01T19:05:45.167422"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "ZhuLinsen/daily_stock_analysis",
+    "description": "Uses lazy imports and dependency injection to wrap external services (e.g., data fetchers, search engines) into standardized agent tools, promoting modularity and reducing startup overhead.",
+    "prompt_fragment": "Create agent tools by wrapping external service calls with lazy imports to avoid circular dependencies. Define each tool with clear parameters, descriptions, and error handling, ensuring they can be dynamically registered and called by an AI agent.",
+    "timestamp": "2026-03-01T19:05:45.170162"
+  },
+  {
+    "category": "GameEngine",
+    "source_repo": "4ian/GDevelop",
+    "description": "Uses a centralized input manager to handle mouse, keyboard, and touch events with state tracking (pressed, justPressed, released) and cursor/touch simulation, ensuring consistent input handling across platforms.",
+    "prompt_fragment": "Create an InputManager class that aggregates input states (keys, mouse, touches) in a frame-based loop. Track pressed, justPressed, and released states using hashtables or arrays. Simulate mouse events from touches for cross-platform support and reset states each frame to avoid stale data.",
+    "timestamp": "2026-03-01T19:38:56.811290"
+  },
+  {
+    "category": "GameEngine",
+    "source_repo": "aframevr/aframe",
+    "description": "Declarative HTML syntax for defining 3D scenes reduces boilerplate and integrates with web tools. It abstracts low-level WebGL/WebXR APIs, making VR development accessible while maintaining performance through underlying optimizations.",
+    "prompt_fragment": "Use a declarative HTML-like syntax (e.g., custom elements) to define 3D scenes and components. Map these to efficient JavaScript/WebGL operations behind the scenes. This pattern lowers entry barriers for VR development and ensures compatibility with web ecosystems like DOM manipulation.",
+    "timestamp": "2026-03-01T19:39:09.491276"
+  },
+  {
+    "category": "GameEngine",
+    "source_repo": "BabylonJS/Babylon.js",
+    "description": "Node-based particle system with block connections for visual scripting, supporting modular particle updates and queue-based execution for efficient processing.",
+    "prompt_fragment": "Design a node-based particle system where blocks like UpdateScaleBlock register inputs and outputs, building a processing queue. Use connection points to link nodes and execute updates in a queue for scalable particle effects in game engines.",
+    "timestamp": "2026-03-01T19:39:26.864243"
+  },
+  {
+    "category": "Frontend",
+    "source_repo": "baidu/amis",
+    "description": "Modular parsing of complex document structures (e.g., Word tables) with utility functions for attribute extraction and style mapping, promoting separation of concerns and maintainability.",
+    "prompt_fragment": "For parsing structured data like documents, implement modular functions (e.g., parseTblJc, parseTblInd) that handle specific elements, using helper utilities (getVal, getAttrBoolean) to extract attributes and map them to styles. Decouple parsing logic into focused modules to enhance testability and reuse across similar formats.",
+    "timestamp": "2026-03-01T19:39:37.985014"
+  },
+  {
+    "category": "GameEngine",
+    "source_repo": "bevyengine/bevy",
+    "description": "Entity Component System (ECS) architecture separates data (components) from behavior (systems) for data-oriented design, enabling parallel processing and modular game logic.",
+    "prompt_fragment": "Implement an Entity Component System (ECS) pattern where entities are IDs, components are data structs, and systems process entities with specific component combinations. This enables data-oriented design, parallel execution, and modular game logic.",
+    "timestamp": "2026-03-01T19:39:47.656942"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "bevyengine/bevy",
+    "description": "Modular engine design allows developers to use only needed features and replace unwanted ones, promoting flexibility and maintainability through plugin-based architecture.",
+    "prompt_fragment": "Design a modular architecture where core functionality is separated into independent, swappable modules or plugins. Users should be able to include only required features and easily replace default implementations with custom ones.",
+    "timestamp": "2026-03-01T19:39:47.664300"
+  },
+  {
+    "category": "GameEngine",
+    "source_repo": "cocos2d/cocos2d-x",
+    "description": "Uses a delegate pattern for table view interactions, separating data source and delegate responsibilities to enable flexible UI updates and event handling in scrollable lists.",
+    "prompt_fragment": "For scrollable UI components like tables in game engines, implement a delegate pattern with separate TableViewDataSource and TableViewDelegate classes. The data source should handle cell sizing and content, while the delegate manages events like highlighting and recycling. This decouples logic, improves maintainability, and supports dynamic content updates efficiently.",
+    "timestamp": "2026-03-01T19:40:06.356851"
+  },
+  {
+    "category": "Backend",
+    "source_repo": "encoredev/encore",
+    "description": "Structured service and resource binding with metadata handling for distributed tracing, request correlation, and authentication in API frameworks.",
+    "prompt_fragment": "Implement a service struct with fields for name, root directory, and resource bindings/usage maps. In API handlers, extract and propagate metadata (trace ID, correlation ID) via headers, using context for auth and request processing to support distributed systems observability.",
+    "timestamp": "2026-03-01T19:40:25.073064"
+  },
+  {
+    "category": "GameEngine",
+    "source_repo": "godotengine/godot",
+    "description": "Use a modular class hierarchy with inheritance and composition for game objects, enabling reusable components like video playback and audio mixing while maintaining separation of concerns.",
+    "prompt_fragment": "Design classes using inheritance from a base class (e.g., Control) and composition with references to specialized resources (e.g., VideoStream). Implement methods for specific functionalities like texture handling and audio mixing to keep code modular and extensible.",
+    "timestamp": "2026-03-01T19:40:36.373391"
+  },
+  {
+    "category": "General",
+    "source_repo": "godotengine/godot",
+    "description": "Implement safe utility functions with error handling and numerical stability checks, such as normalizing vectors and computing projections, to prevent crashes and ensure robust performance in mathematical operations.",
+    "prompt_fragment": "Create inline utility functions that include safety checks (e.g., std::isfinite) and fallback values. Use conditionals to handle edge cases like zero vectors or invalid inputs, ensuring reliability in geometric and numerical computations.",
+    "timestamp": "2026-03-01T19:40:36.381095"
+  },
+  {
+    "category": "General",
+    "source_repo": "leereilly/games",
+    "description": "Archiving inactive projects with a notice provides transparency and context, preventing confusion and acknowledging community contributions over time.",
+    "prompt_fragment": "For projects that are no longer maintained, add an archive notice at the top of the README. Explain the project's history, reason for archiving, and thank contributors. This maintains clarity and respects the community's efforts.",
+    "timestamp": "2026-03-01T19:40:54.296984"
+  },
+  {
+    "category": "GameEngine",
+    "source_repo": "libgdx/libgdx",
+    "description": "Implements SWIG-based JNI wrappers to bridge C++ physics libraries with Java, using director classes for virtual method overrides and efficient cross-language communication.",
+    "prompt_fragment": "For integrating C++ libraries into Java-based engines, generate JNI bindings with SWIG to create wrapper classes. Define director classes to handle virtual method calls from Java, ensuring proper memory management and type conversions for performance-critical operations like physics simulations.",
+    "timestamp": "2026-03-01T19:41:03.547462"
+  },
+  {
+    "category": "Frontend",
+    "source_repo": "marmelab/react-admin",
+    "description": "Wraps simple validation functions into resolvers compatible with react-hook-form, handling nested errors and arrays for robust form validation with minimal boilerplate.",
+    "prompt_fragment": "Create a validation resolver adapter that transforms custom validation functions to work with react-hook-form. Handle errors recursively for objects and arrays, returning formatted errors or values. This ensures consistent validation across forms without manual integration.",
+    "timestamp": "2026-03-01T19:41:15.320978"
+  },
+  {
+    "category": "Backend",
+    "source_repo": "ocornut/imgui",
+    "description": "Modular backend abstraction for rendering APIs, enabling cross-platform support by separating platform-specific implementations (e.g., Metal, SDL_GPU) from core logic, improving maintainability and extensibility.",
+    "prompt_fragment": "Design a modular backend system where each rendering API (e.g., Metal, Vulkan, SDL_GPU) is implemented in separate files with a consistent interface (init, shutdown, render functions). Use conditional compilation (e.g., #ifdef) to support multiple languages (C++/ObjC) and ensure core logic remains independent of platform details.",
+    "timestamp": "2026-03-01T19:41:29.022835"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "ocornut/imgui",
+    "description": "Optimized draw data handling with vertex offset support for large meshes and dynamic texture updates, reducing memory overhead and enabling efficient rendering of complex UIs in real-time applications.",
+    "prompt_fragment": "Implement a render pipeline that supports large meshes (64k+ vertices) using 16-bit indices with vertex offset capabilities (ImGuiBackendFlags_RendererHasVtxOffset). Include dynamic texture updates (ImGuiBackendFlags_RendererHasTextures) for assets like font atlases, and structure draw data to minimize GPU state changes and buffer uploads.",
+    "timestamp": "2026-03-01T19:41:29.032796"
+  },
+  {
+    "category": "Pipeline",
+    "source_repo": "raysan5/raylib",
+    "description": "Uses CMake policies to manage variable expansion and symbol visibility, ensuring cross-platform compatibility and preventing unintended library exports in static builds.",
+    "prompt_fragment": "In CMakeLists.txt, set policies like CMP0054 and CMP0063 early to control variable expansion and symbol visibility. Use conditional checks for platform-specific dependencies (e.g., Wayland/X11 on Linux) to avoid build errors and ensure clean library exports.",
+    "timestamp": "2026-03-01T19:41:45.200845"
+  },
+  {
+    "category": "General",
+    "source_repo": "raysan5/raylib",
+    "description": "Implements a header-only library pattern with optional implementation via a macro (QOI_IMPLEMENTATION), allowing flexible integration and custom memory management.",
+    "prompt_fragment": "For header-only libraries, define a macro (e.g., QOI_IMPLEMENTATION) to include the implementation in one source file. Support customization via macros like QOI_NO_STDIO, QOI_MALLOC, and QOI_FREE to adapt to different project needs without modifying the core code.",
+    "timestamp": "2026-03-01T19:41:45.214898"
+  },
+  {
+    "category": "Frontend",
+    "source_repo": "refinedev/refine",
+    "description": "Encapsulates file-to-base64 conversion in a reusable utility with proper event handling and error management, promoting clean separation of concerns for file processing in upload components.",
+    "prompt_fragment": "For file upload features, create a file2Base64 utility function that converts an UploadFile to a base64 string using FileReader. Implement promise-based async handling, add event listeners for load and error events, and ensure proper cleanup by removing listeners to avoid memory leaks and improve reliability in file processing workflows.",
+    "timestamp": "2026-03-01T19:41:56.095363"
+  },
+  {
+    "category": "Frontend",
+    "source_repo": "Semantic-Org/Semantic-UI-React",
+    "description": "Implements shorthand props (e.g., content, like) to simplify component usage by accepting strings, elements, or objects, reducing boilerplate and enhancing composability.",
+    "prompt_fragment": "In React components, use shorthand props (e.g., SemanticShorthandContent, SemanticShorthandItem) to allow flexible input types like strings, React elements, or props objects, making components more concise and reusable.",
+    "timestamp": "2026-03-01T19:42:05.826399"
+  }
+]

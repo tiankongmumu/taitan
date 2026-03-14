@@ -1,0 +1,274 @@
+{
+  "metadata": {
+    "source1": "Reddit r/SaaS & r/Entrepreneur",
+    "source2": "Mock Affiliate Products (Taobao/Aliyun)",
+    "post_count": 26,
+    "product_count": 6
+  },
+  "reddit_posts": [
+    {
+      "id": "1rikglr",
+      "title": "Here's how to fix \"Crawled – currently not indexed\" for your SaaS website",
+      "selftext": "I've been deep in SEO for years (it's literally what my SaaS does), and one of the most common issues I see founders deal with is this frustrating Google Search Console status: **\"Crawled – currently not indexed.\"**\n\nIt means Google visited your page, read it, and said \"nah.\" Not a technical error. A deliberate rejection.\n\nAfter looking at thousands of websites through [our platform](https://blogseo.io), here's what I've learned about why it happens and how to fix it.\n\n**First, understand what i",
+      "url": "https://www.reddit.com/r/SaaS/comments/1rikglr/heres_how_to_fix_crawled_currently_not_indexed/",
+      "score": 23,
+      "num_comments": 6
+    },
+    {
+      "id": "1riimks",
+      "title": "Looking for an Ivy League student to become CEO to manipulate the masses and dumb investors/VCs",
+      "selftext": "Let’s stop dancing around the truth and align on the real go-to-market strategy.\n\nMarkets don’t reward substance first. They reward signals: pedigree, confidence, a clean accent, and a narrative that sounds inevitable. Execution is a Phase 3 concern. Optics ship in v1.\n\nThis is a satire—but only barely.\n\nInvestors don’t always do diligence. They do pattern matching.\n\nUsers don’t always want value. They want belief.\n\nBoards don’t want builders. They want storytellers who can keep the slide deck a",
+      "url": "https://www.reddit.com/r/SaaS/comments/1riimks/looking_for_an_ivy_league_student_to_become_ceo/",
+      "score": 10,
+      "num_comments": 11
+    },
+    {
+      "id": "1rhv2v2",
+      "title": "I'm a dev who sucks at marketing. Here's everything I learned getting to 1,525 users in 2 months.",
+      "selftext": "So, yeah. I love coding, but if I need sales, I need to learn marketing.\n\nSo, in 2 months, I went from 0 users to 1,525 with 12 paying. Not by being good at marketing. By trying everything and seeing what sticks.\n\nHere's the real breakdown.\n\n**Quick context:** I built [Loggd](https://loggd.life/rd/8), an all in one personal growth app. Habits, tasks, goals, focus timer, all connected with gamification and a GitHub-style activity graph. Launched in December. Dad, married, building before work, af",
+      "url": "https://www.reddit.com/r/SaaS/comments/1rhv2v2/im_a_dev_who_sucks_at_marketing_heres_everything/",
+      "score": 145,
+      "num_comments": 138
+    },
+    {
+      "id": "1riczxf",
+      "title": "Launched my first SaaS yesterday. They told me the market was too crowded, but 3 strangers just paid for CoziePanda. I’m officially in the game.",
+      "selftext": "I’ve spent months second guessing whether [**CoziePanda.com**](http://CoziePanda.com) was even worth building. Being a solo dev, you constantly hear that \"the market is too saturated\" or \"productivity tools are a dime a dozen.\"\n\nYesterday, I finally hit launch. I didn't have a marketing budget or a big following. I just shared my story on a couple of subreddits, genuinely, no spamming and then went to sleep.\n\nI woke up to 3 payment notifications... It’s not \"quit my job\" money yet, but seeing th",
+      "url": "https://www.reddit.com/r/SaaS/comments/1riczxf/launched_my_first_saas_yesterday_they_told_me_the/",
+      "score": 15,
+      "num_comments": 36
+    },
+    {
+      "id": "1rih0wz",
+      "title": "I’m about to lose $1M+ to a surprise corporate blackout. So I spent the weekend building an aggregator to fight back. Roast my landing page",
+      "selftext": "I helped build a SaaS unicorn, vested my shares, and planned to use that equity to secure my two-year-old daughter's future.\n\n​My options expire in April. But this week, the company dropped a surprise administrative blackout starting March 5th. That sudden artificial deadline spooked my financing partner, and they backed out. I am currently locked out of years of my life's work because of a paperwork freeze.\n\n​While trying to figure out how to salvage this, I realized how entirely rigged the sys",
+      "url": "https://www.reddit.com/r/SaaS/comments/1rih0wz/im_about_to_lose_1m_to_a_surprise_corporate/",
+      "score": 7,
+      "num_comments": 34
+    },
+    {
+      "id": "1riiuj2",
+      "title": "How Did You Get Your First 100 SAAS Users?",
+      "selftext": "Many founders say building a SaaS product is the straightforward part, acquiring the first real users is where the real challenge begins.\n\nFor those who have successfully moved past the early traction stage, what strategies actually helped secure the first 100 genuine users?\n\nWhich channels proved most effective?\n\n* Cold outreach (email/DMs)\n* Content marketing\n* Online communities\n* Paid advertising\n* Partnerships or collaborations\n* Other unconventional methods\n\nLooking for practical, experien",
+      "url": "https://www.reddit.com/r/SaaS/comments/1riiuj2/how_did_you_get_your_first_100_saas_users/",
+      "score": 7,
+      "num_comments": 26
+    },
+    {
+      "id": "1ri8nk9",
+      "title": "Our biggest competitor shut down. It didn't help us at all.",
+      "selftext": "Woke up to the news that a direct competitor had announced they were shutting down. My first reaction was relief, maybe even excitement. One less company fighting for the same customers. Their users would need to go somewhere and we were the obvious alternative.\n\nReached out to their customer base through every channel we could. Created migration guides. Offered discounts. Made the transition as easy as possible. Expected a flood of new signups.\n\nGot a trickle. Maybe fifteen customers migrated t",
+      "url": "https://www.reddit.com/r/SaaS/comments/1ri8nk9/our_biggest_competitor_shut_down_it_didnt_help_us/",
+      "score": 23,
+      "num_comments": 20
+    },
+    {
+      "id": "1riercp",
+      "title": "I built an AI tool that automates faceless YouTube channels (beta testers wanted)",
+      "selftext": "I’ve been building a SaaS platform called Tubevo that automates faceless YouTube channels end-to-end.\n\nIt generates:\n\n• Scripts\n\n• Voiceovers\n\n• Visual media\n\n• Fully rendered videos\n\n• Direct YouTube publishing\n\nThe goal is simple:\n\nRemove the friction from starting and scaling a YouTube channel.\n\nWhy I built it:\n\nI kept seeing people quit because editing + scripting + voice was overwhelming. I wanted something that removes all that and lets creators focus on ideas.\n\nCurrent stage:\n\n• Working M",
+      "url": "https://www.reddit.com/r/SaaS/comments/1riercp/i_built_an_ai_tool_that_automates_faceless/",
+      "score": 10,
+      "num_comments": 31
+    },
+    {
+      "id": "1rikewt",
+      "title": "building saas with ai agent browser control, how do i not end up hosting illegal shit by accident?",
+      "selftext": "our startup has this upload feature for custom assets, logos whatever, and now were eyeing ai agents to automate browser tasks like pulling data or filling previews. but reading about agentic browsers that just navigate sites on their own, im paranoid.\n\nusers could tell an agent to scrape weird sites or upload files that end up being cp or whatever under fake pretenses. some buckets are public for email embeds. paid plan needed but easy to spoof invites.\n\nwe arent huge, no big moderation team. i",
+      "url": "https://www.reddit.com/r/SaaS/comments/1rikewt/building_saas_with_ai_agent_browser_control_how/",
+      "score": 3,
+      "num_comments": 7
+    },
+    {
+      "id": "1rhvhhr",
+      "title": "Accidentally deleted my entire production setup (320 paying users) while trying to scale with ASG 😅 (hard lesson learned)",
+      "selftext": "Yesterday was… painful.\n\nI was trying to scale my setup properly for the first time using an Auto Scaling Group.\n\nSetup context:\n\n* Single EC2 with an Elastic IP\n* No Load Balancer\n* 4 frontend apps\n* Python backend running on Gunicorn\n* Nginx reverse proxy\n* GitHub Actions SSH deploy\n* Secrets + env files manually configured\n* EBS attached to the instance\n\nEverything was working fine. I just wanted to “do it properly” and move toward autoscaling.\n\nSo here’s what I did:\n\nI tried attaching my exi",
+      "url": "https://www.reddit.com/r/SaaS/comments/1rhvhhr/accidentally_deleted_my_entire_production_setup/",
+      "score": 57,
+      "num_comments": 63
+    },
+    {
+      "id": "1rib83z",
+      "title": "I spent 3000+ hours building startups that went nowhere. I thought I was bad at marketing. I was just picking terrible ideas.",
+      "selftext": "I used to think my problem was marketing.\n\nEvery time I'd build something and it flopped, I'd tell myself the same story. \"I just need to get better at distribution.\" So I'd go deeper. More SEO. More cold emails. More content. More strategies from people on Twitter who definitely had it all figured out.\n\nNothing worked. I kept blaming the marketing.\n\nThen after about 3000 hours of this across multiple failed startups, I realized. My marketing wasn't the problem. My ideas were just trash.\n\nThe bi",
+      "url": "https://www.reddit.com/r/SaaS/comments/1rib83z/i_spent_3000_hours_building_startups_that_went/",
+      "score": 8,
+      "num_comments": 16
+    },
+    {
+      "id": "1rihv0y",
+      "title": "Fit for a founder?",
+      "selftext": "I've been building a platform for a year now and have recently started working with someone to help me build it (better). \n\nI have a background in programming but my forte is product. He is tech.\n\nHe is interested in joining me as a founder as up until now I've been paying him. He is good in the sense that he is intelligent and a good programmer however there is one thing that he is very lacking, and that is responsiveness. \n\nI send him a message, I get a response the next day. There is always a",
+      "url": "https://www.reddit.com/r/SaaS/comments/1rihv0y/fit_for_a_founder/",
+      "score": 2,
+      "num_comments": 10
+    },
+    {
+      "id": "1rhwfvg",
+      "title": "I mass-messaged 200+ people on LinkedIn about my SaaS. Here's what actually happened (with real numbers).",
+      "selftext": "I'm a solo founder, building a B2B SaaS. No funding, no team besides my co-founder. Based in Spain.\n\nA few weeks ago I decided to go hard on LinkedIn outreach. Cold DMs to product managers, founders, CTOs. People who looked like they could be my ICP.\n\nHere's the real breakdown.\n\nSent \\~200 messages. Personalized, not copy paste. Mentioned their company, their role, what they're building. Each one took 2-3 minutes to write.\n\n**Results:**\n\n\\~40% never opened it\n\n\\~35% opened, never replied\n\n\\~15% ",
+      "url": "https://www.reddit.com/r/SaaS/comments/1rhwfvg/i_massmessaged_200_people_on_linkedin_about_my/",
+      "score": 41,
+      "num_comments": 58
+    },
+    {
+      "id": "1rij5eb",
+      "title": "Customer QBRs were killing our CS team's bandwidth",
+      "selftext": "Quarterly business reviews are important for retention but they were consuming a disproportionate amount of our customer success team's time. Each QBR deck was being built mostly from scratch, pulling data, creating slides, customizing everything for each customer. A full day of work per customer, every quarter.\n\nWhen you have 50 customers each needing a QBR, that's 50 days of deck building per quarter. The math doesn't work when you're trying to be proactive with customers instead of buried in ",
+      "url": "https://www.reddit.com/r/SaaS/comments/1rij5eb/customer_qbrs_were_killing_our_cs_teams_bandwidth/",
+      "score": 2,
+      "num_comments": 3
+    },
+    {
+      "id": "1rihzwp",
+      "title": "I need some help",
+      "selftext": "So, my contract finished a few weeks ago. In parallel, while I still had a job, I built Volapp. I can say it’s pretty much finished, at least for a first presentation and initial tests with clients.\n\nWhat’s Volapp?  \nIn short, it’s a multi-tenant project for deliveries and roll-off pickups here in Argentina. It includes geolocation, tracking, Whisper and LLaMA to create tasks via voice (speech-to-text), and route optimization/recommendations. Owners, drivers, and clients are connected via chat. ",
+      "url": "https://www.reddit.com/r/SaaS/comments/1rihzwp/i_need_some_help/",
+      "score": 2,
+      "num_comments": 2
+    },
+    {
+      "id": "1ri3u5h",
+      "title": "I’m a QA dev tired of note apps that feel like Jira. So my cousin and I built a \"zero-friction\" scratchpad.",
+      "selftext": "Is it just me, or is every note app trying to be a second brain, a database, or a project manager?\n\nI’m a student and a QA dev. I live in my browser, and I realized I don’t need \"properties,\" sidebars, or nested folders. I just need a place for the raw thoughts that happen during a chaotic sprint sync or a 9 AM lecture.\n\nMy cousin and I built [JOT](http://gojot.app) for the people who never leave their tabs.\n\nThe 2-Second Rule: It loads and is ready for input before you’ve even finished the thou",
+      "url": "https://www.reddit.com/r/SaaS/comments/1ri3u5h/im_a_qa_dev_tired_of_note_apps_that_feel_like/",
+      "score": 10,
+      "num_comments": 24
+    },
+    {
+      "id": "1ril5lg",
+      "title": "Tool that reveals ChatGPT’s generated search queries hit 1K+ signups in 30 days",
+      "selftext": "Saw an interesting growth case recently.\n\nA Chrome extension called ChatGPT Query Extractor reportedly crossed 1,000+ signups within 30 days of launch.\n\nThe interesting part isn’t just the installs it’s how it was used.\n\nThe founder used the extension to extract the search-style queries ChatGPT generates during research workflows. Instead of guessing keywords, they analyzed those AI-generated queries and created content specifically aligned with how ChatGPT “thinks” and searches.\n\nAs a result, s",
+      "url": "https://www.reddit.com/r/SaaS/comments/1ril5lg/tool_that_reveals_chatgpts_generated_search/",
+      "score": 1,
+      "num_comments": 1
+    },
+    {
+      "id": "1ril2j6",
+      "title": "Most companies don’t have a SaaS renewal strategy. They have a SaaS auto‑renew habit.",
+      "selftext": "# The hidden tax of auto‑renewal.\n\nIn many 10–500 person teams, IT Service Subscription renewals live across:-\n\n* Spreadsheets that only one person understands.\n* Email threads like “Your subscription renews in 7 days”.\n* Calendar reminders that get lost when people change roles.\n\nWhat happens:-\n\n* Notice periods are missed.\n* Tools keep renewing long after usage drops.\n* Finance only discovers the issue after the card is charged.\n\nThis is especially messy for agencies and fractional CFOs managi",
+      "url": "https://www.reddit.com/r/SaaS/comments/1ril2j6/most_companies_dont_have_a_saas_renewal_strategy/",
+      "score": 1,
+      "num_comments": 0
+    },
+    {
+      "id": "1ri1fka",
+      "title": "Successful Entrepreneurs, what is the one change you made that made you successful?",
+      "selftext": "Overnight successes are technically a myth because you are continually working until one day, something clicks, and you become successful. \n\nFor all the successful entrepreneurs, what is something you changed that gave you that \"overnight success\"? ",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1ri1fka/successful_entrepreneurs_what_is_the_one_change/",
+      "score": 53,
+      "num_comments": 78
+    },
+    {
+      "id": "1ri4xk9",
+      "title": "What you can learn about entrepreneurship from The Simpsons...",
+      "selftext": "A lot of people have this vision that entrepreneurship requires a huge idea which is executed in a huge way. \n\nBut that's the wrong approach. \n\nProbably one of the best cartoon series of all time The Simpsons started off a 2 minute cartoon hosted on another show (Tracy Ullman show).\n\nThe Simpsons was not planned as a big series. It was planned as 2 minute sketches. The public liked them. So the creators made the chunks bigger and turned it into a series. \n\n**Tip**: For most businesses you too ca",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1ri4xk9/what_you_can_learn_about_entrepreneurship_from/",
+      "score": 14,
+      "num_comments": 15
+    },
+    {
+      "id": "1rifpvv",
+      "title": "Shopify Clothing &amp; Fashion Store with $153K Revenue Valuation &amp; Potential Sale",
+      "selftext": "We’re seeking a realistic valuation for a established Shopify store in the clothing and fashion niche, which has generated approximately $153,000 in revenue over the past 12 months.\n\nThe brand has been carefully developed with a strong niche focus, supplier relationships, and a proven sales history. However, we’re currently shifting focus to a new project, so we’re exploring the possibility of selling the business to the right buyer who can continue to grow and scale it.\n\nWe’re open to discussio",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1rifpvv/shopify_clothing_fashion_store_with_153k_revenue/",
+      "score": 2,
+      "num_comments": 15
+    },
+    {
+      "id": "1rifdpw",
+      "title": "How do you stop \"Stability\" from killing your original ambition?",
+      "selftext": "Usually, the security a job provides trumps the burnout and lack of movement, making it difficult to even plan a way out. I’ve heard a similar security trap happens when someone achieves stability in solopreneurship.\n\nIn both cases, the future seems scary and the current state is just too comfortable.\n\nComing with a dream of actually thriving in business, what financial strategy should one take to keep moving without friction? How do you stay aggressive when you no longer 'need' to be?",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1rifdpw/how_do_you_stop_stability_from_killing_your/",
+      "score": 2,
+      "num_comments": 6
+    },
+    {
+      "id": "1ri6fxp",
+      "title": "what advice do you have for me? when should you pivot?",
+      "selftext": "i exited my last company 3 years ago now and have been trying to get back into entrepreneurship for about a year now (although haven't locked in like i'd before) and absolutely struggling.\n\nmy first 6 months were basically spent vibecoding different ideas and not launching any of them and my last 6 months were spent on trying to get a b2c app studio running and after spending $5-6k on hiring, marketing, tools, etc - i only have 2 apps and $200/mo revenue to show for it. this particularly stings ",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1ri6fxp/what_advice_do_you_have_for_me_when_should_you/",
+      "score": 5,
+      "num_comments": 20
+    },
+    {
+      "id": "1rif62r",
+      "title": "I went to school for technical writing. How can I make this lucrative depite modern tech?",
+      "selftext": "I find AI writing drives me crazy. Much like articles today, where you have to skip past the first three one or two sentence paragraphs to get to the meat. But I have an entire degree in an art form many look at as being irrelevant, but I don't believe so. Just looking for cutting edge suggestions on what this sub thinks would work to make my skill lucrative in spite of the AI revolution. Thanks. ",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1rif62r/i_went_to_school_for_technical_writing_how_can_i/",
+      "score": 2,
+      "num_comments": 17
+    },
+    {
+      "id": "1ri09or",
+      "title": "Trying to Predict Chaos Across the World’s Biggest Industries in Under 10 Years",
+      "selftext": "Hi, Just wanted to share something ambitious I’m working on and see if it resonates with anyone here.\n\nThe idea is to build a system that can predict chaos in the world’s largest industries finance, energy, healthcare, tech and do it better than Palantir does today.\n\nNot just data dashboards, not just analytics, but a full decision-making framework that lets executives, investors, and regulators see critical moments coming before they happen and act on them.\n\nYeah, it’s massive. Yeah, it sounds ",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1ri09or/trying_to_predict_chaos_across_the_worlds_biggest/",
+      "score": 7,
+      "num_comments": 8
+    },
+    {
+      "id": "1rhsl2o",
+      "title": "Sunday Rant - Get it out of your system! - March 01, 2026",
+      "selftext": "Here's your chance to rant about how much this subreddit and Entrepreneurship in general sucks. Lets try to contain it to a single weekly thread - here. \n\nIndividual meta posts about the subreddit aren't allowed, but you're welcome to share constructive criticism here with the mod team. To be clear, no personal attacks will be tolerated here either - but feel free to use this post as a subreddit punching bag/soap box, and tell the mods what a terrible job we're doing. \n\nIf you are interested in ",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1rhsl2o/sunday_rant_get_it_out_of_your_system_march_01/",
+      "score": 9,
+      "num_comments": 7
+    }
+  ],
+  "affiliate_products": [
+    {
+      "id": "prod_101",
+      "name": "极速企业建站服务器 (阿里云)",
+      "solves_pain_point": "高并发、建站慢、服务器卡顿、企业官网搭建",
+      "commission_rate": "30%",
+      "monthly_sales": "1000+",
+      "affiliate_url": "https://promotion.aliyun.com/ntms/yunparter/invite.html",
+      "category": "Cloud Hosting"
+    },
+    {
+      "id": "prod_102",
+      "name": "Notion中国平替 - Wolai 企业团队版",
+      "solves_pain_point": "团队协作混乱、文档不好管理、知识库无法沉淀",
+      "commission_rate": "25%",
+      "monthly_sales": "5000+",
+      "affiliate_url": "https://www.wolai.com/affiliate?ref=titan",
+      "category": "Productivity"
+    },
+    {
+      "id": "prod_103",
+      "name": "智能客服机器人 SaaS (网易七鱼)",
+      "solves_pain_point": "客服成本高、夜间无人回复、客户流失、咨询量大",
+      "commission_rate": "20%",
+      "monthly_sales": "200+",
+      "affiliate_url": "https://qiyukf.com/affiliate",
+      "category": "Customer Support"
+    },
+    {
+      "id": "prod_104",
+      "name": "冷邮件自动化营销工具 (Mailshake平替)",
+      "solves_pain_point": "无法自动发邮件、找客户难、邮件被判拉圾、获客成本高",
+      "commission_rate": "35%",
+      "monthly_sales": "800+",
+      "affiliate_url": "https://email-automation.com/?ref=demo",
+      "category": "Marketing"
+    },
+    {
+      "id": "prod_105",
+      "name": "跨境电商防关联指纹浏览器",
+      "solves_pain_point": "亚马逊多账号被封、Tiktok矩阵号运营难、IP防关联",
+      "commission_rate": "40%",
+      "monthly_sales": "10000+",
+      "affiliate_url": "https://antidetect-browser.com/partner",
+      "category": "E-commerce"
+    },
+    {
+      "id": "prod_106",
+      "name": "企业级 CRM 系统 (纷享销客)",
+      "solves_pain_point": "销售漏斗不清晰、客户跟进记录丢失、业绩难追踪",
+      "commission_rate": "15%",
+      "monthly_sales": "1500+",
+      "affiliate_url": "https://crm-partner.com/signup",
+      "category": "CRM"
+    }
+  ]
+}

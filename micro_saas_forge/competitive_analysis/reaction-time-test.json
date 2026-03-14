@@ -1,0 +1,119 @@
+{
+  "keyword": "reaction time test",
+  "competitors": [
+    {
+      "name": "HumanBenchmark",
+      "url": "https://humanbenchmark.com/tests/reactiontime",
+      "features": [
+        "Simple and intuitive interface",
+        "Immediate results with detailed statistics",
+        "Leaderboards for competition"
+      ],
+      "weaknesses": [
+        "Limited customization options",
+        "No mobile app",
+        "Lacks advanced analytics"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 1000000
+    },
+    {
+      "name": "Test My Reaction Time",
+      "url": "https://www.testmyreactionspeed.com/",
+      "features": [
+        "Multiple reaction time tests available",
+        "User-friendly design",
+        "Results can be shared on social media"
+      ],
+      "weaknesses": [
+        "Ads can be intrusive",
+        "No account system to save results",
+        "Basic in terms of features"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 500000
+    },
+    {
+      "name": "Reaction Time Test by Math is Fun",
+      "url": "https://www.mathsisfun.com/games/reaction-time.html",
+      "features": [
+        "Educational context",
+        "Simple and straightforward",
+        "Part of a larger educational site"
+      ],
+      "weaknesses": [
+        "Very basic, no advanced features",
+        "No user accounts or saved results",
+        "Limited to one type of test"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 200000
+    },
+    {
+      "name": "Reaction Time Test by Exploratorium",
+      "url": "https://www.exploratorium.edu/snacks/reaction-time",
+      "features": [
+        "Educational content",
+        "Interactive and engaging",
+        "Part of a science museum's website"
+      ],
+      "weaknesses": [
+        "Limited to one type of test",
+        "No user accounts or saved results",
+        "Not as user-friendly as other sites"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 100000
+    },
+    {
+      "name": "Reaction Time Test by CogniFit",
+      "url": "https://www.cognifit.com/science/cognitive-skills/reaction-time",
+      "features": [
+        "Scientifically validated tests",
+        "Comprehensive cognitive assessment",
+        "Detailed reports and analysis"
+      ],
+      "weaknesses": [
+        "Requires registration for full access",
+        "More complex and less user-friendly",
+        "Pricing can be a barrier for some users"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 50000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Mobile app availability",
+      "implementation": "Develop a dedicated mobile app for iOS and Android with the same features as the web version, plus additional mobile-specific features like push notifications.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Advanced analytics and tracking",
+      "implementation": "Introduce a dashboard where users can track their progress over time, compare their results with others, and receive personalized insights and recommendations.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Customizable test settings",
+      "implementation": "Allow users to customize various aspects of the test, such as the color of the stimulus, the duration of the test, and the type of feedback provided.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "Integration with health and fitness apps",
+      "implementation": "Enable integration with popular health and fitness apps (e.g., Apple Health, Google Fit) to provide a more holistic view of the user's overall performance and well-being.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Gamification elements",
+      "implementation": "Add gamification elements such as badges, levels, and challenges to make the experience more engaging and motivating for users.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    }
+  ],
+  "recommended_positioning": "A comprehensive, user-friendly, and scientifically validated reaction time testing platform with advanced analytics and mobile app support.",
+  "analyzed_at": "2026-03-05T09:59:20.189587"
+}

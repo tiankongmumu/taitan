@@ -1,0 +1,129 @@
+{
+  "keyword": "printable weekly meal planner template",
+  "competitors": [
+    {
+      "name": "Canva",
+      "url": "https://www.canva.com/templates/search/weekly-meal-planner/",
+      "features": [
+        "Massive library of highly customizable, aesthetically pleasing templates",
+        "Intuitive drag-and-drop editor for non-designers",
+        "Integration with stock photos and design elements",
+        "Easy download in multiple formats (PDF, PNG, JPG)"
+      ],
+      "weaknesses": [
+        "Overwhelming choice can lead to decision fatigue",
+        "Core focus is general design, not specialized meal planning",
+        "Lacks built-in recipe databases or nutritional calculators",
+        "Advanced features require Pro subscription"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 2000000
+    },
+    {
+      "name": "Etsy",
+      "url": "https://www.etsy.com/market/weekly_meal_planner_template",
+      "features": [
+        "Huge variety of unique, niche, and artistic designs from independent creators",
+        "Strong focus on aesthetics and specific themes (e.g., rustic, minimalist, floral)",
+        "Instant digital download upon purchase",
+        "Direct support from the template designer"
+      ],
+      "weaknesses": [
+        "Quality and usability are inconsistent across sellers",
+        "No free options; every template is a paid micro-transaction",
+        "No editing capabilities; you get a static PDF/Word file",
+        "No integrated tools for meal planning logic (shopping lists, etc.)"
+      ],
+      "pricing": "paid",
+      "monthly_traffic": 450000
+    },
+    {
+      "name": "Template.net",
+      "url": "https://www.template.net/business/plan-templates/weekly-meal-planner/",
+      "features": [
+        "Large, categorized collection of templates",
+        "Templates available in multiple file formats (Word, Excel, PDF, Google Docs)",
+        "Simple one-click download for free templates",
+        "Clear preview of each template before download"
+      ],
+      "weaknesses": [
+        "Website is ad-heavy and cluttered with pop-ups",
+        "Many templates are generic and lack modern design",
+        "Editing requires external software (MS Office, etc.)",
+        "User experience feels dated and spammy"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 150000
+    },
+    {
+      "name": "The Spruce Eats",
+      "url": "https://www.thespruceeats.com/free-printable-meal-planner-templates-4771430",
+      "features": [
+        "Content is provided by a trusted authority in cooking and recipes",
+        "Templates are practical and paired with helpful meal planning articles",
+        "Completely free with no paywalls",
+        "Clean, simple, and functional designs"
+      ],
+      "weaknesses": [
+        "Very limited selection of template designs (often just 1-2)",
+        "Zero customization options; it's a static PDF",
+        "No integration with their own recipe database",
+        "Pure content play; no dedicated tool or platform"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 120000
+    },
+    {
+      "name": "Eatwell101",
+      "url": "https://www.eatwell101.com/printable-meal-planner",
+      "features": [
+        "Created specifically for meal planning by a food blog",
+        "Includes useful sections like shopping list and notes",
+        "Focus on healthy eating and nutrition",
+        "Directly tied to their recipe content for inspiration"
+      ],
+      "weaknesses": [
+        "Template design is basic and not highly visually appealing",
+        "Single, non-customizable option",
+        "Website navigation can be messy with intrusive ads",
+        "Serves mainly as a lead magnet for their blog, not a dedicated product"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 80000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Smart Template Integration with Recipe Databases",
+      "implementation": "Build a template editor that connects to APIs like Spoonacular or Edamam. Allow users to drag recipes directly into planner slots, which auto-populates a consolidated shopping list.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Dynamic, Nutrition-Focused Templates",
+      "implementation": "Create templates where users can set macro/calorie goals per meal/day. The template includes a simple calculator that sums nutrition from manually entered meals and provides a visual progress bar.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Household & Leftovers Management",
+      "implementation": "Offer templates with a dedicated 'Leftovers' column and a 'Household Roster' section to assign cooking days. Include a 'Cook Once, Eat Twice' template variant that plans for intentional leftovers.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "Seamless Digital-to-Grocery Workflow",
+      "implementation": "Provide a 'Send to App' feature. After planning, users can export their shopping list with one click to Instacart, Walmart+, or Apple/Google Reminders.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Contextual, In-Template Inspiration",
+      "implementation": "In the template editor, include a non-intrusive 'Stuck?' button in each meal slot. Clicking it shows 3-5 seasonal, quick recipe suggestions based on a pre-selected dietary filter (e.g., vegetarian, 30-min meals).",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    }
+  ],
+  "recommended_positioning": "The intelligent meal planning hub that transforms static printables into a dynamic system for saving time, reducing waste, and hitting your health goals.",
+  "analyzed_at": "2026-03-05T15:25:14.889544"
+}

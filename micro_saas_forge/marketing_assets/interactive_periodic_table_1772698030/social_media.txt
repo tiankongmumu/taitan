@@ -1,0 +1,76 @@
+=== TWITTER THREAD ===
+Alright, let's get this thread out there and break the internet (or at least the chemistry corner of it). Time to make learning elements *actually* fun.
+
+---
+
+**Tweet 1/4**
+Remember trying to memorize the periodic table? 😩 Pure pain. Static images, endless lists. It's 2024, why are we still learning chemistry like it's 1899?!
+
+We just shipped something that's about to change EVERYTHING. No more boring elements. 👇
+https://shipmicro.com/tools
+
+**Tweet 2/4**
+Seriously, current 'solutions' are a joke. Textbooks are dead weight. Most websites are just glorified PDFs. You can't *explore* elements, you just... look at them. Where's the fun? Where's the *insight*? It's a crime against curiosity.
+
+**Tweet 3/4**
+We said ENOUGH. Our new Interactive Periodic Table isn't just a table, it's a playground:
+
+⚡️ **Real-time property filtering:** See density, electronegativity, etc., update LIVE as you explore.
+⚛️ **Immersive 3D element visualization:** Spin, zoom, understand structure like never before.
+🎮 **Gamified learning quizzes:** Actually *enjoy* mastering chemistry.
+
+This is how science should be learned.
+
+**Tweet 4/4**
+It's live, it's free, and it's built for YOU. We're building in public, so hit that link, play around, and tell us what you think! What properties do you want to filter next? What elements need more 3D love?
+
+Let's make learning awesome, together. 👇
+https://shipmicro.com/tools
+
+=== REDDIT POST ===
+**Title:** I was frustrated with static periodic tables, so I built an interactive one with real-time filtering and 3D models
+
+Hey r/SideProject,
+
+I was always frustrated with how static most online periodic tables felt when I was trying to study chemistry. It was hard to compare properties across elements quickly, and visualizing things was a pain. I wanted something that could show me trends instantly, not just individual data points.
+
+So, I decided to build my own interactive periodic table. My main goal was to make it super easy to filter elements based on properties like density, electronegativity, or atomic radius in real-time. I wanted to see how elements group together based on these values, which I found incredibly helpful for understanding patterns. I also added a simple 3D visualization for each element, which I think helps give a better sense of their structure, and some quick quizzes for gamified learning – because who doesn't love a good quiz to test their knowledge?
+
+Under the hood, it's a Next.js app, built with TypeScript. For the 3D models, I'm using React Three Fiber, which made integrating Three.js a lot smoother than I expected. All the filtering logic is client-side, processing a JSON dataset of element properties, so it feels pretty snappy.
+
+You can check it out here: https://shipmicro.com/tools
+
+This is still a work in progress, and I'd really appreciate any feedback, especially the brutal kind. What works, what doesn't, what's broken, what could be improved? Are there any other properties you'd find useful to filter by, or features you'd expect from a tool like this?
+
+Thanks for taking a look!
+
+=== 小红书文案 ===
+好的，作为深谙小红书流量密码的效率工具/程序员博主，我来帮你把这个新工具打造成爆款！
+
+---
+
+**🔥告别死记硬背！💥我发现了一个「互动周期表」效率神器，直接封神了！**
+
+姐妹们/兄弟们！👋有没有觉得化学元素周期表特别难背？每次查个密度、电负性，是不是都要翻半天书，或者在各种网站上跳来跳去？传统周期表又干又涩，学起来简直要命！🤯
+
+作为效率工具控+程序员博主，我最近挖到一个宝藏！💎 就是这个 **「互动周期表」**！
+网址：[https://shipmicro.com/tools](https://shipmicro.com/tools)
+
+用过它，你就会发现以前的周期表简直是“史前文明”！这工具简直是为我们这些追求效率的打工人、学生党量身定制的！
+
+**🚀 3个不容拒绝的理由，让你立刻爱上它！**
+
+1.  **告别翻书！秒查属性，效率直接拉满！📈**
+    想知道哪个元素密度大？电负性高？不用再死记硬背！它有**实时属性筛选功能**（密度、电负性等等），一键筛选，数据实时呈现，简直不要太方便！再也不用在书本和网页之间来回切换，查资料的速度快到飞起！
+
+2.  **元素也能玩3D！酷炫可视化，理解力UP UP UP！⚛️**
+    每个元素都有超酷炫的**3D模型**！原子结构、电子排布、晶体结构……所有抽象概念都变得立体可见，一目了然。这视觉冲击力，直接帮你轻松理解那些烧脑的知识点，学习体验直接提升N个档次！
+
+3.  **学习变游戏，轻松拿高分！🎮**
+    内置**趣味学习小测试**，边玩边学，巩固知识点。告别枯燥刷题，让学习变得像打游戏一样上瘾！妈妈再也不用担心我的化学成绩了！🥳
+
+真的，无论是学生党、科研狗还是对化学好奇的宝宝，这个工具都能让你爱上化学，让学习和查资料变得超级轻松高效！
+
+赶紧去试试吧！传送门就在这里：[https://shipmicro.com/tools](https://shipmicro.com/tools)
+
+#效率工具 #程序员 #神器 #生产力工具 #化学学习 #元素周期表 #学习工具 #学生党必备 #科研狗 #科技改变生活 #小红书学习 #船微工具箱

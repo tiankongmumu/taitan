@@ -1,0 +1,139 @@
+{
+  "keyword": "crypto portfolio tracker",
+  "competitors": [
+    {
+      "name": "CoinMarketCap",
+      "url": "https://coinmarketcap.com/portfolio-tracker/",
+      "features": [
+        "Massive coin database",
+        "Seamless integration with price data",
+        "Simple, clean interface",
+        "Free with no account required",
+        "Mobile app available"
+      ],
+      "weaknesses": [
+        "Basic features only",
+        "Limited advanced analytics",
+        "No direct exchange API sync (manual entry)",
+        "No tax reporting tools",
+        "Portfolio data not persistent across devices without account"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 150000000
+    },
+    {
+      "name": "CoinGecko",
+      "url": "https://www.coingecko.com/en/portfolio",
+      "features": [
+        "Trusted, independent data",
+        "Detailed coin profiles & community stats",
+        "Watchlist functionality",
+        "Free portfolio tracking",
+        "Public API for developers"
+      ],
+      "weaknesses": [
+        "Portfolio tracker is a secondary feature",
+        "UI can feel cluttered",
+        "Manual entry or limited CSV import",
+        "Lacks sophisticated performance charts",
+        "No automated trade syncing for most exchanges"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 80000000
+    },
+    {
+      "name": "CoinStats",
+      "url": "https://coinstats.app/",
+      "features": [
+        "Wide exchange & wallet API connectivity",
+        "Unified DeFi & CeFi dashboard",
+        "Detailed P&L analytics",
+        "Mobile-first with strong app",
+        "News aggregator and alerts"
+      ],
+      "weaknesses": [
+        "Free tier is very limited (2 portfolios, 1 exchange)",
+        "Premium pricing is relatively high",
+        "Can be overwhelming for beginners",
+        "Occasional sync issues reported",
+        "Web interface less polished than mobile"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 5000000
+    },
+    {
+      "name": "Koinly",
+      "url": "https://koinly.io/",
+      "features": [
+        "Primary focus on crypto tax reporting",
+        "Robust transaction import from 700+ sources",
+        "Automated capital gains calculations",
+        "Generates tax forms for many countries",
+        "Clear audit trail and cost basis methods"
+      ],
+      "weaknesses": [
+        "Portfolio tracking is secondary to tax prep",
+        "Expensive for active traders (pricing based on transactions)",
+        "UI is functional but not beautiful",
+        "Real-time portfolio value can be laggy",
+        "Overkill for users who just want to track, not tax"
+      ],
+      "pricing": "freemium (paid tax reports)",
+      "monthly_traffic": 2500000
+    },
+    {
+      "name": "Delta Investment Tracker",
+      "url": "https://delta.app/",
+      "features": [
+        "Tracks crypto, stocks, NFTs in one place",
+        "Beautiful, intuitive design",
+        "Advanced charts and market overview",
+        "Strong mobile app experience",
+        "Customizable alerts and news"
+      ],
+      "weaknesses": [
+        "Advanced features locked behind Pro subscription",
+        "Crypto-specific depth less than specialists",
+        "Some users report slow sync speeds",
+        "Limited DeFi tracking compared to rivals",
+        "Portfolio analysis can be surface-level"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 3000000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Privacy-First, Non-Custodial Tracking",
+      "implementation": "Build a tracker that uses local encryption (client-side) for portfolio data. Offer optional, anonymous peer-to-peer price/data syncing. No email or KYC required. Position as the 'offline-first' portfolio tool.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Hyper-Simplified Interface for Casual Holders",
+      "implementation": "Create an extremely focused tool with a 3-step setup: 1) Select coins, 2) Enter amounts, 3) See total. Remove all advanced charts, news, and market data. Use large, clear typography and a single 'All-Time Profit/Loss' figure.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "Advanced Social/Comparative Analytics",
+      "implementation": "Implement anonymized, opt-in benchmarking. Allow users to compare their portfolio's risk profile, asset allocation, and performance against aggregates (e.g., 'top 10% of portfolios', 'similar ETH-heavy portfolios'). Focus on insights, not just raw data.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Integrated On-Chain Wallet Analysis & Security Scoring",
+      "implementation": "Connect to wallet addresses (read-only) to auto-track holdings and transactions. Layer on a security audit: flag risky token approvals, exposure to hacked contracts, and wallet concentration risk. Partner with security firms for data.",
+      "impact": "MEDIUM",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Scenario Planning & 'What-If' Simulator",
+      "implementation": "Build a tool that lets users model portfolio changes: 'What if I sold 50% of my BTC and bought ETH and SOL?' Show projected P&L, new allocation pie chart, and risk metrics. Save and compare multiple scenarios.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    }
+  ],
+  "recommended_positioning": "The intelligent, privacy-focused crypto portfolio tracker that helps you understand your risk and performance beyond just the bottom line.",
+  "analyzed_at": "2026-03-06T11:41:52.554563"
+}
