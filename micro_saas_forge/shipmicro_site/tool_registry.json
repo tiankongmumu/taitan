@@ -1,0 +1,494 @@
+[
+  {
+    "slug": "word-counter",
+    "title": "Word Counter",
+    "category": "Text",
+    "icon": "📝",
+    "url": "/tools/word-counter.html",
+    "isPremium": false
+  },
+  {
+    "slug": "case-converter",
+    "title": "Case Converter",
+    "category": "Text",
+    "icon": "🔤",
+    "url": "/tools/case-converter.html",
+    "isPremium": false
+  },
+  {
+    "slug": "lorem-generator",
+    "title": "Lorem Generator",
+    "category": "Text",
+    "icon": "📜",
+    "url": "/tools/lorem-generator.html",
+    "isPremium": false
+  },
+  {
+    "slug": "slug-generator",
+    "title": "Slug Generator",
+    "category": "Text",
+    "icon": "🔗",
+    "url": "/tools/slug-generator.html",
+    "isPremium": false
+  },
+  {
+    "slug": "text-reverser",
+    "title": "Text Reverser",
+    "category": "Text",
+    "icon": "🔄",
+    "url": "/tools/text-reverser.html",
+    "isPremium": false
+  },
+  {
+    "slug": "line-sorter",
+    "title": "Line Sorter",
+    "category": "Text",
+    "icon": "📊",
+    "url": "/tools/line-sorter.html",
+    "isPremium": false
+  },
+  {
+    "slug": "char-frequency",
+    "title": "Char Frequency",
+    "category": "Text",
+    "icon": "📈",
+    "url": "/tools/char-frequency.html",
+    "isPremium": false
+  },
+  {
+    "slug": "markdown-preview",
+    "title": "Markdown Preview",
+    "category": "Text",
+    "icon": "📝",
+    "url": "/tools/markdown-preview.html",
+    "isPremium": false
+  },
+  {
+    "slug": "json-formatter",
+    "title": "JSON Formatter",
+    "category": "Code",
+    "icon": "⚡",
+    "url": "/tools/json-formatter.html",
+    "isPremium": false
+  },
+  {
+    "slug": "base64-codec",
+    "title": "Base64 Codec",
+    "category": "Code",
+    "icon": "🔐",
+    "url": "/tools/base64-codec.html",
+    "isPremium": false
+  },
+  {
+    "slug": "regex-tester",
+    "title": "Regex Tester",
+    "category": "Code",
+    "icon": "🔍",
+    "url": "/tools/regex-tester.html",
+    "isPremium": false
+  },
+  {
+    "slug": "jwt-decoder",
+    "title": "JWT Decoder",
+    "category": "Code",
+    "icon": "🎫",
+    "url": "/tools/jwt-decoder.html",
+    "isPremium": false
+  },
+  {
+    "slug": "url-encoder",
+    "title": "URL Encoder",
+    "category": "Code",
+    "icon": "🌐",
+    "url": "/tools/url-encoder.html",
+    "isPremium": false
+  },
+  {
+    "slug": "html-escape",
+    "title": "HTML Escape",
+    "category": "Code",
+    "icon": "🏷️",
+    "url": "/tools/html-escape.html",
+    "isPremium": false
+  },
+  {
+    "slug": "css-minifier",
+    "title": "CSS Minifier",
+    "category": "Code",
+    "icon": "🎨",
+    "url": "/tools/css-minifier.html",
+    "isPremium": false
+  },
+  {
+    "slug": "cron-helper",
+    "title": "Cron Helper",
+    "category": "Code",
+    "icon": "⏰",
+    "url": "/tools/cron-helper.html",
+    "isPremium": false
+  },
+  {
+    "slug": "diff-checker",
+    "title": "Diff Checker",
+    "category": "Code",
+    "icon": "📋",
+    "url": "/tools/diff-checker.html",
+    "isPremium": false
+  },
+  {
+    "slug": "color-picker",
+    "title": "Color Picker",
+    "category": "Design",
+    "icon": "🎨",
+    "url": "/tools/color-picker.html",
+    "isPremium": false
+  },
+  {
+    "slug": "gradient-gen",
+    "title": "Gradient Generator",
+    "category": "Design",
+    "icon": "🌈",
+    "url": "/tools/gradient-gen.html",
+    "isPremium": false
+  },
+  {
+    "slug": "contrast-check",
+    "title": "Contrast Checker",
+    "category": "Design",
+    "icon": "👁️",
+    "url": "/tools/contrast-check.html",
+    "isPremium": false
+  },
+  {
+    "slug": "shadow-gen",
+    "title": "Shadow Generator",
+    "category": "Design",
+    "icon": "🌓",
+    "url": "/tools/shadow-gen.html",
+    "isPremium": false
+  },
+  {
+    "slug": "palette-gen",
+    "title": "Palette Generator",
+    "category": "Design",
+    "icon": "🎯",
+    "url": "/tools/palette-gen.html",
+    "isPremium": false
+  },
+  {
+    "slug": "glass-gen",
+    "title": "Glassmorphism Gen",
+    "category": "Design",
+    "icon": "🪟",
+    "url": "/tools/glass-gen.html",
+    "isPremium": false
+  },
+  {
+    "slug": "font-pairing",
+    "title": "Font Pairing",
+    "category": "Design",
+    "icon": "✏️",
+    "url": "/tools/font-pairing.html",
+    "isPremium": false
+  },
+  {
+    "slug": "unit-converter",
+    "title": "Unit Converter",
+    "category": "Utility",
+    "icon": "📐",
+    "url": "/tools/unit-converter.html",
+    "isPremium": false
+  },
+  {
+    "slug": "percentage-calc",
+    "title": "Percentage Calc",
+    "category": "Utility",
+    "icon": "💯",
+    "url": "/tools/percentage-calc.html",
+    "isPremium": false
+  },
+  {
+    "slug": "bmi-calc",
+    "title": "BMI Calculator",
+    "category": "Utility",
+    "icon": "⚖️",
+    "url": "/tools/bmi-calc.html",
+    "isPremium": false
+  },
+  {
+    "slug": "tip-calc",
+    "title": "Tip Calculator",
+    "category": "Utility",
+    "icon": "💰",
+    "url": "/tools/tip-calc.html",
+    "isPremium": false
+  },
+  {
+    "slug": "timestamp-conv",
+    "title": "Timestamp Converter",
+    "category": "Utility",
+    "icon": "🕐",
+    "url": "/tools/timestamp-conv.html",
+    "isPremium": false
+  },
+  {
+    "slug": "number-base",
+    "title": "Number Base Converter",
+    "category": "Utility",
+    "icon": "🔢",
+    "url": "/tools/number-base.html",
+    "isPremium": false
+  },
+  {
+    "slug": "age-calc",
+    "title": "Age Calculator",
+    "category": "Utility",
+    "icon": "🎂",
+    "url": "/tools/age-calc.html",
+    "isPremium": false
+  },
+  {
+    "slug": "loan-calc",
+    "title": "Loan Calculator",
+    "category": "Utility",
+    "icon": "🏦",
+    "url": "/tools/loan-calc.html",
+    "isPremium": false
+  },
+  {
+    "slug": "password-gen",
+    "title": "Password Generator",
+    "category": "Security",
+    "icon": "🔒",
+    "url": "/tools/password-gen.html",
+    "isPremium": false
+  },
+  {
+    "slug": "hash-gen",
+    "title": "Hash Generator",
+    "category": "Security",
+    "icon": "#️⃣",
+    "url": "/tools/hash-gen.html",
+    "isPremium": false
+  },
+  {
+    "slug": "uuid-gen",
+    "title": "UUID Generator",
+    "category": "Security",
+    "icon": "🆔",
+    "url": "/tools/uuid-gen.html",
+    "isPremium": false
+  },
+  {
+    "slug": "qr-gen",
+    "title": "QR Code Generator",
+    "category": "Security",
+    "icon": "📱",
+    "url": "/tools/qr-gen.html",
+    "isPremium": false
+  },
+  {
+    "slug": "fake-data",
+    "title": "Fake Data Generator",
+    "category": "Security",
+    "icon": "🎭",
+    "url": "/tools/fake-data.html",
+    "isPremium": false
+  },
+  {
+    "slug": "ip-info",
+    "title": "IP Info Lookup",
+    "category": "Security",
+    "icon": "🌍",
+    "url": "/tools/ip-info.html",
+    "isPremium": false
+  },
+  {
+    "slug": "encryption",
+    "title": "Text Encryptor",
+    "category": "Security",
+    "icon": "🔐",
+    "url": "/tools/encryption.html",
+    "isPremium": false
+  },
+  {
+    "slug": "meta-gen",
+    "title": "Meta Tag Generator",
+    "category": "SEO",
+    "icon": "🏷️",
+    "url": "/tools/meta-gen.html",
+    "isPremium": false
+  },
+  {
+    "slug": "og-preview",
+    "title": "Open Graph Preview",
+    "category": "SEO",
+    "icon": "👁️",
+    "url": "/tools/og-preview.html",
+    "isPremium": false
+  },
+  {
+    "slug": "robots-builder",
+    "title": "Robots.txt Builder",
+    "category": "SEO",
+    "icon": "🤖",
+    "url": "/tools/robots-builder.html",
+    "isPremium": false
+  },
+  {
+    "slug": "heading-analyzer",
+    "title": "Heading Analyzer",
+    "category": "SEO",
+    "icon": "📊",
+    "url": "/tools/heading-analyzer.html",
+    "isPremium": false
+  },
+  {
+    "slug": "keyword-density",
+    "title": "Keyword Density",
+    "category": "SEO",
+    "icon": "🔑",
+    "url": "/tools/keyword-density.html",
+    "isPremium": false
+  },
+  {
+    "slug": "pomodoro",
+    "title": "Pomodoro Timer",
+    "category": "Utility",
+    "icon": "🍅",
+    "url": "/tools/pomodoro.html",
+    "isPremium": false
+  },
+  {
+    "slug": "habit-tracker",
+    "title": "Habit Tracker",
+    "category": "Utility",
+    "icon": "✅",
+    "url": "/tools/habit-tracker.html",
+    "isPremium": false
+  },
+  {
+    "slug": "stopwatch",
+    "title": "Stopwatch",
+    "category": "Utility",
+    "icon": "⏱️",
+    "url": "/tools/stopwatch.html",
+    "isPremium": false
+  },
+  {
+    "slug": "notes",
+    "title": "Quick Notes",
+    "category": "Utility",
+    "icon": "📝",
+    "url": "/tools/notes.html",
+    "isPremium": false
+  },
+  {
+    "slug": "countdown",
+    "title": "Countdown Timer",
+    "category": "Utility",
+    "icon": "⏳",
+    "url": "/tools/countdown.html",
+    "isPremium": false
+  },
+  {
+    "slug": "jwt-debugger-pro",
+    "title": "JWT Debugger Pro",
+    "category": "Code",
+    "icon": "🔑",
+    "description": "Inspect, validate, and generate JSON Web Tokens with advanced debugging",
+    "url": "https://jwt-debugger-tiankongmumus-projects.vercel.app",
+    "isPremium": true,
+    "isExternal": true
+  },
+  {
+    "slug": "json-path-finder-pro",
+    "title": "JSON Path Finder",
+    "category": "Code",
+    "icon": "🔍",
+    "description": "Find and test JSON paths with real-time preview",
+    "url": "https://json-path-finder-4s481qkm6-tiankongmumus-projects.vercel.app",
+    "isPremium": true,
+    "isExternal": true
+  },
+  {
+    "slug": "sql-formatter-pro",
+    "title": "SQL Query Formatter",
+    "category": "Code",
+    "icon": "🗃️",
+    "description": "Format, beautify and optimize SQL queries instantly",
+    "url": "https://sql-query-formatter-cvv37dbxd-tiankongmumus-projects.vercel.app",
+    "isPremium": true,
+    "isExternal": true
+  },
+  {
+    "slug": "curl-to-code",
+    "title": "cURL to Code",
+    "category": "Code",
+    "icon": "🔄",
+    "description": "Convert cURL commands to Python, JavaScript, Go and more",
+    "url": "https://curl-to-code-26zngtfol-tiankongmumus-projects.vercel.app",
+    "isPremium": true,
+    "isExternal": true
+  },
+  {
+    "slug": "pg-schema-designer",
+    "title": "PostgreSQL Schema Designer",
+    "category": "Code",
+    "icon": "🐘",
+    "description": "Visual PostgreSQL schema designer with SQL export",
+    "url": "https://postgresql-schema-designer-n66208e8l-tiankongmumus-projects.vercel.app",
+    "isPremium": true,
+    "isExternal": true
+  },
+  {
+    "slug": "qr-generator-pro",
+    "title": "Smart QR Generator",
+    "category": "Utility",
+    "icon": "📱",
+    "description": "Generate customizable QR codes with logos and colors",
+    "url": "https://smart-qr-generator-l4gdiykzp-tiankongmumus-projects.vercel.app",
+    "isPremium": true,
+    "isExternal": true
+  },
+  {
+    "slug": "image-compress-pro",
+    "title": "Image Compress Pro",
+    "category": "Design",
+    "icon": "🖼️",
+    "description": "Compress images without losing quality — supports JPG, PNG, WebP",
+    "url": "https://image-compress-7mtlnql94-tiankongmumus-projects.vercel.app",
+    "isPremium": true,
+    "isExternal": true
+  },
+  {
+    "slug": "svg-to-png-pro",
+    "title": "SVG to PNG Converter",
+    "category": "Design",
+    "icon": "🎨",
+    "description": "Convert SVG files to high-quality PNG with custom resolution",
+    "url": "https://svg-to-png-pro-converter-grorlo1tm-tiankongmumus-projects.vercel.app",
+    "isPremium": true,
+    "isExternal": true
+  },
+  {
+    "slug": "typing-speed-pro",
+    "title": "Typing Speed Test",
+    "category": "Utility",
+    "icon": "⌨️",
+    "description": "Test your typing speed and accuracy with real-time WPM tracking",
+    "url": "https://typing-speed-test-72udnt23m-tiankongmumus-projects.vercel.app",
+    "isPremium": true,
+    "isExternal": true
+  },
+  {
+    "slug": "favicon-forge-pro",
+    "title": "Favicon Forge Pro",
+    "category": "Design",
+    "icon": "⭐",
+    "description": "Create professional favicons from text, emoji or uploaded images",
+    "url": "https://favicon-forge-nwnh7z8hf-tiankongmumus-projects.vercel.app",
+    "isPremium": true,
+    "isExternal": true
+  }
+]

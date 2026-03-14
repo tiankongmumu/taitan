@@ -1,0 +1,60 @@
+=== TWITTER THREAD ===
+**Tweet 1:**  
+Gas fees are a silent tax on every Ethereum user.  
+You check the price, it spikes, you wait… and you still overpay.  
+We just shipped a solution.  
+
+https://shipmicro.com/tools
+
+**Tweet 2:**  
+Existing gas trackers are glorified dashboards.  
+They show you the problem—not how to solve it.  
+Static numbers, no prediction, no strategy. You’re left guessing.
+
+**Tweet 3:**  
+Ours is different:  
+✅ AI-powered real-time gas predictions  
+✅ Multi-chain support (Ethereum, Polygon, Arbitrum, more)  
+✅ Fee-saving transaction scheduler  
+Stop watching gas. Start beating it.
+
+**Tweet 4:**  
+It’s live.  
+Try it, break it, tell us what you think.  
+Builders, degens, and gas-conscious users—this is for you.  
+
+https://shipmicro.com/tools
+
+=== REDDIT POST ===
+I was so frustrated with constantly overpaying for Ethereum gas fees, especially when doing batch transactions for my other projects. I’d check a tracker, send a tx, and then watch the price drop right after—super annoying. So I made a real-time gas tracker with a few extra things that helped me personally.
+
+The main difference is that it uses a lightweight ML model to predict short-term gas trends instead of just showing the current price. It also supports multiple EVM chains (Polygon, Arbitrum, etc.) and has a simple transaction scheduler that lets you set a target gas price and get notified (or auto-submit) when it’s hit.
+
+Tech-wise, it’s a Next.js frontend with a Go backend for the prediction service. The model is a simple LSTM trained on historical gas data, and we update it daily. The scheduler uses a queue system with Redis to monitor gas prices without hammering RPC endpoints.
+
+If you want to check it out, it’s here:  
+https://shipmicro.com/tools
+
+I’d love some brutal feedback—especially if you’ve built something similar or if you think the prediction feature is actually useful vs. just a gimmick. Also, if there are other chains or features you’d want, let me know.
+
+=== 小红书文案 ===
+🔥 以太坊Gas费预测神器！AI帮你省到封神！
+
+家人们谁懂啊！每次转账前盯着Gas费心惊胆战的日子终于结束了！😭 不用再熬夜蹲低点，不用再手忙脚乱算手续费，这个工具简直是打工人的救命稻草！
+
+以前不用它的时候：
+❌ 转账像开盲盒，手续费高到肉疼
+❌ 跨链操作一头雾水，手续费算到崩溃
+❌ 错过低价时段，白白多花好几刀
+
+现在有了它简直开挂：
+✨ AI实时预测Gas价格，精准把握最低点
+✨ 支持多链操作，一条龙搞定所有转账
+✨ 智能交易排期，自动选择最省钱的时机
+
+用了它之后，每次转账都感觉自己赚了一个亿！💸 操作简单到哭，界面清爽又直观，程序员看了直呼内行，小白用了也能秒上手！
+
+👉 指路：https://shipmicro.com/tools
+（亲测好用，不好用来打我！）
+
+#效率神器 #区块链必备 #打工人福音 #AI黑科技 #省钱攻略 #以太坊神器

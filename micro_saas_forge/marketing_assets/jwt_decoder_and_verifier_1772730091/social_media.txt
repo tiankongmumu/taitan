@@ -1,0 +1,64 @@
+=== TWITTER THREAD ===
+**Tweet 1:**  
+Ever wasted 15 minutes pasting a JWT into some clunky, slow-as-hell decoder just to debug auth?  
+We just shipped a solution.  
+
+https://jwt-security-workstation-dlbam3h25-tiankongmumus-projects.vercel.app
+
+**Tweet 2:**  
+Existing tools feel like they were built in 2012. Ugly UI, laggy responses, and zero dev experience.  
+Why is something so simple still so painful?
+
+**Tweet 3:**  
+Our JWT Decoder & Verifier fixes this:  
+✨ Awesome, intuitive UI  
+⚡ Zero latency — decode/verify instantly  
+Built for devs who care about speed and clarity.
+
+**Tweet 4:**  
+It’s live right now. Try it, break it, tell us what you think.  
+Feedback = fuel.  
+
+https://jwt-security-workstation-dlbam3h25-tiankongmumus-projects.vercel.app
+
+=== REDDIT POST ===
+I was so frustrated with how clunky and slow most JWT debuggers felt, especially when I was iterating on auth flows or debugging production issues. I’d have a token, paste it somewhere, wait for a decode, then maybe verify it—it always felt like just enough friction to break my flow.
+
+So I made a JWT decoder and verifier that focuses on two things: an awesome, clean UI and zero perceived latency. I wanted it to feel instant—paste a token and see it decoded and validated in real time as you type or edit.
+
+The frontend is Next.js with TypeScript and Tailwind, and the JWT parsing/verification runs entirely client-side (using `jsonwebtoken` in a Web Worker to keep the UI snappy). No tokens are sent to a server—everything happens in your browser. You can paste a token, edit the payload or signature directly in the UI to see how validation changes, and toggle between HS256 and RS256 to test different signing methods.
+
+It’s been a handy little security workstation for my own projects, and I hope it can save some of you time too.
+
+Check it out here:  
+https://jwt-security-workstation-dlbam3h25-tiankongmumus-projects.vercel.app
+
+I’d love brutal feedback—especially if you run into any issues with specific token formats, or if there are features you’ve wished for in a JWT tool that I haven’t thought of.
+
+=== 小红书文案 ===
+🔥 JWT 解析神器！开发效率直接封神了！💥
+
+家人们谁懂啊！每次调试 API 都要手动解 JWT，查 payload、对签名，眼睛都要看花了😫 还要到处找在线工具，有的慢有的广告多，真的栓Q…
+
+直到我发现了这个👉 **JWT Decoder & Verifier**，简直是我的年度效率救星！✨
+
+为什么说它惊艳？三点直接拿捏：
+
+1️⃣ **界面美哭，操作丝滑**
+   — 颜值即正义！干净现代的 UI，一看就是懂设计的工具。解码、验证一键切换，再也不用来回切网页。
+
+2️⃣ **零延迟，秒出结果**
+   — 真的零延迟！粘贴 JWT 的瞬间，Header、Payload 直接展开，签名验证状态实时显示，手速多快它多快。
+
+3️⃣ **安全放心，本地解析**
+   — 完全在浏览器里运行，Token 不传服务器，隐私稳稳的！适合查生产日志、本地调试，打工人必备安全感。
+
+现在调试接口、验签、查用户信息直接起飞🛫 省下来的时间摸鱼不香吗！
+
+工具指路👇
+https://jwt-security-workstation-dlbam3h25-tiankongmumus-projects.vercel.app
+
+不用再在老旧工具里挣扎了，这个真的香！
+建议所有前后端、测试同学速速收藏🌟
+
+#效率工具 #程序员必备 #开发神器 #生产力工具 #JWT调试 #摸鱼小技巧

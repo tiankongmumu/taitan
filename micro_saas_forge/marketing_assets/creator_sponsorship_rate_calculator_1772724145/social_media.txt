@@ -1,0 +1,67 @@
+=== TWITTER THREAD ===
+**Tweet 1:**  
+Every creator I know is leaving money on the table because they don’t know what to charge sponsors.  
+Guessing your rate? That’s a problem.  
+We just shipped a solution.  
+🔗 https://creator-sponsorship-rate-calculator-ihyfzwaj9.vercel.app
+
+**Tweet 2:**  
+Most “rate calculators” just slap a generic CPM on you and call it a day.  
+They ignore your niche, your engagement, and whether it’s an integrated segment or a dedicated video.  
+That’s why their quotes feel fake and sponsors push back.
+
+**Tweet 3:**  
+Ours is different.  
+Dynamic rate cards based on:  
+- Your specific niche  
+- True engagement rate  
+- Content type (integrated vs. dedicated)  
+Data-backed, credible, built to close deals faster.  
+No more underselling your work.
+
+**Tweet 4:**  
+It’s live. Free.  
+Try it, share your rate card, and tell us how we can make it better.  
+Build in public, together.  
+👉 https://creator-sponsorship-rate-calculator-ihyfzwaj9.vercel.app  
+Feedback = fuel. Let’s go.
+
+=== REDDIT POST ===
+**I built a sponsorship rate calculator for creators because I was tired of guessing.**
+
+I’m a developer who also runs a small YouTube channel, and I kept hitting the same wall: trying to figure out what to charge for a sponsored segment. Most advice out there is either “charge $X per 1,000 views” or totally anecdotal. That’s fine for a starting point, but it ignores everything that actually matters—like niche, engagement rate, and how the sponsorship is delivered (e.g., a dedicated video vs. an integrated mention).
+
+So I made a dynamic calculator that actually uses those variables to generate a credible, data-backed rate range. It’s not just a static CPM multiplier; it adjusts based on:
+- **Niche** (tech, gaming, lifestyle, etc.)
+- **Engagement rate** (comments, likes relative to views/subscribers)
+- **Content type** (dedicated video, integrated segment, or simple mention)
+- **Platform** (YouTube or written content/blog)
+
+The logic pulls from aggregated industry rate data, applies modifiers for niche “heat” and engagement quality, and spits out a range that feels realistic rather than random. I built it with Next.js 14 (App Router), TypeScript, and Tailwind, hosted on Vercel. The state logic for the interactive sliders and selectors got a little gnarly, but it was fun to tune.
+
+If you create content or know someone who does, I’d love for you to try it and tear it apart:
+
+**https://creator-sponsorship-rate-calculator-ihyfzwaj9.vercel.app**
+
+This started as a tool for myself, but I’m hoping it can help other creators avoid undercharging or overpricing themselves. Would really appreciate brutal feedback—especially if the calculations feel off for your niche, or if there are other factors I should bake in.
+
+=== 小红书文案 ===
+🔥 接商单报价不再头秃！数据党博主封神计算器来了！
+
+家人们谁懂啊！每次品牌方问报价都心虚到脚趾抠地…😭 凭感觉乱报怕谈崩，查半天市场价还是心里没底？别卷了！今天挖到这个神器简直救我狗命！
+
+就是这个👉创作者赞助报价计算器
+它可不是普通的CPM计算！直接根据你的领域、互动率、内容类型（比如软植入还是专属视频）生成一份超有说服力的数据化报价单！甩给品牌方看都显得咱专业度拉满！💥
+
+为什么说它简直是效率神器？
+1️⃣ 告别拍脑袋报价：输入你的真实数据（领域、粉丝互动率），它用算法生成市场 credible 的报价范围，让你心里有底，谈判不慌！
+2️⃣ 内容类型细分到尖叫：同样是视频，软性植入和专属测评的价它都能分开算！再也不用自己纠结怎么定价差！
+3️⃣ 数据支撑，专业度封神：生成的那份 rate card 自带数据逻辑，给品牌方看瞬间提升信任度，谈价底气都足十倍！
+
+不用它？你就继续在漫天要价和卑微打折之间反复横跳吧…😅 接个商单比做内容还累！
+
+工具指路：creator-sponsorship-rate-calculator-ihyfzwaj9.vercel.app（链接在评论区）
+
+打工人必备，博主必藏！用数据武装自己，接单报价从此硬气！💪
+
+#效率工具 #自媒体干货 #博主必备 #接商单 #神器推荐 #生产力工具 #创作者经济

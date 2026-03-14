@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>霓虹记忆 — ShipMicro 游戏厅</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      background: #050510;
+      color: #fff;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      min-height: 100dvh;
+      touch-action: manipulation;
+      user-select: none;
+    }
+
+    .container {
+      max-width: 440px;
+      width: 100%;
+      padding: 20px;
+      text-align: center
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px
+    }
+
+    .logo {
+      font-size: 13px;
+      color: #666
+    }
+
+    .logo a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    .stats {
+      display: flex;
+      gap: 20px
+    }
+
+    .stat-v {
+      font-size: 22px;
+      font-weight: 900;
+      color: #a855f7;
+      text-shadow: 0 0 10px rgba(168, 85, 247, .3)
+    }
+
+    .stat-l {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #444;
+      text-align: center
+    }
+
+    .status {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 16px;
+      min-height: 24px;
+      transition: all .3s;
+      font-weight: 600;
+    }
+
+    .status.watch {
+      color: #f59e0b;
+      text-shadow: 0 0 10px rgba(245, 158, 11, .3)
+    }
+
+    .status.go {
+      color: #22c55e;
+      text-shadow: 0 0 10px rgba(34, 197, 94, .3)
+    }
+
+    .status.error {
+      color: #ef4444;
+      text-shadow: 0 0 10px rgba(239, 68, 68, .3)
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      max-width: 340px;
+      margin: 0 auto
+    }
+
+    .pad {
+      aspect-ratio: 1;
+      border-radius: 28px;
+      cursor: pointer;
+      transition: all .2s;
+      position: relative;
+      overflow: hidden;
+      border: 3px solid transparent;
+    }
+
+    .pad::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 25px;
+      opacity: 0;
+      transition: opacity .15s;
+    }
+
+    .pad::after {
+      content: '';
+      position: absolute;
+      inset: 4px;
+      border-radius: 22px;
+      background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, .1), transparent);
+      opacity: 0;
+      transition: opacity .2s;
+    }
+
+    .pad:active {
+      transform: scale(.94)
+    }
+
+    /* Pad colors — default dim state */
+    .pad[data-color="0"] {
+      background: rgba(239, 68, 68, .1);
+      border-color: rgba(239, 68, 68, .2)
+    }
+
+    .pad[data-color="1"] {
+      background: rgba(34, 197, 94, .1);
+      border-color: rgba(34, 197, 94, .2)
+    }
+
+    .pad[data-color="2"] {
+      background: rgba(59, 130, 246, .1);
+      border-color: rgba(59, 130, 246, .2)
+    }
+
+    .pad[data-color="3"] {
+      background: rgba(234, 179, 8, .1);
+      border-color: rgba(234, 179, 8, .2)
+    }
+
+    /* Flash/lit state */
+    .pad[data-color="0"].flash {
+      background: rgba(239, 68, 68, .45);
+      border-color: #ef4444;
+      box-shadow: 0 0 50px rgba(239, 68, 68, .4), inset 0 0 30px rgba(239, 68, 68, .2);
+    }
+
+    .pad[data-color="0"].flash::after {
+      opacity: 1
+    }
+
+    .pad[data-color="0"]::before {
+      background: radial-gradient(circle, rgba(239, 68, 68, .3), transparent)
+    }
+
+    .pad[data-color="1"].flash {
+      background: rgba(34, 197, 94, .45);
+      border-color: #22c55e;
+      box-shadow: 0 0 50px rgba(34, 197, 94, .4), inset 0 0 30px rgba(34, 197, 94, .2);
+    }
+
+    .pad[data-color="1"].flash::after {
+      opacity: 1
+    }
+
+    .pad[data-color="1"]::before {
+      background: radial-gradient(circle, rgba(34, 197, 94, .3), transparent)
+    }
+
+    .pad[data-color="2"].flash {
+      background: rgba(59, 130, 246, .45);
+      border-color: #3b82f6;
+      box-shadow: 0 0 50px rgba(59, 130, 246, .4), inset 0 0 30px rgba(59, 130, 246, .2);
+    }
+
+    .pad[data-color="2"].flash::after {
+      opacity: 1
+    }
+
+    .pad[data-color="2"]::before {
+      background: radial-gradient(circle, rgba(59, 130, 246, .3), transparent)
+    }
+
+    .pad[data-color="3"].flash {
+      background: rgba(234, 179, 8, .45);
+      border-color: #eab308;
+      box-shadow: 0 0 50px rgba(234, 179, 8, .4), inset 0 0 30px rgba(234, 179, 8, .2);
+    }
+
+    .pad[data-color="3"].flash::after {
+      opacity: 1
+    }
+
+    .pad[data-color="3"]::before {
+      background: radial-gradient(circle, rgba(234, 179, 8, .3), transparent)
+    }
+
+    .pad.flash::before {
+      opacity: 1
+    }
+
+    /* Fail flash — all pads flash red */
+    .pad.fail {
+      background: rgba(239, 68, 68, .3) !important;
+      border-color: #ef4444 !important;
+      box-shadow: 0 0 30px rgba(239, 68, 68, .3) !important
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 5, 16, .92);
+      backdrop-filter: blur(20px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      animation: fadeIn .3s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: scale(1)
+      }
+
+      50% {
+        transform: scale(1.05)
+      }
+    }
+
+    @keyframes glow {
+
+      0%,
+      100% {
+        box-shadow: 0 0 20px rgba(168, 85, 247, .2)
+      }
+
+      50% {
+        box-shadow: 0 0 40px rgba(168, 85, 247, .5)
+      }
+    }
+
+    .card {
+      text-align: center;
+      padding: 48px 36px;
+      max-width: 400px;
+      width: 92%;
+      background: linear-gradient(135deg, rgba(168, 85, 247, .05), rgba(236, 72, 153, .05));
+      border: 1px solid rgba(168, 85, 247, .15);
+      border-radius: 28px;
+      color: #fff;
+      animation: slideUp .4s;
+    }
+
+    .card-icon {
+      font-size: 80px;
+      margin-bottom: 16px;
+      display: block;
+      animation: pulse 2s infinite
+    }
+
+    .card h2 {
+      font-size: 32px;
+      font-weight: 900;
+      margin-bottom: 4px
+    }
+
+    .card .sub {
+      color: #888;
+      font-size: 13px;
+      margin-bottom: 6px
+    }
+
+    .card .desc {
+      color: #555;
+      font-size: 12px;
+      margin-bottom: 16px;
+      line-height: 1.5
+    }
+
+    .card .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin: 16px 0;
+      padding: 12px 0;
+      border-top: 1px solid rgba(255, 255, 255, .05);
+      border-bottom: 1px solid rgba(255, 255, 255, .05)
+    }
+
+    .card .stat-item {
+      text-align: center
+    }
+
+    .card .stat-val {
+      font-size: 28px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #a855f7, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent
+    }
+
+    .card .stat-lbl {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #555
+    }
+
+    .card .record-badge {
+      color: #f59e0b;
+      font-weight: 800;
+      font-size: 14px;
+      margin: 8px 0;
+      display: none
+    }
+
+    .card .record-badge.show {
+      display: block;
+      animation: pulse .5s
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 44px;
+      border-radius: 16px;
+      border: none;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      background: linear-gradient(135deg, #a855f7, #ec4899);
+      color: #fff;
+      margin-top: 16px;
+      transition: all .2s;
+      animation: glow 2s infinite
+    }
+
+    .btn:hover {
+      transform: scale(1.05)
+    }
+
+    .btn:active {
+      transform: scale(.97)
+    }
+
+    .btn-ghost {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid rgba(255, 255, 255, .08);
+      color: #777;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: all .2s
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, .08)
+    }
+
+    .hidden {
+      display: none !important
+    }
+
+    /* Round announcement */
+    .round-announce {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      font-weight: 900;
+      color: #a855f7;
+      text-shadow: 0 0 30px rgba(168, 85, 247, .6);
+      z-index: 80;
+      pointer-events: none;
+      animation: announceIn .6s ease forwards;
+    }
+
+    @keyframes announceIn {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.5)
+      }
+
+      40% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.1)
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate(-50%, -60%) scale(1)
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo"><a href="/arcade">← 游戏厅</a></div>
+      <div class="stats">
+        <div>
+          <div class="stat-v" id="h-round">0</div>
+          <div class="stat-l">回合</div>
+        </div>
+        <div>
+          <div class="stat-v" id="h-score">0</div>
+          <div class="stat-l">分数</div>
+        </div>
+      </div>
+    </div>
+    <div class="status" id="status">按下开始游戏</div>
+    <div class="board" id="board"></div>
+  </div>
+
+  <div class="overlay" id="start-ov">
+    <div class="card">
+      <span class="card-icon">🎵</span>
+      <h2>霓虹记忆</h2>
+      <div class="sub">Simon Neon</div>
+      <div class="desc">
+        观察灯光闪烁顺序，然后重复它!<br>
+        每回合增加一步 · 你能记住多少步？<br>
+        回合越高 · 速度越快!
+      </div>
+      <button class="btn" onclick="startGame()">开始</button>
+      <br>
+      <button class="btn-ghost" onclick="location.href='/arcade'">← 返回游戏厅</button>
+    </div>
+  </div>
+
+  <div class="overlay hidden" id="end-ov">
+    <div class="card">
+      <span class="card-icon">❌</span>
+      <h2>记错了!</h2>
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-val" id="f-round">0</div>
+          <div class="stat-lbl">回合</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val" id="f-score">0</div>
+          <div class="stat-lbl">分数</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val" id="f-steps">0</div>
+          <div class="stat-lbl">总步数</div>
+        </div>
+      </div>
+      <div style="color:#666;font-size:13px" id="f-best">最佳: 0 回合</div>
+      <div class="record-badge" id="f-rec">🏆 新纪录！</div>
+      <button class="btn" onclick="startGame()">再来一次</button>
+      <br>
+      <button class="btn-ghost" onclick="shareScore()">📤 分享成绩</button>
+    </div>
+  </div>
+
+  <script>
+    const LB = 'shipmicro_sn_v2';
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden && isPlaying) { isPlaying = false; }
+    });
+    const TONES = [261.6, 329.6, 392, 523.3]; // C4 E4 G4 C5
+    const PAD_NAMES = ['红', '绿', '蓝', '黄'];
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    let audioCtx;
+    function initAudio() { if (!audioCtx) audioCtx = new AudioCtx() }
+
+    function playTone(index, dur = .25) {
+      if (!audioCtx) return;
+      const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+      o.connect(g); g.connect(audioCtx.destination);
+      o.type = 'sine'; o.frequency.value = TONES[index];
+      g.gain.setValueAtTime(.2, audioCtx.currentTime);
+      g.gain.exponentialRampToValueAtTime(.001, audioCtx.currentTime + dur);
+      o.start(); o.stop(audioCtx.currentTime + dur);
+    }
+
+    function playCorrectChime() {
+      if (!audioCtx) return;
+      [523, 659, 784].forEach((f, i) => {
+        const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+        o.connect(g); g.connect(audioCtx.destination);
+        o.type = 'sine'; o.frequency.value = f;
+        g.gain.setValueAtTime(.1, audioCtx.currentTime + i * .08);
+        g.gain.exponentialRampToValueAtTime(.001, audioCtx.currentTime + i * .08 + .12);
+        o.start(audioCtx.currentTime + i * .08);
+        o.stop(audioCtx.currentTime + i * .08 + .12);
+      });
+    }
+
+    function playFail() {
+      if (!audioCtx) return;
+      [200, 150, 100].forEach((f, i) => {
+        const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+        o.connect(g); g.connect(audioCtx.destination);
+        o.type = 'sawtooth'; o.frequency.value = f;
+        g.gain.setValueAtTime(.12, audioCtx.currentTime + i * .12);
+        g.gain.exponentialRampToValueAtTime(.001, audioCtx.currentTime + i * .12 + .2);
+        o.start(audioCtx.currentTime + i * .12);
+        o.stop(audioCtx.currentTime + i * .12 + .2);
+      });
+    }
+
+    function getBest() { try { return parseInt(localStorage.getItem(LB) || '0') } catch { return 0 } }
+    function saveBest(s) { try { localStorage.setItem(LB, Math.max(s, getBest())) } catch { } }
+
+    // Build board
+    const board = document.getElementById('board');
+    const pads = [];
+    for (let i = 0; i < 4; i++) {
+      const d = document.createElement('div');
+      d.className = 'pad';
+      d.dataset.color = i;
+      d.addEventListener('pointerdown', () => playerPress(i));
+      board.appendChild(d);
+      pads.push(d);
+    }
+
+    let sequence = [], playerIdx = 0, round = 0, score = 0, totalSteps = 0;
+    let isShowingSequence = false, isPlayerTurn = false;
+
+    function flashPad(index, dur = 300) {
+      const pad = pads[index];
+      pad.classList.add('flash');
+      playTone(index, dur / 1000);
+      setTimeout(() => pad.classList.remove('flash'), dur);
+    }
+
+    function showRoundAnnounce() {
+      const el = document.createElement('div');
+      el.className = 'round-announce';
+      el.textContent = `第 ${round + 1} 回合`;
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 700);
+    }
+
+    async function showSequence() {
+      isShowingSequence = true;
+      isPlayerTurn = false;
+      const status = document.getElementById('status');
+      status.textContent = '👀 观察顺序...';
+      status.className = 'status watch';
+      await sleep(700);
+
+      const speed = Math.max(180, 500 - round * 18);
+      for (let i = 0; i < sequence.length; i++) {
+        flashPad(sequence[i], speed * .7);
+        await sleep(speed);
+      }
+
+      isShowingSequence = false;
+      isPlayerTurn = true;
+      playerIdx = 0;
+      status.textContent = '🎯 你来重复!';
+      status.className = 'status go';
+    }
+
+    function playerPress(index) {
+      if (!isPlayerTurn || isShowingSequence) return;
+      initAudio();
+      flashPad(index, 200);
+
+      if (sequence[playerIdx] === index) {
+        playerIdx++;
+        totalSteps++;
+        score += round + 1;
+        document.getElementById('h-score').textContent = score;
+
+        if (playerIdx >= sequence.length) {
+          isPlayerTurn = false;
+          round++;
+          document.getElementById('h-round').textContent = round;
+          playCorrectChime();
+
+          const status = document.getElementById('status');
+          status.textContent = '✅ 正确!';
+          status.className = 'status go';
+
+          showRoundAnnounce();
+          setTimeout(nextRound, 900);
+        }
+      } else {
+        playFail();
+        // Flash all pads red
+        pads.forEach(p => p.classList.add('fail'));
+        setTimeout(() => pads.forEach(p => p.classList.remove('fail')), 500);
+        endGame();
+      }
+    }
+
+    function nextRound() {
+      sequence.push(Math.floor(Math.random() * 4));
+      showSequence();
+    }
+
+    function sleep(ms) { return new Promise(r => setTimeout(r, ms)) }
+
+    function startGame() {
+      initAudio();
+      sequence = []; round = 0; score = 0; playerIdx = 0; totalSteps = 0;
+      document.getElementById('h-round').textContent = '0';
+      document.getElementById('h-score').textContent = '0';
+      document.getElementById('start-ov').classList.add('hidden');
+      document.getElementById('end-ov').classList.add('hidden');
+      setTimeout(nextRound, 500);
+    }
+
+    function endGame() {
+      isPlayerTurn = false;
+      const best = getBest(); const isNew = round > best; saveBest(round);
+      const status = document.getElementById('status');
+      status.textContent = ''; status.className = 'status';
+      document.getElementById('f-round').textContent = round;
+      document.getElementById('f-score').textContent = score;
+      document.getElementById('f-steps').textContent = totalSteps;
+      document.getElementById('f-best').textContent = `最佳: ${Math.max(round, best)} 回合`;
+      document.getElementById('f-rec').classList.toggle('show', isNew);
+      document.getElementById('end-ov').classList.remove('hidden');
+    }
+
+    function shareScore() {
+      const t = `🎵 霓虹记忆: ${round}回合! 分数${score}\n📝 记住了${totalSteps}步\n🎮 来ShipMicro玩: ${location.origin}/arcade`;
+      if (navigator.share) navigator.share({ title: '霓虹记忆', text: t });
+      else navigator.clipboard.writeText(t).then(() => alert('已复制到剪贴板!'));
+    }
+  </script>
+</body>
+
+</html>

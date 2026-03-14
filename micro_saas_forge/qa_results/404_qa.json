@@ -1,0 +1,26 @@
+{
+  "file": "404.html",
+  "tested_at": "2026-03-06T11:30:40.241770",
+  "checks": {
+    "structure": 10.0,
+    "seo": 10.0,
+    "mobile": 8.0,
+    "interactivity": 6.0,
+    "performance": 8.0,
+    "commercial": 0.0,
+    "visual": 7.0
+  },
+  "issues": [
+    "MOBILE: No touch event handling",
+    "INTERACTIVE: No interactive elements (buttons/inputs)",
+    "INTERACTIVE: Very little JS (9 lines)",
+    "PERF: 6 external scripts",
+    "COMMERCIAL: No ad slots",
+    "COMMERCIAL: No share functionality",
+    "COMMERCIAL: No analytics tracking",
+    "COMMERCIAL: No email capture",
+    "VISUAL: No animations/transitions"
+  ],
+  "score": 6.4,
+  "pass": false
+}

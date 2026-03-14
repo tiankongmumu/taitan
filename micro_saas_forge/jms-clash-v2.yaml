@@ -1,0 +1,81 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+proxies:
+  - name: "JMS-1327716@c93s1.portablesubmarines.com:18963"
+    type: ss
+    server: 67.216.195.71
+    port: 18963
+    cipher: aes-256-gcm
+    password: 9r6X9Nxo7E92xaHJ
+  - name: "JMS-1327716@c93s2.portablesubmarines.com:18963"
+    type: ss
+    server: 67.216.198.51
+    port: 18963
+    cipher: aes-256-gcm
+    password: 9r6X9Nxo7E92xaHJ
+  - name: "JMS-1327716@c93s3.portablesubmarines.com:18963"
+    type: vmess
+    server: 198.35.45.117
+    port: 18963
+    uuid: 02b30c6c-c034-498e-a93c-dbad0f88dd9e
+    alterId: 0
+    cipher: auto
+  - name: "JMS-1327716@c93s4.portablesubmarines.com:18963"
+    type: vmess
+    server: 45.78.56.37
+    port: 18963
+    uuid: 02b30c6c-c034-498e-a93c-dbad0f88dd9e
+    alterId: 0
+    cipher: auto
+  - name: "JMS-1327716@c93s5.portablesubmarines.com:18963"
+    type: vmess
+    server: 104.245.96.56
+    port: 18963
+    uuid: 02b30c6c-c034-498e-a93c-dbad0f88dd9e
+    alterId: 0
+    cipher: auto
+  - name: "JMS-1327716@c93s801.portablesubmarines.com:18963"
+    type: vmess
+    server: 45.62.106.182
+    port: 18963
+    uuid: 02b30c6c-c034-498e-a93c-dbad0f88dd9e
+    alterId: 0
+    cipher: auto
+
+proxy-groups:
+  - name: "🚀 PROXY"
+    type: select
+    proxies:
+      - "♻️ DIRECT"
+      - "🌐 Auto-URLTest"
+      - "JMS-1327716@c93s1.portablesubmarines.com:18963"
+      - "JMS-1327716@c93s2.portablesubmarines.com:18963"
+      - "JMS-1327716@c93s3.portablesubmarines.com:18963"
+      - "JMS-1327716@c93s4.portablesubmarines.com:18963"
+      - "JMS-1327716@c93s5.portablesubmarines.com:18963"
+      - "JMS-1327716@c93s801.portablesubmarines.com:18963"
+
+  - name: "🌐 Auto-URLTest"
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - "JMS-1327716@c93s1.portablesubmarines.com:18963"
+      - "JMS-1327716@c93s2.portablesubmarines.com:18963"
+      - "JMS-1327716@c93s3.portablesubmarines.com:18963"
+      - "JMS-1327716@c93s4.portablesubmarines.com:18963"
+      - "JMS-1327716@c93s5.portablesubmarines.com:18963"
+      - "JMS-1327716@c93s801.portablesubmarines.com:18963"
+
+rules:
+  - DOMAIN-SUFFIX,google.com,🚀 PROXY
+  - DOMAIN-SUFFIX,github.com,🚀 PROXY
+  - DOMAIN-KEYWORD,twitter,🚀 PROXY
+  - DOMAIN-SUFFIX,cn,♻️ DIRECT
+  - GEOIP,CN,♻️ DIRECT
+  - MATCH,🚀 PROXY

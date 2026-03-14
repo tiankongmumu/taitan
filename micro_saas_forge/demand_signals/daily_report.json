@@ -1,0 +1,57 @@
+{
+  "pipeline_run": {
+    "timestamp": "2026-03-04T02:49:51.104636",
+    "mode": "production",
+    "total_duration_seconds": 2032.4
+  },
+  "stages": [
+    {
+      "name": "1. Signal Collector",
+      "status": "skipped",
+      "duration_seconds": 0,
+      "output_count": 0,
+      "error": null
+    },
+    {
+      "name": "2. Signal Validator",
+      "status": "success",
+      "duration_seconds": 0.0,
+      "output_count": 51,
+      "error": null
+    },
+    {
+      "name": "3. Opportunity Scorer",
+      "status": "success",
+      "duration_seconds": 179.3,
+      "output_count": 10,
+      "error": null
+    },
+    {
+      "name": "4. Affiliate Injector",
+      "status": "success",
+      "duration_seconds": 173.2,
+      "output_count": 5,
+      "error": null
+    },
+    {
+      "name": "5. SEO Content Gen",
+      "status": "success",
+      "duration_seconds": 1601.1,
+      "output_count": 5,
+      "error": null
+    },
+    {
+      "name": "6. Auto Publisher",
+      "status": "success",
+      "duration_seconds": 78.8,
+      "output_count": 5,
+      "error": null
+    }
+  ],
+  "summary": {
+    "total_stages": 6,
+    "successful": 5,
+    "failed": 0,
+    "skipped": 1
+  }
+}

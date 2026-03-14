@@ -1,0 +1,41 @@
+[
+  {
+    "tool": {
+      "name": "SQL Optimizer AI",
+      "url": "https://sql-optimizer-nzdcl29x9-tiankongmumus-projects.vercel.app",
+      "description": "An AI-powered SQL query optimizer with cost estimation for cloud databases"
+    },
+    "reddit": {
+      "title": "I built an AI SQL Optimizer to tame my cloud database costs",
+      "body": "As a solo developer, I kept getting hit with unexpected cloud database bills. My SQL queries were inefficient, but I didn't have the time or expertise to manually optimize every single one. I'd spend hours trying to rewrite queries, only to see marginal improvements in performance and cost.\n\nSo I built SQL Optimizer AI - a free tool that uses AI to analyze and rewrite your SQL queries for better performance and lower cloud costs. You paste in your query, and it suggests optimized versions with estimated cost savings.\n\nKey features:\n- AI-powered query rewriting for better performance\n- Cost estimation for major cloud providers (AWS, GCP, Azure)\n- Side-by-side comparison of original vs optimized queries\n- Support for multiple SQL dialects\n\nI'd really appreciate any feedback from fellow developers who work with databases. Try it out at https://sql-optimizer-nzdcl29x9-tiankongmumus-projects.vercel.app and let me know what features would make it more useful for your workflow!",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just launched SQL Optimizer AI! It uses AI to optimize your SQL queries and estimates cloud costs before you run them. Built to save devs time and money. Check it out: https://sql-optimizer-nzdcl29x9-tiankongmumus-projects.vercel.app #buildinpublic #indiehacker #devtools"
+  },
+  {
+    "tool": {
+      "name": "WebSocket TestLab",
+      "url": "https://websocket-testlab-gi6dhyon3-tiankongmumus-projects.vercel.app",
+      "description": "A real-time WebSocket API testing suite with automated mock generation"
+    },
+    "reddit": {
+      "title": "I built WebSocket TestLab to solve my real-time API debugging headaches",
+      "body": "As a developer working on more real-time features, I kept hitting the same wall: testing WebSocket connections was clunky. I'd juggle between terminal commands, browser consoles, and separate mock servers just to see if my connections were working properly. It felt like I was duct-taping my workflow together every time I needed to debug a live data stream.\n\nSo I built WebSocket TestLab - a clean, all-in-one testing suite that lives in your browser. You can connect to any WebSocket endpoint, send custom messages, and instantly see the traffic flow in a structured way. The coolest part? It can automatically generate mock WebSocket servers based on your specifications, so you can test your client code even when your backend isn't ready yet.\n\nSome key features:\n- Real-time message monitoring with formatted JSON display\n- One-click mock server generation with customizable responses\n- Connection state tracking and automatic reconnection\n- Save and load testing configurations for repeated use\n- Completely free and runs entirely in the browser\n\nI'd really appreciate if you could try it out at https://websocket-testlab-gi6dhyon3-tiankongmumus-projects.vercel.app and let me know what you think. Does the interface make sense? Are there any features missing that would make your WebSocket testing easier? All feedback is welcome - this is very much a work in progress.",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just shipped WebSocket TestLab 🚀 A real-time WebSocket API testing suite that auto-generates mocks so you can test faster. Perfect for debugging real-time apps.\n\nTry it out: https://websocket-testlab-gi6dhyon3-tiankongmumus-projects.vercel.app\n\n#buildinpublic #indiehacker #dev..."
+  },
+  {
+    "tool": {
+      "name": "Privacy-First AI Code Explainer",
+      "url": "https://privacy-first-ai-code-explainer-k3oyflaql.vercel.app",
+      "description": "A privacy-first AI code explainer that works entirely client-side"
+    },
+    "reddit": {
+      "title": "Show r/SideProject: Privacy-First AI Code Explainer - Works entirely in your browser",
+      "body": "I was trying to understand a complex piece of code the other day, and my usual go-to was to paste it into an online AI tool. But I hesitated—I wasn't comfortable sending proprietary or sensitive code to a third-party server. I realized there must be a better, more private way to get quick explanations.\n\nSo, I built a tool that runs the AI model directly in your browser. Nothing you paste is ever sent to a server. It uses a local, open-source model to analyze and explain your code snippets on the spot. You can try it here: https://privacy-first-ai-code-explainer-k3oyflaql.vercel.app\n\nHere are the key things it does:\n*   **100% Client-Side:** All processing happens locally in your browser tab.\n*   **No Sign-Ups or API Keys:** Just open the page and start using it.\n*   **Explains Logic:** Breaks down functions, algorithms, or blocks of code in simple terms.\n*   **Works Offline:** Once the page loads the model, you can disconnect from the internet and it still works.\n\nI'd love to know what you think. Does the explanation quality hold up for the code you work with? Is the interface clear? Any feedback or suggestions would be incredibly helpful as I think about what to build next.",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just launched a privacy-first AI code explainer that runs entirely client-side—no data leaves your browser. Perfect for understanding complex code snippets without compromising security. Check it out: https://privacy-first-ai-code-explainer-k3oyflaql.vercel.app #buildinpublic ..."
+  }
+]

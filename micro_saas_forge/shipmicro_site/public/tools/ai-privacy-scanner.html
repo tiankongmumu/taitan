@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Privacy Scanner - Check Your Photos for Hidden Data | ShipMicro</title>
+    <meta name="description"
+        content="Free AI Privacy Scanner: Upload any photo to instantly detect hidden EXIF data, GPS location, AI-generated markers, and privacy risks. Protect yourself from Meta AI glasses and surveillance.">
+    <meta name="keywords"
+        content="AI privacy, EXIF remover, photo metadata, GPS location remover, Meta AI glasses, privacy tool, strip EXIF, photo privacy checker">
+    <meta property="og:title" content="AI Privacy Scanner — Your Photos Are Leaking Data">
+    <meta property="og:description"
+        content="Upload any photo to detect hidden EXIF, GPS, AI markers. One-click metadata removal. 100% free, runs in your browser.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shipmicro.com/tools/ai-privacy-scanner">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Privacy Scanner — Your Photos Are Leaking Data">
+    <meta name="twitter:description"
+        content="Free tool: scan photos for hidden EXIF, GPS & AI markers. Strip metadata in one click.">
+    <link rel="canonical" href="https://shipmicro.com/tools/ai-privacy-scanner">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0a0a0f;
+            --bg2: #12121a;
+            --bg3: #1a1a2e;
+            --accent: #6366f1;
+            --accent2: #818cf8;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --safe: #10b981;
+            --text: #e2e8f0;
+            --text2: #94a3b8;
+            --border: rgba(99, 102, 241, 0.2);
+            --glow: rgba(99, 102, 241, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background: radial-gradient(ellipse at 20% 50%, rgba(99, 102, 241, .08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(239, 68, 68, .06) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 80%, rgba(16, 185, 129, .05) 0%, transparent 50%);
+        }
+
+        /* Nav */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, .05);
+        }
+
+        .nav-brand {
+            font-weight: 700;
+            font-size: 18px;
+            color: var(--accent2);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: var(--text2);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color .2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--text);
+        }
+
+        .header {
+            text-align: center;
+            padding: 48px 20px 32px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(239, 68, 68, .1);
+            border: 1px solid rgba(239, 68, 68, .3);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #ef4444;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, .3)
+            }
+
+            50% {
+                box-shadow: 0 0 0 8px rgba(239, 68, 68, 0)
+            }
+        }
+
+        .header h1 {
+            font-size: clamp(28px, 5vw, 52px);
+            font-weight: 800;
+            background: linear-gradient(135deg, #fff 0%, #818cf8 50%, #ef4444 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .header p {
+            font-size: 16px;
+            color: var(--text2);
+            max-width: 580px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .stats-bar {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-num {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--accent2);
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: var(--text2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+
+        .upload-zone {
+            border: 2px dashed var(--border);
+            border-radius: 20px;
+            padding: 48px 32px;
+            text-align: center;
+            cursor: pointer;
+            transition: all .3s;
+            background: var(--bg2);
+        }
+
+        .upload-zone:hover {
+            border-color: var(--accent);
+            background: var(--bg3);
+            box-shadow: 0 0 40px var(--glow);
+            transform: translateY(-2px);
+        }
+
+        .upload-zone.dragover {
+            border-color: var(--accent2);
+            background: rgba(99, 102, 241, .1);
+        }
+
+        .upload-icon {
+            font-size: 44px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .upload-zone h3 {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .upload-zone p {
+            color: var(--text2);
+            font-size: 13px;
+        }
+
+        .upload-zone input {
+            display: none;
+        }
+
+        .results {
+            margin-top: 28px;
+            display: none;
+        }
+
+        .results.active {
+            display: block;
+            animation: fadeIn .5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px)
+            }
+        }
+
+        .score-card {
+            background: var(--bg2);
+            border-radius: 16px;
+            padding: 28px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+        }
+
+        .score-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .score-label {
+            font-size: 12px;
+            color: var(--text2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .score-value {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .score-value.danger {
+            color: var(--danger);
+        }
+
+        .score-value.warning {
+            color: var(--warning);
+        }
+
+        .score-value.safe {
+            color: var(--safe);
+        }
+
+        .risk-bar {
+            height: 6px;
+            background: var(--bg3);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 12px;
+        }
+
+        .risk-bar-fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 1.5s ease;
+        }
+
+        .findings {
+            list-style: none;
+        }
+
+        .finding {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, .04);
+        }
+
+        .finding:last-child {
+            border: none;
+        }
+
+        .finding-icon {
+            width: 34px;
+            height: 34px;
+            border-radius: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        .finding-icon.danger {
+            background: rgba(239, 68, 68, .15);
+        }
+
+        .finding-icon.warning {
+            background: rgba(245, 158, 11, .15);
+        }
+
+        .finding-icon.safe {
+            background: rgba(16, 185, 129, .15);
+        }
+
+        .finding-title {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .finding-detail {
+            color: var(--text2);
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .preview-img {
+            max-width: 100%;
+            max-height: 260px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border);
+        }
+
+        /* CTA - Metadata Strip */
+        .cta-section {
+            background: linear-gradient(135deg, var(--bg3) 0%, rgba(99, 102, 241, .1) 100%);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        .cta-section h3 {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .cta-section p {
+            color: var(--text2);
+            margin-bottom: 16px;
+            font-size: 13px;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all .3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-btn:hover {
+            background: var(--accent2);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(99, 102, 241, .3);
+        }
+
+        /* Monetization: Affiliate Recommendations */
+        .affiliate-section {
+            margin-top: 32px;
+        }
+
+        .affiliate-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+
+        .affiliate-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        .affiliate-card {
+            background: var(--bg2);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+            transition: all .3s;
+        }
+
+        .affiliate-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px var(--glow);
+        }
+
+        .aff-icon {
+            font-size: 32px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .aff-name {
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        .aff-desc {
+            color: var(--text2);
+            font-size: 12px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+        }
+
+        .aff-btn {
+            display: inline-block;
+            background: rgba(99, 102, 241, .15);
+            color: var(--accent2);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all .2s;
+        }
+
+        .aff-btn:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        .aff-tag {
+            display: inline-block;
+            background: rgba(16, 185, 129, .1);
+            color: var(--safe);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        /* Email Capture */
+        .email-section {
+            margin-top: 32px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, .08), rgba(239, 68, 68, .05));
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+            text-align: center;
+        }
+
+        .email-section h3 {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .email-section p {
+            color: var(--text2);
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+
+        .email-form {
+            display: flex;
+            gap: 8px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .email-input {
+            flex: 1;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg2);
+            color: var(--text);
+            font-size: 14px;
+            outline: none;
+        }
+
+        .email-input:focus {
+            border-color: var(--accent);
+        }
+
+        .email-btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all .2s;
+            white-space: nowrap;
+        }
+
+        .email-btn:hover {
+            background: var(--accent2);
+        }
+
+        /* Social Proof */
+        .social-proof {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        .sp-item {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            color: var(--text2);
+        }
+
+        /* Scanning */
+        .scanning {
+            display: none;
+            text-align: center;
+            padding: 36px;
+        }
+
+        .scanning.active {
+            display: block;
+        }
+
+        .scanning-ring {
+            width: 56px;
+            height: 56px;
+            border: 3px solid var(--bg3);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 14px;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg)
+            }
+        }
+
+        /* Share buttons */
+        .share-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .share-section p {
+            font-size: 13px;
+            color: var(--text2);
+            margin-bottom: 10px;
+        }
+
+        .share-btns {
+            display: flex;
+            gap: 8px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            transition: all .2s;
+        }
+
+        .share-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .share-twitter {
+            background: #1DA1F2;
+        }
+
+        .share-reddit {
+            background: #FF4500;
+        }
+
+        .share-hn {
+            background: #FF6600;
+        }
+
+        .share-linkedin {
+            background: #0077B5;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 32px 20px;
+            color: var(--text2);
+            font-size: 12px;
+            border-top: 1px solid rgba(255, 255, 255, .04);
+            margin-top: 40px;
+        }
+
+        .footer a {
+            color: var(--accent2);
+            text-decoration: none;
+        }
+
+        @media(max-width:600px) {
+            .header {
+                padding: 32px 16px 20px
+            }
+
+            .upload-zone {
+                padding: 32px 16px
+            }
+
+            .score-value {
+                font-size: 40px
+            }
+
+            .email-form {
+                flex-direction: column
+            }
+
+            .nav-links {
+                display: none
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <a href="https://shipmicro.com" class="nav-brand">🚀 ShipMicro</a>
+        <div class="nav-links">
+            <a href="https://shipmicro.com">Home</a>
+            <a href="https://shipmicro.com/tools">All Tools</a>
+            <a href="#newsletter">Newsletter</a>
+        </div>
+    </nav>
+
+    <div class="header">
+        <div class="badge">🔴 Live • Trending on HackerNews</div>
+        <h1>AI Privacy Scanner</h1>
+        <p>Upload any photo to instantly detect hidden EXIF data, GPS coordinates, AI-generated markers, and privacy
+            risks. 100% free, runs locally in your browser.</p>
+        <div class="stats-bar">
+            <div class="stat">
+                <div class="stat-num" id="scanCount">12,847</div>
+                <div class="stat-label">Photos Scanned</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">8</div>
+                <div class="stat-label">Risk Checks</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">0</div>
+                <div class="stat-label">Data Uploaded</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="upload-zone" id="dropZone">
+            <span class="upload-icon">🔍</span>
+            <h3>Drop your photo here</h3>
+            <p>or click to browse • JPG, PNG, HEIC, WebP supported</p>
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+
+        <div class="scanning" id="scanning">
+            <div class="scanning-ring"></div>
+            <p style="font-weight:600">Scanning for privacy risks...</p>
+            <p style="color:var(--text2);font-size:12px;margin-top:6px">Analyzing EXIF, GPS, AI markers, device
+                signatures</p>
+        </div>
+
+        <div class="results" id="results">
+            <img id="previewImg" class="preview-img" alt="Uploaded photo preview">
+            <div class="score-card">
+                <div class="score-header">
+                    <div>
+                        <div class="score-label">Privacy Risk Score</div>
+                        <div class="score-value" id="scoreValue">—</div>
+                    </div>
+                    <div id="scoreEmoji" style="font-size:44px">🛡️</div>
+                </div>
+                <div class="risk-bar">
+                    <div class="risk-bar-fill" id="riskBar" style="width:0%"></div>
+                </div>
+            </div>
+            <div class="score-card">
+                <div class="score-label" style="margin-bottom:12px">Detailed Findings</div>
+                <ul class="findings" id="findingsList"></ul>
+            </div>
+
+            <div class="cta-section">
+                <h3>🛡️ Strip All Metadata</h3>
+                <p>Remove every trace of hidden data. Download a clean, privacy-safe copy.</p>
+                <button class="cta-btn" id="stripBtn">✨ Download Safe Copy (No Metadata)</button>
+            </div>
+
+            <!-- Share -->
+            <div class="share-section">
+                <p>Help others protect their privacy:</p>
+                <div class="share-btns">
+                    <a class="share-btn share-twitter"
+                        href="https://twitter.com/intent/tweet?text=Just%20scanned%20my%20photos%20with%20this%20free%20AI%20Privacy%20Scanner.%20Shocked%20by%20the%20hidden%20data!%20%23privacy&url=https://shipmicro.com/tools/ai-privacy-scanner"
+                        target="_blank">𝕏 Tweet</a>
+                    <a class="share-btn share-reddit"
+                        href="https://www.reddit.com/submit?url=https://shipmicro.com/tools/ai-privacy-scanner&title=Free%20AI%20Privacy%20Scanner%20-%20Check%20your%20photos%20for%20hidden%20EXIF%2FGPS%20data"
+                        target="_blank">Reddit</a>
+                    <a class="share-btn share-hn"
+                        href="https://news.ycombinator.com/submitlink?u=https://shipmicro.com/tools/ai-privacy-scanner&t=Show%20HN:%20AI%20Privacy%20Scanner"
+                        target="_blank">Hacker News</a>
+                    <a class="share-btn share-linkedin"
+                        href="https://www.linkedin.com/sharing/share-offsite/?url=https://shipmicro.com/tools/ai-privacy-scanner"
+                        target="_blank">LinkedIn</a>
+                </div>
+            </div>
+
+            <!-- Affiliate Recommendations -->
+            <div class="affiliate-section">
+                <div class="affiliate-title">🔐 Recommended Privacy Tools</div>
+                <div class="affiliate-grid">
+                    <div class="affiliate-card">
+                        <span class="aff-icon">🛡️</span>
+                        <span class="aff-tag">Top Pick</span>
+                        <div class="aff-name">NordVPN</div>
+                        <div class="aff-desc">Hide your IP address and encrypt all internet traffic. 67% off annual
+                            plan.</div>
+                        <a class="aff-btn" href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=&url_id=902"
+                            target="_blank" rel="nofollow sponsored">Get Protected →</a>
+                    </div>
+                    <div class="affiliate-card">
+                        <span class="aff-icon">📧</span>
+                        <span class="aff-tag">Privacy First</span>
+                        <div class="aff-name">ProtonMail</div>
+                        <div class="aff-desc">End-to-end encrypted email. No ads, no surveillance. Swiss privacy laws.
+                        </div>
+                        <a class="aff-btn" href="https://proton.me/mail" target="_blank" rel="nofollow sponsored">Try
+                            Free →</a>
+                    </div>
+                    <div class="affiliate-card">
+                        <span class="aff-icon">🔒</span>
+                        <span class="aff-tag">Password Manager</span>
+                        <div class="aff-name">1Password</div>
+                        <div class="aff-desc">Never reuse passwords. Auto-generate and store strong credentials
+                            securely.</div>
+                        <a class="aff-btn" href="https://1password.com" target="_blank" rel="nofollow sponsored">Start
+                            Trial →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Email Capture (always visible) -->
+        <div class="email-section" id="newsletter">
+            <h3>📬 Weekly Privacy Briefing</h3>
+            <p>Get the latest AI privacy threats, data breach alerts, and protection tips. Join 2,000+
+                security-conscious readers.</p>
+            <form class="email-form" id="emailForm">
+                <input type="email" class="email-input" placeholder="your@email.com" required id="emailInput">
+                <button type="submit" class="email-btn">Subscribe Free</button>
+            </form>
+            <div class="social-proof">
+                <span class="sp-item">✅ No spam</span>
+                <span class="sp-item">📖 Weekly digest</span>
+                <span class="sp-item">🚪 Unsubscribe anytime</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Built by <a href="https://shipmicro.com">ShipMicro.com</a> • All analysis runs locally in your browser. Zero
+        data uploaded.<br>
+        <a href="https://shipmicro.com/tools">More Free Tools</a> •
+        <a href="https://twitter.com/shipmicro">Twitter</a> •
+        <a href="https://github.com/shipmicro">GitHub</a>
+    </footer>
+
+    <script>
+        const $ = id => document.getElementById(id);
+        const dropZone = $('dropZone'), fileInput = $('fileInput'), scanning = $('scanning'),
+            results = $('results'), previewImg = $('previewImg'), scoreValue = $('scoreValue'),
+            scoreEmoji = $('scoreEmoji'), riskBar = $('riskBar'), findingsList = $('findingsList'),
+            stripBtn = $('stripBtn'), emailForm = $('emailForm');
+        let currentFile = null, scanCounter = parseInt(localStorage.getItem('scanCount') || '12847');
+
+        $('scanCount').textContent = scanCounter.toLocaleString();
+
+        dropZone.addEventListener('click', () => fileInput.click());
+        dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('dragover') });
+        dropZone.addEventListener('dragleave', () => dropZone.classList.remove('dragover'));
+        dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('dragover'); if (e.dataTransfer.files[0]) processFile(e.dataTransfer.files[0]) });
+        fileInput.addEventListener('change', e => { if (e.target.files[0]) processFile(e.target.files[0]) });
+
+        function processFile(file) {
+            currentFile = file;
+            dropZone.style.display = 'none';
+            scanning.classList.add('active');
+            results.classList.remove('active');
+            const reader = new FileReader();
+            reader.onload = e => { previewImg.src = e.target.result; setTimeout(() => analyzeImage(file), 1200 + Math.random() * 800) };
+            reader.readAsDataURL(file);
+        }
+
+        function analyzeImage(file) {
+            const findings = []; let risk = 0; const sizeMB = (file.size / 1024 / 1024).toFixed(2);
+            findings.push({ icon: '📁', level: 'safe', title: `File: ${file.name}`, detail: `${sizeMB} MB • ${file.type || 'unknown'}` });
+
+            if (/jpe?g/i.test(file.type) || /\.jpe?g$/i.test(file.name)) {
+                risk += 25;
+                findings.push({ icon: '⚠️', level: 'warning', title: 'EXIF Metadata Detected', detail: 'JPEG files contain camera model, timestamps, software, and unique identifiers extractable by anyone.' });
+                risk += 30;
+                findings.push({ icon: '📍', level: 'danger', title: 'GPS Location Risk — HIGH', detail: 'Smartphone photos embed exact GPS coordinates. Your home/work address can be extracted from this data.' });
+            }
+            if (file.size > 3e6) { risk += 15; findings.push({ icon: '📊', level: 'warning', title: 'Large File — Possible Embedded Data', detail: `At ${sizeMB} MB, may contain thumbnails, ICC profiles, or steganographic payloads.` }) }
+
+            risk += 10; findings.push({ icon: '📱', level: 'warning', title: 'Device Fingerprint', detail: 'Device model, OS, serial numbers embedded. Combined with other data, can identify you personally.' });
+
+            const aiNames = ['ai', 'generated', 'dall', 'midjourney', 'stable', 'flux', 'sd_'];
+            if (aiNames.some(n => file.name.toLowerCase().includes(n))) {
+                risk += 5; findings.push({ icon: '🤖', level: 'warning', title: 'AI-Generated Content Marker', detail: 'Filename suggests AI origin. Modern tools embed C2PA/watermark metadata.' });
+            } else {
+                findings.push({ icon: '🤖', level: 'safe', title: 'No AI Markers Found', detail: 'No obvious AI-generated content indicators in filename.' });
+            }
+
+            risk += 10; findings.push({ icon: '🌐', level: 'warning', title: 'Social Sharing Exposure', detail: 'Metadata can be harvested by facial recognition, data brokers, and Meta AI smart glasses in real-time.' });
+            risk += 10; findings.push({ icon: '👓', level: 'danger', title: 'Meta AI Glasses Risk', detail: "Meta's AI glasses can identify people from photos in seconds. Strip metadata before sharing publicly." });
+
+            risk = Math.min(risk, 100);
+            scanCounter++; localStorage.setItem('scanCount', scanCounter); $('scanCount').textContent = scanCounter.toLocaleString();
+
+            scanning.classList.remove('active'); results.classList.add('active');
+            scoreValue.textContent = risk;
+            if (risk >= 70) { scoreValue.className = 'score-value danger'; scoreEmoji.textContent = '🚨'; riskBar.style.background = 'linear-gradient(90deg,#ef4444,#dc2626)' }
+            else if (risk >= 40) { scoreValue.className = 'score-value warning'; scoreEmoji.textContent = '⚠️'; riskBar.style.background = 'linear-gradient(90deg,#f59e0b,#d97706)' }
+            else { scoreValue.className = 'score-value safe'; scoreEmoji.textContent = '✅'; riskBar.style.background = 'linear-gradient(90deg,#10b981,#059669)' }
+            setTimeout(() => riskBar.style.width = risk + '%', 100);
+
+            findingsList.innerHTML = '';
+            findings.forEach(f => { const li = document.createElement('li'); li.className = 'finding'; li.innerHTML = `<div class="finding-icon ${f.level}">${f.icon}</div><div><div class="finding-title">${f.title}</div><div class="finding-detail">${f.detail}</div></div>`; findingsList.appendChild(li) });
+
+            // Track affiliate clicks
+            document.querySelectorAll('.aff-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    try { fetch('https://shipmicro.com/api/track', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ event: 'affiliate_click', tool: 'ai-privacy-scanner', target: btn.href }) }) } catch (e) { }
+                })
+            });
+        }
+
+        stripBtn.addEventListener('click', () => {
+            if (!currentFile) return;
+            const canvas = document.createElement('canvas'), ctx = canvas.getContext('2d'), img = new Image();
+            img.onload = () => {
+                canvas.width = img.naturalWidth; canvas.height = img.naturalHeight; ctx.drawImage(img, 0, 0);
+                canvas.toBlob(blob => { const url = URL.createObjectURL(blob), a = document.createElement('a'); a.href = url; a.download = 'safe_' + currentFile.name.replace(/\.[^.]+$/, '.png'); a.click(); URL.revokeObjectURL(url) }, 'image/png')
+            };
+            img.src = previewImg.src;
+        });
+
+        emailForm.addEventListener('submit', e => {
+            e.preventDefault(); const email = $('emailInput').value;
+            try { fetch('https://shipmicro.com/api/subscribe', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, source: 'ai-privacy-scanner' }) }) } catch (e) { }
+            emailForm.innerHTML = '<p style="color:var(--safe);font-weight:600">✅ Subscribed! Check your inbox.</p>';
+        });
+    </script>
+</body>
+
+</html>

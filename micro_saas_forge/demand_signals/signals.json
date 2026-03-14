@@ -1,0 +1,248 @@
+{
+  "scanned_at": "2026-03-14T15:43:06.659306",
+  "total_signals": 25,
+  "signals": [
+    {
+      "keyword": "character counter with spaces",
+      "source": "LLM_analysis",
+      "monthly_volume": 165000,
+      "competition_score": 1,
+      "revenue_model": "AdSense banner ads",
+      "build_complexity": "SIMPLE",
+      "differentiation": "Real-time counting for Twitter/X, LinkedIn, Meta, and SEO meta descriptions with platform-specific limits highlighted. Most existing tools are outdated.",
+      "type": "trend_signal",
+      "opportunity_score": 165000.0
+    },
+    {
+      "keyword": "percentage increase calculator",
+      "source": "LLM_analysis",
+      "monthly_volume": 148000,
+      "competition_score": 1,
+      "revenue_model": "AdSense + affiliate links to related financial tools",
+      "build_complexity": "SIMPLE",
+      "differentiation": "Ultra-fast, single-input-field design with clear visualization of the change. Focus on speed and clarity over competitors' cluttered pages.",
+      "type": "trend_signal",
+      "opportunity_score": 148000.0
+    },
+    {
+      "keyword": "online stopwatch with laps",
+      "source": "LLM_analysis",
+      "monthly_volume": 135000,
+      "competition_score": 1,
+      "revenue_model": "AdSense + premium features (dark mode, custom sounds, export data)",
+      "build_complexity": "SIMPLE",
+      "differentiation": "Clean, ad-lite interface with lap history table, splits, and shareable results URL. Existing solutions are cluttered with intrusive ads.",
+      "type": "trend_signal",
+      "opportunity_score": 135000.0
+    },
+    {
+      "keyword": "free invoice generator pdf",
+      "source": "LLM_analysis",
+      "monthly_volume": 110000,
+      "competition_score": 1,
+      "revenue_model": "Freemium (client management, recurring invoices, branding removal)",
+      "build_complexity": "MEDIUM",
+      "differentiation": "Truly free PDF generation with no signup, professional templates, and automatic calculations. Competitors force signups or have hidden fees.",
+      "type": "trend_signal",
+      "opportunity_score": 110000.0
+    },
+    {
+      "keyword": "printable weekly meal planner template",
+      "source": "LLM_analysis",
+      "monthly_volume": 90500,
+      "competition_score": 1,
+      "revenue_model": "Freemium (premium templates, grocery list generator, ad-free PDF)",
+      "build_complexity": "MEDIUM",
+      "differentiation": "Fully customizable in-browser before printing (drag-drop meals, edit categories). No download of generic PDFs; users create their own.",
+      "type": "trend_signal",
+      "opportunity_score": 90500.0
+    },
+    {
+      "keyword": "random name picker wheel",
+      "source": "LLM_analysis",
+      "monthly_volume": 82300,
+      "competition_score": 1,
+      "revenue_model": "AdSense + sponsored themes (for classrooms, businesses)",
+      "build_complexity": "MEDIUM",
+      "differentiation": "Visually engaging with animations, save/load name lists, shareable wheel URL. Current tools are either too simple or poorly designed.",
+      "type": "trend_signal",
+      "opportunity_score": 82300.0
+    },
+    {
+      "keyword": "online metronome with tap tempo",
+      "source": "LLM_analysis",
+      "monthly_volume": 60500,
+      "competition_score": 1,
+      "revenue_model": "AdSense + premium sounds and visual modes",
+      "build_complexity": "MEDIUM",
+      "differentiation": "Accurate visual pulse, multiple time signature sounds, and a superior tap-to-set BPM interface. Existing metronomes have poor UI/UX.",
+      "type": "trend_signal",
+      "opportunity_score": 60500.0
+    },
+    {
+      "keyword": "free bingo card generator",
+      "source": "LLM_analysis",
+      "monthly_volume": 45000,
+      "competition_score": 1,
+      "revenue_model": "Freemium (premium templates, ad-free, high-res printing)",
+      "build_complexity": "MEDIUM",
+      "differentiation": "Truly free with no watermarks, instant PDF download, modern templates for teachers/events, no signup required for basic version",
+      "type": "trend_signal",
+      "opportunity_score": 45000.0
+    },
+    {
+      "keyword": "online multi-track voice recorder",
+      "source": "LLM_analysis",
+      "monthly_volume": 40100,
+      "competition_score": 1,
+      "revenue_model": "Freemium (more tracks, higher quality export, cloud save)",
+      "build_complexity": "COMPLEX",
+      "differentiation": "Browser-based, no-install tool for podcasters and singers to layer harmonies/practice. Basic overdub functionality is rare in free web apps.",
+      "type": "trend_signal",
+      "opportunity_score": 40100.0
+    },
+    {
+      "keyword": "custom crossword puzzle maker",
+      "source": "LLM_analysis",
+      "monthly_volume": 33100,
+      "competition_score": 1,
+      "revenue_model": "Freemium (premium dictionary, larger puzzles, answer key PDF)",
+      "build_complexity": "COMPLEX",
+      "differentiation": "AI-assisted word placement for better puzzle density, clean printable output. Most makers are clunky, old Java applets or require software installs.",
+      "type": "trend_signal",
+      "opportunity_score": 33100.0
+    },
+    {
+      "keyword": "svg to png converter online",
+      "source": "keyword_research",
+      "monthly_volume": 90000,
+      "competition_score": 3,
+      "revenue_model": "AdSense",
+      "type": "keyword_signal",
+      "opportunity_score": 17320.5
+    },
+    {
+      "keyword": "jwt decoder and verifier",
+      "source": "keyword_research",
+      "monthly_volume": 120000,
+      "competition_score": 5,
+      "revenue_model": "AdSense",
+      "type": "keyword_signal",
+      "opportunity_score": 10733.1
+    },
+    {
+      "keyword": "regex visualizer and debugger",
+      "source": "keyword_research",
+      "monthly_volume": 50000,
+      "competition_score": 3,
+      "revenue_model": "AdSense",
+      "type": "keyword_signal",
+      "opportunity_score": 9622.5
+    },
+    {
+      "keyword": "postgresql connection string generator",
+      "source": "keyword_research",
+      "monthly_volume": 25000,
+      "competition_score": 2,
+      "revenue_model": "AdSense",
+      "type": "keyword_signal",
+      "opportunity_score": 8838.8
+    },
+    {
+      "keyword": "sql query optimizer online",
+      "source": "keyword_research",
+      "monthly_volume": 45000,
+      "competition_score": 3,
+      "revenue_model": "AdSense",
+      "type": "keyword_signal",
+      "opportunity_score": 8660.3
+    },
+    {
+      "keyword": "cron expression visualizer",
+      "source": "keyword_research",
+      "monthly_volume": 40000,
+      "competition_score": 3,
+      "revenue_model": "AdSense",
+      "type": "keyword_signal",
+      "opportunity_score": 7698.0
+    },
+    {
+      "keyword": "json schema generator",
+      "source": "keyword_research",
+      "monthly_volume": 60000,
+      "competition_score": 4,
+      "revenue_model": "AdSense",
+      "type": "keyword_signal",
+      "opportunity_score": 7500.0
+    },
+    {
+      "keyword": "privacy policy generator for saas",
+      "source": "keyword_research",
+      "monthly_volume": 80000,
+      "competition_score": 5,
+      "revenue_model": "AdSense",
+      "type": "keyword_signal",
+      "opportunity_score": 7155.4
+    },
+    {
+      "keyword": "markdown email template builder",
+      "source": "keyword_research",
+      "monthly_volume": 20000,
+      "competition_score": 2,
+      "revenue_model": "AdSense",
+      "type": "keyword_signal",
+      "opportunity_score": 7071.1
+    },
+    {
+      "keyword": "typescript interface generator from json",
+      "source": "keyword_research",
+      "monthly_volume": 55000,
+      "competition_score": 4,
+      "revenue_model": "AdSense",
+      "type": "keyword_signal",
+      "opportunity_score": 6875.0
+    },
+    {
+      "keyword": "api payload builder and tester",
+      "source": "keyword_research",
+      "monthly_volume": 35000,
+      "competition_score": 3,
+      "revenue_model": "AdSense",
+      "type": "keyword_signal",
+      "opportunity_score": 6735.8
+    },
+    {
+      "keyword": "B2B SaaS pricing page templates",
+      "source": "keyword_research",
+      "monthly_volume": 30000,
+      "competition_score": 3,
+      "revenue_model": "AdSense",
+      "type": "keyword_signal",
+      "opportunity_score": 5773.5
+    },
+    {
+      "keyword": "Show HN: Channel Surfer – Watch YouTube like it’s cable TV",
+      "source": "HackerNews",
+      "raw_score": 476,
+      "url": "https://channelsurfer.tv",
+      "type": "demand_signal",
+      "opportunity_score": 42.6
+    },
+    {
+      "keyword": "Mouser: An open source alternative to Logi-Plus mouse software",
+      "source": "HackerNews",
+      "raw_score": 277,
+      "url": "https://github.com/TomBadash/MouseControl",
+      "type": "demand_signal",
+      "opportunity_score": 24.8
+    },
+    {
+      "keyword": "I found 39 Algolia admin keys exposed across open source documentation sites",
+      "source": "HackerNews",
+      "raw_score": 115,
+      "url": "https://benzimmermann.dev/blog/algolia-docsearch-admin-keys",
+      "type": "demand_signal",
+      "opportunity_score": 10.3
+    }
+  ]
+}

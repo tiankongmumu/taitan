@@ -1,0 +1,105 @@
+{
+    "source": "https://github.com/badlogic/pi-mono",
+    "learned_at": "2026-03-05T10:26:00",
+    "category": "ai_agent_toolkit",
+    "summary": "Pi-mono — 世界级AI Agent工具包，学习其统一LLM API、Agent循环、编码Agent架构",
+    "pi_ai_unified_llm_api": {
+        "description": "统一20+个LLM提供商的API，支持流式、工具调用、跨提供商切换、成本追踪",
+        "providers": [
+            "OpenAI",
+            "Anthropic",
+            "Google",
+            "Google Vertex",
+            "Amazon Bedrock",
+            "Mistral",
+            "Groq",
+            "Cerebras",
+            "xAI",
+            "OpenRouter",
+            "Vercel AI Gateway",
+            "MiniMax",
+            "GitHub Copilot",
+            "Google Gemini CLI",
+            "Azure OpenAI",
+            "OpenAI Codex",
+            "Any OpenAI-compatible (Ollama/vLLM/LM Studio)"
+        ],
+        "key_patterns": {
+            "model_registry": "getModel(provider, modelId) → 自动补全+类型安全",
+            "streaming_events": [
+                "start",
+                "text_delta",
+                "thinking_delta",
+                "toolcall_delta",
+                "done",
+                "error"
+            ],
+            "context_serialization": "Context对象可序列化、可跨模型传递",
+            "cross_provider_handoff": "Claude→GPT→Gemini无缝切换，自动转换thinking/tool格式",
+            "cost_tracking": "每次调用返回tokens+cost，支持缓存价格",
+            "abort_resume": "AbortController支持中断和恢复",
+            "custom_model": "支持自定义endpoint+compat设置，完美适配各种代理"
+        },
+        "titan_application": [
+            "升级llm_client.py: 添加provider registry模式，支持动态注册新模型",
+            "添加cost tracking: 每次API调用追踪token和费用",
+            "支持abort/resume: 超时时保存部分结果而不是全部丢弃",
+            "模型自动发现: 类似getModels()自动列出可用模型"
+        ]
+    },
+    "pi_agent_core_loop": {
+        "description": "健壮的Agent循环：外循环(follow-up) + 内循环(tool calls + steering)",
+        "architecture": {
+            "outer_loop": "检查follow-up messages → 如果有则继续执行",
+            "inner_loop": "streaming LLM → 检测tool calls → 执行tools → 检查steering",
+            "steering_messages": "用户可以在tool执行过程中发送中断消息，跳过剩余tool calls",
+            "follow_up_messages": "agent停止后检查是否有排队的后续消息",
+            "context_transform": "LLM调用前转换context（剪裁历史、注入外部信息）"
+        },
+        "key_types": {
+            "AgentLoopConfig": "model + convertToLlm + transformContext + getApiKey + getSteeringMessages + getFollowUpMessages",
+            "AgentMessage": "标准LLM消息 + 自定义消息（通过declaration merging扩展）",
+            "AgentTool": "Tool + label + execute(id, params, signal, onUpdate)",
+            "AgentEvent": "agent_start/end + turn_start/end + message_start/update/end + tool_execution_start/update/end"
+        },
+        "titan_application": [
+            "给titan_heart添加steering能力: 用户可以在心跳间中断并改变方向",
+            "给executor添加follow-up: 任务完成后检查是否有后续任务",
+            "context transform: 限制LLM上下文窗口，注入最新市场数据"
+        ]
+    },
+    "pi_coding_agent": {
+        "description": "完整的编码Agent CLI，具备bash执行、文件编辑、技能系统、会话管理",
+        "modules": {
+            "bash_executor": "安全执行shell命令，超时+信号处理",
+            "model_resolver": "智能选择模型: DEFAULT_MODELS + 环境变量覆盖",
+            "session_manager": "会话持久化，支持恢复中断的编码任务",
+            "skills_system": "可扩展技能: 类似plugin，动态加载",
+            "slash_commands": "用户快捷指令系统",
+            "system_prompt": "结构化系统提示，包含工具描述和行为规则",
+            "diagnostics": "收集运行环境信息用于debug",
+            "keybindings": "可配置的键绑定系统"
+        },
+        "titan_application": [
+            "学习session_manager: 让TITAN的构建任务可恢复",
+            "学习skills_system: 动态注册新能力，从失败中学习",
+            "学习model_resolver: 根据任务复杂度智能选择模型"
+        ]
+    },
+    "code_quality_rules": {
+        "no_any_types": true,
+        "no_inline_imports": true,
+        "check_before_commit": "npm run check",
+        "never_hardcode_keys": "All keybindings must be configurable",
+        "parallel_agent_safety": "NEVER git add -A, always specific files"
+    },
+    "architecture_lessons_for_titan": [
+        "1. Provider Registry: 注册式架构，新模型只需添加一个provider文件",
+        "2. Event Stream: 统一的事件流模式，所有agent操作都发射可监听事件",
+        "3. Context Window Management: 自动裁剪context防止超出token限制",
+        "4. Tool Validation: 执行前验证参数schema，失败自动retry",
+        "5. Steering: 用户可以随时介入正在运行的agent",
+        "6. Cost Awareness: 每次调用都追踪成本，支持预算控制",
+        "7. Cross-Model Handoff: 同一对话可以切换模型，thinking块自动转换"
+    ]
+}

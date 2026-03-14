@@ -1,0 +1,119 @@
+{
+  "keyword": "number guessing game",
+  "competitors": [
+    {
+      "name": "Number Guessing Game by Math Is Fun",
+      "url": "https://www.mathsisfun.com/games/number-guessing-game.html",
+      "features": [
+        "Simple and intuitive interface",
+        "Educational value for children",
+        "Instant feedback on guesses"
+      ],
+      "weaknesses": [
+        "Limited customization options",
+        "No multiplayer mode",
+        "Basic design"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 100000
+    },
+    {
+      "name": "Guess the Number - Coolmath Games",
+      "url": "https://www.coolmathgames.com/0-guess-the-number",
+      "features": [
+        "Engaging and colorful design",
+        "Suitable for all ages",
+        "Interactive and fun"
+      ],
+      "weaknesses": [
+        "Ads can be intrusive",
+        "No advanced levels or challenges",
+        "Lacks educational content"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 80000
+    },
+    {
+      "name": "Number Guessing Game by CodePen",
+      "url": "https://codepen.io/your-work/pen/ExjJXg",
+      "features": [
+        "Customizable code for developers",
+        "Interactive and responsive design",
+        "Good for learning JavaScript"
+      ],
+      "weaknesses": [
+        "Not user-friendly for non-developers",
+        "No built-in game modes",
+        "Requires coding knowledge"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 30000
+    },
+    {
+      "name": "Number Guessing Game by Scratch",
+      "url": "https://scratch.mit.edu/projects/27456968/",
+      "features": [
+        "Educational for kids learning to code",
+        "Creative and engaging",
+        "Community-driven with many variations"
+      ],
+      "weaknesses": [
+        "Requires a Scratch account to play",
+        "Limited to Scratch platform",
+        "Basic graphics and design"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 50000
+    },
+    {
+      "name": "Number Guessing Game by GitHub",
+      "url": "https://github.com/yourusername/number-guessing-game",
+      "features": [
+        "Open-source and customizable",
+        "Good for learning and practicing programming",
+        "Community contributions"
+      ],
+      "weaknesses": [
+        "Not user-friendly for non-developers",
+        "No built-in game modes",
+        "Requires setup and installation"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 20000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Multiplayer mode",
+      "implementation": "Develop a feature that allows users to play against each other in real-time, with a leaderboard and chat functionality.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Advanced levels and challenges",
+      "implementation": "Create different levels of difficulty and introduce time limits, hints, and power-ups to make the game more engaging.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Educational content integration",
+      "implementation": "Incorporate math problems and educational quizzes into the game, making it a fun and interactive learning tool.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "Mobile app version",
+      "implementation": "Develop a mobile app for iOS and Android, ensuring a seamless and optimized experience for mobile users.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "User-friendly interface for non-developers",
+      "implementation": "Design an intuitive and easy-to-use interface that does not require any coding knowledge, making it accessible to a broader audience.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    }
+  ],
+  "recommended_positioning": "A versatile and engaging number guessing game with multiplayer, advanced levels, and educational content, designed for both casual and serious players.",
+  "analyzed_at": "2026-03-05T10:47:43.762359"
+}

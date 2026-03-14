@@ -1,0 +1,123 @@
+{
+  "keyword": "random name picker wheel",
+  "competitors": [
+    {
+      "name": "Wheel of Names",
+      "url": "https://wheelofnames.com/",
+      "features": [
+        "Simple and intuitive interface",
+        "Customizable wheel colors and text",
+        "Option to add multiple names",
+        "Spin history"
+      ],
+      "weaknesses": [
+        "Limited customization options for the wheel design",
+        "No mobile app",
+        "Lacks advanced features like scheduling or integration with other tools"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 150000
+    },
+    {
+      "name": "Random Name Picker",
+      "url": "https://www.randomnamepicker.org/",
+      "features": [
+        "Multiple input methods (text, CSV, etc.)",
+        "Bulk name addition",
+        "History of picks",
+        "Customizable wheel"
+      ],
+      "weaknesses": [
+        "User interface is not as polished as some competitors",
+        "Ads can be intrusive",
+        "Limited in terms of additional features"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 75000
+    },
+    {
+      "name": "ClassTools.net Random Name Picker",
+      "url": "https://www.classtools.net/random-name-picker/",
+      "features": [
+        "Educational focus with classroom-friendly features",
+        "Option to save and share wheels",
+        "Integration with other ClassTools resources"
+      ],
+      "weaknesses": [
+        "Design is somewhat outdated",
+        "Limited customization options",
+        "Not as user-friendly for non-educational use cases"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 60000
+    },
+    {
+      "name": "Flippity",
+      "url": "https://www.flippity.net/RandomNamePicker.htm",
+      "features": [
+        "Google Sheets integration",
+        "Highly customizable",
+        "Can be embedded on websites",
+        "Supports images and videos"
+      ],
+      "weaknesses": [
+        "Requires Google account",
+        "Steep learning curve for new users",
+        "Less intuitive for simple use cases"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 45000
+    },
+    {
+      "name": "Pick a Random",
+      "url": "https://pickarandom.com/random-name-picker-wheel",
+      "features": [
+        "Clean and modern interface",
+        "Quick and easy to use",
+        "Option to add up to 100 names",
+        "No ads"
+      ],
+      "weaknesses": [
+        "Limited customization options",
+        "No history or saving feature",
+        "Lacks advanced features like scheduling or integrations"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 30000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Mobile app availability",
+      "implementation": "Develop a dedicated mobile app for iOS and Android with a seamless user experience.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Advanced customization options",
+      "implementation": "Offer more detailed customization options such as custom backgrounds, fonts, and animations.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "Scheduling and reminders",
+      "implementation": "Add a feature that allows users to schedule spins and set reminders for future events.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Integration with other tools",
+      "implementation": "Integrate with popular tools like Google Classroom, Microsoft Teams, and Slack for seamless use in educational and professional settings.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Premium features and support",
+      "implementation": "Offer a freemium model with premium features such as ad-free experience, priority support, and advanced analytics.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    }
+  ],
+  "recommended_positioning": "A versatile and highly customizable random name picker wheel with a seamless mobile app and advanced integration capabilities.",
+  "analyzed_at": "2026-03-05T08:55:11.259529"
+}

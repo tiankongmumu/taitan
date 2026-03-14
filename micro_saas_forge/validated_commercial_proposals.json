@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-03-09T18:10:00.857513",
+  "methodology": "Doubao Cross-Ref + DeepSeek WTP Matrix",
+  "top_proposals": [
+    {
+      "source": "global_seo_proven",
+      "keyword": "svg to png converter online",
+      "monthly_volume_estimate": 90000,
+      "avg_unit_price_rmb": 9.9,
+      "competition_score": 3,
+      "build_complexity": "MEDIUM",
+      "wtp_score": 297000.0
+    },
+    {
+      "source": "global_seo_proven",
+      "keyword": "jwt decoder and verifier",
+      "monthly_volume_estimate": 120000,
+      "avg_unit_price_rmb": 9.9,
+      "competition_score": 5,
+      "build_complexity": "MEDIUM",
+      "wtp_score": 237600.0
+    },
+    {
+      "source": "global_seo_proven",
+      "keyword": "regex visualizer and debugger",
+      "monthly_volume_estimate": 50000,
+      "avg_unit_price_rmb": 9.9,
+      "competition_score": 3,
+      "build_complexity": "MEDIUM",
+      "wtp_score": 165000.0
+    },
+    {
+      "source": "global_seo_proven",
+      "keyword": "privacy policy generator for saas",
+      "monthly_volume_estimate": 80000,
+      "avg_unit_price_rmb": 9.9,
+      "competition_score": 5,
+      "build_complexity": "MEDIUM",
+      "wtp_score": 158400.0
+    },
+    {
+      "source": "global_seo_proven",
+      "keyword": "sql query optimizer online",
+      "monthly_volume_estimate": 45000,
+      "avg_unit_price_rmb": 9.9,
+      "competition_score": 3,
+      "build_complexity": "MEDIUM",
+      "wtp_score": 148500.0
+    },
+    {
+      "source": "global_seo_proven",
+      "keyword": "json schema generator",
+      "monthly_volume_estimate": 60000,
+      "avg_unit_price_rmb": 9.9,
+      "competition_score": 4,
+      "build_complexity": "MEDIUM",
+      "wtp_score": 148500.0
+    },
+    {
+      "source": "global_seo_proven",
+      "keyword": "typescript interface generator from json",
+      "monthly_volume_estimate": 55000,
+      "avg_unit_price_rmb": 9.9,
+      "competition_score": 4,
+      "build_complexity": "MEDIUM",
+      "wtp_score": 136125.0
+    },
+    {
+      "source": "global_seo_proven",
+      "keyword": "cron expression visualizer",
+      "monthly_volume_estimate": 40000,
+      "avg_unit_price_rmb": 9.9,
+      "competition_score": 3,
+      "build_complexity": "MEDIUM",
+      "wtp_score": 132000.0
+    },
+    {
+      "source": "global_seo_proven",
+      "keyword": "postgresql connection string generator",
+      "monthly_volume_estimate": 25000,
+      "avg_unit_price_rmb": 9.9,
+      "competition_score": 2,
+      "build_complexity": "MEDIUM",
+      "wtp_score": 123750.0
+    },
+    {
+      "source": "global_seo_proven",
+      "keyword": "api payload builder and tester",
+      "monthly_volume_estimate": 35000,
+      "avg_unit_price_rmb": 9.9,
+      "competition_score": 3,
+      "build_complexity": "MEDIUM",
+      "wtp_score": 115500.0
+    },
+    {
+      "source": "global_seo_proven",
+      "keyword": "B2B SaaS pricing page templates",
+      "monthly_volume_estimate": 30000,
+      "avg_unit_price_rmb": 9.9,
+      "competition_score": 3,
+      "build_complexity": "MEDIUM",
+      "wtp_score": 99000.0
+    },
+    {
+      "source": "global_seo_proven",
+      "keyword": "Enterprise Database Schema Generator",
+      "monthly_volume_estimate": 22000,
+      "avg_unit_price_rmb": 9.9,
+      "competition_score": 5,
+      "build_complexity": "COMPLEX",
+      "wtp_score": 21780.0
+    }
+  ]
+}

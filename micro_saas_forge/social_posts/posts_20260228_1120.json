@@ -1,0 +1,41 @@
+[
+  {
+    "tool": {
+      "name": "JSON Path Finder",
+      "url": "https://json-path-finder-7gb09ltm3-tiankongmumus-projects.vercel.app",
+      "description": "JSON Path Finder: Extract nested JSON values using intuitive path builder with live preview"
+    },
+    "reddit": {
+      "title": "I built JSON Path Finder to stop guessing nested JSON paths",
+      "body": "Working with deeply nested JSON structures always slowed me down. I'd spend way too much time manually counting brackets and writing paths like `data.users[0].profile.address.city`, only to get errors because I missed an array index or property name. It felt like unnecessary busywork that broke my flow.\n\nSo I made JSON Path Finder: a simple web tool that lets you visually build and test JSON paths. You paste your JSON on the left, click through the structure to build the path, and instantly see the extracted value on the right. No more syntax guessing. You can try it here: https://json-path-finder-7gb09ltm3-tiankongmumus-projects.vercel.app\n\nSome things it does:\n- Live preview as you build the path\n- Handles arrays and nested objects intuitively\n- Copies the final path with one click\n- Works entirely in the browser (your data stays private)\n\nIt's a small tool, but it's already saving me time. I'd love to know if you find it useful or have ideas to make it better. What features would help you most when dealing with complex JSON?",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just shipped JSON Path Finder 🚀 A tool to extract nested JSON values with an intuitive path builder and live preview. No more guessing paths! \n\nCheck it out: https://json-path-finder-7gb09ltm3-tiankongmumus-projects.vercel.app\n\n#buildinpublic #indiehacker #devtools"
+  },
+  {
+    "tool": {
+      "name": "JSON Path Tester",
+      "url": "https://json-path-tester-mqgeanr00-tiankongmumus-projects.vercel.app",
+      "description": "JSON Path Tester: Instantly test JSONPath expressions against sample JSON with live highlighting"
+    },
+    "reddit": {
+      "title": "I built a JSON Path Tester to stop context-switching while debugging APIs",
+      "body": "I was working on a project that involved a lot of API integrations, and I kept hitting the same annoying wall. I'd get a complex JSON response, need to extract specific data with a JSONPath expression, and then waste minutes bouncing between my terminal, a documentation site, and a random online validator just to test if my path was correct. The constant context-switching was killing my flow.\n\nSo, I built a simple, focused tool to keep me in the zone: the JSON Path Tester. It's a single-page web app where you can paste a sample JSON payload and a JSONPath expression to see the results instantly. The live highlighting shows you exactly which parts of your JSON are matched, making it super visual and immediate.\n\nThe main features are pretty straightforward:\n- Live highlighting of matched elements in your JSON as you type the path.\n- Support for standard JSONPath syntax (like `$.store.book[*].author`).\n- A clean, editable sample JSON to start with.\n- No sign-up, no fees, and it runs entirely in your browser.\n\nI'd love for you to try it out and let me know what you think. If you work with JSON data often, I hope it saves you a few minutes of frustration. You can find it here: https://json-path-tester-mqgeanr00-tiankongmumus-projects.vercel.app\n\nAny feedback on the UI, missing features, or bugs would be incredibly helpful. Thanks for checking it out",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just shipped JSON Path Tester 🚀 Instantly test and highlight JSONPath expressions against any sample JSON. Perfect for debugging APIs or configs. Super fast and live!\n\nCheck it out: https://json-path-tester-mqgeanr00-tiankongmumus-projects.vercel.app\n\n#buildinpublic #indiehack..."
+  },
+  {
+    "tool": {
+      "name": "SQL Query Formatter",
+      "url": "https://sql-query-formatter-6fh354oza-tiankongmumus-projects.vercel.app",
+      "description": "SQL Query Formatter: Format and beautify SQL queries with dialect-aware syntax highlighting"
+    },
+    "reddit": {
+      "title": "I built a SQL Query Formatter to clean up messy queries",
+      "body": "As a developer, I often find myself dealing with SQL queries that are either minified, poorly formatted, or just plain messy. Whether it's debugging a query from logs or trying to understand someone else's code, reading unformatted SQL can be a real headache. I'd copy-paste into various tools, but they either lacked proper syntax highlighting or didn't handle different SQL dialects well.\n\nSo I created SQL Query Formatter - a simple web tool that instantly formats and beautifies SQL queries with dialect-aware syntax highlighting. You can try it here: https://sql-query-formatter-6fh354oza-tiankongmumus-projects.vercel.app\n\nKey features:\n- Supports multiple SQL dialects (MySQL, PostgreSQL, SQL Server, etc.)\n- Clean, readable formatting with proper indentation\n- Syntax highlighting that adapts to your chosen dialect\n- One-click copy formatted results\n- Completely free and runs in your browser\n\nI'd love to hear what you think! If you have any feedback or suggestions for improvements, please let me know. If you find it useful, I'd appreciate you sharing it with others who might benefit from it.",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just shipped a SQL Query Formatter I built for myself. It beautifies your messy queries with dialect-aware syntax highlighting. Super handy for cleaning up SQL before sharing or committing.\n\nCheck it out: https://sql-query-formatter-6fh354oza-tiankongmumus-projects.vercel.app\n..."
+  }
+]

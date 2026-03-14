@@ -1,0 +1,71 @@
+=== TWITTER THREAD ===
+**Tweet 1:**  
+Deploying microservices feels like untangling headphone wires in the dark.  
+Configs sprawl, YAML multiplies, and local testing? A fantasy.  
+We just shipped a solution: https://shipmicro.com/tools
+
+**Tweet 2:**  
+Existing tools? They give you a skeleton and leave you to wire up the nervous system.  
+No network topology. No persistent volumes. No service discovery.  
+Just "good luck" in production.
+
+**Tweet 3:**  
+Our generator builds *production-ready* Docker Compose & K8s manifests from a visual workflow.  
+Includes network maps, volume setup, service discovery, AND a local test env with simulated latency & failure injection.  
+Because "it works on my machine" should actually mean something.
+
+**Tweet 4:**  
+It's live. It's free. Go break it, test it, deploy with it.  
+Then tell us how to make it better.  
+Build in public, together: https://shipmicro.com/tools
+
+=== REDDIT POST ===
+**I was so frustrated with manually wiring up multi-service Docker Compose files for local dev and staging environments, so I made a visual microservices Docker Compose generator.**
+
+Every time I’d add a new service—say a Redis cache, a Postgres DB, and a couple of Node.js APIs—I’d waste an hour tweaking the docker-compose.yml: setting up networks, volumes, environment variables, health checks, and making sure the service discovery actually worked. Then I’d have to duplicate most of that logic into Kubernetes manifests later. It felt like busywork, and it was way too easy to introduce subtle config mismatches between environments.
+
+So I built a tool that lets you define your services and dependencies in a simple declarative config (or drag them together in a visual workflow), and it spits out a production-ready docker-compose.yml along with Kubernetes manifests. It handles:
+
+- Network topology and internal DNS
+- Persistent volumes with sensible defaults
+- Service discovery configs (env vars, etc.)
+- Integrated local testing with simulated latency and failure injection (useful for testing circuit breakers)
+
+The generator itself is built with TypeScript, Node.js, and React for the UI. The backend uses a custom YAML/JSON parser that maps to Docker Compose and K8s schemas, and the test environment leverages tc (traffic control) and some fault injection proxies we wrote in Go.
+
+It’s something I built to scratch my own itch, but I’ve found it useful enough that I put it online for others: https://shipmicro.com/tools
+
+Would love brutal feedback—especially if you’ve struggled with similar Docker/K8s wiring headaches, or if you think the approach is overkill. What’s your go-to method for managing multi-service setups locally?
+
+=== 小红书文案 ===
+🔥 微服务编排直接封神！一键生成生产级Docker Compose！
+
+家人们谁懂啊！以前配微服务编排真的头秃到崩溃💥
+每个服务手动写docker-compose
+网络拓扑、持久化卷、服务发现全要自己怼
+本地测试还要模拟延迟和故障？不存在的！
+
+直到我挖到这个逆天神器👇
+【Microservices Docker Compose Generator】
+简直是为打工人量身定制的效率核武器！
+
+✨三大封神亮点：
+1️⃣ 可视化工作流直接转生产级配置
+画个流程图就能生成带完整网络拓扑的docker-compose.yml
+连K8s manifests都给你备好了！
+
+2️⃣ 内置全套测试环境
+自动配置服务发现+持久化存储
+还能模拟网络延迟和故障注入
+本地测试直接逼近真实场景！
+
+3️⃣ 开箱即用零配置
+再也不用翻文档查端口冲突
+卷配置、环境变量、依赖关系全自动生成
+部署效率直接飙升500%！
+
+现在点开 https://shipmicro.com/tools
+五分钟搞定原来两天的活
+摸鱼时间又多亿点点🐟
+
+#效率神器 #程序员必备 #生产力工具 #微服务 #Docker #摸鱼真香

@@ -1,0 +1,26 @@
+{
+  "keyword": "online metronome with tuner",
+  "competitors": [],
+  "gaps": [
+    {
+      "gap": "Offline/PWA support",
+      "implementation": "Add Service Worker",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Mobile-first design",
+      "implementation": "Touch-optimized responsive UI",
+      "impact": "HIGH",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "No ads or tracking",
+      "implementation": "Privacy-first marketing angle",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    }
+  ],
+  "recommended_positioning": "The fastest, privacy-first online metronome with tuner — works offline",
+  "analyzed_at": "2026-03-05T12:48:05.195178"
+}

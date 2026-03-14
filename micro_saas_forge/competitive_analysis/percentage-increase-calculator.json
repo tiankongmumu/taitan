@@ -1,0 +1,127 @@
+{
+  "keyword": "percentage increase calculator",
+  "competitors": [
+    {
+      "name": "Omni Calculator",
+      "url": "https://www.omnicalculator.com/math/percentage-increase",
+      "features": [
+        "Clean, modern UI with step-by-step explanation",
+        "Visual chart showing the increase",
+        "Multiple related calculators linked (percentage change, decrease, etc.)",
+        "Educational content explaining the formula"
+      ],
+      "weaknesses": [
+        "High ad density can be intrusive",
+        "Page load is slower due to many widgets and trackers",
+        "Explanation, while good, is text-heavy and could be more interactive"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 1500000
+    },
+    {
+      "name": "Calculator Soup",
+      "url": "https://www.calculatorsoup.com/calculators/algebra/percentage-increase-calculator.php",
+      "features": [
+        "Extremely straightforward, no-nonsense interface",
+        "Clear formula display and calculation steps",
+        "Handles negative numbers and decreases",
+        "No frills, fast for quick calculations"
+      ],
+      "weaknesses": [
+        "Dated, early-2000s website design",
+        "Minimal visual appeal or guidance",
+        "Cluttered layout with many unrelated calculator links",
+        "Poor mobile experience"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 800000
+    },
+    {
+      "name": "RapidTables",
+      "url": "https://www.rapidtables.com/calc/math/percentage-increase-calculator.html",
+      "features": [
+        "Ultra-fast loading, minimal design",
+        "Simple two-input field and result",
+        "Includes a percentage decrease calculator on the same page",
+        "Part of a vast library of simple tools"
+      ],
+      "weaknesses": [
+        "Zero explanation or educational value",
+        "No visualization or context",
+        "Very basic, almost too sparse",
+        "Feels like a utility rather than a helpful tool"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 1200000
+    },
+    {
+      "name": "Percentage Calculator",
+      "url": "https://percentagecalculator.net/",
+      "features": [
+        "Dedicated domain name for high keyword relevance",
+        "Offers 5+ different percentage calculation types",
+        "Simple color-coded interface",
+        "Quick-copy buttons for results"
+      ],
+      "weaknesses": [
+        "Aggressive and misleading ads (fake 'Calculate' buttons)",
+        "Design feels cheap and untrustworthy",
+        "No unique value proposition beyond basic calculation",
+        "Poor branding"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 400000
+    },
+    {
+      "name": "Marshu.com",
+      "url": "https://www.marshu.com/articles/calculate-percent-increase-decrease-percentage-calculator.php",
+      "features": [
+        "Article-style format with detailed written examples",
+        "Shows multiple calculation methods",
+        "Encourages user practice with example problems"
+      ],
+      "weaknesses": [
+        "Terrible, archaic web design",
+        "Confusing navigation and layout",
+        "Calculation tool is buried in text",
+        "Unappealing and not user-friendly"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 200000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Lack of real-world, contextual examples and templates",
+      "implementation": "Build a template library next to the calculator: 'Calculate Salary Raise (5% over $50,000)', 'Calculate Price Inflation', 'Calculate Sales Growth Year-over-Year'. Pre-fill the fields with these examples for one-click learning.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "No data visualization for multi-step or compound increases",
+      "implementation": "Add an advanced mode that allows users to calculate percentage increase over multiple periods (e.g., 5% annual growth for 5 years). Display the results as an interactive line chart or bar graph showing the growth trajectory.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Poor mobile-optimized, tap-friendly experience",
+      "implementation": "Design a fully responsive, mobile-first PWA (Progressive Web App). Use large input fields, swipe-able examples, and haptic feedback. Offer an 'Add to Home Screen' prompt for instant app-like access.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Absence of professional/business features",
+      "implementation": "Create a 'Business' mode with features like: bulk upload (CSV) of values to calculate increases for a list, generate a shareable report (PDF/PNG) of the calculation with a company logo, and API access for developers.",
+      "impact": "MEDIUM",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "No integration with common productivity platforms",
+      "implementation": "Develop lightweight extensions/add-ons for Google Sheets, Microsoft Excel, or Notion. Allow users to insert percentage increase calculations directly into their workflows without leaving their document.",
+      "impact": "MEDIUM",
+      "effort": "COMPLEX"
+    }
+  ],
+  "recommended_positioning": "The contextual percentage calculator that turns simple math into actionable insights for students, professionals, and businesses.",
+  "analyzed_at": "2026-03-05T16:41:48.808093"
+}

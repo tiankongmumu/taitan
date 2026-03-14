@@ -1,0 +1,60 @@
+=== TWITTER THREAD ===
+**Tweet 1:**  
+Scrolling through CT for hours, checking 10 different dashboards, just to find out you’re *not eligible* for that airdrop everyone’s talking about.  
+We just shipped a solution.  
+https://shipmicro.com/tools
+
+**Tweet 2:**  
+Existing “airdrop lists” are just glorified calendars. They tell you what’s dropping, but not if you qualify. You still have to manually bridge, swap, and pray—only to miss out last minute. It’s reactive, not proactive.
+
+**Tweet 3:**  
+Our Crypto Airdrop Finder scans your wallets *automatically* for upcoming eligibility AND prepares claims in one click. No more guesswork. We track criteria live so you’re first in line, not last to know.
+
+**Tweet 4:**  
+It’s live. Stop missing free money.  
+Try it, break it, tell us what you think.  
+👇  
+https://shipmicro.com/tools  
+Building in public—feedback fuels the ship.
+
+=== REDDIT POST ===
+**I built a crypto airdrop finder because I was tired of manually checking eligibility for every new drop.**
+
+As a dev who dabbles in crypto, I kept missing out on airdrops or wasting time on ones I wasn’t eligible for. I’d see a new project, dig through their docs, check my wallet history, and still not be sure. It felt like doing unpaid data entry.
+
+So I made a tool that automatically scans your wallet against upcoming airdrop criteria and shows you what you qualify for. It also helps automate the claim process for supported drops—no more racing against transaction queues.
+
+**How it works under the hood:**
+- Connects via WalletConnect (we never see your keys)
+- Fetches and parses on-chain activity (EVM chains for now)
+- Cross-references with a curated list of drop criteria (sourced from public docs and community updates)
+- For eligible claims, it can generate and submit the claim transaction on your behalf (you still sign it)
+
+Built with Next.js 14, TypeScript, Tailwind, and a sprinkle of Viem for chain interactions. Hosted on Vercel.
+
+If you’re into airdrops or just hate manual eligibility checks, give it a try:  
+[https://shipmicro.com/tools](https://shipmicro.com/tools)
+
+I’d love some brutal feedback—especially on the UX, false positives/negatives in eligibility, or ideas for supporting more chains.
+
+=== 小红书文案 ===
+🔥空投猎人必备！自动扫描+一键领取神器，简直了！
+
+家人们谁懂啊！每次刷到别人领空投赚麻了，自己却要手动查资格、蹲点抢，结果还总是错过😭 直到我发现这个封神工具——自动扫描空投资格，还能一键代领！
+
+不用它真的太麻烦了：
+❌ 手动查钱包资格查到眼花
+❌ 定闹钟抢领却网络卡顿
+❌ 研究规则半天发现不符合
+
+而这工具三大王炸优点：
+1️⃣ 全自动扫描：绑定钱包后自动检测所有待领空投
+2️⃣ 一键代领：符合条件直接后台帮你操作领取
+3️⃣ 实时提醒：最新空投项目第一时间推送通知
+
+打工人的摸鱼神器，程序员都在偷偷用！再也不用担心错过任何一个暴富机会💥
+
+工具指路：shipmicro.com/tools
+（建议收藏，悄悄用别声张～）
+
+#效率神器 #空投猎人 #程序员必备 #区块链工具 #生产力爆表 #打工人逆袭

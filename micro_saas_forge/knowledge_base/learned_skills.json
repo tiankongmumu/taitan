@@ -1,0 +1,9 @@
+[
+  {
+    "skill_name": "typescript_generics",
+    "knowledge": "## TypeScript Generics Reference Card\n\n### 1. Common Mistakes\n- **Mismatched property names**: Using different property names in generic types vs data (like `savings` vs `potentialSavings`)\n- **Missing required properties**: Omitting required fields when passing data to generic components\n- **Incorrect type inference**: Letting TypeScript infer wrong types instead of explicitly defining generics\n\n### 2. Correct Patterns\n\n```tsx\n// 1. Generic component with explicit types\ninterface DataItem<T> {\n  id: string;\n  data: T;\n}\n\nfunction DataTable<T>({ items }: { items: DataItem<T>[] }) {\n  return <div>{/* Render items */}</div>;\n}\n\n// 2. Properly typed API response\nasync function fetchData<T>(): Promise<T[]> {\n  const res = await fetch('/api/data');\n  return res.json();\n}\n\n// 3. Reusable hook with generics\nfunction useFetch<T>(url: string) {\n  const [data, setData] = useState<T | null>(null);\n  // Fetch logic\n  return { data };\n}\n```\n\n### 3. Quick Fix Checklist\n1. ✅ Check property names match between type definitions and actual data\n2. ✅ Add explicit generic types instead of relying on inference\n3. ✅ Verify all required properties are present in passed data\n4. ✅ Use `extends` to constrain generic types when needed\n5. ✅ Test with sample data that matches your type structure",
+    "context": "Failed to compile.\n\n./src/app/page.tsx:92:9\nType error: Type '{ opportunity: string; savings: number; }[]' is not assignable to type '{ opportunity: string; potentialSavings: number; }[]'.\n  Property ",
+    "learned_at": "2026-03-01T17:34:30.221180",
+    "times_applied": 3
+  }
+]

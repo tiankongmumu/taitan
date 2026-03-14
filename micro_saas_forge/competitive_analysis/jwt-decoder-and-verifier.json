@@ -1,0 +1,129 @@
+{
+  "keyword": "jwt decoder and verifier",
+  "competitors": [
+    {
+      "name": "JWT.io",
+      "url": "https://jwt.io/",
+      "features": [
+        "Industry standard from Auth0",
+        "Clean, intuitive UI for decoding",
+        "Built-in library of public/private key algorithms for verification",
+        "Direct integration links to Auth0 docs and services"
+      ],
+      "weaknesses": [
+        "Verification requires manual key entry (prone to error)",
+        "No ability to save or share decoded tokens",
+        "No advanced features like token generation or bulk decode",
+        "UI is functional but dated"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 1200000
+    },
+    {
+      "name": "jwt.ms",
+      "url": "https://jwt.ms/",
+      "features": [
+        "Microsoft-branded, inspires trust for Azure/AAD users",
+        "Extremely simple, single-input interface",
+        "Excellent visual breakdown of token sections (header, payload, signature)",
+        "Auto-decodes on paste"
+      ],
+      "weaknesses": [
+        "No verification capabilities whatsoever (decoder only)",
+        "No customization or advanced options",
+        "Completely tied to Microsoft ecosystem",
+        "No explanation of claims or error messages"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 800000
+    },
+    {
+      "name": "DinoChiesa JWT Debugger",
+      "url": "https://dinochiesa.github.io/jwt/",
+      "features": [
+        "Powerful verification with support for complex keys (PEM, JWK)",
+        "Detailed error messages for failed verification",
+        "Ability to add custom claims for testing",
+        "Option to manipulate 'alg' header to test vulnerabilities"
+      ],
+      "weaknesses": [
+        "Very technical and intimidating UI",
+        "Poor visual design and user experience",
+        "No traffic or SEO optimization (personal GitHub page)",
+        "Lacks modern UX principles (looks and feels like a tool from 2010)"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 150000
+    },
+    {
+      "name": "Token.dev",
+      "url": "https://token.dev/",
+      "features": [
+        "Modern, polished developer-focused UI",
+        "Supports multiple token types (JWT, PASETO, etc.)",
+        "Features like token generation, timeline view for 'exp'/'iat', and curl command export",
+        "Dark/light mode"
+      ],
+      "weaknesses": [
+        "Core verification is behind a paywall",
+        "Free tier is very limited (5 tokens/month)",
+        "Can feel bloated for quick, simple decode/verify tasks",
+        "Requires account creation for most useful features"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 300000
+    },
+    {
+      "name": "Base64.ai JWT Decoder",
+      "url": "https://www.base64.ai/tools/jwt-decoder",
+      "features": [
+        "Very fast, client-side only processing",
+        "Clean and minimal interface",
+        "Clear copy buttons for each section",
+        "Links to other useful encoding/decoding tools"
+      ],
+      "weaknesses": [
+        "No verification feature (pure decoder)",
+        "Part of a larger tool suite, not a dedicated JWT product",
+        "No explanation of JWT claims",
+        "Basic functionality with no differentiation"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 200000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "No intelligent, guided verification workflow for beginners.",
+      "implementation": "Build a step-by-step wizard that asks: 'What provider issued this? (e.g., Auth0, AWS Cognito, Firebase)' or 'What type of key do you have? (JWKS URL, PEM, secret)'. Then guide the user through the correct steps with explanations, auto-fetching JWKS where possible.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Lack of collaborative or shareable debug sessions.",
+      "implementation": "Create a unique, shareable URL for each decode/verify operation (with optional password protection). Allow team comments or annotations on specific claims. This turns a solo debugging tool into a team troubleshooting asset.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Missing proactive security analysis.",
+      "implementation": "After decoding/verifying, run an automated security audit: flag 'none' alg, weak HS256 secrets, overly long expiration, unvalidated custom claims, or known vulnerable JWT libraries (based on the 'kid' or 'typ'). Provide a plain-English security score and recommendations.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "No offline or CLI capability for secure/air-gapped environments.",
+      "implementation": "Offer a downloadable, single-binary CLI tool (Go/Rust) and a static HTML/JS PWA that works fully offline. This caters to developers in high-security or restricted-network environments who cannot use web tools.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Poor integration with developer workflows and IDEs.",
+      "implementation": "Build browser extensions (Chrome/Firefox DevTools panel) and IDE plugins (VS Code, JetBrains) that allow developers to decode/verify JWTs directly from their network tab or a selected string of code without context-switching to a website.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    }
+  ],
+  "recommended_positioning": "The intelligent, security-focused JWT workstation for developers and teams, combining guided verification, actionable security insights, and collaboration.",
+  "analyzed_at": "2026-03-06T00:23:51.704890"
+}

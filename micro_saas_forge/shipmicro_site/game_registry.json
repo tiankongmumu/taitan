@@ -1,0 +1,378 @@
+[
+  {
+    "slug": "whack-a-mole",
+    "title": "Whack-a-Mole",
+    "category": "Game",
+    "icon": "🐹",
+    "url": "/games/whack-a-mole.html",
+    "isPremium": false
+  },
+  {
+    "slug": "emoji-catcher",
+    "title": "Emoji Catcher",
+    "category": "Game",
+    "icon": "⭐",
+    "url": "/games/emoji-catcher.html",
+    "isPremium": false
+  },
+  {
+    "slug": "bug-squasher",
+    "title": "Bug Squasher",
+    "category": "Game",
+    "icon": "🐛",
+    "url": "/games/bug-squasher.html",
+    "isPremium": false
+  },
+  {
+    "slug": "balloon-pop",
+    "title": "Balloon Pop",
+    "category": "Game",
+    "icon": "🎈",
+    "url": "/games/balloon-pop.html",
+    "isPremium": false
+  },
+  {
+    "slug": "gem-hunter",
+    "title": "Gem Hunter",
+    "category": "Game",
+    "icon": "💎",
+    "url": "/games/gem-hunter.html",
+    "isPremium": false
+  },
+  {
+    "slug": "ufo-spotter",
+    "title": "UFO Spotter",
+    "category": "Game",
+    "icon": "🛸",
+    "url": "/games/ufo-spotter.html",
+    "isPremium": false
+  },
+  {
+    "slug": "fruit-ninja",
+    "title": "Fruit Slicer",
+    "category": "Game",
+    "icon": "🍉",
+    "url": "/games/fruit-ninja.html",
+    "isPremium": false
+  },
+  {
+    "slug": "star-tap",
+    "title": "Star Tap",
+    "category": "Game",
+    "icon": "✨",
+    "url": "/games/star-tap.html",
+    "isPremium": false
+  },
+  {
+    "slug": "ghost-hunt",
+    "title": "Ghost Hunt",
+    "category": "Game",
+    "icon": "👻",
+    "url": "/games/ghost-hunt.html",
+    "isPremium": false
+  },
+  {
+    "slug": "rocket-catch",
+    "title": "Rocket Catch",
+    "category": "Game",
+    "icon": "🚀",
+    "url": "/games/rocket-catch.html",
+    "isPremium": false
+  },
+  {
+    "slug": "fish-tap",
+    "title": "Fish Tap",
+    "category": "Game",
+    "icon": "🐟",
+    "url": "/games/fish-tap.html",
+    "isPremium": false
+  },
+  {
+    "slug": "coin-grab",
+    "title": "Coin Grab",
+    "category": "Game",
+    "icon": "🪙",
+    "url": "/games/coin-grab.html",
+    "isPremium": false
+  },
+  {
+    "slug": "diamond-rush",
+    "title": "Diamond Rush",
+    "category": "Game",
+    "icon": "💠",
+    "url": "/games/diamond-rush.html",
+    "isPremium": false
+  },
+  {
+    "slug": "fire-fly",
+    "title": "Firefly Chase",
+    "category": "Game",
+    "icon": "🪲",
+    "url": "/games/fire-fly.html",
+    "isPremium": false
+  },
+  {
+    "slug": "planet-pop",
+    "title": "Planet Pop",
+    "category": "Game",
+    "icon": "🪐",
+    "url": "/games/planet-pop.html",
+    "isPremium": false
+  },
+  {
+    "slug": "meteor-dodge",
+    "title": "Meteor Dodge",
+    "category": "Game",
+    "icon": "🚀",
+    "url": "/games/meteor-dodge.html",
+    "isPremium": false
+  },
+  {
+    "slug": "rain-runner",
+    "title": "Rain Runner",
+    "category": "Game",
+    "icon": "🏃",
+    "url": "/games/rain-runner.html",
+    "isPremium": false
+  },
+  {
+    "slug": "fire-escape",
+    "title": "Fire Escape",
+    "category": "Game",
+    "icon": "🧑",
+    "url": "/games/fire-escape.html",
+    "isPremium": false
+  },
+  {
+    "slug": "virus-dodge",
+    "title": "Virus Dodge",
+    "category": "Game",
+    "icon": "🛡️",
+    "url": "/games/virus-dodge.html",
+    "isPremium": false
+  },
+  {
+    "slug": "candy-fall",
+    "title": "Candy Fall",
+    "category": "Game",
+    "icon": "🧺",
+    "url": "/games/candy-fall.html",
+    "isPremium": false
+  },
+  {
+    "slug": "snowfall",
+    "title": "Snow Drift",
+    "category": "Game",
+    "icon": "⛷️",
+    "url": "/games/snowfall.html",
+    "isPremium": false
+  },
+  {
+    "slug": "space-junk",
+    "title": "Space Junk",
+    "category": "Game",
+    "icon": "🛰️",
+    "url": "/games/space-junk.html",
+    "isPremium": false
+  },
+  {
+    "slug": "leaf-catcher",
+    "title": "Leaf Catcher",
+    "category": "Game",
+    "icon": "🧤",
+    "url": "/games/leaf-catcher.html",
+    "isPremium": false
+  },
+  {
+    "slug": "arrow-dodge",
+    "title": "Arrow Dodge",
+    "category": "Game",
+    "icon": "🏹",
+    "url": "/games/arrow-dodge.html",
+    "isPremium": false
+  },
+  {
+    "slug": "lava-run",
+    "title": "Lava Run",
+    "category": "Game",
+    "icon": "🏃",
+    "url": "/games/lava-run.html",
+    "isPremium": false
+  },
+  {
+    "slug": "thunder-dodge",
+    "title": "Thunder Dodge",
+    "category": "Game",
+    "icon": "⚡",
+    "url": "/games/thunder-dodge.html",
+    "isPremium": false
+  },
+  {
+    "slug": "cyber-memory",
+    "title": "Cyber Memory",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/cyber-memory.html",
+    "isPremium": false
+  },
+  {
+    "slug": "neon-match",
+    "title": "Neon Match",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/neon-match.html",
+    "isPremium": false
+  },
+  {
+    "slug": "pixel-pairs",
+    "title": "Pixel Pairs",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/pixel-pairs.html",
+    "isPremium": false
+  },
+  {
+    "slug": "astro-memory",
+    "title": "Astro Memory",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/astro-memory.html",
+    "isPremium": false
+  },
+  {
+    "slug": "deep-recall",
+    "title": "Deep Recall",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/deep-recall.html",
+    "isPremium": false
+  },
+  {
+    "slug": "mind-link",
+    "title": "Mind Link",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/mind-link.html",
+    "isPremium": false
+  },
+  {
+    "slug": "brain-grid",
+    "title": "Brain Grid",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/brain-grid.html",
+    "isPremium": false
+  },
+  {
+    "slug": "flash-match",
+    "title": "Flash Match",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/flash-match.html",
+    "isPremium": false
+  },
+  {
+    "slug": "simon-neon",
+    "title": "Simon Neon",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/simon-neon.html",
+    "isPremium": false
+  },
+  {
+    "slug": "pattern-pro",
+    "title": "Pattern Pro",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/pattern-pro.html",
+    "isPremium": false
+  },
+  {
+    "slug": "beat-memory",
+    "title": "Beat Memory",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/beat-memory.html",
+    "isPremium": false
+  },
+  {
+    "slug": "math-blitz",
+    "title": "Math Blitz",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/math-blitz.html",
+    "isPremium": false
+  },
+  {
+    "slug": "number-rush",
+    "title": "Number Rush",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/number-rush.html",
+    "isPremium": false
+  },
+  {
+    "slug": "calc-attack",
+    "title": "Calc Attack",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/calc-attack.html",
+    "isPremium": false
+  },
+  {
+    "slug": "digit-duel",
+    "title": "Digit Duel",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/digit-duel.html",
+    "isPremium": false
+  },
+  {
+    "slug": "code-typer",
+    "title": "Code Typer",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/code-typer.html",
+    "isPremium": false
+  },
+  {
+    "slug": "hacker-keys",
+    "title": "Hacker Keys",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/hacker-keys.html",
+    "isPremium": false
+  },
+  {
+    "slug": "speed-words",
+    "title": "Speed Words",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/speed-words.html",
+    "isPremium": false
+  },
+  {
+    "slug": "reflex-test",
+    "title": "Reflex Test",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/reflex-test.html",
+    "isPremium": false
+  },
+  {
+    "slug": "speed-click",
+    "title": "Speed Click",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/speed-click.html",
+    "isPremium": false
+  },
+  {
+    "slug": "nerve-check",
+    "title": "Nerve Check",
+    "category": "Game",
+    "icon": "🎮",
+    "url": "/games/nerve-check.html",
+    "isPremium": false
+  }
+]

@@ -1,0 +1,119 @@
+{
+  "keyword": "printable calendar creator",
+  "competitors": [
+    {
+      "name": "Time and Date",
+      "url": "https://www.timeanddate.com/calendar/creator.html",
+      "features": [
+        "Customizable templates",
+        "Multiple calendar styles (monthly, yearly, etc.)",
+        "Option to add holidays and events"
+      ],
+      "weaknesses": [
+        "Limited design customization options",
+        "No mobile app",
+        "Ads on the free version"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 1000000
+    },
+    {
+      "name": "CalendarLabs",
+      "url": "https://www.calendarlabs.com/",
+      "features": [
+        "Wide range of templates",
+        "Highly customizable designs",
+        "Option to add personal events and notes"
+      ],
+      "weaknesses": [
+        "Some advanced features require a paid subscription",
+        "User interface can be confusing for new users",
+        "Limited integration with other tools"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 500000
+    },
+    {
+      "name": "Vertex42",
+      "url": "https://www.vertex42.com/ExcelTemplates/printable-calendar.html",
+      "features": [
+        "Excel-based templates",
+        "Highly customizable in Excel",
+        "Option to download and print directly"
+      ],
+      "weaknesses": [
+        "Requires Microsoft Excel or compatible software",
+        "Limited online functionality",
+        "No direct integration with other calendar apps"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 300000
+    },
+    {
+      "name": "Printable Calendar",
+      "url": "https://www.printablecalendar.net/",
+      "features": [
+        "Simple and easy-to-use interface",
+        "Variety of calendar styles",
+        "Option to add custom text and images"
+      ],
+      "weaknesses": [
+        "Basic design options",
+        "No mobile app",
+        "Limited customization compared to competitors"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 200000
+    },
+    {
+      "name": "Canva",
+      "url": "https://www.canva.com/templates/calendars/",
+      "features": [
+        "Highly customizable designs",
+        "Professional-looking templates",
+        "Integration with Canva's design tools"
+      ],
+      "weaknesses": [
+        "Requires a Canva account",
+        "Some premium templates are behind a paywall",
+        "Can be overwhelming for non-designers"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 800000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Mobile app for on-the-go calendar creation",
+      "implementation": "Develop a mobile app that allows users to create, customize, and print calendars directly from their smartphones or tablets.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Advanced integration with popular calendar apps (Google Calendar, Outlook, etc.)",
+      "implementation": "Add features that allow users to import events and schedules from their existing calendar apps and sync them with the printable calendar.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Collaborative calendar creation",
+      "implementation": "Enable multiple users to collaborate on the same calendar, allowing them to add, edit, and share events in real-time.",
+      "impact": "MEDIUM",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "AI-powered event suggestions and reminders",
+      "implementation": "Integrate AI to suggest relevant events and holidays based on user preferences and provide automated reminders for important dates.",
+      "impact": "MEDIUM",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Enhanced design customization with drag-and-drop interface",
+      "implementation": "Offer a more intuitive and user-friendly design tool that allows users to easily customize their calendars with a drag-and-drop interface, without requiring advanced design skills.",
+      "impact": "HIGH",
+      "effort": "SIMPLE"
+    }
+  ],
+  "recommended_positioning": "A versatile and user-friendly printable calendar creator with advanced integrations and collaborative features.",
+  "analyzed_at": "2026-03-05T08:28:30.872704"
+}

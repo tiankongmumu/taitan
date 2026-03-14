@@ -1,0 +1,548 @@
+[
+  {
+    "type": "successful_template",
+    "description": " JSON Path Tester",
+    "keywords": [
+      "json",
+      "path",
+      "tester",
+      "json_path",
+      "path_tester"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useCallback } from \"react\";\n\nexport default function Home() {\n  const [jsonInput, setJsonInput] = useState<string>(\n    JSON.stringify(\n      {\n        store: {\n          book: [\n            {\n              category: \"reference\",\n              author: \"Nigel Rees\",\n              title: \"Sayings of the Century\",\n              price: 8.95,\n            },\n            {\n              category: \"fiction\",\n              author: \"Evelyn Waugh\",\n              title: \"Sword of Honour\",\n              price: 12.99,\n            },\n            {\n              category: \"fiction\",\n              author: \"Herman Melville\",\n              title: \"Moby Dick\",\n              price: 8.99,\n            },\n            {\n              category: \"fiction\",\n              a",
+    "app_slug": "json-path-tester",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-02-28T11:11:46.069209"
+  },
+  {
+    "type": "successful_template",
+    "description": " SQL Query Formatter",
+    "keywords": [
+      "sql",
+      "query",
+      "formatter",
+      "sql_query",
+      "query_formatter"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect } from \"react\";\n\nexport default function Home() {\n  const [inputSQL, setInputSQL] = useState<string>(\"SELECT * FROM users WHERE id = 1 AND status = 'active' ORDER BY created_at DESC;\");\n  const [formattedSQL, setFormattedSQL] = useState<string>(\"\");\n  const [dialect, setDialect] = useState<string>(\"postgresql\");\n  const [theme, setTheme] = useState<string>(\"light\");\n  const [indentSize, setIndentSize] = useState<number>(2);\n  const [isCopied, setIsCopied] = useState<boolean>(false);\n\n  const dialects = [\n    { id: \"postgresql\", name: \"PostgreSQL\" },\n    { id: \"mysql\", name: \"MySQL\" },\n    { id: \"sqlite\", name: \"SQLite\" },\n    { id: \"mssql\", name: \"SQL Server\" },\n  ];\n\n  const themes = [\n    { id: \"light\", name: \"Light\" },\n    { id: \"dark\", name: ",
+    "app_slug": "sql-query-formatter",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-02-28T11:16:44.660098"
+  },
+  {
+    "type": "successful_template",
+    "description": " Curl-to-Code",
+    "keywords": [
+      "curl",
+      "code",
+      "curl_code"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect } from \"react\";\n\ntype Language = \"python\" | \"javascript\" | \"go\" | \"php\";\n\nconst languageConfigs: Record<Language, { name: string; extension: string }> = {\n  python: { name: \"Python\", extension: \"py\" },\n  javascript: { name: \"JavaScript\", extension: \"js\" },\n  go: { name: \"Go\", extension: \"go\" },\n  php: { name: \"PHP\", extension: \"php\" },\n};\n\nexport default function Home() {\n  const [curlInput, setCurlInput] = useState<string>(\"curl https://api.example.com/data\");\n  const [selectedLanguage, setSelectedLanguage] = useState<Language>(\"python\");\n  const [generatedCode, setGeneratedCode] = useState<string>(\"\");\n  const [isCopied, setIsCopied] = useState<boolean>(false);\n  const [history, setHistory] = useState<string[]>([]);\n\n  const convertCurlToCode =",
+    "app_slug": "curl-to-code",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-01T10:42:38.177394"
+  },
+  {
+    "type": "successful_template",
+    "description": " Cybernetic IP Tracker",
+    "keywords": [
+      "cybernetic",
+      "tracker",
+      "cybernetic_tracker"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useCallback } from 'react';\n\ninterface IPAsset {\n  id: string;\n  name: string;\n  type: 'trademark' | 'copyright' | 'patent' | 'trade-secret';\n  status: 'active' | 'infringement-detected' | 'monitoring' | 'inactive';\n  lastScanned: string;\n  infringementCount: number;\n  value: number;\n}\n\ninterface Alert {\n  id: string;\n  assetId: string;\n  severity: 'low' | 'medium' | 'high' | 'critical';\n  message: string;\n  timestamp: string;\n  resolved: boolean;\n}\n\ninterface AnalyticsData {\n  totalAssets: number;\n  activeMonitoring: number;\n  infringementsThisMonth: number;\n  protectedValue: number;\n  topInfringedAssets: string[];\n}\n\nexport default function Home() {\n  const [ipAssets, setIpAssets] = useState<IPAsset[]>([\n    { id: '1', name: 'NexusOS Logo', ty",
+    "app_slug": "cybernetic-ip-tracker",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-01T12:44:07.290222"
+  },
+  {
+    "type": "successful_template",
+    "description": " Privacy Pulse",
+    "keywords": [
+      "privacy",
+      "pulse",
+      "privacy_pulse"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useCallback } from 'react';\n\ntype DataCategory = {\n  id: string;\n  name: string;\n  description: string;\n  icon: string;\n  accessLevel: 'none' | 'limited' | 'full';\n  lastAccessed: string;\n  riskLevel: 'low' | 'medium' | 'high';\n};\n\ntype PermissionStatus = {\n  id: string;\n  name: string;\n  status: 'granted' | 'denied' | 'prompt';\n  icon: string;\n  description: string;\n};\n\nexport default function Home() {\n  const [dataCategories, setDataCategories] = useState<DataCategory[]>([\n    { id: 'location', name: 'Location', description: 'GPS coordinates, IP-based location', icon: '📍', accessLevel: 'full', lastAccessed: 'Just now', riskLevel: 'high' },\n    { id: 'cookies', name: 'Cookies', description: 'Session data, preferences, tracking', icon: '🍪', acce",
+    "app_slug": "privacy-pulse",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-01T14:41:29.305666"
+  },
+  {
+    "type": "successful_template",
+    "description": " API Playground Sandbox",
+    "keywords": [
+      "api",
+      "playground",
+      "sandbox",
+      "api_playground",
+      "playground_sandbox"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useCallback } from 'react';\n\ntype HttpMethod = 'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH';\ntype ResponseStatus = 'idle' | 'loading' | 'success' | 'error';\n\ninterface ApiResponse {\n  status: number;\n  data: any;\n  headers: Record<string, string>;\n  time: number;\n}\n\nconst METHOD_COLORS: Record<HttpMethod, string> = {\n  GET: 'bg-green-500/20 text-green-400 border-green-500/30',\n  POST: 'bg-blue-500/20 text-blue-400 border-blue-500/30',\n  PUT: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',\n  DELETE: 'bg-red-500/20 text-red-400 border-red-500/30',\n  PATCH: 'bg-purple-500/20 text-purple-400 border-purple-500/30',\n};\n\nconst DEFAULT_ENDPOINT = 'https://jsonplaceholder.typicode.com/posts/1';\nconst DEFAULT_METHOD: HttpMethod = 'GET';\nconst DEFA",
+    "app_slug": "api-playground-sandbox",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-01T14:49:36.496451"
+  },
+  {
+    "type": "successful_template",
+    "description": " API Playground Builder",
+    "keywords": [
+      "api",
+      "playground",
+      "builder",
+      "api_playground",
+      "playground_builder"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useCallback } from \"react\";\n\ntype HttpMethod = \"GET\" | \"POST\" | \"PUT\" | \"DELETE\" | \"PATCH\";\ntype ParamType = \"query\" | \"header\" | \"body\";\ntype Param = { key: string; value: string; type: ParamType };\ntype ApiResponse = { status: number; data: any; time: number };\n\nexport default function Home() {\n  const [url, setUrl] = useState<string>(\"https://jsonplaceholder.typicode.com/posts\");\n  const [method, setMethod] = useState<HttpMethod>(\"GET\");\n  const [params, setParams] = useState<Param[]>([\n    { key: \"Content-Type\", value: \"application/json\", type: \"header\" },\n    { key: \"userId\", value: \"1\", type: \"query\" },\n  ]);\n  const [body, setBody] = useState<string>('{\\n  \"title\": \"foo\",\\n  \"body\": \"bar\",\\n  \"userId\": 1\\n}');\n  const [response, setRespon",
+    "app_slug": "api-playground-builder",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-01T14:54:48.572568"
+  },
+  {
+    "type": "successful_template",
+    "description": " CSS Gradient Animator",
+    "keywords": [
+      "css",
+      "gradient",
+      "animator",
+      "css_gradient",
+      "gradient_animator"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useCallback } from \"react\";\n\ntype GradientStop = {\n  id: string;\n  color: string;\n  position: number;\n};\n\ntype TimingFunction = \"linear\" | \"ease\" | \"ease-in\" | \"ease-out\" | \"ease-in-out\";\n\nexport default function Home() {\n  // Gradient configuration\n  const [stops, setStops] = useState<GradientStop[]>([\n    { id: \"1\", color: \"#ff0080\", position: 0 },\n    { id: \"2\", color: \"#00ffcc\", position: 50 },\n    { id: \"3\", color: \"#7700ff\", position: 100 },\n  ]);\n  const [angle, setAngle] = useState<number>(45);\n  const [duration, setDuration] = useState<number>(3);\n  const [timingFunction, setTimingFunction] = useState<TimingFunction>(\"ease-in-out\");\n  const [isAnimating, setIsAnimating] = useState<boolean>(true);\n  const [cssCode, setCssCode] = useState",
+    "app_slug": "css-gradient-animator",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-01T15:00:33.447023"
+  },
+  {
+    "type": "successful_template",
+    "description": " Privacy Shield Inspector",
+    "keywords": [
+      "privacy",
+      "shield",
+      "inspector",
+      "privacy_shield",
+      "shield_inspector"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect } from \"react\";\n\ntype HeaderAnalysis = {\n  name: string;\n  value: string;\n  status: \"secure\" | \"warning\" | \"missing\" | \"info\";\n  recommendation: string;\n  severity: \"high\" | \"medium\" | \"low\";\n};\n\ntype AnalysisResult = {\n  url: string;\n  timestamp: string;\n  headers: HeaderAnalysis[];\n  overallScore: number;\n  grade: \"A\" | \"B\" | \"C\" | \"D\" | \"F\";\n};\n\nconst SECURITY_HEADERS = [\n  {\n    name: \"Content-Security-Policy\",\n    description: \"Prevents XSS attacks by controlling resources\",\n    secureValue: \"default-src 'self'; script-src 'self'\",\n    severity: \"high\" as const,\n  },\n  {\n    name: \"Strict-Transport-Security\",\n    description: \"Forces HTTPS connections\",\n    secureValue: \"max-age=31536000; includeSubDomains\",\n    severity: \"high\" as const,\n  ",
+    "app_slug": "privacy-shield-inspector",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-01T16:37:22.108194"
+  },
+  {
+    "type": "successful_template",
+    "description": " Privacypass Generator",
+    "keywords": [
+      "privacypass",
+      "generator",
+      "privacypass_generator"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useCallback } from \"react\";\n\nexport default function Home() {\n  const [password, setPassword] = useState<string>(\"\");\n  const [length, setLength] = useState<number>(16);\n  const [includeUppercase, setIncludeUppercase] = useState<boolean>(true);\n  const [includeLowercase, setIncludeLowercase] = useState<boolean>(true);\n  const [includeNumbers, setIncludeNumbers] = useState<boolean>(true);\n  const [includeSymbols, setIncludeSymbols] = useState<boolean>(true);\n  const [copied, setCopied] = useState<boolean>(false);\n  const [strength, setStrength] = useState<number>(0);\n\n  const characterSets = {\n    uppercase: \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\",\n    lowercase: \"abcdefghijklmnopqrstuvwxyz\",\n    numbers: \"0123456789\",\n    symbols: \"!@#$%^&*()_+-=[]{}|;:,.<",
+    "app_slug": "privacypass-generator",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-01T16:50:25.168449"
+  },
+  {
+    "type": "successful_template",
+    "description": " Web3 Wallet Health Checker",
+    "keywords": [
+      "web3",
+      "wallet",
+      "health",
+      "checker",
+      "web3_wallet",
+      "wallet_health",
+      "health_checker"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useCallback } from \"react\";\n\ninterface WalletAnalysis {\n  securityScore: number;\n  risks: string[];\n  tokenDistribution: {\n    token: string;\n    percentage: number;\n    value: number;\n  }[];\n  gasOptimization: {\n    opportunity: string;\n    potentialSavings: number;\n  }[];\n  lastUpdated: string;\n}\n\nexport default function Home() {\n  const [address, setAddress] = useState<string>(\"\");\n  const [isAnalyzing, setIsAnalyzing] = useState<boolean>(false);\n  const [analysis, setAnalysis] = useState<WalletAnalysis | null>(null);\n  const [error, setError] = useState<string>(\"\");\n\n  const mockAnalyzeWallet = useCallback(async (walletAddress: string): Promise<WalletAnalysis> => {\n    // Simulate API delay\n    await new Promise(resolve => setTimeout(resolve",
+    "app_slug": "web3-wallet-health-checker",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-01T16:55:25.799833"
+  },
+  {
+    "type": "successful_template",
+    "description": " Web3 Wallet Health Checker",
+    "keywords": [
+      "web3",
+      "wallet",
+      "health",
+      "checker",
+      "web3_wallet",
+      "wallet_health",
+      "health_checker"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useCallback } from \"react\";\n\ninterface WalletAnalysis {\n  securityScore: number;\n  risks: string[];\n  tokenDistribution: {\n    token: string;\n    percentage: number;\n    value: number;\n  }[];\n  gasOptimization: {\n    opportunity: string;\n    potentialSavings: number;\n  }[];\n  lastUpdated: string;\n}\n\ninterface AnalysisResult {\n  address: string;\n  analysis: WalletAnalysis;\n  summary: string;\n}\n\nexport default function Home() {\n  const [address, setAddress] = useState<string>(\"\");\n  const [result, setResult] = useState<AnalysisResult | null>(null);\n  const [loading, setLoading] = useState<boolean>(false);\n  const [error, setError] = useState<string>(\"\");\n  const [copied, setCopied] = useState<boolean>(false);\n\n  // Mock analysis function - in a re",
+    "app_slug": "web3-wallet-health-checker",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-01T17:36:24.913776"
+  },
+  {
+    "type": "successful_template",
+    "description": " Promptcraft Studio",
+    "keywords": [
+      "promptcraft",
+      "studio",
+      "promptcraft_studio"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useCallback } from \"react\";\n\n// Modular prompt layers inspired by lobehub/lobehub\ntype PromptLayer = {\n  id: string;\n  name: string;\n  description: string;\n  content: string;\n  weight: number;\n};\n\ntype AITool = \"chatgpt\" | \"midjourney\" | \"claude\" | \"dalle\";\n\n// Runtime type converter inspired by langgenius/dify\nconst serializePromptLayers = (layers: PromptLayer[]): Record<string, any> => {\n  return layers.map(layer => ({\n    id: layer.id,\n    name: layer.name,\n    content: layer.content,\n    weight: layer.weight,\n    _type: \"PromptLayer\"\n  }));\n};\n\nconst defaultLayers: PromptLayer[] = [\n  {\n    id: \"identity\",\n    name: \"Identity\",\n    description: \"Who you are (e.g., expert marketer, creative writer)\",\n    content: \"You are an expert creative w",
+    "app_slug": "promptcraft-studio",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-01T18:06:00.487486"
+  },
+  {
+    "type": "successful_template",
+    "description": " ImageCompress Pro",
+    "keywords": [
+      "imagecompress",
+      "pro",
+      "imagecompress_pro"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState } from \"react\";\n\nconst Home: React.FC = () => {\n  const [input, setInput] = useState<string>(\"\");\n  const [output, setOutput] = useState<string>(\"\");\n  const [processing, setProcessing] = useState<boolean>(false);\n  const [error, setError] = useState<string | null>(null);\n\n  const handleCompress = async () => {\n    if (input) {\n      setProcessing(true);\n      setError(null);\n\n      try {\n        // Simulate compression and editing process\n        const compressedData = await simulateCompression(input);\n        setOutput(compressedData);\n      } catch (err) {\n        setError(\"An error occurred during compression. Please try again.\");\n      } finally {\n        setProcessing(false);\n      }\n    }\n  };\n\n  const simulateCompression = (data: string): Promise<st",
+    "app_slug": "image-compress-pro",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T08:22:11.373541"
+  },
+  {
+    "type": "successful_template",
+    "description": " Printable Calendar Creator Pro",
+    "keywords": [
+      "printable",
+      "calendar",
+      "creator",
+      "pro",
+      "printable_calendar",
+      "calendar_creator",
+      "creator_pro"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState } from \"react\";\n\nconst Home: React.FC = () => {\n  const [input, setInput] = useState<string>(\"\");\n  const [output, setOutput] = useState<string>(\"\");\n  const [processing, setProcessing] = useState<boolean>(false);\n  const [error, setError] = useState<string | null>(null);\n\n  const handleCompress = async () => {\n    if (input) {\n      setProcessing(true);\n      setError(null);\n\n      try {\n        // Simulate a processing delay\n        await new Promise((resolve) => setTimeout(resolve, 1000));\n\n        // Simulate output generation\n        const compressedOutput = input.slice(0, 10000); // Truncate if > 10000 chars\n        setOutput(compressedOutput);\n      } catch (err) {\n        setError(\"An error occurred while compressing the image.\");\n      } finally {\n",
+    "app_slug": "printable-calendar-creator-pro",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T08:36:13.944317"
+  },
+  {
+    "type": "successful_template",
+    "description": " CharCount Pro",
+    "keywords": [
+      "charcount",
+      "pro",
+      "charcount_pro"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState } from \"react\";\n\nexport default function Home() {\n  const [input, setInput] = useState<string>(\"\");\n  const [output, setOutput] = useState<string>(\"\");\n  const [processing, setProcessing] = useState<boolean>(false);\n  const [error, setError] = useState<string | null>(null);\n\n  const handleCount = async () => {\n    if (input) {\n      setProcessing(true);\n      try {\n        const charCountWithSpaces = input.length;\n        const formattedOutput = `Character count with spaces: ${charCountWithSpaces}`;\n        setOutput(formattedOutput);\n      } catch (err) {\n        setError(\"An error occurred while counting characters.\");\n      } finally {\n        setProcessing(false);\n      }\n    }\n  };\n\n  const handleCopy = () => {\n    if (output) {\n      navigator.clipboa",
+    "app_slug": "character-counter-with-spaces",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T08:48:57.528587"
+  },
+  {
+    "type": "successful_template",
+    "description": " SpinSelect Pro",
+    "keywords": [
+      "spinselect",
+      "pro",
+      "spinselect_pro"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState } from \"react\";\n\nexport default function Home() {\n  const [input, setInput] = useState<string>(\"\");\n  const [output, setOutput] = useState<string>(\"\");\n  const [processing, setProcessing] = useState<boolean>(false);\n  const [error, setError] = useState<string | null>(null);\n\n  const handleProcess = async () => {\n    if (input) {\n      setProcessing(true);\n      try {\n        // Simulate processing with a delay\n        await new Promise((resolve) => setTimeout(resolve, 1000));\n        // Example processing: reverse the input string\n        const processedOutput = input.split(\"\").reverse().join(\"\");\n        setOutput(processedOutput);\n      } catch (err) {\n        setError(\"An error occurred while processing the input.\");\n      } finally {\n        setProcessi",
+    "app_slug": "spinselect-pro",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T09:06:44.910468"
+  },
+  {
+    "type": "successful_template",
+    "description": " SVG to PNG Pro Converter",
+    "keywords": [
+      "svg",
+      "png",
+      "pro",
+      "converter",
+      "svg_png",
+      "png_pro",
+      "pro_converter"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState } from \"react\";\nimport { useEffect } from \"react\";\n\nconst Home: React.FC = () => {\n  const [svg, setSvg] = useState<string>(\"\");\n  const [png, setPng] = useState<string | null>(null);\n  const [processing, setProcessing] = useState<boolean>(false);\n  const [error, setError] = useState<string | null>(null);\n  const [backgroundColor, setBackgroundColor] = useState<string>(\"#ffffff\");\n  const [transparency, setTransparency] = useState<boolean>(true);\n  const [resolution, setResolution] = useState<number>(300);\n\n  const handleConvert = async () => {\n    if (svg) {\n      setProcessing(true);\n      try {\n        const response = await fetch(\"/api/convert\", {\n          method: \"POST\",\n          headers: {\n            \"Content-Type\": \"application/json\",\n          },",
+    "app_slug": "svg-to-png-pro-converter",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T09:28:26.674445"
+  },
+  {
+    "type": "successful_template",
+    "description": " TypeFlow Pro",
+    "keywords": [
+      "typeflow",
+      "pro",
+      "typeflow_pro"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState } from \"react\";\n\nexport default function Home() {\n  const [input, setInput] = useState<string>(\"\");\n  const [output, setOutput] = useState<string>(\"\");\n  const [processing, setProcessing] = useState<boolean>(false);\n  const [error, setError] = useState<string | null>(null);\n\n  const handleTest = async () => {\n    if (input) {\n      setProcessing(true);\n      try {\n        // Simulate processing with a delay\n        await new Promise((resolve) => setTimeout(resolve, 1000));\n\n        // Example: Calculate typing speed and generate output\n        const words = input.split(\" \").length;\n        const timeTaken = 60; // Assume 1 minute for simplicity\n        const wpm = Math.round((words / timeTaken) * 60);\n        const tips = `Your typing speed is ${wpm} WPM. K",
+    "app_slug": "typing-speed-test",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T09:47:34.858325"
+  },
+  {
+    "type": "successful_template",
+    "description": " Reaction Time Pro",
+    "keywords": [
+      "reaction",
+      "time",
+      "pro",
+      "reaction_time",
+      "time_pro"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState } from \"react\";\n\nexport default function Home() {\n  const [input, setInput] = useState<string>(\"\");\n  const [output, setOutput] = useState<string>(\"\");\n  const [processing, setProcessing] = useState<boolean>(false);\n  const [error, setError] = useState<string | null>(null);\n\n  const handleReactionTest = async () => {\n    if (input) {\n      setProcessing(true);\n      try {\n        // Simulate a reaction time test\n        const startTime = Date.now();\n        await new Promise(resolve => setTimeout(resolve, Math.random() * 1000 + 500));\n        const endTime = Date.now();\n        const reactionTime = (endTime - startTime).toFixed(2);\n        setOutput(`Your reaction time: ${reactionTime} ms`);\n      } catch (err) {\n        setError(\"An error occurred during t",
+    "app_slug": "reaction-time-pro",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T10:11:09.623154"
+  },
+  {
+    "type": "successful_template",
+    "description": " Favicon Forge Pro",
+    "keywords": [
+      "favicon",
+      "forge",
+      "pro",
+      "favicon_forge",
+      "forge_pro"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState } from \"react\";\n\nexport default function Home() {\n  const [input, setInput] = useState<string>(\"\");\n  const [output, setOutput] = useState<string>(\"\");\n  const [processing, setProcessing] = useState<boolean>(false);\n  const [error, setError] = useState<string | null>(null);\n\n  const handleGenerateFavicon = async () => {\n    if (input) {\n      setProcessing(true);\n      try {\n        // Simulate processing with a delay\n        await new Promise(resolve => setTimeout(resolve, 1000));\n\n        // Generate the favicon (for demonstration, we'll just return the input)\n        const generatedFavicon = `Generated Favicon: ${input}`;\n        setOutput(generatedFavicon);\n      } catch (err) {\n        setError(\"An error occurred while generating the favicon.\");\n      ",
+    "app_slug": "favicon-forge-pro",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T10:35:28.895971"
+  },
+  {
+    "type": "successful_template",
+    "description": " Number Guessing Game Pro",
+    "keywords": [
+      "number",
+      "guessing",
+      "game",
+      "pro",
+      "number_guessing",
+      "guessing_game",
+      "game_pro"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState } from \"react\";\nimport { useEffect } from \"react\";\n\nexport default function Home() {\n  const [input, setInput] = useState<string>(\"\");\n  const [output, setOutput] = useState<string>(\"\");\n  const [processing, setProcessing] = useState<boolean>(false);\n  const [error, setError] = useState<string | null>(null);\n\n  const handleCount = async () => {\n    if (input) {\n      setProcessing(true);\n      try {\n        const result = input.length;\n        setOutput(`Character count: ${result}`);\n      } catch (err) {\n        setError(\"An error occurred while counting characters.\");\n      } finally {\n        setProcessing(false);\n      }\n    }\n  };\n\n  const handleCopy = () => {\n    if (output) {\n      navigator.clipboard.writeText(output).then(() => {\n        alert(\"Cop",
+    "app_slug": "number-guessing-game-pro",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T10:56:48.977424"
+  },
+  {
+    "type": "successful_template",
+    "description": " TechResume Pro",
+    "keywords": [
+      "techresume",
+      "pro",
+      "techresume_pro"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState } from \"react\";\n\nexport default function Home() {\n  const [input, setInput] = useState<string>(\"\");\n  const [output, setOutput] = useState<string>(\"\");\n  const [processing, setProcessing] = useState<boolean>(false);\n  const [error, setError] = useState<string | null>(null);\n\n  const handleGenerateResume = async () => {\n    if (input) {\n      setProcessing(true);\n      try {\n        // Simulate AI-driven content generation\n        const generatedContent = `Generated Resume for: ${input}`;\n        setOutput(generatedContent);\n      } catch (err) {\n        setError(\"An error occurred while generating the resume.\");\n      } finally {\n        setProcessing(false);\n      }\n    }\n  };\n\n  const handleCopyToClipboard = () => {\n    if (output) {\n      navigator.clipb",
+    "app_slug": "techresume-pro",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T11:15:02.429329"
+  },
+  {
+    "type": "successful_template",
+    "description": " Intelligent Character Counter",
+    "keywords": [
+      "intelligent",
+      "character",
+      "counter",
+      "intelligent_character",
+      "character_counter"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useRef, useCallback } from \"react\";\n\n/* ───────── types ───────── */\ninterface PlatformOption {\n  name: string;\n  charLimit: number | null;\n  wordLimit: number | null;\n  description: string;\n}\n\ninterface AnalysisResult {\n  charCount: number;\n  wordCount: number;\n  uniqueWordCount: number;\n  readabilityScore: string; // Simplified for this example\n  keywordDensity: Record<string, number>; // Simplified for this example\n  platformLimits: {\n    char: number | null;\n    word: number | null;\n  };\n  isOverCharLimit: boolean;\n  isOverWordLimit: boolean;\n}\n\n/* ───────── helpers ───────── */\nconst PLATFORMS: PlatformOption[] = [\n  { name: \"Generic\", charLimit: null, wordLimit: null, description: \"No specific limits.\" },\n  { name: \"Twitter\", charLimit: 28",
+    "app_slug": "intelligent-character-counter",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T13:27:23.288476"
+  },
+  {
+    "type": "successful_template",
+    "description": " IP Assistant Pro",
+    "keywords": [
+      "assistant",
+      "pro",
+      "assistant_pro"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useRef, useCallback } from \"react\";\n\n/* ───────── types ───────── */\ninterface IpDetails {\n  ip: string;\n  country: string;\n  regionName: string;\n  city: string;\n  zip: string;\n  lat: number;\n  lon: number;\n  timezone: string;\n  isp: string;\n  org: string;\n  as: string; // Autonomous System\n  query: string; // The IP address queried\n}\n\ntype CheckStatus = 'checking' | 'detected' | 'not detected' | 'error';\n\ninterface LeakStatus {\n  dnsLeak: CheckStatus;\n  webrtcLeak: CheckStatus;\n  vpnProxy: CheckStatus;\n}\n\ninterface NetworkDiagnostics {\n  ping: 'checking' | 'N/A' | string; // e.g., \"50ms\"\n  speed: 'checking' | 'N/A' | string; // e.g., \"100 Mbps\"\n}\n\n/* ───────── helpers ───────── */\nfunction formatValue(val: string | number | null | undefined): s",
+    "app_slug": "ip-assistant-pro",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T13:30:56.465651"
+  },
+  {
+    "type": "successful_template",
+    "description": " Regex AI Pro",
+    "keywords": [
+      "regex",
+      "pro",
+      "regex_pro"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useCallback } from \"react\";\n\n/* ───────── types ───────── */\ninterface RegexResult {\n  regex: string;\n  explanation: string;\n  testCases: Array<{ input: string; matches: boolean }>;\n}\n\n/* ───────── helpers ───────── */\n// Function to simulate AI generation\nasync function generateRegexFromNaturalLanguage(\n  description: string\n): Promise<RegexResult> {\n  // Simulate API call delay\n  await new Promise((resolve) => setTimeout(resolve, Math.random() * 1000 + 500));\n\n  let regex = \"\";\n  let explanation = \"\";\n  let testCases: Array<{ input: string; matches: boolean }> = [];\n\n  const lowerDescription = description.toLowerCase();\n\n  if (lowerDescription.includes(\"email\")) {\n    regex = \"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}$\";\n    explanation",
+    "app_slug": "regex-ai-pro",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T13:35:46.999314"
+  },
+  {
+    "type": "successful_template",
+    "description": " Smart QR Generator",
+    "keywords": [
+      "smart",
+      "generator",
+      "smart_generator"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useRef, useCallback } from \"react\";\n\n/* ───────── types ───────── */\ninterface QrOptions {\n  url: string;\n  color: string;\n  logoUrl?: string; // Placeholder for future\n  errorCorrection: \"L\" | \"M\" | \"Q\" | \"H\";\n  dataType: \"url\" | \"wifi\" | \"vcard\" | \"text\";\n}\n\ninterface NicheTemplate {\n  id: string;\n  name: string;\n  defaultUrl: string;\n  dataType: QrOptions[\"dataType\"];\n  description: string;\n}\n\n/* ───────── helpers ───────── */\n// Simulates QR code generation, returning a basic SVG string.\n// In a real app, this would use a library like 'qrcode' or 'qrcode.react'.\nfunction generateQrCodeSvg(options: QrOptions): string {\n  const { url, color, errorCorrection, dataType } = options;\n  const data = dataType === \"url\" ? url : `TYPE:${dataType};DATA",
+    "app_slug": "smart-qr-generator",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T13:41:11.367953"
+  },
+  {
+    "type": "successful_template",
+    "description": " SecurePass Studio",
+    "keywords": [
+      "securepass",
+      "studio",
+      "securepass_studio"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useRef, useCallback } from \"react\";\n\n/* ───────── types ───────── */\ninterface PasswordConfig {\n  length: number;\n  useUppercase: boolean;\n  useLowercase: boolean;\n  useNumbers: boolean;\n  useSymbols: boolean;\n  excludeAmbiguous: boolean;\n  pronounceable: boolean;\n  customExclude: string;\n  customInclude: string;\n}\n\ntype GenerationMode = \"simple\" | \"advanced\";\n\n/* ───────── helpers ───────── */\nconst CHARACTER_SETS = {\n  uppercase: \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\",\n  lowercase: \"abcdefghijklmnopqrstuvwxyz\",\n  numbers: \"0123456789\",\n  symbols: \"!@#$%^&*()_+-=[]{}|;:,.<>?\",\n  ambiguous: \"il1Lo0O\",\n} as const;\n\nfunction generatePassword(config: PasswordConfig): string {\n  let charset = \"\";\n  if (config.useUppercase) charset += CHARACTER_SETS.uppercase;",
+    "app_slug": "securepass-studio",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T14:03:09.174732"
+  },
+  {
+    "type": "successful_template",
+    "description": " SmartMeal Planner Pro",
+    "keywords": [
+      "smartmeal",
+      "planner",
+      "pro",
+      "smartmeal_planner",
+      "planner_pro"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useCallback } from \"react\";\n\n/* ───────── types ───────── */\ntype DietaryGoal = \"balanced\" | \"high-protein\" | \"low-carb\" | \"budget\";\n\ninterface Recipe {\n  id: number;\n  name: string;\n  macros: {\n    protein: number;\n    carbs: number;\n    fat: number;\n    calories: number;\n  };\n  cost: number;\n  ingredients: string[];\n}\n\ninterface Meal {\n  id: number;\n  day: string;\n  slot: \"breakfast\" | \"lunch\" | \"dinner\" | \"snack\";\n  recipe: Recipe;\n}\n\ninterface GroceryItem {\n  id: number;\n  name: string;\n  quantity: number;\n  unit: string;\n  checked: boolean;\n}\n\n/* ───────── helpers ───────── */\nfunction formatCurrency(amount: number): string {\n  return `$${amount.toFixed(2)}`;\n}\n\nfunction formatMacros(recipe: Recipe): string {\n  return `${recipe.macros.calor",
+    "app_slug": "smartmeal-planner-pro",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T14:07:02.867182"
+  },
+  {
+    "type": "successful_template",
+    "description": " PostgreSQL Schema Generator from JSON",
+    "keywords": [
+      "postgresql",
+      "schema",
+      "generator",
+      "json",
+      "postgresql_schema",
+      "schema_generator",
+      "generator_from",
+      "from_json"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useRef, useCallback } from \"react\";\n\n/* ───────── types ───────── */\ninterface JsonSchemaField {\n  name: string;\n  type: string;\n  nullable: boolean;\n  defaultValue?: string;\n  isPrimaryKey: boolean;\n  isIndexed: boolean;\n  isUnique: boolean;\n  isJsonb: boolean;\n}\n\ninterface PostgresOptions {\n  enableJsonb: boolean;\n  enableGinIndex: boolean;\n  includeTimestamps: boolean;\n  includeSoftDelete: boolean;\n}\n\ninterface SchemaGenerationResult {\n  ddl: string;\n  indexes: string;\n  warnings: string[];\n}\n\n/* ───────── helpers ───────── */\nfunction inferTypeFromValue(value: unknown): string {\n  if (value === null || value === undefined) return \"TEXT\";\n  if (typeof value === \"string\") {\n    if (/^\\d{4}-\\d{2}-\\d{2}T/.test(value)) return \"TIMESTAMPTZ\";\n    i",
+    "app_slug": "postgresql-schema-generator-from-json",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T21:43:32.622445"
+  },
+  {
+    "type": "successful_template",
+    "description": " Creator Sponsorship Rate Calculator",
+    "keywords": [
+      "creator",
+      "sponsorship",
+      "rate",
+      "calculator",
+      "creator_sponsorship",
+      "sponsorship_rate",
+      "rate_calculator"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useCallback } from \"react\";\n\n/* ───────── types ───────── */\ninterface CalculatorInputs {\n  followers: number;\n  engagementRate: number;\n  nichePremiumPercent: number;\n  productionCost: number;\n  exclusivityMonths: number;\n  usageRightsMonths: number;\n}\n\ninterface CalculationResult {\n  baseRate: number;\n  nichePremium: number;\n  exclusivityFee: number;\n  usageRightsFee: number;\n  totalRate: number;\n  breakdown: string[];\n}\n\n/* ───────── helpers ───────── */\nconst formatCurrency = (val: number): string => {\n  return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(val);\n};\n\nconst calculateSponsorshipRate = (inputs: CalculatorInputs): CalculationResult => {\n  const baseRate = Math.round((input",
+    "app_slug": "creator-sponsorship-rate-calculator",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-05T23:08:51.739173"
+  },
+  {
+    "type": "successful_template",
+    "description": " JWT Security Workstation",
+    "keywords": [
+      "jwt",
+      "security",
+      "workstation",
+      "jwt_security",
+      "security_workstation"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useCallback } from \"react\";\n\ninterface VerificationResult {\n  claim: string;\n  status: \"valid\" | \"invalid\" | \"warning\";\n  message: string;\n}\n\ninterface JWTSecurityAudit {\n  score: number;\n  issues: string[];\n  recommendations: string[];\n  provider?: string;\n}\n\nexport default function JWTDecoder() {\n  const [jwt, setJwt] = useState<string>(\"\");\n  const [header, setHeader] = useState<string>(\"\");\n  const [payload, setPayload] = useState<string>(\"\");\n  const [signature, setSignature] = useState<string>(\"\");\n  const [activeTab, setActiveTab] = useState<\"decode\" | \"verify\" | \"audit\">(\"decode\");\n  const [verificationResults, setVerificationResults] = useState<VerificationResult[]>([]);\n  const [securityAudit, setSecurityAudit] = useState<JWTSecurityAudit>({\n    ",
+    "app_slug": "jwt-security-workstation",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-06T00:48:48.190488"
+  },
+  {
+    "type": "successful_template",
+    "description": " ZeroPDF Editor",
+    "keywords": [
+      "zeropdf",
+      "editor",
+      "zeropdf_editor"
+    ],
+    "code_snippet": "\"use client\";\n\nimport { useState, useEffect, useRef, useCallback } from \"react\";\n\n/* ───────── types ───────── */\ninterface PDFPage {\n  id: number;\n  content: string;\n}\n\ninterface ChatMessage {\n  id: number;\n  user: string;\n  message: string;\n  timestamp: Date;\n}\n\n/* ───────── helpers ───────── */\nfunction formatValue(val: number): string {\n  return val.toString();\n}\n\n/* ═══════════════════════════════════════════\n   ZeroPDF Editor — Teams and individuals need a secure, private PDF editor without restrictive limits, file uploads, or cluttered interfaces, but existing solutions compromise on privacy, have strict free tiers, or lack real-time collaboration.\n   ═══════════════════════════════════════════ */\nexport default function Home() {\n  // ── state ──\n  const [pdfPages, setPdfPages] = us",
+    "app_slug": "zero-pdf-editor",
+    "quality_score": 0,
+    "ui_score": 0,
+    "reference_count": 0,
+    "timestamp": "2026-03-06T10:56:00.895865"
+  }
+]

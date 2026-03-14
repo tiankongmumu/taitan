@@ -1,0 +1,29 @@
+[
+  {
+    "id": "rage-escape",
+    "name": "发疯文学职场逃生舱",
+    "description": "通过分析你的MBTI和近期压力，生成专属的“发疯文学”辞职信和体制内/外逃生路线图。",
+    "target_audience": "精神内耗严重、渴望逃离“打工人”或“体制内”困境的年轻白领",
+    "hook_question": "你的精神状态，离“发疯”辞职还差几步？",
+    "paywall_trigger": "在生成最解压的“发疯文学”辞职信全文和最佳“搞钱”副业推荐前",
+    "theme_color": "fuchsia"
+  },
+  {
+    "id": "fortune-suit",
+    "name": "孔乙己长衫运势占卜",
+    "description": "通过玄学测试，揭示你身上无形的“孔乙己长衫”是什么，并提供“脱下长衫”后的水逆退散运势与搞钱指南。",
+    "target_audience": "高学历但感到怀才不遇、在理想与现实间挣扎的95后、00后",
+    "hook_question": "困住你的，究竟是哪件“孔乙己的长衫”？",
+    "paywall_trigger": "在揭晓你“脱下长衫”后的具体天命职业和未来三个月财运走势图时",
+    "theme_color": "indigo"
+  },
+  {
+    "id": "mbti-kryptonite",
+    "name": "MBTI水逆克星诊断",
+    "description": "结合你的MBTI和近期星象，精准诊断你当前“水逆”的根源，并生成个性化的“退散”玄学仪式与社交话术。",
+    "target_audience": "信奉MBTI与玄学、热衷社交分享、近期诸事不顺的都市年轻人",
+    "hook_question": "你最近的倒霉事，是你的MBTI人格招来的吗？",
+    "paywall_trigger": "在显示专属于你的“水逆退散”终极玄学仪式步骤和转运幸运物清单前",
+    "theme_color": "purple"
+  }
+]

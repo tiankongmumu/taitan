@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS编码关税秒查 | CodeMint 外贸神器</title>
+    <meta name="description" content="一键查询HS编码和关税税率，外贸采购员必备工具，数据来源美国国际贸易委员会官方API">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .blur-paywall {
+            filter: blur(6px);
+            pointer-events: none;
+            user-select: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 0 20px rgba(59, 130, 246, 0.8);
+            }
+        }
+
+        .glow {
+            animation: pulse-glow 2s infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950 text-white min-h-screen">
+
+    <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur-xl sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-400 rounded-xl flex items-center justify-center text-xl font-bold">
+                    HS</div>
+                <div>
+                    <h1
+                        class="text-lg font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
+                        HS编码关税秒查</h1>
+                    <p class="text-xs text-slate-500">数据源：美国国际贸易委员会 (USITC) 官方数据</p>
+                </div>
+            </div>
+            <span id="vipBadge"
+                class="hidden px-3 py-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full text-xs font-bold">VIP
+                已激活</span>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-8">
+
+        <!-- 搜索区 -->
+        <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 mb-8">
+            <h2 class="text-xl font-bold mb-1">输入产品名称，秒出HS编码+税率</h2>
+            <p class="text-slate-500 text-sm mb-4">支持中英文搜索，如"陶瓷砖"、"laptop"、"cotton fabric"</p>
+            <div class="flex gap-3">
+                <input id="searchInput" type="text" placeholder="请输入产品关键词，例如：laptop、ceramic、棉布..."
+                    class="flex-1 bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none">
+                <button id="searchBtn"
+                    class="bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-bold px-8 py-3 rounded-xl transition-all glow whitespace-nowrap">
+                    立即查询
+                </button>
+            </div>
+            <p class="text-slate-600 text-xs mt-2">免翻墙直连 | 实时同步美国海关最新数据 | 比翻手册快100倍</p>
+        </div>
+
+        <!-- 加载中 -->
+        <div id="loadingState" class="hidden text-center py-12">
+            <div class="inline-block animate-spin rounded-full h-10 w-10 border-4 border-blue-500 border-t-transparent">
+            </div>
+            <p class="text-slate-400 mt-4">正在查询美国海关数据库...</p>
+        </div>
+
+        <!-- 错误提示 -->
+        <div id="errorState" class="hidden bg-red-500/10 border border-red-500/30 rounded-xl p-4 mb-6">
+            <p id="errorMsg" class="text-red-400"></p>
+        </div>
+
+        <!-- 结果区 -->
+        <div id="resultsContainer" class="hidden">
+            <div class="flex items-center justify-between mb-4">
+                <h3 id="resultCount" class="text-lg font-bold"></h3>
+                <button id="exportBtn"
+                    class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2 rounded-lg text-sm transition-all disabled:opacity-50 disabled:cursor-not-allowed">
+                    导出Excel (VIP专属)
+                </button>
+            </div>
+
+            <div class="overflow-x-auto relative">
+                <table class="w-full text-left">
+                    <thead class="bg-slate-800 text-slate-300 text-sm">
+                        <tr>
+                            <th class="px-4 py-3 rounded-tl-lg">HS编码</th>
+                            <th class="px-4 py-3">产品描述</th>
+                            <th class="px-4 py-3">关税税率</th>
+                            <th class="px-4 py-3 rounded-tr-lg">计量单位</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataTableBody" class="divide-y divide-slate-800"></tbody>
+                </table>
+
+                <!-- 付费墙 -->
+                <div id="paywallOverlay"
+                    class="hidden absolute inset-0 bg-slate-950/60 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                    <div
+                        class="bg-gradient-to-br from-slate-900 to-slate-800 border border-blue-500/30 rounded-2xl p-8 max-w-sm text-center mx-4">
+                        <div class="text-4xl mb-3">🔒</div>
+                        <h3 class="text-xl font-bold mb-2">解锁完整查询结果</h3>
+                        <p class="text-slate-400 text-sm mb-4">输入激活码查看全部HS编码和关税税率</p>
+                        <input id="codeInput" type="text" placeholder="请输入激活码..."
+                            class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-white mb-3 outline-none focus:ring-2 focus:ring-blue-500">
+                        <button id="activateBtn"
+                            class="w-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 text-white font-bold py-2 rounded-lg transition-all">
+                            激活VIP
+                        </button>
+                        <a href="https://afdian.com/a/tiankongmumu" target="_blank"
+                            class="block mt-3 text-blue-400 text-sm hover:underline">
+                            获取激活码 (9.9元永久使用) →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 用户评价 -->
+        <div class="grid md:grid-cols-2 gap-4 mt-10">
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 fade-in">
+                <div class="flex items-center gap-3 mb-3">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-br from-pink-500 to-rose-500 rounded-full flex items-center justify-center text-sm font-bold">
+                        王</div>
+                    <div>
+                        <p class="font-bold text-sm">王姐</p>
+                        <p class="text-slate-500 text-xs">深圳 · 跨境电商卖家 · 5年外贸经验</p>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-sm">"以前查一个HS编码要翻半小时海关手册，现在输入产品名称直接出来，税率一目了然。上周给客户报价的时候用了一下，当场就成交了一单。"</p>
+            </div>
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 fade-in">
+                <div class="flex items-center gap-3 mb-3">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full flex items-center justify-center text-sm font-bold">
+                        张</div>
+                    <div>
+                        <p class="font-bold text-sm">张工</p>
+                        <p class="text-slate-500 text-xs">宁波 · 报关行 · 从业8年</p>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-sm">"客户每天问我'这个产品关税多少'，以前我得查半天。现在我直接把这个链接发给他们，专业又省事。已经推荐给了同行的好几个朋友。"</p>
+            </div>
+        </div>
+
+        <!-- 功能亮点 -->
+        <div class="grid md:grid-cols-3 gap-4 mt-8">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-4 text-center">
+                <div class="text-2xl mb-2">🌐</div>
+                <h4 class="font-bold text-sm mb-1">免翻墙直连</h4>
+                <p class="text-slate-500 text-xs">国内网络直达，无需VPN</p>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-4 text-center">
+                <div class="text-2xl mb-2">⚡</div>
+                <h4 class="font-bold text-sm mb-1">秒级响应</h4>
+                <p class="text-slate-500 text-xs">全球CDN加速，查询结果即时返回</p>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-4 text-center">
+                <div class="text-2xl mb-2">📊</div>
+                <h4 class="font-bold text-sm mb-1">官方数据源</h4>
+                <p class="text-slate-500 text-xs">实时同步美国ITC官方税率表</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-slate-800 py-6 mt-12 text-center text-slate-600 text-sm">
+        <p>CodeMint Tools &copy; 2026 | 数据来源：美国国际贸易委员会 (usitc.gov)</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+  "file": "jwt-decoder.html",
+  "tested_at": "2026-03-02T09:42:47.617623",
+  "checks": {
+    "structure": 10.0,
+    "seo": 9.0,
+    "mobile": 6.0,
+    "interactivity": 10.0,
+    "performance": 10.0,
+    "commercial": 4.0,
+    "visual": 9.0
+  },
+  "issues": [
+    "SEO: Missing H1 heading",
+    "MOBILE: No media queries or responsive CSS",
+    "MOBILE: No touch event handling",
+    "COMMERCIAL: No ad slots",
+    "COMMERCIAL: No analytics tracking",
+    "COMMERCIAL: No email capture"
+  ],
+  "score": 8.0,
+  "pass": true
+}

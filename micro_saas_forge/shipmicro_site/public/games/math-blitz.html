@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>数学闪电战 — ShipMicro 游戏厅</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    body {
+      background: #050510;
+      color: #fff;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      min-height: 100dvh;
+      touch-action: manipulation;
+      user-select: none;
+    }
+
+    .container {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      flex-shrink: 0
+    }
+
+    .logo {
+      font-size: 13px;
+      color: #666
+    }
+
+    .logo a {
+      color: inherit;
+      text-decoration: none
+    }
+
+    .stats {
+      display: flex;
+      gap: 20px
+    }
+
+    .stat-v {
+      font-size: 22px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent
+    }
+
+    .stat-l {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #444;
+      text-align: center
+    }
+
+    .timer-bar {
+      height: 8px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, .04);
+      overflow: hidden;
+      margin: 12px 0;
+      flex-shrink: 0;
+      position: relative
+    }
+
+    .timer-fill {
+      height: 100%;
+      border-radius: 4px;
+      background: linear-gradient(90deg, #ef4444, #f97316, #22c55e);
+      transition: width .1s linear;
+      position: relative
+    }
+
+    .timer-fill::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -2px;
+      bottom: -2px;
+      width: 12px;
+      border-radius: 6px;
+      background: inherit;
+      box-shadow: 0 0 12px rgba(34, 197, 94, .5)
+    }
+
+    .question-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      min-height: 0
+    }
+
+    .question {
+      font-size: clamp(42px, 12vw, 72px);
+      font-weight: 900;
+      text-align: center;
+      letter-spacing: 3px;
+      text-shadow: 0 0 30px rgba(139, 92, 246, .3);
+      transition: all .2s;
+    }
+
+    .question.correct-flash {
+      color: #22c55e;
+      text-shadow: 0 0 40px rgba(34, 197, 94, .5)
+    }
+
+    .question.wrong-flash {
+      color: #ef4444;
+      text-shadow: 0 0 40px rgba(239, 68, 68, .5)
+    }
+
+    .streak {
+      font-size: 15px;
+      color: #f59e0b;
+      font-weight: 800;
+      min-height: 22px;
+      text-shadow: 0 0 10px rgba(245, 158, 11, .4)
+    }
+
+    .answers {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      width: 100%;
+      max-width: 380px;
+      flex-shrink: 0;
+      padding-bottom: 24px
+    }
+
+    .ans-btn {
+      padding: 20px;
+      border-radius: 18px;
+      border: 2px solid rgba(255, 255, 255, .06);
+      background: linear-gradient(135deg, rgba(255, 255, 255, .02), rgba(255, 255, 255, .01));
+      color: #fff;
+      font-size: 26px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all .15s;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ans-btn::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(255, 255, 255, .05) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity .2s;
+    }
+
+    .ans-btn:hover::before {
+      opacity: 1
+    }
+
+    .ans-btn:hover {
+      border-color: rgba(255, 255, 255, .12);
+      transform: translateY(-2px)
+    }
+
+    .ans-btn:active {
+      transform: scale(.95)
+    }
+
+    .ans-btn.correct {
+      border-color: #22c55e;
+      background: rgba(34, 197, 94, .12);
+      color: #22c55e;
+      box-shadow: 0 0 30px rgba(34, 197, 94, .2);
+      animation: pulseBtn .3s;
+    }
+
+    .ans-btn.wrong {
+      border-color: #ef4444;
+      background: rgba(239, 68, 68, .12);
+      color: #ef4444;
+      box-shadow: 0 0 30px rgba(239, 68, 68, .2);
+      animation: shakeBtn .3s;
+    }
+
+    @keyframes pulseBtn {
+
+      0%,
+      100% {
+        transform: scale(1)
+      }
+
+      50% {
+        transform: scale(1.06)
+      }
+    }
+
+    @keyframes shakeBtn {
+
+      0%,
+      100% {
+        transform: translateX(0)
+      }
+
+      25% {
+        transform: translateX(-10px)
+      }
+
+      75% {
+        transform: translateX(10px)
+      }
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 5, 16, .92);
+      backdrop-filter: blur(20px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      animation: fadeIn .3s;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: scale(1)
+      }
+
+      50% {
+        transform: scale(1.05)
+      }
+    }
+
+    @keyframes glow {
+
+      0%,
+      100% {
+        box-shadow: 0 0 20px rgba(139, 92, 246, .2)
+      }
+
+      50% {
+        box-shadow: 0 0 40px rgba(139, 92, 246, .5)
+      }
+    }
+
+    .card {
+      text-align: center;
+      padding: 48px 36px;
+      max-width: 400px;
+      width: 92%;
+      background: linear-gradient(135deg, rgba(139, 92, 246, .05), rgba(6, 182, 212, .05));
+      border: 1px solid rgba(139, 92, 246, .15);
+      border-radius: 28px;
+      color: #fff;
+      animation: slideUp .4s;
+    }
+
+    .card-icon {
+      font-size: 80px;
+      margin-bottom: 16px;
+      display: block;
+      animation: pulse 2s infinite
+    }
+
+    .card h2 {
+      font-size: 32px;
+      font-weight: 900;
+      margin-bottom: 4px
+    }
+
+    .card .sub {
+      color: #888;
+      font-size: 13px;
+      margin-bottom: 6px
+    }
+
+    .card .desc {
+      color: #555;
+      font-size: 12px;
+      margin-bottom: 16px;
+      line-height: 1.5
+    }
+
+    .card .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 16px 0;
+      padding: 12px 0;
+      border-top: 1px solid rgba(255, 255, 255, .05);
+      border-bottom: 1px solid rgba(255, 255, 255, .05)
+    }
+
+    .card .stat-item {
+      text-align: center
+    }
+
+    .card .stat-val {
+      font-size: 26px;
+      font-weight: 900;
+      background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent
+    }
+
+    .card .stat-lbl {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #555
+    }
+
+    .card .record-badge {
+      color: #f59e0b;
+      font-weight: 800;
+      font-size: 14px;
+      margin: 8px 0;
+      display: none
+    }
+
+    .card .record-badge.show {
+      display: block;
+      animation: pulse .5s
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 44px;
+      border-radius: 16px;
+      border: none;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+      color: #fff;
+      margin-top: 16px;
+      transition: all .2s;
+      animation: glow 2s infinite
+    }
+
+    .btn:hover {
+      transform: scale(1.05)
+    }
+
+    .btn:active {
+      transform: scale(.97)
+    }
+
+    .btn-ghost {
+      display: inline-block;
+      padding: 12px 28px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid rgba(255, 255, 255, .08);
+      color: #777;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: all .2s
+    }
+
+    .btn-ghost:hover {
+      background: rgba(255, 255, 255, .08)
+    }
+
+    .hidden {
+      display: none !important
+    }
+
+    /* Level up flash */
+    .level-up {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 28px;
+      font-weight: 900;
+      color: #06b6d4;
+      text-shadow: 0 0 30px rgba(6, 182, 212, .6);
+      z-index: 80;
+      pointer-events: none;
+      animation: levelUp .8s ease forwards
+    }
+
+    @keyframes levelUp {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.5)
+      }
+
+      30% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.2)
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate(-50%, -80%) scale(1)
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo"><a href="/arcade">← 游戏厅</a></div>
+      <div class="stats">
+        <div>
+          <div class="stat-v" id="h-score">0</div>
+          <div class="stat-l">分数</div>
+        </div>
+        <div>
+          <div class="stat-v" id="h-level">1</div>
+          <div class="stat-l">等级</div>
+        </div>
+        <div>
+          <div class="stat-v" id="h-correct">0</div>
+          <div class="stat-l">正确</div>
+        </div>
+      </div>
+    </div>
+    <div class="timer-bar">
+      <div class="timer-fill" id="timer" style="width:100%"></div>
+    </div>
+    <div class="question-area">
+      <div class="streak" id="streak"></div>
+      <div class="question" id="question">—</div>
+      <div class="answers" id="answers"></div>
+    </div>
+  </div>
+
+  <div class="overlay" id="start-ov">
+    <div class="card">
+      <span class="card-icon">🧮</span>
+      <h2>数学闪电战</h2>
+      <div class="sub">Math Blitz</div>
+      <div class="desc">
+        在时间耗尽前答对尽可能多的数学题!<br>
+        答对 = +2秒 · 答错 = -3秒<br>
+        连续答对获得连击加成 🔥
+      </div>
+      <button class="btn" onclick="startGame()">开始挑战</button>
+      <br>
+      <button class="btn-ghost" onclick="location.href='/arcade'">← 返回游戏厅</button>
+    </div>
+  </div>
+
+  <div class="overlay hidden" id="end-ov">
+    <div class="card">
+      <span class="card-icon">⏱️</span>
+      <h2>时间到!</h2>
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-val" id="f-score">0</div>
+          <div class="stat-lbl">分数</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val" id="f-correct">0</div>
+          <div class="stat-lbl">正确</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-val" id="f-streak">0</div>
+          <div class="stat-lbl">最高连击</div>
+        </div>
+      </div>
+      <div style="color:#666;font-size:13px" id="f-acc">—</div>
+      <div style="color:#666;font-size:13px;margin-top:4px" id="f-best">最佳: 0</div>
+      <div class="record-badge" id="f-rec">🏆 新纪录！</div>
+      <button class="btn" onclick="startGame()">再来一次</button>
+      <br>
+      <button class="btn-ghost" onclick="shareScore()">📤 分享成绩</button>
+    </div>
+  </div>
+
+  <script>
+    const LB = 'shipmicro_mb_v2';
+    const DURATION = 60;
+    let score = 0, correct = 0, wrong = 0, streak = 0, maxStreak = 0, level = 1, timeLeft = DURATION, isPlaying = false, timer, answer, prevLevel = 1;
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden && isPlaying) { clearTimeout(timer); }
+    });
+
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    let audioCtx;
+    function initAudio() { if (!audioCtx) audioCtx = new AudioCtx() }
+
+    function playCorrectSfx() {
+      if (!audioCtx) return;
+      [523, 659, 784].forEach((f, i) => {
+        const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+        o.connect(g); g.connect(audioCtx.destination);
+        o.type = 'sine'; o.frequency.value = f;
+        g.gain.setValueAtTime(.12, audioCtx.currentTime + i * .05);
+        g.gain.exponentialRampToValueAtTime(.001, audioCtx.currentTime + i * .05 + .12);
+        o.start(audioCtx.currentTime + i * .05);
+        o.stop(audioCtx.currentTime + i * .05 + .12);
+      });
+    }
+
+    function playWrongSfx() {
+      if (!audioCtx) return;
+      const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+      o.connect(g); g.connect(audioCtx.destination);
+      o.type = 'sawtooth'; o.frequency.setValueAtTime(300, audioCtx.currentTime);
+      o.frequency.exponentialRampToValueAtTime(100, audioCtx.currentTime + .2);
+      g.gain.setValueAtTime(.1, audioCtx.currentTime);
+      g.gain.exponentialRampToValueAtTime(.001, audioCtx.currentTime + .25);
+      o.start(); o.stop(audioCtx.currentTime + .25);
+    }
+
+    function playLevelUp() {
+      if (!audioCtx) return;
+      [523, 659, 784, 1047].forEach((f, i) => {
+        const o = audioCtx.createOscillator(), g = audioCtx.createGain();
+        o.connect(g); g.connect(audioCtx.destination);
+        o.type = 'sine'; o.frequency.value = f;
+        g.gain.setValueAtTime(.15, audioCtx.currentTime + i * .08);
+        g.gain.exponentialRampToValueAtTime(.001, audioCtx.currentTime + i * .08 + .15);
+        o.start(audioCtx.currentTime + i * .08);
+        o.stop(audioCtx.currentTime + i * .08 + .15);
+      });
+    }
+
+    function getBest() { try { return parseInt(localStorage.getItem(LB) || '0') } catch { return 0 } }
+    function saveBest(s) { try { localStorage.setItem(LB, Math.max(s, getBest())) } catch { } }
+
+    function genQ() {
+      const ops = ['+', '-', '×'];
+      let a, b, op, ans;
+      if (level <= 2) { a = 2 + (Math.random() * 10 | 0); b = 1 + (Math.random() * 9 | 0); op = ops[Math.random() * 2 | 0] }
+      else if (level <= 5) { a = 5 + (Math.random() * 25 | 0); b = 2 + (Math.random() * 15 | 0); op = ops[Math.random() * 3 | 0] }
+      else if (level <= 8) { a = 10 + (Math.random() * 40 | 0); b = 3 + (Math.random() * 20 | 0); op = ops[Math.random() * 3 | 0] }
+      else { a = 15 + (Math.random() * 80 | 0); b = 5 + (Math.random() * 30 | 0); op = ops[Math.random() * 3 | 0] }
+
+      if (op === '+') ans = a + b;
+      else if (op === '-') { if (a < b) [a, b] = [b, a]; ans = a - b }
+      else ans = a * b;
+
+      const choices = new Set([ans]);
+      while (choices.size < 4) {
+        let fake = ans + Math.floor((Math.random() - .5) * Math.max(10, ans * .4));
+        if (fake === ans) fake += Math.random() > .5 ? 1 + (Math.random() * 5 | 0) : -(1 + (Math.random() * 5 | 0));
+        choices.add(fake);
+      }
+      return { text: `${a} ${op} ${b}`, answer: ans, choices: [...choices].sort(() => Math.random() - .5) };
+    }
+
+    function showQuestion() {
+      const q = genQ();
+      answer = q.answer;
+      const qEl = document.getElementById('question');
+      qEl.textContent = q.text;
+      qEl.className = 'question';
+
+      const div = document.getElementById('answers');
+      div.innerHTML = '';
+      q.choices.forEach(c => {
+        const btn = document.createElement('button');
+        btn.className = 'ans-btn';
+        btn.textContent = c;
+        btn.onclick = () => checkAnswer(c, btn);
+        div.appendChild(btn);
+      });
+    }
+
+    function showLevelUpBanner() {
+      const el = document.createElement('div');
+      el.className = 'level-up';
+      el.textContent = `⚡ 等级 ${level}!`;
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 900);
+    }
+
+    function checkAnswer(val, btn) {
+      if (!isPlaying) return;
+      initAudio();
+      document.querySelectorAll('.ans-btn').forEach(b => b.style.pointerEvents = 'none');
+      const qEl = document.getElementById('question');
+
+      if (val === answer) {
+        btn.classList.add('correct');
+        qEl.classList.add('correct-flash');
+        playCorrectSfx();
+        streak++;
+        if (streak > maxStreak) maxStreak = streak;
+        const bonus = streak >= 5 ? streak : streak >= 3 ? Math.ceil(streak * .7) : 1;
+        score += 10 * bonus;
+        correct++;
+        timeLeft = Math.min(DURATION, timeLeft + 2);
+      } else {
+        btn.classList.add('wrong');
+        qEl.classList.add('wrong-flash');
+        playWrongSfx();
+        document.querySelectorAll('.ans-btn').forEach(b => {
+          if (parseInt(b.textContent) === answer) b.classList.add('correct');
+        });
+        streak = 0;
+        wrong++;
+        timeLeft = Math.max(0, timeLeft - 3);
+      }
+
+      const newLevel = Math.floor(correct / 5) + 1;
+      if (newLevel > level) {
+        level = newLevel;
+        playLevelUp();
+        showLevelUpBanner();
+      } else {
+        level = newLevel;
+      }
+      updateHUD();
+      setTimeout(showQuestion, 450);
+    }
+
+    function updateHUD() {
+      document.getElementById('h-score').textContent = score;
+      document.getElementById('h-level').textContent = level;
+      document.getElementById('h-correct').textContent = correct;
+      const streakEl = document.getElementById('streak');
+      if (streak >= 5) streakEl.textContent = `🔥🔥 连击 x${streak}!`;
+      else if (streak >= 3) streakEl.textContent = `🔥 连击 x${streak}`;
+      else streakEl.textContent = '';
+    }
+
+    function tick() {
+      if (!isPlaying) return;
+      timeLeft -= .1;
+      if (timeLeft <= 0) { timeLeft = 0; endGame(); return }
+      const pct = timeLeft / DURATION * 100;
+      const fill = document.getElementById('timer');
+      fill.style.width = pct + '%';
+      // Color change based on time
+      if (pct < 20) fill.style.background = 'linear-gradient(90deg, #ef4444, #f97316)';
+      else if (pct < 50) fill.style.background = 'linear-gradient(90deg, #f97316, #eab308, #22c55e)';
+      else fill.style.background = 'linear-gradient(90deg, #ef4444, #f97316, #22c55e)';
+      timer = setTimeout(tick, 100);
+    }
+
+    function startGame() {
+      initAudio();
+      score = 0; correct = 0; wrong = 0; streak = 0; maxStreak = 0; level = 1; timeLeft = DURATION; isPlaying = true;
+      document.getElementById('start-ov').classList.add('hidden');
+      document.getElementById('end-ov').classList.add('hidden');
+      updateHUD();
+      showQuestion();
+      tick();
+    }
+
+    function endGame() {
+      isPlaying = false; clearTimeout(timer);
+      const best = getBest(); const isNew = score > best; saveBest(score);
+      const total = correct + wrong;
+      document.getElementById('f-score').textContent = score;
+      document.getElementById('f-correct').textContent = correct;
+      document.getElementById('f-streak').textContent = 'x' + maxStreak;
+      document.getElementById('f-acc').textContent = total > 0 ? `正确率: ${Math.round(correct / total * 100)}% · 等级 ${level}` : '';
+      document.getElementById('f-best').textContent = `最佳: ${Math.max(score, best)}`;
+      document.getElementById('f-rec').classList.toggle('show', isNew);
+      document.getElementById('end-ov').classList.remove('hidden');
+    }
+
+    function shareScore() {
+      const t = `🧮 数学闪电战: ${score}分!\n✅ ${correct}题正确 · 🔥最高连击 x${maxStreak} · 等级${level}\n🎮 来ShipMicro玩: ${location.origin}/arcade`;
+      if (navigator.share) navigator.share({ title: '数学闪电战', text: t });
+      else navigator.clipboard.writeText(t).then(() => alert('已复制到剪贴板!'));
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+{
+  "CoverLetterForge": {
+    "name": "Cover Letter Forge",
+    "tagline": "AI Cover Letter Generator that beats ATS filters in 5 seconds.",
+    "short_description": "Stop manual writing. Cover Letter Forge uses DeepSeek V3 to craft tailored cover letters that match your resume to the job description perfectly.",
+    "keywords": ["AI", "Career", "Job Search", "Cover Letter", "ATS Bypass"],
+    "pricing": "Free Preview / $9.90 Unlock"
+  },
+  "ResumeAI": {
+    "name": "ATS Resume Optimizer",
+    "tagline": "Scan and optimize your resume for a 95%+ ATS match score.",
+    "short_description": "The only resume tool that simulates real recruiter ATS algorithms. Upload your resume, get a score, and let AI rewrite your bullet points for keywords.",
+    "keywords": ["Resume", "CV", "ATS", "Career Growth", "AI Hiring"],
+    "pricing": "Free Scan / $14.90 Full Update"
+  },
+  "ScamDetector": {
+    "name": "AI Debt Scam Shield",
+    "tagline": "Protect yourself from predatory debt settlement contracts.",
+    "short_description": "Paste your contract or debt offer. Our AI identifies legal red flags and 'too good to be true' clauses used by debt scam companies.",
+    "keywords": ["Finance", "Protection", "LegalTech", "Scam Detection", "Debt Relief"],
+    "pricing": "Free Risk Level / $14.99 Full Report"
+  },
+  "CRMExtract": {
+    "name": "AI CRM Extract",
+    "tagline": "Turn messy meeting notes into structured CRM data instantly.",
+    "short_description": "Automatically extract contacts, deal values, and next steps from raw notes. Ready for export to Salesforce, HubSpot, and Pipedrive.",
+    "keywords": ["SaaS", "Sales", "CRM", "Automaton", "Productivity"],
+    "pricing": "Free Preview / $9.99 Export"
+  },
+  "PitchDeckAI": {
+    "name": "AI Pitch Deck Generator",
+    "tagline": "Go from idea to investor-ready 10-slide deck in seconds.",
+    "short_description": "Describe your startup idea and get a professional pitch deck complete with financial strategy, market analysis, and speaker notes.",
+    "keywords": ["Startup", "Venture Capital", "Pitch Deck", "Fundraising", "AI"],
+    "pricing": "Free 2-Slide Preview / $9.99 Full Unlock"
+  }
+}

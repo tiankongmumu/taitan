@@ -1,0 +1,41 @@
+[
+  {
+    "tool": {
+      "name": "Pong Duel",
+      "url": "https://www.shipmicro.com/arcade/pong-duel",
+      "description": "Classic Pong reimagined with ball trails, particle effects, and 3 AI difficulty levels. First to 7 wins the duel!"
+    },
+    "reddit": {
+      "title": "Show r/SideProject: Pong Duel - Classic arcade action with a modern twist",
+      "body": "I've been wanting to build a small, fun arcade game for a while, but I always got stuck trying to make something overly complex. I realized I just missed the simple, pure competition of the classics. I wanted something I could play for a few minutes to unwind without a huge time commitment or learning curve.\n\nSo, I built Pong Duel. It's a fresh take on the classic Pong game, designed for quick, satisfying duels. I focused on keeping the core gameplay instantly recognizable but added some visual flair to make it feel special. You can check it out here: https://www.shipmicro.com/arcade/pong-duel\n\nHere are a few of the key features I added:\n*   **Visual Effects:** Ball trails and particle explosions to make every hit feel impactful.\n*   **AI Opponents:** Three difficulty levels (Easy, Medium, Hard) so you can practice or get a real challenge.\n*   **Quick Matches:** First to 7 points wins, perfect for a short break.\n\nI'd really love to know what you think. Is the gameplay smooth? How's the difficulty scaling? Any features you'd want to see added? Thanks for giving it a look",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just shipped \"Pong Duel\" 🏓 A dev break reimagined with ball trails, particle effects, and 3 AI levels. First to 7 wins! Built with @shipmicro.\n\nPlay here: https://www.shipmicro.com/arcade/pong-duel\n\n#buildinpublic #indiehacker #devtools"
+  },
+  {
+    "tool": {
+      "name": "Tower Stack",
+      "url": "https://www.shipmicro.com/arcade/tower-stack",
+      "description": "Stack blocks with precision timing. Overhangs get cut off — perfect alignment earns bonus width. How high can you build?"
+    },
+    "reddit": {
+      "title": "Show r/SideProject: Tower Stack - A chill, physics-based stacking game",
+      "body": "I've been trying to get better at building small, polished projects from start to finish. One of my biggest hurdles was actually finishing things—I'd get stuck over-engineering or lose motivation on the final 10%. I wanted to build something complete, fun, and satisfying to play in just a few minutes.\n\nSo I built Tower Stack. It's a simple but tricky web game where you stack blocks with a single click. The challenge is in the timing—if your block overhangs, the excess gets chopped off. Line it up perfectly, and you earn a bonus, making your tower wider and giving you more room for error. It’s surprisingly tense trying to see how high you can build before it all comes tumbling down.\n\nA few key things about it:\n- It’s built with Next.js and TypeScript, and uses Matter.js for the physics.\n- The clean, minimal design is meant to be relaxing, not overwhelming.\n- It’s completely free, with no ads or sign-ups—just a quick game.\n\nIf you have a spare minute, I’d love for you to try it and let me know what you think. Does the physics feel right? Is it too easy or too hard? Any bugs you spot? You can play it here: https://www.shipmicro.com/arcade/tower-stack. All feedback is welcome!",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just launched Tower Stack — a precision timing game where you stack blocks and overhangs get cut. Perfect alignment earns bonus width. How high can you build? 🧱\n\nhttps://www.shipmicro.com/arcade/tower-stack\n\n#buildinpublic #indiehacker #devtools"
+  },
+  {
+    "tool": {
+      "name": "Pixel Invaders",
+      "url": "https://www.shipmicro.com/arcade/pixel-invaders",
+      "description": "Defend Earth from alien invaders! Canvas-rendered space shooter with particle explosions, wave-based difficulty, and 3 enemy types."
+    },
+    "reddit": {
+      "title": "Show r/SideProject: Pixel Invaders - A retro space shooter I built to learn canvas rendering",
+      "body": "I've been wanting to dive deeper into HTML5 Canvas and game development for a while, but most tutorials felt too simple or overwhelming. I wanted a project that was challenging enough to be interesting, but small enough to actually finish as a solo dev.\n\nSo I built Pixel Invaders, a classic space shooter rendered entirely with Canvas. It's a love letter to the arcade games I grew up with, but built from scratch with modern JavaScript. You can play it here: https://www.shipmicro.com/arcade/pixel-invaders\n\nSome key features I'm proud of:\n- Smooth canvas rendering with particle-based explosions\n- Three distinct enemy types with different behaviors\n- Wave-based difficulty that ramps up as you survive longer\n- Pure client-side gameplay with no dependencies\n\nThis was a great learning experience for me, especially around performance optimization and game state management. I'd love to hear what you think - any feedback on gameplay, difficulty curve, or just general impressions would be super helpful. If you have a minute to try it out, let me know what you think!",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just shipped \"Pixel Invaders\" – a canvas space shooter I built with particle explosions and wave-based difficulty. Defend Earth from 3 enemy types! 🚀👾\n\nhttps://www.shipmicro.com/arcade/pixel-invaders\n\n#buildinpublic #indiehacker #devtools"
+  }
+]

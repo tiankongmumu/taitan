@@ -1,0 +1,28 @@
+[
+  {
+    "tool": {
+      "name": "Markdown Email Converter",
+      "url": "https://simulated-app-url.vercel.app",
+      "description": "A markdown to clean HTML email converter for newsletter creators"
+    },
+    "reddit": {
+      "title": "Show r/SideProject: Markdown Email Converter - Turn markdown into clean HTML emails",
+      "body": "I've been writing a small newsletter for a while, and I kept running into the same annoying problem. I'd draft everything in markdown (because it's fast and simple), but then I'd have to spend way too much time manually converting it into HTML that would actually render properly across different email clients. It was a tedious, error-prone process that took the fun out of writing.\n\nSo, I built a simple web tool to automate that conversion. It's called the Markdown Email Converter, and you can try it at https://simulated-app-url.vercel.app. You paste in your markdown, and it spits out clean, minimal HTML that's formatted for email newsletters. No more wrestling with table layouts for basic formatting.\n\nThe key things it handles are:\n*   Converting markdown syntax (headings, lists, links, etc.) into email-safe HTML.\n*   Ensuring the output is compatible with major email clients.\n*   Providing a clean preview so you can see roughly how it will look.\n*   Keeping the CSS inline, which is a best practice for email.\n\nIt's a free tool I made for my own workflow, but I thought others might find it useful. If you give it a try, I'd really appreciate any feedback—especially if you spot bugs or have ideas for features that would make it more helpful for your own newsletter process.",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just shipped Markdown Email Converter – a tool I built to turn markdown into clean HTML emails for newsletters. Perfect for devs who write in markdown but need email-ready output.\n\nCheck it out: https://simulated-app-url.vercel.app\n\n#buildinpublic #indiehacker #devtools"
+  },
+  {
+    "tool": {
+      "name": "Palette Pro",
+      "url": "dry-run",
+      "description": "A color palette generator for web designers"
+    },
+    "reddit": {
+      "title": "Show r/SideProject: Palette Pro - A simple color palette generator for web design",
+      "body": "Hey everyone! I'm a web designer, and I constantly found myself wasting time jumping between different tools just to create a simple, cohesive color palette for my projects. I'd get a base color I liked, but then spend ages trying to manually figure out the right shades, accents, and neutrals that worked together. It was a small but repetitive friction point in my workflow.\n\nSo, I built Palette Pro to solve exactly that. It's a straightforward, no-fuss web app that lets you generate a complete, ready-to-use color palette from a single starting color. You can check it out at dry-run (it's completely free, no sign-up).\n\nHere are a few things it does:\n*   Generates a full 10-color palette (primary, accents, neutrals) instantly from one hex code.\n*   Lets you lock colors you like and regenerate the rest with one click.\n*   Exports palettes directly to CSS variables or Tailwind config format.\n*   Has a contrast checker to ensure your text colors are accessible.\n\nI built this mainly for my own use, but I thought others might find it helpful. I'd really appreciate it if you could give it a try and let me know what you think. Does the workflow make sense? Is there a feature missing that would make it indispensable for you? Any and all feedback is welcome. Thanks!",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just shipped Palette Pro 🎨 – a color palette generator I built to speed up my own design workflow. Perfect for web devs who want consistent, accessible color schemes. #buildinpublic #indiehacker #devtools\n\ndry-run"
+  }
+]

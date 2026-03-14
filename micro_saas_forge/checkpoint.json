@@ -1,0 +1,21 @@
+{
+  "spec": {
+    "name": "Pixelflow Animator",
+    "slug": "pixelflow-animator",
+    "pain_point": "Pixel art creators lack a streamlined tool for designing, previewing, and exporting smooth sprite animations with real-time editing and playback.",
+    "core_features": [
+      "Real-time pixel art animation design",
+      "Frame-by-frame editing with instant playback",
+      "Smooth sprite animation preview and export",
+      "User-friendly interface for creators"
+    ],
+    "tech_stack": [
+      "Next.js",
+      "TailwindCSS"
+    ],
+    "gumroad_product_id": "xllsi"
+  },
+  "raw_idea": "Pixelflow Animator: A real-time pixel art animation tool that lets creators design, preview, and export smooth sprite animations with frame-by-frame editing and instant playback.",
+  "_checkpoint_step": 1,
+  "_checkpoint_time": 1772365258.2784197
+}

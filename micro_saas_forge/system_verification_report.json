@@ -1,0 +1,235 @@
+{
+  "timestamp": "2026-03-12T13:08:32.616121",
+  "architecture": "TITAN (Brain) + OpenClaw (Executor)",
+  "total": 45,
+  "passed": 41,
+  "failed": 4,
+  "health_pct": 91,
+  "details": [
+    {
+      "name": "Python version >= 3.9",
+      "pass": true,
+      "detail": "3.14.2"
+    },
+    {
+      "name": "Python module: requests",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Python module: websockets",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Python module: asyncio",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Python module: json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Python module: subprocess",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Node.js installed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "OpenClaw CLI installed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "titan_brain_server.py exists",
+      "pass": true,
+      "detail": "22645 bytes"
+    },
+    {
+      "name": "Brain Server classes importable",
+      "pass": true,
+      "detail": "TitanBrain, ToolExecutor, RobustWSConnector, BeastModeScheduler"
+    },
+    {
+      "name": "TitanBrain instantiation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ToolExecutor instantiation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "ToolOrchestrator importable",
+      "pass": true,
+      "detail": "ToolOrchestrator, CircuitBreaker"
+    },
+    {
+      "name": "titan_config importable",
+      "pass": true,
+      "detail": "MAX_HISTORY=20, PING=30s, CB_THRESHOLD=3"
+    },
+    {
+      "name": "titan_brain.py (legacy) exists",
+      "pass": true,
+      "detail": "31115 bytes"
+    },
+    {
+      "name": ".env file exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "API Key: DEEPSEEK_API_KEY",
+      "pass": true,
+      "detail": "***29d\""
+    },
+    {
+      "name": "API Key: QWEN_API_KEY",
+      "pass": false,
+      "detail": "MISSING"
+    },
+    {
+      "name": "API Key: DOUBAO_API_KEY",
+      "pass": false,
+      "detail": "MISSING"
+    },
+    {
+      "name": "DeepSeek API reachable",
+      "pass": false,
+      "detail": "HTTP 401"
+    },
+    {
+      "name": "Tool: news_scraper.py",
+      "pass": true,
+      "detail": "8,593 bytes"
+    },
+    {
+      "name": "Tool: daily_forge.py",
+      "pass": true,
+      "detail": "13,368 bytes"
+    },
+    {
+      "name": "Tool: generate_tools.py",
+      "pass": false,
+      "detail": "MISSING"
+    },
+    {
+      "name": "Tool: quality_gate.py",
+      "pass": true,
+      "detail": "7,203 bytes"
+    },
+    {
+      "name": "Tool: social_distributor.py",
+      "pass": true,
+      "detail": "16,477 bytes"
+    },
+    {
+      "name": "Tool: titan_beast_mode.py",
+      "pass": true,
+      "detail": "7,206 bytes"
+    },
+    {
+      "name": "Tool: shipmicro_autopilot.py",
+      "pass": true,
+      "detail": "9,795 bytes"
+    },
+    {
+      "name": "Tool: demand_radar.py",
+      "pass": true,
+      "detail": "11,336 bytes"
+    },
+    {
+      "name": "Tool: memory_bank.py",
+      "pass": true,
+      "detail": "17,370 bytes"
+    },
+    {
+      "name": "Tool: skill_learner.py",
+      "pass": true,
+      "detail": "15,392 bytes"
+    },
+    {
+      "name": "Generated apps directory",
+      "pass": true,
+      "detail": "88 items"
+    },
+    {
+      "name": "ShipMicro site directory",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Factory main.py",
+      "pass": true,
+      "detail": "9,078 bytes"
+    },
+    {
+      "name": "Factory config.py",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Factory QA Pipeline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Factory health check",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "openclaw.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "openclaw.json valid JSON",
+      "pass": true,
+      "detail": "{'version': '1.0.0'}"
+    },
+    {
+      "name": "Workspace directory",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "AGENTS.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "SOUL.md",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Skill: titan_news_scraper",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Skill: titan_codemint",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Skill: titan_social_publisher",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Skill: titan_account_nurturer",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

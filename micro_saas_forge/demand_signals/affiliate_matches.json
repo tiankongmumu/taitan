@@ -1,0 +1,62 @@
+[
+  {
+    "pain_keyword": "AI business automation",
+    "pain_summary": "Entrepreneurs are looking for AI solutions to automate and streamline their business operations.",
+    "product_id": "chatgpt_api",
+    "product_name": "AI API 中转服务",
+    "affiliate_url": "https://api2d.com/",
+    "commission": "充值返佣 10-20%",
+    "pitch_copy": "作为创业者，我深知自动化业务流程的重要性。最近发现了一个非常实用的工具——AI API 中转服务，它能帮助你稳定调用 OpenAI/Claude API，轻松实现聊天机器人和各种 AI 开发需求，大大提升了我们的工作效率。",
+    "pitch_copy_en": "As an entrepreneur, I understand the importance of automating business processes. Recently, I discovered a very useful tool - AI API 中转服务, which helps you stably call OpenAI/Claude APIs, easily enabling chatbot and various AI development needs, significantly improving our work efficiency.",
+    "match_score": 85,
+    "target_platform": "知乎"
+  },
+  {
+    "pain_keyword": "GDPR compliance",
+    "pain_summary": "SaaS companies struggle with GDPR compliance, especially when dealing with European customers.",
+    "product_id": "nordvpn",
+    "product_name": "NordVPN",
+    "affiliate_url": "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=shipmicro",
+    "commission": "$10-40 per signup",
+    "pitch_copy": "对于 SaaS 公司来说，GDPR 合规性是一个大问题，尤其是在处理欧洲客户时。我推荐使用 NordVPN 来保护数据安全，确保符合 GDPR 的要求。这样可以让你的业务更加稳健。",
+    "pitch_copy_en": "For SaaS companies, GDPR compliance is a big issue, especially when dealing with European customers. I recommend using NordVPN to protect data security and ensure GDPR compliance. This will make your business more robust.",
+    "match_score": 75,
+    "target_platform": "知乎"
+  },
+  {
+    "pain_keyword": "Cofounder matching",
+    "pain_summary": "Finding the right cofounders is a major challenge for entrepreneurs, often hindering the startup process.",
+    "product_id": "xiaobot",
+    "product_name": "小报童",
+    "affiliate_url": "https://xiaobot.net/",
+    "commission": "平台抽成 10%，90% 归作者",
+    "pitch_copy": "找到合适的联合创始人是创业过程中的一大挑战。我建议你可以通过小报童这样的平台发布你的项目信息，吸引志同道合的人加入。这个平台不仅适合知识变现，还能帮你找到理想的合作伙伴。",
+    "pitch_copy_en": "Finding the right co-founders is a major challenge in the startup process. I recommend using a platform like 小报童 to post your project information and attract like-minded people. This platform is not only suitable for knowledge monetization but can also help you find ideal partners.",
+    "match_score": 70,
+    "target_platform": "小红书"
+  },
+  {
+    "pain_keyword": "Visitor identification",
+    "pain_summary": "SaaS companies find it difficult to identify and understand their website visitors, leading to missed opportunities.",
+    "product_id": "surfer",
+    "product_name": "Surfer SEO",
+    "affiliate_url": "https://surferseo.com/?via=shipmicro",
+    "commission": "25% recurring",
+    "pitch_copy": "SaaS 公司常常难以识别和理解网站访客，导致错失很多机会。我推荐使用 Surfer SEO，它不仅能优化你的内容排名，还能帮助你更好地了解访客行为，从而抓住更多商机。",
+    "pitch_copy_en": "SaaS companies often struggle to identify and understand website visitors, leading to missed opportunities. I recommend using Surfer SEO, which not only optimizes your content ranking but also helps you better understand visitor behavior, thus capturing more business opportunities.",
+    "match_score": 70,
+    "target_platform": "知乎"
+  },
+  {
+    "pain_keyword": "Pivot strategy",
+    "pain_summary": "Entrepreneurs need guidance on when and how to pivot their business strategies to achieve success.",
+    "product_id": "beehiiv",
+    "product_name": "Beehiiv",
+    "affiliate_url": "https://www.beehiiv.com/?via=shipmicro",
+    "commission": "50% for 12 months",
+    "pitch_copy": "在创业过程中，适时调整策略是非常重要的。我推荐使用 Beehiiv 这样的邮件营销平台来收集用户反馈，更好地了解市场需求。这样可以帮助你及时调整方向，提高成功的几率。",
+    "pitch_copy_en": "In the entrepreneurial journey, it's crucial to pivot your strategy at the right time. I recommend using a newsletter platform like Beehiiv to gather user feedback and better understand market demands. This will help you make timely adjustments and increase your chances of success.",
+    "match_score": 65,
+    "target_platform": "公众号"
+  }
+]

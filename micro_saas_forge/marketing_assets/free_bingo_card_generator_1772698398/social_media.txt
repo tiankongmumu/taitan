@@ -1,0 +1,63 @@
+=== TWITTER THREAD ===
+**Tweet 1:**  
+Ever tried making a custom bingo card for your event or classroom?  
+You end up wrestling with clunky templates, watermarks, or worse—manual copy-paste hell.  
+We just shipped a solution.  
+https://shipmicro.com/tools
+
+**Tweet 2:**  
+Most free generators look like they were built in 2005.  
+You get slapped with ugly watermarks, zero customization, and a PDF that prints like a ransom note.  
+Why is something so simple still so painful?
+
+**Tweet 3:**  
+So we built a modern bingo card generator:  
+✨ Drag & drop to customize any card in real-time  
+✨ Direct print or download clean PDFs—no watermarks, even on the free tier  
+✨ Actually feels good to use  
+Try it here: https://shipmicro.com/tools
+
+**Tweet 4:**  
+It’s live. It’s free. And we’re just getting started.  
+Go make some bingo cards, and tell us what you think.  
+Built in public—feedback is fuel.  
+https://shipmicro.com/tools
+
+=== REDDIT POST ===
+**I was so frustrated with how clunky and ad-ridden free bingo card generators were, so I built a cleaner one for myself.**
+
+I needed to make custom bingo cards for a family game night, and every free tool I tried either had terrible UX, forced watermarks, or buried the print/PDF option behind a paywall. I just wanted to drag items around, see a live preview, and export something clean—without jumping through hoops.
+
+So I built a **free bingo card generator** with:
+- A modern, drag‑and‑drop UI to arrange items freely
+- Real‑time card preview as you edit
+- Direct printing and PDF export with no watermarks, even on the free tier
+
+Tech-wise, it’s a Next.js 14 app with TypeScript, Tailwind for styling, and react‑dnd for the drag interactions. The PDF generation is handled client‑side using jsPDF so nothing gets sent to a server.
+
+If you ever need to whip up bingo cards for events, classrooms, or just for fun, you can try it here:  
+[https://shipmicro.com/tools](https://shipmicro.com/tools)
+
+I’d love some brutal feedback—especially on the UX or if you run into any quirks with the PDF output. Thanks in advance.
+
+=== 小红书文案 ===
+🔥 免费Bingo卡生成器！打工人效率直接封神了！
+
+家人们谁懂啊！做活动抽奖、团队破冰还在手动画Bingo卡？💥 我上次为了公司活动熬夜排表格，眼睛都快看瞎了… 直到发现这个神器，简直救我狗命！
+
+这个「Free Bingo Card Generator」简直了！  
+👉 拖拽就能自定义模板，小白秒上手  
+👉 实时预览效果，不怕做完丑到哭  
+👉 免费版直接打印/导出PDF，居然无水印！
+
+三个不得不爱的理由：  
+1️⃣ 界面巨现代，操作像玩一样简单  
+2️⃣ 实时改实时看，再也不反复修改到崩溃  
+3️⃣ 完全免费还无水印，良心到跪了！
+
+现在公司活动、朋友聚会、课堂游戏分分钟搞定，省下时间摸鱼不香吗？💃
+
+工具指路：shipmicro.com/tools  
+（自用收藏，怕下次找不到！）
+
+#效率神器 #打工人必备 #办公技巧 #免费工具 #生产力工具 #Bingo生成器

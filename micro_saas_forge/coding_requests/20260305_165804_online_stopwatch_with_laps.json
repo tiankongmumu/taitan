@@ -1,0 +1,29 @@
+{
+  "id": "20260305_165804",
+  "title": "构建 online stopwatch with laps 工具",
+  "description": "API自动构建2次失败，升级给Antigravity。",
+  "complexity": "complex",
+  "priority": 1,
+  "status": "pending",
+  "keyword": "online stopwatch with laps",
+  "monthly_volume": 135000,
+  "revenue_model": "AdSense (high engagement tool), optional small fee to remove ads",
+  "differentiation": "Ultra-clean, full-screen interface with customizable lap columns (time, diff), shareable links for specific timer setups, and no intrusive branding.",
+  "build_complexity": "SIMPLE",
+  "previous_attempts": 2,
+  "failure_reasons": [
+    "cycle失败"
+  ],
+  "error_logs": [],
+  "expected_output": "一个基于'online stopwatch with laps'的完整Web应用",
+  "target_dir": "d:\\Project\\1\\micro_saas_forge\\generated_apps\\online-stopwatch-with-laps",
+  "tech_stack": [
+    "Next.js",
+    "TypeScript",
+    "TailwindCSS"
+  ],
+  "created_at": "2026-03-05T16:58:04.555369",
+  "completed_at": "",
+  "result_summary": "",
+  "result_files": []
+}

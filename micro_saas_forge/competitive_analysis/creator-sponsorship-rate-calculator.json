@@ -1,0 +1,129 @@
+{
+  "keyword": "creator sponsorship rate calculator",
+  "competitors": [
+    {
+      "name": "Influence.co",
+      "url": "https://influence.co/rate-calculator",
+      "features": [
+        "Simple, clean interface",
+        "Considers platform (YouTube, Instagram, TikTok)",
+        "Provides rate ranges based on follower count and engagement",
+        "Free to use with no signup required"
+      ],
+      "weaknesses": [
+        "Very basic inputs (only followers/engagement)",
+        "No customization for niche, content type, or production value",
+        "No ability to save or export calculations",
+        "No guidance on negotiation or contract terms"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 120000
+    },
+    {
+      "name": "Social Bluebook",
+      "url": "https://socialbluebook.com/",
+      "features": [
+        "More detailed rate estimation",
+        "Considers content format (post, story, video)",
+        "Provides 'retail value' for sponsored content",
+        "Offers a marketplace for connecting brands and creators"
+      ],
+      "weaknesses": [
+        "Requires signup/email to see detailed rates",
+        "Feels brand-centric (tool is for brands to 'value' creators)",
+        "Rates can feel low or demoralizing to creators",
+        "Complex interface with upsells to its core marketplace service"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 85000
+    },
+    {
+      "name": "Grin (Creator Rates)",
+      "url": "https://grin.co/creator-rates/",
+      "features": [
+        "Backed by industry data and surveys",
+        "Breaks down rates by platform and content type",
+        "Includes insights on industry trends",
+        "Professional, data-driven presentation"
+      ],
+      "weaknesses": [
+        "Not a true interactive calculator; it's a static report/PDF",
+        "Data is aggregated and not personalized",
+        "No ability to input your own metrics",
+        "Serves primarily as a lead magnet for their enterprise software"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 45000
+    },
+    {
+      "name": "Fohr Card",
+      "url": "https://www.fohr.co/creator-calculator",
+      "features": [
+        "Clean, modern design",
+        "Asks for specific metrics (reach, saves, likes)",
+        "Calculates a single 'card rate'",
+        "Simple and fast to use"
+      ],
+      "weaknesses": [
+        "Extremely simplistic output (one number)",
+        "No breakdown of what the rate includes",
+        "No context on how the rate was derived",
+        "No advice on how to use the rate in negotiations"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 30000
+    },
+    {
+      "name": "NoxInfluencer Calculator",
+      "url": "https://www.noxinfluencer.com/youtube-channel-rate-calculator",
+      "features": [
+        "YouTube-specific, with deep metric integration",
+        "Can pull data directly from a channel URL",
+        "Estimates CPM and potential earnings",
+        "Part of a larger suite of influencer analytics tools"
+      ],
+      "weaknesses": [
+        "Only for YouTube, ignoring other platforms",
+        "Interface is cluttered and not intuitive",
+        "Primary goal is to upsell to paid analytics",
+        "The 'sponsorship rate' is buried among other monetization metrics"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 55000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Lack of a holistic, customizable calculator that accounts for value beyond vanity metrics.",
+      "implementation": "Build a calculator with advanced inputs: niche premium (e.g., finance vs. lifestyle), content production cost (hours, equipment), exclusivity period, usage rights, and past campaign performance data. Use these to generate a detailed, itemized rate card.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "No tool provides actionable negotiation support or contract guidance alongside the rate.",
+      "implementation": "After generating a rate, offer dynamic negotiation scripts, a checklist of standard contract clauses to review/request, and templates for pitches and invoices. This moves from 'what to charge' to 'how to get it.'",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Missing integration with creator platforms for automatic data import and rate tracking over time.",
+      "implementation": "Allow creators to connect their YouTube Studio, Instagram Professional Dashboard, or TikTok Analytics to auto-populate metrics. Let them save historical calculations to track rate growth and campaign history.",
+      "impact": "MEDIUM",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "All tools are designed for one-off calculations, not for managing an entire sponsorship business.",
+      "implementation": "Create a 'Sponsorship Rate Manager' dashboard where creators can set different rates for different platforms/content types, create and send custom proposals, and track conversations with brands—all centered around their calculated baseline rates.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "No tool effectively serves nano/micro-influencers with high engagement but low follower counts, who are often most confused about pricing.",
+      "implementation": "Create a calculator and educational content specifically framed for this audience, emphasizing value-per-engagement and case studies. Offer a 'confidence slider' that adjusts the rate based on the creator's own perceived value, backed by coaching tips.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    }
+  ],
+  "recommended_positioning": "The first AI-powered rate calculator & negotiation platform that helps creators build custom, defensible rate cards and close better sponsorship deals.",
+  "analyzed_at": "2026-03-05T22:55:54.527548"
+}

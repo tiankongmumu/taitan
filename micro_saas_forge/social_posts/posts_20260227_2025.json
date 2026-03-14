@@ -1,0 +1,41 @@
+[
+  {
+    "tool": {
+      "name": "Privacy-First AI Code Explainer",
+      "url": "https://privacy-first-ai-code-explainer-k3oyflaql.vercel.app",
+      "description": "A privacy-first AI code explainer that works entirely client-side"
+    },
+    "reddit": {
+      "title": "Show r/SideProject: Privacy-First AI Code Explainer - Works entirely in your browser",
+      "body": "I was trying to understand a complex piece of code the other day, and my usual go-to was to paste it into an online AI tool. But I hesitated, realizing I was about to send proprietary code to a third-party server. That got me thinking about privacy and how many developers must face the same dilemma.\n\nSo I built a tool that runs the AI model directly in your browser. Nothing you paste is ever sent to a server. It uses a local, open-source model (thanks to Transformers.js) to analyze your code and generate a plain-English explanation, right on your machine.\n\nThe key things it does:\n*   **100% Client-Side:** Your code never leaves your computer.\n*   **No Sign-Up/API Keys:** Just open the page and use it.\n*   **Handles Multiple Languages:** Works with Python, JavaScript, TypeScript, Go, and more.\n*   **Completely Free:** No limits, no paywalls.\n\nYou can try it out here: https://privacy-first-ai-code-explainer-k3oyflaql.vercel.app\n\nI'd really love to know what you think. Does it explain your code clearly? Are there any languages or features you'd like to see added? Any feedback from fellow developers would be incredibly helpful.",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just launched a privacy-first AI code explainer that runs entirely client-side—no data leaves your browser. Perfect for understanding complex code snippets without compromising security. Check it out: https://privacy-first-ai-code-explainer-k3oyflaql.vercel.app #buildinpublic ..."
+  },
+  {
+    "tool": {
+      "name": "JWT Debugger",
+      "url": "https://jwt-debugger-l2c6kriko-tiankongmumus-projects.vercel.app",
+      "description": "JWT Debugger: Decode and validate JWT tokens with signature verification and expiry warnings"
+    },
+    "reddit": {
+      "title": "I built a JWT Debugger to solve my own authentication headaches",
+      "body": "As a developer working with APIs and microservices, I kept running into the same frustrating issue: debugging JWT tokens. Whether it was a malformed token, an expired signature, or just trying to quickly see what claims were inside, I found myself constantly searching for online tools or writing one-off scripts. It was a small but consistent time drain during development and debugging sessions.\n\nSo I built JWT Debugger - a simple, free web tool that lets you paste in any JWT and instantly decode it. You can find it here: https://jwt-debugger-l2c6kriko-tiankongmumus-projects.vercel.app. It runs entirely in your browser, so your tokens never leave your machine, which is crucial for security when dealing with sensitive data.\n\nThe main features are:\n- Instant decoding of header, payload, and signature\n- Visual validation of the token's expiry with clear warnings\n- Signature verification to check if the token is valid\n- A clean, no-frills interface that just gets the job done\n\nI'd love to know what you think. If you work with JWTs, could this be useful in your workflow? Any features you'd find helpful that I might have missed? All feedback is welcome.",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just shipped JWT Debugger – a simple tool I built to decode and validate tokens with signature checks and expiry warnings. Handy for debugging auth! 🔐\n\nhttps://jwt-debugger-l2c6kriko-tiankongmumus-projects.vercel.app\n\n#buildinpublic #indiehacker #devtools"
+  },
+  {
+    "tool": {
+      "name": "JSON Path Finder",
+      "url": "https://json-path-finder-7gb09ltm3-tiankongmumus-projects.vercel.app",
+      "description": "JSON Path Finder: Extract nested JSON values using intuitive path builder with live preview"
+    },
+    "reddit": {
+      "title": "I built JSON Path Finder to stop guessing nested JSON structures",
+      "body": "Working with deeply nested JSON APIs always slowed me down. I'd waste time writing trial-and-error code or scrolling through massive console logs just to figure out the correct path to extract a single value. It felt like there should be a simpler way to visually explore and build these paths without writing a single line of code.\n\nSo I made JSON Path Finder: a free web tool that lets you interactively click through your JSON structure to build the exact path you need. You paste in your JSON, click on the nested values you want, and it instantly generates the path syntax with a live preview of the extracted data. You can find it here: https://json-path-finder-7gb09ltm3-tiankongmumus-projects.vercel.app\n\nSome key things it does:\n- Live path building with a clickable tree interface\n- Supports both standard JSONPath and JavaScript-style notation\n- Copy the path with one click for immediate use in your code\n- Handles large objects and arrays cleanly\n\nI'd really appreciate it if you could try it out and let me know what you think. Does the interface make sense? Are there any features that would make it more useful for your workflow? All feedback is welcome.",
+      "subreddit": "SideProject"
+    },
+    "x_tweet": "Just shipped JSON Path Finder 🚀 A tool to extract nested JSON values with an intuitive path builder and live preview. No more guessing paths! \n\nCheck it out: https://json-path-finder-7gb09ltm3-tiankongmumus-projects.vercel.app\n\n#buildinpublic #indiehacker #devtools"
+  }
+]

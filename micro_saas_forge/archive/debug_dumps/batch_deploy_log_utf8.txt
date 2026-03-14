@@ -1,0 +1,51 @@
+﻿python : Traceback (mo
+st recent call last):
+所在位置 行:1 字符: 1
++ python batch_deploy.
+py > batch_deploy_log.
+txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
+    + CategoryInfo    
+          : NotSpeci  
+  fied: (Traceback    
+ (most recent call    
+ last)::String) [    ]
+, RemoteExceptio    n
+    + FullyQualifiedE 
+   rrorId : NativeCo  
+  mmandError
+ 
+  File "D:\Project\1\m
+icro_saas_forge\batch_
+deploy.py", line 171, 
+in <module>
+    main()
+    ~~~~^^
+  File "D:\Project\1\m
+icro_saas_forge\batch_
+deploy.py", line 91, i
+n main
+        print(f"""
+        ~~~~~^^^^^
+    ╔═════════════════
+══════════════════════
+═══════════╗
+    ^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^
+    ...<3 lines>...
+    ╚═════════════════
+══════════════════════
+═══════════╝
+    ^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^
+    """)
+    ^^^^
+UnicodeEncodeError: 'g
+bk' codec can't encode
+ character '\U0001f680
+' in position 59: ille
+gal multibyte sequence

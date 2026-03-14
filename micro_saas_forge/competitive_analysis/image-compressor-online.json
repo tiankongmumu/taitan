@@ -1,0 +1,114 @@
+{
+  "keyword": "image compressor online",
+  "competitors": [
+    {
+      "name": "TinyPNG",
+      "url": "https://tinypng.com/",
+      "features": [
+        "High-quality compression",
+        "Supports PNG and JPEG formats",
+        "Batch processing"
+      ],
+      "weaknesses": [
+        "Limited to 20 images per upload for free users",
+        "No advanced settings for compression quality"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 1500000
+    },
+    {
+      "name": "Squoosh",
+      "url": "https://squoosh.app/",
+      "features": [
+        "Real-time preview of compressed images",
+        "Advanced settings for fine-tuning",
+        "Supports multiple image formats"
+      ],
+      "weaknesses": [
+        "Web-based only, no desktop app",
+        "User interface can be overwhelming for beginners"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 300000
+    },
+    {
+      "name": "Compress JPEG & PNG images",
+      "url": "https://compressjpeg.com/",
+      "features": [
+        "Simple and user-friendly interface",
+        "Supports both JPEG and PNG formats",
+        "Option to download all images in a single ZIP file"
+      ],
+      "weaknesses": [
+        "Limited to 20 images per upload for free users",
+        "No advanced settings for compression quality"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 400000
+    },
+    {
+      "name": "ImageOptim",
+      "url": "https://imageoptim.com/online",
+      "features": [
+        "Lossless compression",
+        "Supports multiple image formats",
+        "No watermarks or ads"
+      ],
+      "weaknesses": [
+        "Web version is limited compared to the desktop app",
+        "No batch processing in the web version"
+      ],
+      "pricing": "free (web version)",
+      "monthly_traffic": 200000
+    },
+    {
+      "name": "JPEG-Optimizer",
+      "url": "https://www.jpeg-optimizer.com/",
+      "features": [
+        "Simple and easy-to-use interface",
+        "Supports JPEG format",
+        "Option to adjust compression quality"
+      ],
+      "weaknesses": [
+        "Only supports JPEG format",
+        "No batch processing"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 100000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Advanced compression settings with a user-friendly interface",
+      "implementation": "Develop an intuitive UI that allows users to fine-tune compression settings without overwhelming them. Use sliders and presets to simplify the process.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Integrated image editing tools",
+      "implementation": "Add basic image editing features such as cropping, resizing, and adjusting brightness/contrast. This can be done using existing open-source libraries like Fabric.js or PixiJS.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Mobile app for on-the-go compression",
+      "implementation": "Develop a mobile app for iOS and Android that offers the same features as the web version. Ensure it has a simple and intuitive interface suitable for mobile devices.",
+      "impact": "MEDIUM",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Integration with cloud storage services",
+      "implementation": "Allow users to import and export images directly from popular cloud storage services like Google Drive, Dropbox, and OneDrive. Use APIs provided by these services to enable seamless integration.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    },
+    {
+      "gap": "AI-powered compression recommendations",
+      "implementation": "Use machine learning to analyze images and provide optimal compression settings based on the content and intended use of the image. This can help users achieve the best balance between file size and quality.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    }
+  ],
+  "recommended_positioning": "A user-friendly, feature-rich image compressor with advanced settings and integrated editing tools.",
+  "analyzed_at": "2026-03-05T08:11:37.404203"
+}

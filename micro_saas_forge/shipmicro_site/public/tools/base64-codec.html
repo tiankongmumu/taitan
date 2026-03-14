@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 Encoder/Decoder — Free Online | ShipMicro</title>
+    <meta name="description"
+        content="Encode and decode Base64 strings instantly. Supports text and file upload. Zero latency, offline-capable.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #e5e5e5;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, .06);
+            flex-shrink: 0
+        }
+
+        .back {
+            color: #666;
+            text-decoration: none;
+            font-size: 13px
+        }
+
+        .back:hover {
+            color: #fff
+        }
+
+        .title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #fff
+        }
+
+        .badge {
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 20px;
+            background: rgba(34, 197, 94, .1);
+            border: 1px solid rgba(34, 197, 94, .2);
+            color: #22c55e
+        }
+
+        .toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 10px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, .04);
+            background: rgba(255, 255, 255, .01)
+        }
+
+        .btn {
+            padding: 6px 14px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, .08);
+            background: transparent;
+            color: #999;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .15s;
+            display: flex;
+            align-items: center;
+            gap: 4px
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, .05);
+            color: #fff
+        }
+
+        .btn.active {
+            background: rgba(6, 182, 212, .1);
+            border-color: rgba(6, 182, 212, .3);
+            color: #06b6d4
+        }
+
+        .spacer {
+            flex: 1
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column
+        }
+
+        @media(min-width:768px) {
+            .main {
+                flex-direction: row
+            }
+        }
+
+        .panel {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 200px
+        }
+
+        .panel+.panel {
+            border-top: 1px solid rgba(255, 255, 255, .06)
+        }
+
+        @media(min-width:768px) {
+            .panel+.panel {
+                border-top: none;
+                border-left: 1px solid rgba(255, 255, 255, .06)
+            }
+        }
+
+        .plabel {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, .02);
+            border-bottom: 1px solid rgba(255, 255, 255, .04);
+            flex-shrink: 0
+        }
+
+        .plabel span {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #555
+        }
+
+        textarea {
+            flex: 1;
+            width: 100%;
+            border: none;
+            background: transparent;
+            color: #e5e5e5;
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            font-size: 13px;
+            line-height: 1.6;
+            padding: 16px;
+            resize: none;
+            outline: none
+        }
+
+        textarea::placeholder {
+            color: #333
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 6px 20px;
+            border-top: 1px solid rgba(255, 255, 255, .04);
+            background: rgba(255, 255, 255, .01);
+            flex-shrink: 0
+        }
+
+        .si {
+            font-size: 11px;
+            color: #444
+        }
+
+        .si.ok {
+            color: #22c55e
+        }
+
+        .si.err {
+            color: #ef4444
+        }
+
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 24px;
+            border-radius: 10px;
+            background: rgba(6, 182, 212, .15);
+            border: 1px solid rgba(6, 182, 212, .3);
+            color: #06b6d4;
+            font-size: 13px;
+            font-weight: 600;
+            z-index: 200;
+            opacity: 0;
+            transition: opacity .2s;
+            pointer-events: none
+        }
+
+        .toast.show {
+            opacity: 1
+        }
+
+        .drop-zone {
+            outline: 2px dashed rgba(6, 182, 212, .5);
+            outline-offset: -8px;
+            background: rgba(6, 182, 212, .03) !important
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="/tools" class="back">← Tools</a>
+        <span style="color:rgba(255,255,255,.1)">|</span>
+        <span class="title">🔐 Base64 Codec</span>
+        <span class="badge">FREE</span>
+    </div>
+    <div class="toolbar">
+        <button class="btn active" id="btn-enc" onclick="setMode('encode')">Encode</button>
+        <button class="btn" id="btn-dec" onclick="setMode('decode')">Decode</button>
+        <div class="spacer"></div>
+        <button class="btn" onclick="handleFile()">📁 File</button>
+        <button class="btn" onclick="pasteIn()">📋 Paste</button>
+        <button class="btn" onclick="copyOut()">📤 Copy</button>
+        <button class="btn" onclick="download()">💾 Save</button>
+        <button class="btn" onclick="clearAll()">🗑️</button>
+    </div>
+    <div class="main">
+        <div class="panel" id="inp-panel">
+            <div class="plabel"><span>Input</span><span id="inp-info">—</span></div>
+            <textarea id="inp" placeholder="Type, paste, or drop a file here..."></textarea>
+        </div>
+        <div class="panel">
+            <div class="plabel"><span>Output</span><span id="out-info">—</span></div>
+            <textarea id="out" readonly placeholder="Result appears here..."></textarea>
+        </div>
+    </div>
+    <div class="status">
+        <div class="si" id="st">Ready</div>
+        <div class="si" id="st2">Ctrl+Enter: Convert</div>
+    </div>
+    <div class="toast" id="toast"></div>
+    <input type="file" id="file-input" style="display:none">
+    <script>
+        const inp = document.getElementById('inp'), out = document.getElementById('out');
+        let mode = 'encode';
+        function setMode(m) { mode = m; document.getElementById('btn-enc').classList.toggle('active', m === 'encode'); document.getElementById('btn-dec').classList.toggle('active', m === 'decode'); convert() }
+        function convert() {
+            const raw = inp.value; if (!raw) { out.value = ''; document.getElementById('st').textContent = 'Ready'; document.getElementById('st').className = 'si'; return }
+            try {
+                if (mode === 'encode') { out.value = btoa(unescape(encodeURIComponent(raw))) }
+                else { out.value = decodeURIComponent(escape(atob(raw.replace(/\s/g, '')))) }
+                document.getElementById('inp-info').textContent = fmt(raw.length);
+                document.getElementById('out-info').textContent = fmt(out.value.length);
+                document.getElementById('st').textContent = '✅ Success'; document.getElementById('st').className = 'si ok';
+                saveHist(raw);
+            } catch (e) { out.value = '❌ ' + e.message; document.getElementById('st').textContent = '❌ Invalid'; document.getElementById('st').className = 'si err' }
+        }
+        function fmt(n) { return n < 1024 ? n + 'B' : n < 1048576 ? (n / 1024).toFixed(1) + 'KB' : (n / 1048576).toFixed(1) + 'MB' }
+        inp.addEventListener('input', () => { clearTimeout(inp._t); inp._t = setTimeout(convert, 150) });
+        inp.addEventListener('paste', () => setTimeout(convert, 50));
+        document.addEventListener('keydown', e => { if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') { e.preventDefault(); convert() } });
+        // Drag & Drop
+        const ip = document.getElementById('inp-panel');
+        ['dragenter', 'dragover'].forEach(e => ip.addEventListener(e, ev => { ev.preventDefault(); ip.classList.add('drop-zone') }));
+        ['dragleave', 'drop'].forEach(e => ip.addEventListener(e, ev => { ev.preventDefault(); ip.classList.remove('drop-zone') }));
+        ip.addEventListener('drop', e => { const f = e.dataTransfer.files[0]; if (f) readFile(f) });
+        function handleFile() { document.getElementById('file-input').click() }
+        document.getElementById('file-input').addEventListener('change', e => { if (e.target.files[0]) readFile(e.target.files[0]) });
+        function readFile(f) { const r = new FileReader(); if (mode === 'encode') { r.onload = e => { const bytes = new Uint8Array(e.target.result); let bin = ''; bytes.forEach(b => bin += String.fromCharCode(b)); out.value = btoa(bin); document.getElementById('st').textContent = '✅ File encoded'; document.getElementById('st').className = 'si ok'; document.getElementById('out-info').textContent = fmt(out.value.length) }; r.readAsArrayBuffer(f) } else { r.onload = e => { inp.value = e.target.result; convert() }; r.readAsText(f) } }
+        function copyOut() { if (!out.value) return; navigator.clipboard.writeText(out.value).then(() => showToast('Copied!')) }
+        function pasteIn() { navigator.clipboard.readText().then(t => { inp.value = t; convert(); showToast('Pasted') }) }
+        function download() { if (!out.value) return; const b = new Blob([out.value], { type: 'text/plain' }); const u = URL.createObjectURL(b); const a = document.createElement('a'); a.href = u; a.download = mode === 'encode' ? 'encoded.txt' : 'decoded.txt'; a.click(); URL.revokeObjectURL(u) }
+        function clearAll() { inp.value = ''; out.value = ''; document.getElementById('st').textContent = 'Ready'; document.getElementById('st').className = 'si' }
+        const HK = 'shipmicro_b64_hist';
+        function saveHist(raw) { try { const h = JSON.parse(localStorage.getItem(HK) || '[]'); h.unshift({ t: new Date().toLocaleTimeString(), d: raw.substring(0, 200) }); localStorage.setItem(HK, JSON.stringify(h.slice(0, 10))) } catch { } }
+        function showToast(m) { const t = document.getElementById('toast'); t.textContent = m; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 1500) }
+    </script>
+</body>
+
+</html>

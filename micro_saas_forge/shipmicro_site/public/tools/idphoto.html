@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI证件照制作 | 一键生成标准证件照 | CodeMint</title>
+    <meta name="description" content="在线证件照制作工具，支持一寸、二寸、签证照，自选背景色，隐私安全不上传服务器">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 5px rgba(168, 85, 247, 0.5);
+            }
+
+            50% {
+                box-shadow: 0 0 20px rgba(168, 85, 247, 0.8);
+            }
+        }
+
+        .glow {
+            animation: pulse-glow 2s infinite;
+        }
+
+        .size-btn.active {
+            background: linear-gradient(135deg, #7c3aed, #a855f7);
+            color: white;
+        }
+
+        .color-btn.active {
+            ring: 3px solid white;
+            transform: scale(1.2);
+        }
+
+        .blur-paywall {
+            filter: blur(8px);
+            pointer-events: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-950 text-white min-h-screen">
+
+    <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur-xl sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-400 rounded-xl flex items-center justify-center text-xl">
+                    📷</div>
+                <div>
+                    <h1
+                        class="text-lg font-bold bg-gradient-to-r from-purple-400 to-pink-300 bg-clip-text text-transparent">
+                        AI证件照制作</h1>
+                    <p class="text-xs text-slate-500">照片不上传服务器 · 隐私100%安全</p>
+                </div>
+            </div>
+            <span id="vipBadge"
+                class="hidden px-3 py-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full text-xs font-bold">VIP
+                已激活</span>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-4 py-8">
+
+        <!-- 上传区 -->
+        <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 mb-6">
+            <h2 class="text-xl font-bold mb-4">第一步：上传你的照片</h2>
+            <div id="dropZone"
+                class="border-2 border-dashed border-slate-700 rounded-xl p-8 text-center cursor-pointer hover:border-purple-500 transition-colors">
+                <div class="text-4xl mb-3">📸</div>
+                <p class="text-slate-400 mb-2">点击上传或拖拽照片到这里</p>
+                <p class="text-slate-600 text-sm">支持 JPG、PNG 格式，建议正面免冠照</p>
+                <input id="fileInput" type="file" accept="image/*" class="hidden">
+            </div>
+        </div>
+
+        <!-- 设置区 -->
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <!-- 尺寸选择 -->
+            <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800">
+                <h3 class="font-bold mb-3">第二步：选择证件照尺寸</h3>
+                <div class="grid grid-cols-2 gap-2" id="sizeSelector">
+                    <button
+                        class="size-btn active rounded-lg px-3 py-2 bg-slate-800 text-sm hover:bg-slate-700 transition-all"
+                        data-w="295" data-h="413" data-name="一寸 (25×35mm)">
+                        一寸<br><span class="text-xs text-slate-400">25×35mm</span>
+                    </button>
+                    <button class="size-btn rounded-lg px-3 py-2 bg-slate-800 text-sm hover:bg-slate-700 transition-all"
+                        data-w="413" data-h="579" data-name="二寸 (35×49mm)">
+                        二寸<br><span class="text-xs text-slate-400">35×49mm</span>
+                    </button>
+                    <button class="size-btn rounded-lg px-3 py-2 bg-slate-800 text-sm hover:bg-slate-700 transition-all"
+                        data-w="390" data-h="567" data-name="小二寸 (33×48mm)">
+                        小二寸<br><span class="text-xs text-slate-400">33×48mm</span>
+                    </button>
+                    <button class="size-btn rounded-lg px-3 py-2 bg-slate-800 text-sm hover:bg-slate-700 transition-all"
+                        data-w="472" data-h="649" data-name="护照 (40×55mm)">
+                        护照/签证<br><span class="text-xs text-slate-400">40×55mm</span>
+                    </button>
+                    <button class="size-btn rounded-lg px-3 py-2 bg-slate-800 text-sm hover:bg-slate-700 transition-all"
+                        data-w="600" data-h="600" data-name="社交头像 (正方形)">
+                        社交头像<br><span class="text-xs text-slate-400">正方形</span>
+                    </button>
+                    <button class="size-btn rounded-lg px-3 py-2 bg-slate-800 text-sm hover:bg-slate-700 transition-all"
+                        data-w="358" data-h="441" data-name="驾照 (22×32mm)">
+                        驾照<br><span class="text-xs text-slate-400">22×32mm</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 背景色选择 -->
+            <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800">
+                <h3 class="font-bold mb-3">第三步：选择背景颜色</h3>
+                <div class="flex gap-3 mb-4" id="colorSelector">
+                    <button
+                        class="color-btn active w-12 h-12 rounded-full border-4 border-white/30 hover:scale-110 transition-all"
+                        data-color="#FFFFFF" style="background: white;" title="白色"></button>
+                    <button
+                        class="color-btn w-12 h-12 rounded-full border-4 border-white/30 hover:scale-110 transition-all"
+                        data-color="#438EDB" style="background: #438EDB;" title="蓝色"></button>
+                    <button
+                        class="color-btn w-12 h-12 rounded-full border-4 border-white/30 hover:scale-110 transition-all"
+                        data-color="#D93A3A" style="background: #D93A3A;" title="红色"></button>
+                    <button
+                        class="color-btn w-12 h-12 rounded-full border-4 border-white/30 hover:scale-110 transition-all"
+                        data-color="#E8E8E8" style="background: #E8E8E8;" title="浅灰"></button>
+                    <button
+                        class="color-btn w-12 h-12 rounded-full border-4 border-white/30 hover:scale-110 transition-all"
+                        data-color="#67C23A" style="background: #67C23A;" title="绿色"></button>
+                </div>
+                <p id="colorName" class="text-slate-400 text-sm">当前：白色背景</p>
+                <div class="mt-4 p-3 bg-slate-800/50 rounded-lg">
+                    <p class="text-xs text-slate-500">💡 小贴士：</p>
+                    <p class="text-xs text-slate-500">· 简历/求职 → 白色或蓝色</p>
+                    <p class="text-xs text-slate-500">· 护照/签证 → 白色</p>
+                    <p class="text-xs text-slate-500">· 身份证/结婚证 → 白色</p>
+                    <p class="text-xs text-slate-500">· 驾照/社保 → 白色或红色</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 预览区 -->
+        <div class="bg-slate-900 rounded-2xl p-6 border border-slate-800 mb-6">
+            <div class="flex items-center justify-between mb-4">
+                <h3 class="font-bold">预览效果</h3>
+                <div class="flex gap-2">
+                    <button id="resetBtn"
+                        class="bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded-lg text-sm transition-all hidden">重新调整</button>
+                    <button id="downloadBtn"
+                        class="bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-500 hover:to-pink-400 text-white font-bold px-6 py-2 rounded-lg text-sm transition-all glow disabled:opacity-50 disabled:cursor-not-allowed"
+                        disabled>
+                        下载高清证件照 (VIP)
+                    </button>
+                </div>
+            </div>
+            <div id="previewArea" class="flex items-center justify-center min-h-[300px] relative">
+                <div id="emptyState" class="text-center">
+                    <div class="text-6xl mb-4 opacity-30">🖼️</div>
+                    <p class="text-slate-600">上传照片后，这里会显示预览效果</p>
+                </div>
+                <canvas id="previewCanvas" class="hidden max-h-[400px] rounded-lg shadow-2xl"></canvas>
+
+                <!-- 付费墙(覆盖在下载按钮上) -->
+                <div id="paywallOverlay"
+                    class="hidden absolute inset-0 bg-slate-950/60 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                    <div
+                        class="bg-gradient-to-br from-slate-900 to-slate-800 border border-purple-500/30 rounded-2xl p-8 max-w-sm text-center mx-4">
+                        <div class="text-4xl mb-3">🔓</div>
+                        <h3 class="text-xl font-bold mb-2">解锁高清下载</h3>
+                        <p class="text-slate-400 text-sm mb-1">预览效果满意？</p>
+                        <p class="text-slate-400 text-sm mb-4">输入激活码即可下载无水印高清原图</p>
+                        <input id="codeInput" type="text" placeholder="请输入激活码..."
+                            class="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-white mb-3 outline-none focus:ring-2 focus:ring-purple-500">
+                        <button id="activateBtn"
+                            class="w-full bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-500 hover:to-pink-400 text-white font-bold py-2 rounded-lg transition-all">
+                            激活VIP
+                        </button>
+                        <a href="https://afdian.com/a/tiankongmumu" target="_blank"
+                            class="block mt-3 text-purple-400 text-sm hover:underline">
+                            获取激活码 (9.9元 · 永久无限次使用) →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 用户评价 -->
+        <div class="grid md:grid-cols-3 gap-4 mt-8">
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 fade-in">
+                <div class="flex items-center gap-3 mb-3">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-br from-pink-500 to-rose-500 rounded-full flex items-center justify-center text-sm font-bold">
+                        陈</div>
+                    <div>
+                        <p class="font-bold text-sm">陈同学</p>
+                        <p class="text-slate-500 text-xs">大四应届生 · 武汉</p>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-sm">"投简历要证件照，去照相馆一张要40块还得排队。这个工具9.9无限次用，自己在家拍完直接出片，背景颜色随便换！"</p>
+            </div>
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 fade-in">
+                <div class="flex items-center gap-3 mb-3">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full flex items-center justify-center text-sm font-bold">
+                        李</div>
+                    <div>
+                        <p class="font-bold text-sm">李姐</p>
+                        <p class="text-slate-500 text-xs">HR · 北京</p>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-sm">"给新员工做工牌，以前还得让他们专门去拍。现在随便拿张照片往里一扔，一寸二寸随便切，省了不少事。"</p>
+            </div>
+            <div class="bg-slate-900 border border-slate-800 rounded-xl p-5 fade-in">
+                <div class="flex items-center gap-3 mb-3">
+                    <div
+                        class="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-full flex items-center justify-center text-sm font-bold">
+                        王</div>
+                    <div>
+                        <p class="font-bold text-sm">王先生</p>
+                        <p class="text-slate-500 text-xs">办签证 · 上海</p>
+                    </div>
+                </div>
+                <p class="text-slate-400 text-sm">"办签证要白底照片，之前拍的是蓝底。用这个工具直接换了个背景色，5秒搞定，不用重新去拍了。"</p>
+            </div>
+        </div>
+
+        <!-- 功能亮点 -->
+        <div class="grid md:grid-cols-4 gap-4 mt-8">
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-4 text-center">
+                <div class="text-2xl mb-2">🔒</div>
+                <h4 class="font-bold text-sm mb-1">隐私安全</h4>
+                <p class="text-slate-500 text-xs">照片不上传服务器<br>全部本地处理</p>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-4 text-center">
+                <div class="text-2xl mb-2">⚡</div>
+                <h4 class="font-bold text-sm mb-1">秒速出片</h4>
+                <p class="text-slate-500 text-xs">上传即预览<br>无需等待</p>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-4 text-center">
+                <div class="text-2xl mb-2">🎨</div>
+                <h4 class="font-bold text-sm mb-1">5种背景色</h4>
+                <p class="text-slate-500 text-xs">白/蓝/红/灰/绿<br>一键切换</p>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl p-4 text-center">
+                <div class="text-2xl mb-2">📐</div>
+                <h4 class="font-bold text-sm mb-1">6种标准尺寸</h4>
+                <p class="text-slate-500 text-xs">一寸/二寸/护照<br>驾照/社交头像</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-t border-slate-800 py-6 mt-12 text-center text-slate-600 text-sm">
+        <p>CodeMint Tools &copy; 2026 | 你的照片不会上传到任何服务器，请放心使用</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

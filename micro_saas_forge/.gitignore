@@ -1,0 +1,48 @@
+# Playwright and headless browser persistence
+playwright_profiles/
+
+# Logs
+*.log
+*.jsonl
+logs/
+
+# TITAN State & History
+heart_state.json
+soul_state.json
+brain_state.json
+revenue_state.json
+memory/titan_chat_history.json
+generated_apps/
+
+# Environments
+.env
+.env.local
+.venv/
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+**/*.png
+**/*.jpg
+**/*.jpeg
+**/*.gif
+**/*.webp
+**/*.ico
+**/*.pdf
+**/*.mp4
+**/*.mov
+**/*.avi
+**/*.mp3
+**/*.wav
+**/*.zip
+**/*.tar.gz
+**/*.rar
+**/*.7z

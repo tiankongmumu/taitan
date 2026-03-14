@@ -1,0 +1,129 @@
+{
+  "keyword": "online piano keyboard",
+  "competitors": [
+    {
+      "name": "Virtual Piano",
+      "url": "https://virtualpiano.net",
+      "features": [
+        "Extensive song library with visual guides",
+        "Social sharing and community features",
+        "Mobile-friendly interface",
+        "Multiple keyboard layouts and instrument sounds"
+      ],
+      "weaknesses": [
+        "Cluttered, ad-heavy interface",
+        "Limited learning structure for beginners",
+        "Sound quality is basic/midi-like",
+        "No structured progression or lessons"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 3500000
+    },
+    {
+      "name": "OnlinePianist",
+      "url": "https://onlinepianist.com",
+      "features": [
+        "High-quality video tutorials for popular songs",
+        "Interactive note highlighting (falling notes)",
+        "Metronome and practice loop features",
+        "Mobile app available"
+      ],
+      "weaknesses": [
+        "Heavily song-focused, weak on fundamentals",
+        "Free tier is very limited",
+        "Interface can feel slow/overly animated",
+        "Limited customization of the keyboard itself"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 1200000
+    },
+    {
+      "name": "Pianu",
+      "url": "https://pianu.com",
+      "features": [
+        "Interactive learning with real-time feedback",
+        "Gamified lessons and challenges",
+        "Connects to MIDI keyboards",
+        "Structured course progression"
+      ],
+      "weaknesses": [
+        "Requires account creation for core features",
+        "Free content is a small sample",
+        "Can feel repetitive/game-like vs. musical",
+        "Community features are minimal"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 800000
+    },
+    {
+      "name": "Musicca",
+      "url": "https://musicca.com/piano",
+      "features": [
+        "Clean, ad-free, and minimalist design",
+        "Integrated with broader music theory lessons",
+        "Excellent for note/interval/chord identification",
+        "Completely free with no paywalls"
+      ],
+      "weaknesses": [
+        "Very basic, no song library",
+        "No interactive feedback or gamification",
+        "Not designed for learning to play songs",
+        "UI may feel too academic/sparse for casual users"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 600000
+    },
+    {
+      "name": "Flat.io Piano",
+      "url": "https://flat.io/online-piano",
+      "features": [
+        "High-quality, realistic piano sound",
+        "Clean and professional interface",
+        "Integration with music notation software",
+        "Record and save your performances"
+      ],
+      "weaknesses": [
+        "Primarily a tool for composers/notators",
+        "Zero learning or guided content",
+        "No song library or tutorials",
+        "Keyboard is a utility, not a learning platform"
+      ],
+      "pricing": "freemium",
+      "monthly_traffic": 400000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Integrated, AI-powered real-time feedback on technique and accuracy.",
+      "implementation": "Use the Web MIDI API or microphone analysis to listen to user play. Implement an AI model that provides feedback on timing, dynamics, and fingering suggestions, similar to a real teacher's corrections.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "A 'song-first' learning path that teaches fundamentals THROUGH popular songs, not as separate modules.",
+      "implementation": "Deconstruct popular songs into core techniques (e.g., chords in 'Let It Be', arpeggios in 'River Flows in You'). Build a curriculum where each song introduces and drills 1-2 new concepts, blending repertoire with theory.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Social/cohort-based learning with shared practice rooms and group challenges.",
+      "implementation": "Build virtual practice rooms where users can see each other's progress on the same song, join scheduled group practice sessions with a guide, and participate in weekly community challenges with rankings.",
+      "impact": "MEDIUM",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Dynamic, adaptive difficulty for any song.",
+      "implementation": "For any song in the library, implement a system that can simplify the arrangement in real-time (e.g., reduce chords to single notes, slow tempo, highlight only the next note) and progressively increase complexity as the user masters each level.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Focus on 'short-form' musical satisfaction for absolute beginners.",
+      "implementation": "Create micro-tasks and 30-second musical phrases that sound impressive with minimal skill (e.g., iconic movie themes, video game sounds). Focus on immediate auditory reward to combat early frustration, using sound design and arrangement to make simple inputs sound complex.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    }
+  ],
+  "recommended_positioning": "The first online piano that listens like a teacher, adapting lessons to your favorite songs and giving you real-time feedback on your playing.",
+  "analyzed_at": "2026-03-05T17:58:28.889176"
+}

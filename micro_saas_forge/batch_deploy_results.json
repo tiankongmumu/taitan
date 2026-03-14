@@ -1,0 +1,62 @@
+{
+  "deployed": [
+    {
+      "slug": "jwt-debugger",
+      "url": "https://jwt-debugger-nxmya74ow-tiankongmumus-projects.vercel.app",
+      "time": "2026-03-05T19:48:42.660999"
+    },
+    {
+      "slug": "json-path-finder",
+      "url": "https://json-path-finder-4s481qkm6-tiankongmumus-projects.vercel.app",
+      "time": "2026-03-05T19:49:32.672136"
+    },
+    {
+      "slug": "sql-query-formatter",
+      "url": "https://sql-query-formatter-cvv37dbxd-tiankongmumus-projects.vercel.app",
+      "time": "2026-03-05T19:50:29.577819"
+    },
+    {
+      "slug": "curl-to-code",
+      "url": "https://curl-to-code-26zngtfol-tiankongmumus-projects.vercel.app",
+      "time": "2026-03-05T19:51:16.415159"
+    },
+    {
+      "slug": "postgresql-schema-designer",
+      "url": "https://postgresql-schema-designer-n66208e8l-tiankongmumus-projects.vercel.app",
+      "time": "2026-03-05T19:52:19.848411"
+    },
+    {
+      "slug": "smart-qr-generator",
+      "url": "https://smart-qr-generator-l4gdiykzp-tiankongmumus-projects.vercel.app",
+      "time": "2026-03-05T19:53:19.301598"
+    },
+    {
+      "slug": "image-compress-pro",
+      "url": "https://image-compress-7mtlnql94-tiankongmumus-projects.vercel.app",
+      "time": "2026-03-05T19:55:02.626057"
+    },
+    {
+      "slug": "svg-to-png-pro-converter",
+      "url": "https://svg-to-png-pro-converter-grorlo1tm-tiankongmumus-projects.vercel.app",
+      "time": "2026-03-05T19:56:16.054877"
+    },
+    {
+      "slug": "typing-speed-test",
+      "url": "https://typing-speed-test-72udnt23m-tiankongmumus-projects.vercel.app",
+      "time": "2026-03-05T19:57:32.130925"
+    },
+    {
+      "slug": "favicon-forge-pro",
+      "url": "https://favicon-forge-nwnh7z8hf-tiankongmumus-projects.vercel.app",
+      "time": "2026-03-05T19:58:42.264336"
+    }
+  ],
+  "build_failed": [
+    "regex-playground",
+    "password-security-coach",
+    "css-gradient-animator",
+    "markdown-email-converter"
+  ],
+  "install_failed": [],
+  "missing": []
+}

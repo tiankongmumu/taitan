@@ -1,0 +1,69 @@
+=== TWITTER THREAD ===
+**Tweet 1:**  
+Recording and editing voice clips shouldn’t feel like a 2005 software hunt.  
+We just shipped a solution.  
+No installs. No bloat. Just your browser and a clean timeline.  
+https://shipmicro.com/tools
+
+**Tweet 2:**  
+Existing tools either:  
+- Make you download heavy desktop apps  
+- Force you into a subscription for basic cuts  
+- Or send you through 3 different sites just to trim and export  
+It’s broken.
+
+**Tweet 3:**  
+Our online voice recorder editor changes that:  
+🎙️ Record directly in your browser  
+✂️ Trim, cut, splice — right there  
+⬇️ Export instantly to MP3 or WAV  
+All in one tab. Zero installs.  
+We killed the friction.
+
+**Tweet 4:**  
+It’s live.  
+Try it, break it, tell us what you think.  
+Built in public, for builders like you.  
+https://shipmicro.com/tools  
+Feedback = fuel. Let’s go.
+
+=== REDDIT POST ===
+**I was so frustrated with having to download bulky software just to record and trim a quick voice memo, so I built a browser-based voice recorder/editor.**
+
+I often need to record short audio clips for work—feedback, quick notes, or snippets for presentations—and I got tired of installing (and updating) dedicated apps just to cut out a few seconds of silence or a stumble. I wanted something that worked right in the browser, required zero installs, and let me export a clean MP3 or WAV without jumping through hoops.
+
+So I made a simple online tool that does exactly that:  
+- Record directly in the browser using the MediaRecorder API  
+- Basic trim/cut/splice functions (just enough to clean up a recording)  
+- Export to MP3 (via libmp3lame.js) or WAV, no server processing—everything happens client-side  
+
+The stack is pretty straightforward: Next.js for the frontend, TypeScript, and a bit of Web Audio API manipulation for the editing. The whole thing is static-hosted; no audio ever touches our servers, which felt like the right call for privacy and simplicity.
+
+If you ever need to quickly record and trim voice audio without installing anything, you can try it here:  
+[https://shipmicro.com/tools](https://shipmicro.com/tools)
+
+I’d love some brutal feedback—especially if you run into any weird browser quirks or have ideas for small, useful features that wouldn’t overcomplicate it.
+
+=== 小红书文案 ===
+🔥 录音剪辑神器！不用下载软件也太爽了吧！
+
+家人们谁懂啊！每次剪个录音都要开电脑装软件简直了😭  
+不是格式不对就是导出慢到怀疑人生……  
+打工人的时间真的耗不起啊！  
+
+直到我发现了这个在线录音剪辑神器💥  
+直接在浏览器里就能搞定所有操作  
+简直封神了好吗！  
+
+🌟 三大优点直接封神：  
+1️⃣ 无需安装！打开网页就能录能剪  
+2️⃣ 基础剪辑全都有✂️ 裁剪/拼接一键搞定  
+3️⃣ 直接导出MP3/WAV💾 再也不怕格式问题  
+
+现在开会记录/语音笔记/播客剪辑全用它  
+效率直接拉满✨ 打工人必备生产力工具！  
+
+👉 指路：https://shipmicro.com/tools  
+（手机电脑都能用，亲测流畅到飞起～）  
+
+#效率神器 #打工人必备 #在线工具 #录音剪辑 #生产力工具 #学生党必备 #办公技巧

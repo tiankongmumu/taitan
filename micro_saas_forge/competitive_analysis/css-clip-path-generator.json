@@ -1,0 +1,139 @@
+{
+  "keyword": "css clip-path generator",
+  "competitors": [
+    {
+      "name": "Clippy! (by Bennett Feely)",
+      "url": "https://bennettfeely.com/clippy/",
+      "features": [
+        "Interactive drag-and-drop points for polygon shapes",
+        "Predefined basic shapes (polygon, circle, ellipse, inset)",
+        "Live CSS output for easy copying",
+        "Simple and clean user interface",
+        "Good for quick generation of common clip-path shapes"
+      ],
+      "weaknesses": [
+        "UI feels somewhat dated and lacks modern polish",
+        "No advanced shape manipulation (e.g., Bezier curves, smooth points)",
+        "Limited to basic shapes, no complex or custom shape import (SVG)",
+        "No animation capabilities or keyframe generation",
+        "No undo/redo functionality",
+        "No background image upload for contextual design"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 40000
+    },
+    {
+      "name": "CSS Portal - CSS Clip-path Generator",
+      "url": "https://www.cssportal.com/css-clip-path-generator/",
+      "features": [
+        "Supports polygon, circle, ellipse, and inset shapes",
+        "Interactive point editing for polygon",
+        "Option to upload a background image for visual context",
+        "Live CSS output with browser prefixes",
+        "Ability to add border-radius to inset shapes",
+        "Relatively user-friendly interface"
+      ],
+      "weaknesses": [
+        "UI is cluttered with ads, impacting user experience",
+        "Lacks advanced vector editing features (Bezier curves, complex path drawing)",
+        "No SVG import/export functionality",
+        "No animation or transition generation tools",
+        "Limited customization options beyond basic shape parameters",
+        "Performance can sometimes be slow due to ads and site overhead"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 80000
+    },
+    {
+      "name": "Keyframes.app - CSS Clip-path Generator",
+      "url": "https://keyframes.app/clip-path/",
+      "features": [
+        "Modern and clean user interface",
+        "Supports polygon, circle, ellipse, and inset shapes",
+        "Interactive point editing with clear visual feedback",
+        "Option to upload a background image",
+        "Live CSS output, easily copyable",
+        "Part of a larger suite of CSS animation tools, offering potential for integration"
+      ],
+      "weaknesses": [
+        "Still lacks advanced shape creation like Bezier curves or complex path drawing",
+        "No direct SVG import or export for shapes",
+        "Animation features are general to keyframes.app, not specific clip-path morphing",
+        "No undo/redo or history management",
+        "Limited template library for complex shapes",
+        "Relatively newer tool, less established than some competitors"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 30000
+    },
+    {
+      "name": "Fancy-Border-Radius.com (Clip-path section)",
+      "url": "https://fancy-border-radius.com/clip-path-generator",
+      "features": [
+        "Focuses on generating organic, blob-like polygon shapes",
+        "Interactive point manipulation for creating unique forms",
+        "Randomize button for quick shape variations",
+        "Live CSS output",
+        "Simple and focused interface for polygon generation"
+      ],
+      "weaknesses": [
+        "Primarily focused on polygon shapes, lacks other basic types (circle, ellipse, inset)",
+        "No background image upload for contextual design",
+        "No advanced vector editing or Bezier curve support",
+        "UI is quite basic and lacks modern design elements",
+        "Limited control over curve smoothness beyond point density",
+        "No SVG import/export"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 15000
+    },
+    {
+      "name": "CSS-Tricks Clip-Path Maker",
+      "url": "https://css-tricks.com/examples/ClipPathEditor/",
+      "features": [
+        "Basic interactive polygon editor",
+        "Live CSS output",
+        "Part of a highly reputable web development resource (CSS-Tricks)",
+        "Good for understanding the basics of clip-path polygon"
+      ],
+      "weaknesses": [
+        "Extremely basic, more of a demo than a full-fledged tool",
+        "Only supports polygon shapes, no circle, ellipse, or inset",
+        "No background image upload",
+        "Outdated UI/UX, not intuitive for complex shapes",
+        "Lacks any advanced features like Bezier curves, SVG import, or animation",
+        "No undo/redo functionality"
+      ],
+      "pricing": "free",
+      "monthly_traffic": 10000
+    }
+  ],
+  "gaps": [
+    {
+      "gap": "Advanced Vector Editing with Bezier Curves and Smoothing",
+      "implementation": "Integrate a robust vector drawing canvas allowing users to create and manipulate shapes using Bezier curves, smooth points, and advanced path operations (e.g., union, subtract). This would enable designers to create highly complex and organic clip-paths not possible with current polygon-only tools.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Seamless SVG Import & Export",
+      "implementation": "Allow users to upload SVG files, parse their path data, and automatically convert them into `clip-path: path()` or `clip-path: polygon()` (with optimization). Conversely, enable exporting the generated clip-path shape as an SVG file for use in design tools or other contexts.",
+      "impact": "HIGH",
+      "effort": "MEDIUM"
+    },
+    {
+      "gap": "Intuitive Clip-Path Animation & Morphing Generator",
+      "implementation": "Provide a timeline-based interface where users can define multiple clip-path states (keyframes) and the tool automatically generates the necessary CSS for smooth transitions and morphing between these shapes. This would require intelligent point interpolation for polygon shapes or path data manipulation for `path()` functions.",
+      "impact": "HIGH",
+      "effort": "COMPLEX"
+    },
+    {
+      "gap": "Rich Template Library & Community Sharing",
+      "implementation": "Curate a diverse library of pre-designed, complex, and inspiring clip-path shapes (e.g., speech bubbles, geometric patterns, organic blobs). Allow users to save their creations, share them with a community, and browse/fork others' designs, fostering creativity and speeding up workflow.",
+      "impact": "MEDIUM",
+      "effort": "SIMPLE"
+    }
+  ],
+  "recommended_positioning": "The next-generation clip-path generator empowering designers with advanced vector editing, seamless SVG integration, and intuitive animation tools for truly dynamic web visuals.",
+  "analyzed_at": "2026-03-05T16:05:25.261908"
+}
